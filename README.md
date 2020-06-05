@@ -17,6 +17,7 @@ Convert an ansi string to an image. Great for adding terminal output into a read
 
 - [Examples](#examples)
 	- [SVG Image](#svg-image)
+	- [Windows Terminal](#windows-terminal)
 - [Roadmap](#roadmap)
 - [Changelog](#changelog)
 - [Install With PIP](#install-with-pip)
@@ -79,6 +80,10 @@ ansiToSVG(example3, THISDIR + "/example3.svg")
 
 ![example3](test/example3.svg)
 
+
+### Windows Terminal
+
+![winterm](readme-assets/terminal.png)
 
 
 ## Roadmap
