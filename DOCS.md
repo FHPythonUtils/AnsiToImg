@@ -145,7 +145,7 @@ convert an ansi stream to svg
 
 - `ansiText` _string_ - ansi text to convert
 - `fileName` _string_ - file path to svg to write
-- `theme` _str, optional_ - file path to theme to use. Defaults to "onedark.yml".
+- `theme` _str, optional_ - file path to base24 theme to use. Defaults to "onedark.yml".
 
 <a name=".ansitoimg.render.ansiToRaster"></a>
 #### ansiToRaster
@@ -160,7 +160,23 @@ convert an ansi stream to a raster image with pillow
 
 - `ansiText` _string_ - ansi text to convert
 - `fileName` _string_ - image file path
-- `theme` _str, optional_ - file path to theme to use. Defaults to "onedark.yml".
+- `theme` _str, optional_ - file path to base24 theme to use. Defaults to "onedark.yml".
+
+<a name=".ansitoimg.render.ansiToSVGRaster"></a>
+#### ansiToSVGRaster
+
+```python
+ansiToSVGRaster(ansiText, fileName, theme=THISDIR + "/onedark.yml")
+```
+
+convert an ansi stream to a raster image using pypeteer to take a
+screenshot of a generated svg (hacky but we can get coloured emoji now)
+
+**Arguments**:
+
+- `ansiText` _string_ - ansi text to convert
+- `fileName` _string_ - image file path
+- `theme` _str, optional_ - file path to base24 theme to use. Defaults to "onedark.yml".
 
 <a name=".ansitoimg.utils"></a>
 ## ansitoimg.utils

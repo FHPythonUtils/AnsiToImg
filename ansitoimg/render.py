@@ -2,10 +2,13 @@
 
 render as svg
 """
+import asyncio
+from os import remove
 from pathlib import Path
 import svgwrite
 from yaml import safe_load
 from PIL import Image, ImageDraw, ImageFont
+from pyppeteer import launch
 from ansitoimg.ansirep import AnsiBlocks, findLen
 
 THISDIR = str(Path(__file__).resolve().parent)
@@ -21,7 +24,7 @@ def ansiToSVG(ansiText, fileName, theme=THISDIR + "/onedark.yml"):
 	Args:
 		ansiText (string): ansi text to convert
 		fileName (string): file path to svg to write
-		theme (str, optional): file path to theme to use. Defaults to "onedark.yml".
+		theme (str, optional): file path to base24 theme to use. Defaults to "onedark.yml".
 	"""
 	themeData = safe_load(open(theme))
 	ansiBlocks = AnsiBlocks(ansiText)
@@ -63,7 +66,7 @@ def ansiToRaster(ansiText, fileName, theme=THISDIR + "/onedark.yml"):
 	Args:
 		ansiText (string): ansi text to convert
 		fileName (string): image file path
-		theme (str, optional): file path to theme to use. Defaults to "onedark.yml".
+		theme (str, optional): file path to base24 theme to use. Defaults to "onedark.yml".
 	"""
 	themeData = safe_load(open(theme))
 	ansiBlocks = AnsiBlocks(ansiText)
@@ -113,3 +116,36 @@ def ansiToRaster(ansiText, fileName, theme=THISDIR + "/onedark.yml"):
 				draw.line((posX, posY + TEXT_HEIGHT, posX + 9.5, posY + TEXT_HEIGHT),
 				fill=fill, width=1)
 	image.save(fileName)
+
+
+def ansiToSVGRaster(ansiText, fileName, theme=THISDIR + "/onedark.yml"):
+	"""convert an ansi stream to a raster image using pypeteer to take a
+	screenshot of a generated svg (hacky but we can get coloured emoji now)
+
+	Args:
+		ansiText (string): ansi text to convert
+		fileName (string): image file path
+		theme (str, optional): file path to base24 theme to use. Defaults to "onedark.yml".
+	"""
+	ansiToSVG(ansiText, THISDIR + "/temp.svg", theme)
+	ansiBlocks = AnsiBlocks(ansiText)
+	ansiBlocks.process()
+	size = (int(70 * TEXT_WIDTH), int(TEXT_HEIGHT * ansiBlocks.height + 5))
+	asyncio.get_event_loop().run_until_complete(
+	_doGrabWebpage('file:///' + THISDIR + "/temp.svg", size, fileName))
+	try:
+		remove(THISDIR + "/temp.svg")
+	except PermissionError:
+		print("Unable to clean up, manually remove temp.svg from project root " +
+		"or ignore")
+
+
+async def _doGrabWebpage(url, resolution, fileName):
+	''' Go to a URL, with a browser with a set resolution and take a screenshot'''
+	browser = await launch(
+	options={'args': ['--no-sandbox', '--disable-web-security']})
+	page = await browser.newPage()
+	await page.setViewport({"width": resolution[0], "height": resolution[1]})
+	await page.goto(url)
+	await page.screenshot({'path': fileName})
+	await browser.close()

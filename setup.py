@@ -21,9 +21,9 @@ if os.path.exists(readme_path):
 setup(
     long_description=readme,
     name='ansitoimg',
-    version='2020.1',
+    version='2020.2',
     description='Convert an ansi string to an image. Great for adding terminal output into a readme.',
-    python_requires='==3.*,>=3.6.0',
+    python_requires='==3.*,>=3.6.1',
     project_urls={
         "documentation":
             "https://github.com/FHPythonUtils/AnsiToImg/blob/master/README.md",
@@ -51,6 +51,7 @@ setup(
     package_data={"ansitoimg": [
         "*.yml", "resources/*.otf", "resources/*.ttf"]},
     install_requires=[
-        'pillow==7.*,>=7.1.2', 'pyyaml==5.*,>=5.3.1', 'svgwrite==1.*,>=1.4.0'
+        'pillow==7.*,>=7.1.2', 'pyppeteer==0.*,>=0.2.2', 'pyyaml==5.*,>=5.3.1',
+        'svgwrite==1.*,>=1.4.0'
     ],
 )

@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "ansitoimg"
-version = "2020.1"
+version = "2020.2"
 description = "Convert an ansi string to an image. Great for adding terminal output into a readme."
 authors = ["FredHappyface"]
 classifiers = [
@@ -24,10 +24,11 @@ documentation = "https://github.com/FHPythonUtils/AnsiToImg/blob/master/README.m
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = "^3.6"
+python = "^3.6.1"
 svgwrite = "^1.4"
 pyyaml = "^5.3.1"
 pillow = "^7.1.2"
+pyppeteer = "^0.2.2"
 
 
 [tool.dephell.main]

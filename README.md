@@ -18,10 +18,12 @@ Convert an ansi string to an image. Great for adding terminal output into a read
 - [Examples](#examples)
 	- [SVG Image](#svg-image)
 	- [Raster Image](#raster-image)
+	- [SVGRaster Image](#svgraster-image)
 	- [Windows Terminal](#windows-terminal)
-- [Choosing ansiToSVG or ansiToRaster](#choosing-ansitosvg-or-ansitoraster)
+- [Choosing ansiToSVG ansiToRaster or ansiToSVGRaster](#choosing-ansitosvg-ansitoraster-or-ansitosvgraster)
 	- [ansiToSVG](#ansitosvg)
 	- [ansiToRaster](#ansitoraster)
+	- [ansiToSVGRaster](#ansitosvgraster)
 - [Changelog](#changelog)
 - [Install With PIP](#install-with-pip)
 - [Language information](#language-information)
@@ -47,6 +49,11 @@ Convert an ansi string to an image. Great for adding terminal output into a read
 
 Here is an example of some code and the images it produces:
 
+Functions accept the following arguments:
+- ansiText - text to process
+- fileName - name of the file to write to
+- theme - a base24 theme. Defaults to atom one dark
+
 ```python
 import sys
 import os
@@ -67,14 +74,17 @@ if platform.system() == "Windows":
 example = "👋\033[32mHello\033[0m, \033[34mWorld\033[0m🌏\033[31m!\033[0m\n\033[41m👋\033[0m\033[43m🦄\033[0m\033[42m🐘\033[0m\033[3m\033[9m13\033[0m\033[1m3\033[0m\033[4m7\033[0m\033[46m🍄\033[0m\033[44m🎃\033[0m\033[45m🐦\033[0m"
 ansiToSVG(example, THISDIR + "/example.svg")
 ansiToRaster(example, THISDIR + "/example.png")
+ansiToSVGRaster(example, THISDIR + "/svgExample.png")
 
 example2 = "hello\nworld\n\033[42m\033[31mwe meet again\033[0m\nABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz😁😂🤣😃😄😅😆😉😊😋😎😍😘🥰😗😙😚☺🙂🤗🤩🤔🤨😐😑😶🙄😏😣😥😮🤐😯😪asdfghjk"
 ansiToSVG(example2, THISDIR + "/example2.svg")
-ansiToRaster(example, THISDIR + "/example.png")
+ansiToRaster(example2, THISDIR + "/example2.png")
+ansiToSVGRaster(example2, THISDIR + "/svgExample2.png")
 
 example3 = generateHDColour(THISDIR + "/test.png", 40)
 ansiToSVG(example3, THISDIR + "/example3.svg")
-ansiToRaster(example, THISDIR + "/example.png")
+ansiToRaster(example3, THISDIR + "/example3.png")
+ansiToSVGRaster(example3, THISDIR + "/svgExample3.png")
 ```
 
 ### SVG Image
@@ -91,12 +101,18 @@ ansiToRaster(example, THISDIR + "/example.png")
 
 ![example3](test/example3.png)
 
+### SVGRaster Image
+![example](test/svgExample.png)
+
+![example2](test/svgExample2.png)
+
+![example3](test/svgExample3.png)
 
 ### Windows Terminal
 
 ![winterm](readme-assets/terminal.png)
 
-## Choosing ansiToSVG or ansiToRaster
+## Choosing ansiToSVG ansiToRaster or ansiToSVGRaster
 
 ### ansiToSVG
 This is better for the vast majority of cases as the image sizes are smaller
@@ -112,6 +128,11 @@ The image size does not scale to the length of the ansi sequence but does scale
 to the number of lines of terminal output. This is ideal for output of complex
 ansi sequences that would be huge if `ansiToSVG` were used. However, emojis are
 in black and white and show quite poorly on coloured backgrounds.
+
+### ansiToSVGRaster
+Takes the advantages that `ansiToRaster` has whilst keeping colour emojis, Yay!
+This uses pyppeteer to fire up a headless browser which opens the svg and takes
+a screenshot
 
 ## Changelog
 See the [CHANGELOG](/CHANGELOG.md) for more information.

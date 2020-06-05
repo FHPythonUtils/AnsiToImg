@@ -9,7 +9,7 @@ from catimage.catimage import generateHDColour
 
 THISDIR = str(Path(__file__).resolve().parent)
 sys.path.insert(0, os.path.dirname(THISDIR))
-from ansitoimg.render import ansiToSVG, ansiToRaster
+from ansitoimg.render import ansiToSVG, ansiToRaster, ansiToSVGRaster
 
 
 if platform.system() == "Windows":
@@ -21,14 +21,17 @@ print(example)
 print()
 ansiToSVG(example, THISDIR + "/example.svg")
 ansiToRaster(example, THISDIR + "/example.png")
+ansiToSVGRaster(example, THISDIR + "/svgExample.png")
 
 example2 = "hello\nworld\n\033[42m\033[31mwe meet again\033[0m\nABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz😁😂🤣😃😄😅😆😉😊😋😎😍😘🥰😗😙😚☺🙂🤗🤩🤔🤨😐😑😶🙄😏😣😥😮🤐😯😪asdfghjk"
 print(example2)
 print()
 ansiToSVG(example2, THISDIR + "/example2.svg")
 ansiToRaster(example2, THISDIR + "/example2.png")
+ansiToSVGRaster(example2, THISDIR + "/svgExample2.png")
 
 example3 = generateHDColour(THISDIR + "/test.png", 40)
 print(example3)
 ansiToSVG(example3, THISDIR + "/example3.svg")
 ansiToRaster(example3, THISDIR + "/example3.png")
+ansiToSVGRaster(example3, THISDIR + "/svgExample3.png")
