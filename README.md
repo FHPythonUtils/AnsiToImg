@@ -18,11 +18,10 @@ Convert an ansi string to an image. Great for adding terminal output into a read
 - [Examples](#examples)
 	- [SVG Image](#svg-image)
 	- [Raster Image](#raster-image)
+	- [Windows Terminal](#windows-terminal)
 - [Choosing ansiToSVG or ansiToRaster](#choosing-ansitosvg-or-ansitoraster)
 	- [ansiToSVG](#ansitosvg)
 	- [ansiToRaster](#ansitoraster)
-	- [Windows Terminal](#windows-terminal)
-- [Roadmap](#roadmap)
 - [Changelog](#changelog)
 - [Install With PIP](#install-with-pip)
 - [Language information](#language-information)
@@ -92,6 +91,11 @@ ansiToRaster(example, THISDIR + "/example.png")
 
 ![example3](test/example3.png)
 
+
+### Windows Terminal
+
+![winterm](readme-assets/terminal.png)
+
 ## Choosing ansiToSVG or ansiToRaster
 
 ### ansiToSVG
@@ -108,15 +112,6 @@ The image size does not scale to the length of the ansi sequence but does scale
 to the number of lines of terminal output. This is ideal for output of complex
 ansi sequences that would be huge if `ansiToSVG` were used. However, emojis are
 in black and white and show quite poorly on coloured backgrounds.
-
-### Windows Terminal
-
-![winterm](readme-assets/terminal.png)
-
-
-## Roadmap
-
-Add option to convert to raster images through pillow
 
 ## Changelog
 See the [CHANGELOG](/CHANGELOG.md) for more information.
