@@ -20,7 +20,7 @@ Convert an ansi string to an image. Great for adding terminal output into a read
 	- [Raster Image](#raster-image)
 - [Choosing ansiToSVG or ansiToRaster](#choosing-ansitosvg-or-ansitoraster)
 	- [ansiToSVG](#ansitosvg)
-	- [ansiToSVG](#ansitosvg-1)
+	- [ansiToRaster](#ansitoraster)
 	- [Windows Terminal](#windows-terminal)
 - [Roadmap](#roadmap)
 - [Changelog](#changelog)
@@ -103,7 +103,7 @@ opt for shorter sequences for output making `ansiToSVG` the better option.
 10 one can expect full colour emoji. Image sizes can get out of hand for some
 cases such as catimage output as those tend to be very long ansi sequences.
 
-### ansiToSVG
+### ansiToRaster
 The image size does not scale to the length of the ansi sequence but does scale
 to the number of lines of terminal output. This is ideal for output of complex
 ansi sequences that would be huge if `ansiToSVG` were used. However, emojis are
