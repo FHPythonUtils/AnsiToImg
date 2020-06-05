@@ -147,6 +147,21 @@ convert an ansi stream to svg
 - `fileName` _string_ - file path to svg to write
 - `theme` _str, optional_ - file path to theme to use. Defaults to "onedark.yml".
 
+<a name=".ansitoimg.render.ansiToRaster"></a>
+#### ansiToRaster
+
+```python
+ansiToRaster(ansiText, fileName, theme=THISDIR + "/onedark.yml")
+```
+
+convert an ansi stream to a raster image with pillow
+
+**Arguments**:
+
+- `ansiText` _string_ - ansi text to convert
+- `fileName` _string_ - image file path
+- `theme` _str, optional_ - file path to theme to use. Defaults to "onedark.yml".
+
 <a name=".ansitoimg.utils"></a>
 ## ansitoimg.utils
 

@@ -5,6 +5,7 @@ render as svg
 from pathlib import Path
 import svgwrite
 from yaml import safe_load
+from PIL import Image, ImageDraw, ImageFont
 from ansitoimg.ansirep import AnsiBlocks, findLen
 
 THISDIR = str(Path(__file__).resolve().parent)
@@ -54,3 +55,61 @@ def ansiToSVG(ansiText, fileName, theme=THISDIR + "/onedark.yml"):
 		if block.fgColour is None else block.fgColour), style=style))
 	dwg.add(group)
 	dwg.save()
+
+
+def ansiToRaster(ansiText, fileName, theme=THISDIR + "/onedark.yml"):
+	"""convert an ansi stream to a raster image with pillow
+
+	Args:
+		ansiText (string): ansi text to convert
+		fileName (string): image file path
+		theme (str, optional): file path to theme to use. Defaults to "onedark.yml".
+	"""
+	themeData = safe_load(open(theme))
+	ansiBlocks = AnsiBlocks(ansiText)
+	ansiBlocks.process()
+	blocks = ansiBlocks.ansiBlocks
+	size = (int(70 * TEXT_WIDTH), int(TEXT_HEIGHT * ansiBlocks.height + 5))
+	image = Image.new("RGB", size, "#" + themeData["base00"])
+	draw = ImageDraw.Draw(image)
+	# Load the fonts
+	fontNormal = ImageFont.truetype(THISDIR + "/resources/FiraCode-Regular.otf",
+	14)
+	fontBold = ImageFont.truetype(THISDIR + "/resources/FiraCode-Bold.otf", 14)
+	fontItalic = ImageFont.truetype(THISDIR + "/resources/FiraCode-Italic.otf",
+	14)
+	fontBoldItalic = ImageFont.truetype(
+	THISDIR + "/resources/FiraCode-BoldItalic.otf", 14)
+	fontEmoji = ImageFont.truetype(
+	THISDIR + "/resources/TwitterColorEmoji-SVGinOT30.ttf", 14)
+	# Iterate through the ansi blocks
+	for block in blocks:
+		posY = block.position[1] * TEXT_HEIGHT + 2.5
+		if block.bgColour is not None:
+			posX = block.position[0] * TEXT_WIDTH + 5
+			draw.rectangle((posX, posY, posX + findLen(block.text) * 9.5,
+			posY + TEXT_HEIGHT), block.bgColour)
+		text = block.text
+		font = fontNormal
+		fill = ("#" + themeData["base05"]
+		if block.fgColour is None else block.fgColour) # get the block fill colour
+		if block.bold and block.italic:
+			font = fontBoldItalic
+		elif block.bold:
+			font = fontBold
+		elif block.italic:
+			font = fontItalic
+		index = 0
+		for char in text:
+			posX = (block.position[0] + index) * TEXT_WIDTH + 5
+			if ord(char) > 10000: # I wish there was a better way of doing this...
+				draw.text((posX, posY + 2), char, font=fontEmoji, fill=fill)
+				index += 2
+			else:
+				draw.text((posX, posY), char if not block.crossedOut else '\u0336' + char +
+				'\u0336', font=font, fill=fill)
+				index += 1
+			if block.underline:
+				draw.line((posX, posY + TEXT_HEIGHT, posX + 9.5, posY + TEXT_HEIGHT),
+				fill=fill, width=1)
+	image.save(fileName)

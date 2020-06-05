@@ -21,7 +21,7 @@ if os.path.exists(readme_path):
 setup(
     long_description=readme,
     name='ansitoimg',
-    version='2020',
+    version='2020.1',
     description='Convert an ansi string to an image. Great for adding terminal output into a readme.',
     python_requires='==3.*,>=3.6.0',
     project_urls={
@@ -39,7 +39,6 @@ setup(
         'License :: OSI Approved :: MIT License', 'Natural Language :: English',
         'Operating System :: OS Independent',
         'Programming Language :: Python :: 3',
-        'Programming Language :: Python :: 3.5',
         'Programming Language :: Python :: 3.6',
         'Programming Language :: Python :: 3.7',
         'Programming Language :: Python :: 3.8',
@@ -47,8 +46,11 @@ setup(
         'Topic :: Software Development :: Libraries :: Python Modules',
         'Topic :: Utilities'
     ],
-    packages=['ansitoimg'],
+    packages=['AnsiToImg'],
     package_dir={"": "."},
-    package_data={"ansitoimg": ["*.yml"]},
-    install_requires=['pyyaml==5.*,>=5.3.1', 'svgwrite==1.*,>=1.4.0'],
+    package_data={"ansitoimg": [
+        "*.yml", "resources/*.otf", "resources/*.ttf"]},
+    install_requires=[
+        'pillow==7.*,>=7.1.2', 'pyyaml==5.*,>=5.3.1', 'svgwrite==1.*,>=1.4.0'
+    ],
 )

@@ -17,6 +17,10 @@ Convert an ansi string to an image. Great for adding terminal output into a read
 
 - [Examples](#examples)
 	- [SVG Image](#svg-image)
+	- [Raster Image](#raster-image)
+- [Choosing ansiToSVG or ansiToRaster](#choosing-ansitosvg-or-ansitoraster)
+	- [ansiToSVG](#ansitosvg)
+	- [ansiToSVG](#ansitosvg-1)
 	- [Windows Terminal](#windows-terminal)
 - [Roadmap](#roadmap)
 - [Changelog](#changelog)
@@ -54,7 +58,7 @@ from catimage.catimage import generateHDColour
 
 THISDIR = str(Path(__file__).resolve().parent)
 sys.path.insert(0, os.path.dirname(THISDIR))
-from ansitoimg.txtrender import ansiToSVG
+from ansitoimg.txtrender import ansiToSVG, ansiToRaster
 
 
 if platform.system() == "Windows":
@@ -63,14 +67,15 @@ if platform.system() == "Windows":
 
 example = "👋\033[32mHello\033[0m, \033[34mWorld\033[0m🌏\033[31m!\033[0m\n\033[41m👋\033[0m\033[43m🦄\033[0m\033[42m🐘\033[0m\033[3m\033[9m13\033[0m\033[1m3\033[0m\033[4m7\033[0m\033[46m🍄\033[0m\033[44m🎃\033[0m\033[45m🐦\033[0m"
 ansiToSVG(example, THISDIR + "/example.svg")
-
+ansiToRaster(example, THISDIR + "/example.png")
 
 example2 = "hello\nworld\n\033[42m\033[31mwe meet again\033[0m\nABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz😁😂🤣😃😄😅😆😉😊😋😎😍😘🥰😗😙😚☺🙂🤗🤩🤔🤨😐😑😶🙄😏😣😥😮🤐😯😪asdfghjk"
 ansiToSVG(example2, THISDIR + "/example2.svg")
-
+ansiToRaster(example, THISDIR + "/example.png")
 
 example3 = generateHDColour(THISDIR + "/test.png", 40)
 ansiToSVG(example3, THISDIR + "/example3.svg")
+ansiToRaster(example, THISDIR + "/example.png")
 ```
 
 ### SVG Image
@@ -80,6 +85,29 @@ ansiToSVG(example3, THISDIR + "/example3.svg")
 
 ![example3](test/example3.svg)
 
+### Raster Image
+![example](test/example.png)
+
+![example2](test/example2.png)
+
+![example3](test/example3.png)
+
+## Choosing ansiToSVG or ansiToRaster
+
+### ansiToSVG
+This is better for the vast majority of cases as the image sizes are smaller
+for reasonably simple ansi sequences. The image size scales proportionally
+with the length of the ansi sequence. A large number of applications tend to
+opt for shorter sequences for output making `ansiToSVG` the better option.
+`ansiToSVG` also handles emoji as well as the OS does. For instance, on Windows
+10 one can expect full colour emoji. Image sizes can get out of hand for some
+cases such as catimage output as those tend to be very long ansi sequences.
+
+### ansiToSVG
+The image size does not scale to the length of the ansi sequence but does scale
+to the number of lines of terminal output. This is ideal for output of complex
+ansi sequences that would be huge if `ansiToSVG` were used. However, emojis are
+in black and white and show quite poorly on coloured backgrounds.
 
 ### Windows Terminal
 
