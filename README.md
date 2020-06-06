@@ -19,11 +19,14 @@ Convert an ansi string to an image. Great for adding terminal output into a read
 	- [SVG Image](#svg-image)
 	- [Raster Image](#raster-image)
 	- [SVGRaster Image](#svgraster-image)
+	- [HTML/ HTMLRaster Image](#html-htmlraster-image)
 	- [Windows Terminal](#windows-terminal)
-- [Choosing ansiToSVG ansiToRaster or ansiToSVGRaster](#choosing-ansitosvg-ansitoraster-or-ansitosvgraster)
+- [Choosing ansiToSVG, ansiToRaster, ansiToSVGRaster, ansiToHTML or ansiToHTMLRaster](#choosing-ansitosvg-ansitoraster-ansitosvgraster-ansitohtml-or-ansitohtmlraster)
 	- [ansiToSVG](#ansitosvg)
 	- [ansiToRaster](#ansitoraster)
 	- [ansiToSVGRaster](#ansitosvgraster)
+	- [ansiToHTML](#ansitohtml)
+	- [ansiToHTMLRaster](#ansitohtmlraster)
 - [Changelog](#changelog)
 - [Install With PIP](#install-with-pip)
 - [Language information](#language-information)
@@ -64,7 +67,7 @@ from catimage.catimage import generateHDColour
 
 THISDIR = str(Path(__file__).resolve().parent)
 sys.path.insert(0, os.path.dirname(THISDIR))
-from ansitoimg.render import ansiToSVG, ansiToRaster, ansiToSVGRaster
+from ansitoimg.render import ansiToSVG, ansiToRaster, ansiToSVGRaster, ansiToHTML, ansiToHTMLRaster
 
 
 if platform.system() == "Windows":
@@ -98,6 +101,16 @@ ansiToRaster(example3, THISDIR + "/example3.png")
 ansiToSVGRaster(example, THISDIR + "/svgExample.png")
 ansiToSVGRaster(example2, THISDIR + "/svgExample2.png")
 ansiToSVGRaster(example3, THISDIR + "/svgExample3.png")
+
+# To HTML
+ansiToHTML(example, THISDIR + "/example.html")
+ansiToHTML(example2, THISDIR + "/example2.html")
+ansiToHTML(example3, THISDIR + "/example3.html")
+
+# To HTMLRaster
+ansiToHTMLRaster(example, THISDIR + "/htmlExample.png")
+ansiToHTMLRaster(example2, THISDIR + "/htmlExample2.png")
+ansiToHTMLRaster(example3, THISDIR + "/htmlExample3.png")
 ```
 
 ### SVG Image
@@ -121,11 +134,19 @@ ansiToSVGRaster(example3, THISDIR + "/svgExample3.png")
 
 ![example3](test/svgExample3.png)
 
+### HTML/ HTMLRaster Image
+![example](test/htmlExample.png)
+
+![example2](test/htmlExample2.png)
+
+![example3](test/htmlExample3.png)
+
+
 ### Windows Terminal
 
 ![winterm](readme-assets/terminal.png)
 
-## Choosing ansiToSVG ansiToRaster or ansiToSVGRaster
+## Choosing ansiToSVG, ansiToRaster, ansiToSVGRaster, ansiToHTML or ansiToHTMLRaster
 
 ### ansiToSVG
 This is better for the vast majority of cases as the image sizes are smaller
@@ -145,7 +166,16 @@ in black and white and show quite poorly on coloured backgrounds.
 ### ansiToSVGRaster
 Takes the advantages that `ansiToRaster` has whilst keeping colour emojis, Yay!
 This uses pyppeteer to fire up a headless browser which opens the svg and takes
-a screenshot
+a screenshot.
+
+### ansiToHTML
+Has the same advantages and disadvantages of `ansiToSVG` with the added benefit
+of looking a bit more like terminal output
+
+### ansiToHTMLRaster
+Has the same advantages and disadvantages of `ansiToSVGRaster` with the added benefit
+of looking a bit more like terminal output
+
 
 ## Changelog
 See the [CHANGELOG](/CHANGELOG.md) for more information.

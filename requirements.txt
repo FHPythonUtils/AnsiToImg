@@ -1,3 +1,4 @@
+markupsafe==1.*,>=1.1.1
 pillow==7.*,>=7.1.2
 pyppeteer==0.*,>=0.2.2
 pyyaml==5.*,>=5.3.1

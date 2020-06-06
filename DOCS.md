@@ -178,6 +178,38 @@ screenshot of a generated svg (hacky but we can get coloured emoji now)
 - `fileName` _string_ - image file path
 - `theme` _str, optional_ - file path to base24 theme to use. Defaults to "onedark.yml".
 
+<a name=".ansitoimg.render.ansiToHTML"></a>
+#### ansiToHTML
+
+```python
+ansiToHTML(ansiText, fileName, theme=THISDIR + "/onedark.yml")
+```
+
+convert an ansi stream to a html file
+
+**Arguments**:
+
+- `ansiText` _string_ - ansi text to convert
+- `fileName` _string_ - image file path
+- `theme` _str, optional_ - file path to base24 theme to use. Defaults to "onedark.yml".
+
+<a name=".ansitoimg.render.ansiToHTMLRaster"></a>
+#### ansiToHTMLRaster
+
+```python
+ansiToHTMLRaster(ansiText, fileName, theme=THISDIR + "/onedark.yml")
+```
+
+convert an ansi stream to a raster image using pypeteer to take a
+screenshot of a generated html (hacky but we can output more like that
+of a terminal now)
+
+**Arguments**:
+
+- `ansiText` _string_ - ansi text to convert
+- `fileName` _string_ - image file path
+- `theme` _str, optional_ - file path to base24 theme to use. Defaults to "onedark.yml".
+
 <a name=".ansitoimg.utils"></a>
 ## ansitoimg.utils
 

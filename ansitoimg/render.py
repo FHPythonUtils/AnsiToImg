@@ -9,6 +9,7 @@ import svgwrite
 from yaml import safe_load
 from PIL import Image, ImageDraw, ImageFont
 from pyppeteer import launch
+from markupsafe import escape
 from ansitoimg.ansirep import AnsiBlocks, findLen
 
 THISDIR = str(Path(__file__).resolve().parent)
@@ -149,3 +150,62 @@ async def _doGrabWebpage(url, resolution, fileName):
 	await page.goto(url)
 	await page.screenshot({'path': fileName})
 	await browser.close()
+
+
+def ansiToHTML(ansiText, fileName, theme=THISDIR + "/onedark.yml"):
+	"""convert an ansi stream to a html file
+
+	Args:
+		ansiText (string): ansi text to convert
+		fileName (string): image file path
+		theme (str, optional): file path to base24 theme to use. Defaults to "onedark.yml".
+	"""
+	themeData = safe_load(open(theme))
+	ansiBlocks = AnsiBlocks(ansiText)
+	ansiBlocks.process()
+	blocks = ansiBlocks.ansiBlocks
+	prevY = 0
+	html = ["<!DOCTYPE html><html style=\"background-color: #" + themeData["base00"] + "; font-size: 14px; font-family: FiraCode NF, Fira Code, Courier New, monospace;\"><body>"]
+	for block in blocks:
+		style = "color: " + ("#" + themeData["base05"] if block.fgColour is None else block.fgColour) + ";"
+		if block.bgColour is not None:
+			style += "background-color:" + block.bgColour + ";"
+		if block.bold:
+			style += "font-weight: bold;"
+		if block.italic:
+			style += "font-style: italic;"
+		if block.underline:
+			style += "text-decoration: underline;"
+		if block.crossedOut:
+			style += "text-decoration: line-through;"
+		if block.position[1] > prevY:
+			html.append("<br>")
+			prevY = block.position[1]
+		html.append("<span style=\"{0}\">{1}</span>".format(style, escape(block.text)))
+	html.append("</body></html>")
+	with open(fileName, "w") as file:
+		file.write("".join(html))
+
+
+
+def ansiToHTMLRaster(ansiText, fileName, theme=THISDIR + "/onedark.yml"):
+	"""convert an ansi stream to a raster image using pypeteer to take a
+	screenshot of a generated html (hacky but we can output more like that
+	of a terminal now)
+
+	Args:
+		ansiText (string): ansi text to convert
+		fileName (string): image file path
+		theme (str, optional): file path to base24 theme to use. Defaults to "onedark.yml".
+	"""
+	ansiToHTML(ansiText, THISDIR + "/temp.html", theme)
+	ansiBlocks = AnsiBlocks(ansiText)
+	ansiBlocks.process()
+	size = (int(70 * 8.63) + 16, int(16.8 * ansiBlocks.height + 16))
+	asyncio.get_event_loop().run_until_complete(
+	_doGrabWebpage('file:///' + THISDIR + "/temp.html", size, fileName))
+	try:
+		remove(THISDIR + "/temp.html")
+	except PermissionError:
+		print("Unable to clean up, manually remove temp.html from project root " +
+		"or ignore")

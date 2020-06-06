@@ -8,7 +8,7 @@ from catimage.catimage import generateHDColour
 
 THISDIR = str(Path(__file__).resolve().parent)
 sys.path.insert(0, os.path.dirname(THISDIR))
-from ansitoimg.render import ansiToSVG, ansiToRaster, ansiToSVGRaster
+from ansitoimg.render import ansiToSVG, ansiToRaster, ansiToSVGRaster, ansiToHTML, ansiToHTMLRaster
 
 
 if platform.system() == "Windows":
@@ -42,3 +42,13 @@ ansiToRaster(example3, THISDIR + "/example3.png")
 ansiToSVGRaster(example, THISDIR + "/svgExample.png")
 ansiToSVGRaster(example2, THISDIR + "/svgExample2.png")
 ansiToSVGRaster(example3, THISDIR + "/svgExample3.png")
+
+# To HTML
+ansiToHTML(example, THISDIR + "/example.html")
+ansiToHTML(example2, THISDIR + "/example2.html")
+ansiToHTML(example3, THISDIR + "/example3.html")
+
+# To HTMLRaster
+ansiToHTMLRaster(example, THISDIR + "/htmlExample.png")
+ansiToHTMLRaster(example2, THISDIR + "/htmlExample2.png")
+ansiToHTMLRaster(example3, THISDIR + "/htmlExample3.png")

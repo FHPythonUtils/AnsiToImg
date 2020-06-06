@@ -2,6 +2,10 @@
 All major and minor version changes will be documented in this file. Details of
 patch-level version changes can be found in [commit messages](../../commits/master).
 
+## 2020.3 - 2020/06/06
+- added ansiToHTML
+- added ansiToHTMLRaster
+
 ## 2020.2 - 2020/06/05
 - added ansiToSVGRaster
 
