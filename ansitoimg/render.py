@@ -169,7 +169,8 @@ def ansiToHTML(ansiText, fileName, theme=THISDIR + "/onedark.yml"):
 	"<!DOCTYPE html><html style=\"background-color: #" + themeData["base00"] +
 	"; font-size: 14px; font-family: FiraCode NF, Fira Code, Courier New, " +
 	"monospace;\"><head><title>" + fileName.replace("\\",
-	"/").split("/")[-1] + "</title><link " +
+	"/").split("/")[-1] + "</title><meta name=\"viewport\" " +
+	"content=\"width=device-width, initial-scale=1, shrink-to-fit=no\"><link " +
 	"href=\"https://fonts.googleapis.com/css2?family=Fira+Code:wght@450;650&display=swap\" "
 	+ "rel=\"stylesheet\"></head><body>"]
 	for block in blocks:
