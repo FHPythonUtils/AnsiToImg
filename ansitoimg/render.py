@@ -1,6 +1,6 @@
-""" render the ansi
+""" render the ANSI
 
-render as svg
+render as SVG
 """
 import asyncio
 from os import remove
@@ -20,11 +20,11 @@ TEXT_WIDTH = 8.7
 
 
 def ansiToSVG(ansiText, fileName, theme=THISDIR + "/onedark.yml"):
-	"""convert an ansi stream to svg
+	"""convert an ANSI stream to SVG
 
 	Args:
-		ansiText (string): ansi text to convert
-		fileName (string): file path to svg to write
+		ansiText (string): ANSI text to convert
+		fileName (string): file path to SVG to write
 		theme (str, optional): file path to base24 theme to use. Defaults to "onedark.yml".
 	"""
 	themeData = safe_load(open(theme))
@@ -41,7 +41,7 @@ def ansiToSVG(ansiText, fileName, theme=THISDIR + "/onedark.yml"):
 			group.add(
 			dwg.rect((block.position[0] * TEXT_WIDTH + 5,
 			block.position[1] * TEXT_HEIGHT + 2.5),
-			(findLen(block.text) * 9.5, TEXT_HEIGHT), fill=block.bgColour))
+			(findLen(block.text) * TEXT_WIDTH, TEXT_HEIGHT), fill=block.bgColour))
 		style = "" if any([
 		block.bold, block.italic, block.underline, block.crossedOut]) else None
 		if block.bold:
@@ -62,10 +62,10 @@ def ansiToSVG(ansiText, fileName, theme=THISDIR + "/onedark.yml"):
 
 
 def ansiToRaster(ansiText, fileName, theme=THISDIR + "/onedark.yml"):
-	"""convert an ansi stream to a raster image with pillow
+	"""convert an ANSI stream to a raster image with pillow
 
 	Args:
-		ansiText (string): ansi text to convert
+		ansiText (string): ANSI text to convert
 		fileName (string): image file path
 		theme (str, optional): file path to base24 theme to use. Defaults to "onedark.yml".
 	"""
@@ -86,12 +86,12 @@ def ansiToRaster(ansiText, fileName, theme=THISDIR + "/onedark.yml"):
 	THISDIR + "/resources/FiraCode-BoldItalic.otf", 14)
 	fontEmoji = ImageFont.truetype(
 	THISDIR + "/resources/TwitterColorEmoji-SVGinOT30.ttf", 14)
-	# Iterate through the ansi blocks
+	# Iterate through the ANSI blocks
 	for block in blocks:
 		posY = block.position[1] * TEXT_HEIGHT + 2.5
 		if block.bgColour is not None:
 			posX = block.position[0] * TEXT_WIDTH + 5
-			draw.rectangle((posX, posY, posX + findLen(block.text) * 9.5,
+			draw.rectangle((posX, posY, posX + findLen(block.text) * TEXT_WIDTH,
 			posY + TEXT_HEIGHT), block.bgColour)
 		text = block.text
 		font = fontNormal
@@ -120,11 +120,11 @@ def ansiToRaster(ansiText, fileName, theme=THISDIR + "/onedark.yml"):
 
 
 def ansiToSVGRaster(ansiText, fileName, theme=THISDIR + "/onedark.yml"):
-	"""convert an ansi stream to a raster image using pypeteer to take a
-	screenshot of a generated svg (hacky but we can get coloured emoji now)
+	"""convert an ANSI stream to a raster image using pypeteer to take a
+	screenshot of a generated SVG (hacky but we can get coloured emoji now)
 
 	Args:
-		ansiText (string): ansi text to convert
+		ansiText (string): ANSI text to convert
 		fileName (string): image file path
 		theme (str, optional): file path to base24 theme to use. Defaults to "onedark.yml".
 	"""
@@ -153,10 +153,10 @@ async def _doGrabWebpage(url, resolution, fileName):
 
 
 def ansiToHTML(ansiText, fileName, theme=THISDIR + "/onedark.yml"):
-	"""convert an ansi stream to a html file
+	"""convert an ANSI stream to a html file
 
 	Args:
-		ansiText (string): ansi text to convert
+		ansiText (string): ANSI text to convert
 		fileName (string): image file path
 		theme (str, optional): file path to base24 theme to use. Defaults to "onedark.yml".
 	"""
@@ -189,12 +189,12 @@ def ansiToHTML(ansiText, fileName, theme=THISDIR + "/onedark.yml"):
 
 
 def ansiToHTMLRaster(ansiText, fileName, theme=THISDIR + "/onedark.yml"):
-	"""convert an ansi stream to a raster image using pypeteer to take a
+	"""convert an ANSI stream to a raster image using pypeteer to take a
 	screenshot of a generated html (hacky but we can output more like that
 	of a terminal now)
 
 	Args:
-		ansiText (string): ansi text to convert
+		ansiText (string): ANSI text to convert
 		fileName (string): image file path
 		theme (str, optional): file path to base24 theme to use. Defaults to "onedark.yml".
 	"""

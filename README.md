@@ -13,7 +13,7 @@
 
 <img src="readme-assets/icons/name.png" alt="Project Icon" width="750">
 
-Convert an ansi string to an image. Great for adding terminal output into a readme.
+Convert an ANSI string to an image. Great for adding terminal output into a readme.
 
 - [Examples](#examples)
 	- [SVG Image](#svg-image)
@@ -150,31 +150,30 @@ ansiToHTMLRaster(example3, THISDIR + "/htmlExample3.png")
 
 ### ansiToSVG
 This is better for the vast majority of cases as the image sizes are smaller
-for reasonably simple ansi sequences. The image size scales proportionally
-with the length of the ansi sequence. A large number of applications tend to
+for reasonably simple ANSI sequences. The image size scales proportionally
+with the length of the ANSI sequence. A large number of applications tend to
 opt for shorter sequences for output making `ansiToSVG` the better option.
 `ansiToSVG` also handles emoji as well as the OS does. For instance, on Windows
 10 one can expect full colour emoji. Image sizes can get out of hand for some
-cases such as catimage output as those tend to be very long ansi sequences.
+cases such as catimage output as those tend to be very long ANSI sequences.
 
 ### ansiToRaster
-The image size does not scale to the length of the ansi sequence but does scale
+The image size does not scale to the length of the ANSI sequence but does scale
 to the number of lines of terminal output. This is ideal for output of complex
-ansi sequences that would be huge if `ansiToSVG` were used. However, emojis are
+ANSI sequences that would be huge if `ansiToSVG` were used. However, emojis are
 in black and white and show quite poorly on coloured backgrounds.
 
 ### ansiToSVGRaster
 Takes the advantages that `ansiToRaster` has whilst keeping colour emojis, Yay!
-This uses pyppeteer to fire up a headless browser which opens the svg and takes
+This uses pyppeteer to fire up a headless browser which opens the SVG and takes
 a screenshot.
 
 ### ansiToHTML
-Has the same advantages and disadvantages of `ansiToSVG` with the added benefit
-of looking a bit more like terminal output
+Has the same advantages and disadvantages of `ansiToSVG` though this is not
+suitable to be included in a GitHub readme
 
 ### ansiToHTMLRaster
-Has the same advantages and disadvantages of `ansiToSVGRaster` with the added benefit
-of looking a bit more like terminal output
+Has the same advantages and disadvantages of `ansiToSVGRaster`
 
 
 ## Changelog

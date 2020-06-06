@@ -1,6 +1,6 @@
 """
 
-use svg write for much of this
+use SVG write for much of this
 
 as per terminal environment
 
@@ -18,14 +18,14 @@ def rgbToHex(rgb):
 
 
 def ansiTrueToRgb(ansiTrue):
-	""" convert ansi truecolour to hex rgb """
+	""" convert ANSI truecolour to hex rgb """
 	rgb = ansiTrue.replace("\033[", "").replace("38;2;", "").replace("48;2;",
 	"").replace("m", "").split(";")
 	return rgbToHex((int(rgb[0]), int(rgb[1]), int(rgb[2])))
 
 
 def ansi256ToRGB(ansi256, theme=THISDIR + "/onedark.yml"):
-	"""  convert ansi 256 to hex rgb """
+	"""  convert ANSI 256 to hex rgb """
 	# 0-7, 8-15
 	switch = int(
 	ansi256.replace("\033[", "").replace("38;5;", "").replace("48;5;",
@@ -51,7 +51,7 @@ def ansi256ToRGB(ansi256, theme=THISDIR + "/onedark.yml"):
 
 
 def ansi16ToRGB(ansi16, ansi16Map=None, theme=THISDIR + "/onedark.yml"):
-	"""  convert ansi 16 to hex rgb """
+	"""  convert ANSI 16 to hex rgb """
 	cCode = int(ansi16.replace("\033[", "").replace("m", ""))
 	if 39 < cCode < 48 or 99 < cCode < 108:
 		cCode -= 10
@@ -64,10 +64,10 @@ def ansi16ToRGB(ansi16, ansi16Map=None, theme=THISDIR + "/onedark.yml"):
 
 
 def ansiColourToRGB(ansiColour, theme=THISDIR + "/onedark.yml"):
-	""" convert an ansi colour to a hex colour
+	""" convert an ANSI colour to a hex colour
 
 	Args:
-		ansiColour (string): ansi colour
+		ansiColour (string): ANSI colour
 
 	Returns:
 		string: hex code

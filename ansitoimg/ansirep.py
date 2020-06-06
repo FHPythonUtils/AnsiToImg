@@ -1,13 +1,13 @@
-""" representation and processing of an ansi stream into an 'ast' of sorts
+""" representation and processing of an ANSI stream into an 'ast' of sorts
 such that it can be rendered
 """
 from ansitoimg.utils import ansiColourToRGB, findLen
 
 
 class AnsiBlock():
-	""" represent a block of ansi text. eg \033[31mhello!\033[0m
+	""" represent a block of ANSI text. eg \033[31mhello!\033[0m
 
-	ansi text can have the following attributes:
+	ANSI text can have the following attributes:
 	- text
 	- background colour
 	- foreground colour
@@ -42,12 +42,12 @@ class AnsiBlock():
 
 
 class AnsiBlocks():
-	""" representation of ansi blocks
+	""" representation of ANSI blocks
 
-	ansi blocks has the following attributes:
-	- ansi text
-	- ansi blocks
-	ansi blocks also holds a series of attributes that are used when processing
+	ANSI blocks has the following attributes:
+	- ANSI text
+	- ANSI blocks
+	ANSI blocks also holds a series of attributes that are used when processing
 	- sgi buffer
 	- text buffer
 	- background colour
@@ -64,7 +64,7 @@ class AnsiBlocks():
 		"""Constructor
 
 		Args:
-			ansiText (string): ansi text stream to process
+			ansiText (string): ANSI text stream to process
 		"""
 		# text to parse
 		self.ansiText = ansiText
@@ -86,7 +86,7 @@ class AnsiBlocks():
 		self.pointer = 0
 
 	def process(self):
-		""" process the ansi text into a series of ansi blocks """
+		""" process the ANSI text into a series of ANSI blocks """
 		while self.pointer < len(self.ansiText):
 			# process sgi codes
 			if self.ansiText[self.pointer] == "\033":
@@ -95,16 +95,16 @@ class AnsiBlocks():
 			else:
 				self.textBuffer.append(self.ansiText[self.pointer])
 				self.pointer += 1
-			# if there is a 'closing' sgi code, create an ansi block
+			# if there is a 'closing' sgi code, create an ANSI block
 			if len(self.sgiBuffer) > 0 and self.sgiBuffer[-1] in ("\033[0m", "\033[21m",
 			"\033[23m", "\033[24m", "\033[29m", "\033[39m", "\033[49m"):
 				self.processCloseSgi()
-		# create an ansi block out of anythin left over
+		# create an ANSI block out of anythin left over
 		if len(self.textBuffer) > 0:
 			self.setAnsiBlocks("".join(self.textBuffer))
 
 	def setAnsiBlocks(self, text):
-		"""create a series of ansi blocks from the text buffer and other attributes
+		"""create a series of ANSI blocks from the text buffer and other attributes
 
 		Args:
 			text (string): text from the buffer
@@ -130,7 +130,7 @@ class AnsiBlocks():
 
 	def processSgi(self):
 		""" process an sgi code and set attributes accordingly """
-		# if text is before the sgi code. create an ansi block
+		# if text is before the sgi code. create an ANSI block
 		if len(self.textBuffer) > 0:
 			self.setAnsiBlocks("".join(self.textBuffer))
 		sgiChar = []
@@ -161,7 +161,7 @@ class AnsiBlocks():
 		self.sgiBuffer.append(sgiFlag)
 
 	def processCloseSgi(self):
-		""" process a closing sgi code and create ansi blocks accordingly
+		""" process a closing sgi code and create ANSI blocks accordingly
 		reset any attributes that need setting """
 		self.setAnsiBlocks("".join(self.textBuffer))
 		# reset as per sgi code

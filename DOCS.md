@@ -4,7 +4,7 @@
 <a name=".ansitoimg.ansire"></a>
 ## ansitoimg.ansire
 
-representation and processing of an ansi stream into an 'ast' of sorts
+representation and processing of an ANSI stream into an 'ast' of sorts
 such that it can be rendered
 
 <a name=".ansitoimg.ansire.AnsiBlock"></a>
@@ -14,9 +14,9 @@ such that it can be rendered
 class AnsiBlock()
 ```
 
-represent a block of ansi text. eg \033[31mhello!\033[0m
+represent a block of ANSI text. eg \033[31mhello!\033[0m
 
-ansi text can have the following attributes:
+ANSI text can have the following attributes:
 - text
 - background colour
 - foreground colour
@@ -53,12 +53,12 @@ Constructor
 class AnsiBlocks()
 ```
 
-representation of ansi blocks
+representation of ANSI blocks
 
-ansi blocks has the following attributes:
-- ansi text
-- ansi blocks
-ansi blocks also holds a series of attributes that are used when processing
+ANSI blocks has the following attributes:
+- ANSI text
+- ANSI blocks
+ANSI blocks also holds a series of attributes that are used when processing
 - sgi buffer
 - text buffer
 - background colour
@@ -82,7 +82,7 @@ Constructor
 
 **Arguments**:
 
-- `ansiText` _string_ - ansi text stream to process
+- `ansiText` _string_ - ANSI text stream to process
 
 <a name=".ansitoimg.ansire.AnsiBlocks.process"></a>
 #### process
@@ -91,7 +91,7 @@ Constructor
  | process()
 ```
 
-process the ansi text into a series of ansi blocks
+process the ANSI text into a series of ANSI blocks
 
 <a name=".ansitoimg.ansire.AnsiBlocks.setAnsiBlocks"></a>
 #### setAnsiBlocks
@@ -100,7 +100,7 @@ process the ansi text into a series of ansi blocks
  | setAnsiBlocks(text)
 ```
 
-create a series of ansi blocks from the text buffer and other attributes
+create a series of ANSI blocks from the text buffer and other attributes
 
 **Arguments**:
 
@@ -122,15 +122,15 @@ process an sgi code and set attributes accordingly
  | processCloseSgi()
 ```
 
-process a closing sgi code and create ansi blocks accordingly
+process a closing sgi code and create ANSI blocks accordingly
 reset any attributes that need setting
 
 <a name=".ansitoimg.render"></a>
 ## ansitoimg.render
 
-render the ansi
+render the ANSI
 
-render as svg
+render as SVG
 
 <a name=".ansitoimg.render.ansiToSVG"></a>
 #### ansiToSVG
@@ -139,12 +139,12 @@ render as svg
 ansiToSVG(ansiText, fileName, theme=THISDIR + "/onedark.yml")
 ```
 
-convert an ansi stream to svg
+convert an ANSI stream to SVG
 
 **Arguments**:
 
-- `ansiText` _string_ - ansi text to convert
-- `fileName` _string_ - file path to svg to write
+- `ansiText` _string_ - ANSI text to convert
+- `fileName` _string_ - file path to SVG to write
 - `theme` _str, optional_ - file path to base24 theme to use. Defaults to "onedark.yml".
 
 <a name=".ansitoimg.render.ansiToRaster"></a>
@@ -154,11 +154,11 @@ convert an ansi stream to svg
 ansiToRaster(ansiText, fileName, theme=THISDIR + "/onedark.yml")
 ```
 
-convert an ansi stream to a raster image with pillow
+convert an ANSI stream to a raster image with pillow
 
 **Arguments**:
 
-- `ansiText` _string_ - ansi text to convert
+- `ansiText` _string_ - ANSI text to convert
 - `fileName` _string_ - image file path
 - `theme` _str, optional_ - file path to base24 theme to use. Defaults to "onedark.yml".
 
@@ -169,12 +169,12 @@ convert an ansi stream to a raster image with pillow
 ansiToSVGRaster(ansiText, fileName, theme=THISDIR + "/onedark.yml")
 ```
 
-convert an ansi stream to a raster image using pypeteer to take a
-screenshot of a generated svg (hacky but we can get coloured emoji now)
+convert an ANSI stream to a raster image using pypeteer to take a
+screenshot of a generated SVG (hacky but we can get coloured emoji now)
 
 **Arguments**:
 
-- `ansiText` _string_ - ansi text to convert
+- `ansiText` _string_ - ANSI text to convert
 - `fileName` _string_ - image file path
 - `theme` _str, optional_ - file path to base24 theme to use. Defaults to "onedark.yml".
 
@@ -185,11 +185,11 @@ screenshot of a generated svg (hacky but we can get coloured emoji now)
 ansiToHTML(ansiText, fileName, theme=THISDIR + "/onedark.yml")
 ```
 
-convert an ansi stream to a html file
+convert an ANSI stream to a html file
 
 **Arguments**:
 
-- `ansiText` _string_ - ansi text to convert
+- `ansiText` _string_ - ANSI text to convert
 - `fileName` _string_ - image file path
 - `theme` _str, optional_ - file path to base24 theme to use. Defaults to "onedark.yml".
 
@@ -200,20 +200,20 @@ convert an ansi stream to a html file
 ansiToHTMLRaster(ansiText, fileName, theme=THISDIR + "/onedark.yml")
 ```
 
-convert an ansi stream to a raster image using pypeteer to take a
+convert an ANSI stream to a raster image using pypeteer to take a
 screenshot of a generated html (hacky but we can output more like that
 of a terminal now)
 
 **Arguments**:
 
-- `ansiText` _string_ - ansi text to convert
+- `ansiText` _string_ - ANSI text to convert
 - `fileName` _string_ - image file path
 - `theme` _str, optional_ - file path to base24 theme to use. Defaults to "onedark.yml".
 
 <a name=".ansitoimg.utils"></a>
 ## ansitoimg.utils
 
-use svg write for much of this
+use SVG write for much of this
 
 as per terminal environment
 
@@ -233,7 +233,7 @@ convert rgb tuple to hex
 ansiTrueToRgb(ansiTrue)
 ```
 
-convert ansi truecolour to hex rgb
+convert ANSI truecolour to hex rgb
 
 <a name=".ansitoimg.utils.ansi256ToRGB"></a>
 #### ansi256ToRGB
@@ -242,7 +242,7 @@ convert ansi truecolour to hex rgb
 ansi256ToRGB(ansi256, theme=THISDIR + "/onedark.yml")
 ```
 
-convert ansi 256 to hex rgb
+convert ANSI 256 to hex rgb
 
 <a name=".ansitoimg.utils.ansi16ToRGB"></a>
 #### ansi16ToRGB
@@ -251,7 +251,7 @@ convert ansi 256 to hex rgb
 ansi16ToRGB(ansi16, ansi16Map=None, theme=THISDIR + "/onedark.yml")
 ```
 
-convert ansi 16 to hex rgb
+convert ANSI 16 to hex rgb
 
 <a name=".ansitoimg.utils.ansiColourToRGB"></a>
 #### ansiColourToRGB
@@ -260,11 +260,11 @@ convert ansi 16 to hex rgb
 ansiColourToRGB(ansiColour, theme=THISDIR + "/onedark.yml")
 ```
 
-convert an ansi colour to a hex colour
+convert an ANSI colour to a hex colour
 
 **Arguments**:
 
-- `ansiColour` _string_ - ansi colour
+- `ansiColour` _string_ - ANSI colour
   
 
 **Returns**:
