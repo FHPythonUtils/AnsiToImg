@@ -24,7 +24,7 @@ def ansiTrueToRgb(ansiTrue):
 	return rgbToHex((int(rgb[0]), int(rgb[1]), int(rgb[2])))
 
 
-def ansi256ToRGB(ansi256, theme=THISDIR + "/onedark.yml"):
+def ansi256ToRGB(ansi256, theme=None):
 	"""  convert ANSI 256 to hex rgb """
 	# 0-7, 8-15
 	switch = int(
@@ -50,7 +50,7 @@ def ansi256ToRGB(ansi256, theme=THISDIR + "/onedark.yml"):
 	return rgbToHex((switch * 11, switch * 11, switch * 11))
 
 
-def ansi16ToRGB(ansi16, ansi16Map=None, theme=THISDIR + "/onedark.yml"):
+def ansi16ToRGB(ansi16, ansi16Map=None, theme=None):
 	"""  convert ANSI 16 to hex rgb """
 	cCode = int(ansi16.replace("\033[", "").replace("m", ""))
 	if 39 < cCode < 48 or 99 < cCode < 108:
@@ -60,10 +60,10 @@ def ansi16ToRGB(ansi16, ansi16Map=None, theme=THISDIR + "/onedark.yml"):
 	35: "base0E", 36: "base0C", 37: "base06", 90: "base02", 91: "base12",
 	92: "base14", 93: "base13", 94: "base16", 95: "base17", 96: "base15",
 	97: "base07"}
-	return "#" + safe_load(open(theme))[ansi16Map[cCode]]
+	return "#" + safe_load(open(theme if theme is not None else THISDIR + "/onedark.yml"))[ansi16Map[cCode]]
 
 
-def ansiColourToRGB(ansiColour, theme=THISDIR + "/onedark.yml"):
+def ansiColourToRGB(ansiColour, theme=None):
 	""" convert an ANSI colour to a hex colour
 
 	Args:
@@ -97,7 +97,7 @@ def ansiColourToRGB(ansiColour, theme=THISDIR + "/onedark.yml"):
 	# 100 - 107
 	if ansiColour.startswith("\033[10"):
 		return ansi16ToRGB(ansiColour, theme=theme)
-	return "#" + safe_load(open(theme))["base05"] # fail on fg colour
+	return "#" + safe_load(open(theme if theme is not None else THISDIR + "/onedark.yml"))["base05"] # fail on fg colour
 
 
 def findLen(string):

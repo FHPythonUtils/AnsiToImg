@@ -21,7 +21,7 @@ if os.path.exists(readme_path):
 setup(
     long_description=readme,
     name='ansitoimg',
-    version='2020.3.2',
+    version='2020.3.3',
     description='Convert an ANSI string to an image. Great for adding terminal output into a readme.',
     python_requires='==3.*,>=3.6.1',
     project_urls={

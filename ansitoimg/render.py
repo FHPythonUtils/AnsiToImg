@@ -19,7 +19,7 @@ TEXT_HEIGHT = 15
 TEXT_WIDTH = 8.7
 
 
-def ansiToSVG(ansiText, fileName, theme=THISDIR + "/onedark.yml"):
+def ansiToSVG(ansiText, fileName, theme=None):
 	"""convert an ANSI stream to SVG
 
 	Args:
@@ -27,7 +27,7 @@ def ansiToSVG(ansiText, fileName, theme=THISDIR + "/onedark.yml"):
 		fileName (string): file path to SVG to write
 		theme (str, optional): file path to base24 theme to use. Defaults to "onedark.yml".
 	"""
-	themeData = safe_load(open(theme))
+	themeData = safe_load(open(theme if theme is not None else THISDIR + "/onedark.yml"))
 	ansiBlocks = AnsiBlocks(ansiText)
 	ansiBlocks.process()
 	blocks = ansiBlocks.ansiBlocks
@@ -61,7 +61,7 @@ def ansiToSVG(ansiText, fileName, theme=THISDIR + "/onedark.yml"):
 	dwg.save()
 
 
-def ansiToRaster(ansiText, fileName, theme=THISDIR + "/onedark.yml"):
+def ansiToRaster(ansiText, fileName, theme=None):
 	"""convert an ANSI stream to a raster image with pillow
 
 	Args:
@@ -69,7 +69,7 @@ def ansiToRaster(ansiText, fileName, theme=THISDIR + "/onedark.yml"):
 		fileName (string): image file path
 		theme (str, optional): file path to base24 theme to use. Defaults to "onedark.yml".
 	"""
-	themeData = safe_load(open(theme))
+	themeData = safe_load(open(theme if theme is not None else THISDIR + "/onedark.yml"))
 	ansiBlocks = AnsiBlocks(ansiText)
 	ansiBlocks.process()
 	blocks = ansiBlocks.ansiBlocks
@@ -119,8 +119,8 @@ def ansiToRaster(ansiText, fileName, theme=THISDIR + "/onedark.yml"):
 	image.save(fileName)
 
 
-def ansiToSVGRaster(ansiText, fileName, theme=THISDIR + "/onedark.yml"):
-	"""convert an ANSI stream to a raster image using pypeteer to take a
+def ansiToSVGRaster(ansiText, fileName, theme=None):
+	"""convert an ANSI stream to a raster image using pyppeteer to take a
 	screenshot of a generated SVG (hacky but we can get coloured emoji now)
 
 	Args:
@@ -152,7 +152,7 @@ async def _doGrabWebpage(url, resolution, fileName):
 	await browser.close()
 
 
-def ansiToHTML(ansiText, fileName, theme=THISDIR + "/onedark.yml"):
+def ansiToHTML(ansiText, fileName, theme=None):
 	"""convert an ANSI stream to a html file
 
 	Args:
@@ -160,7 +160,7 @@ def ansiToHTML(ansiText, fileName, theme=THISDIR + "/onedark.yml"):
 		fileName (string): image file path
 		theme (str, optional): file path to base24 theme to use. Defaults to "onedark.yml".
 	"""
-	themeData = safe_load(open(theme))
+	themeData = safe_load(open(theme if theme is not None else THISDIR + "/onedark.yml"))
 	ansiBlocks = AnsiBlocks(ansiText)
 	ansiBlocks.process()
 	blocks = ansiBlocks.ansiBlocks
@@ -172,7 +172,7 @@ def ansiToHTML(ansiText, fileName, theme=THISDIR + "/onedark.yml"):
 	"/").split("/")[-1] + "</title><meta name=\"viewport\" " +
 	"content=\"width=device-width, initial-scale=1, shrink-to-fit=no\"><link " +
 	"href=\"https://fonts.googleapis.com/css2?family=Fira+Code:wght@450;650&display=swap\" "
-	+ "rel=\"stylesheet\"></head><body>"]
+	+ "rel=\"stylesheet\"></head><body style=\"min-width: " + str(int(70 * TEXT_WIDTH)) + "px\">"]
 	for block in blocks:
 		style = "color: " + ("#" + themeData["base05"]
 		if block.fgColour is None else block.fgColour) + "; "
@@ -196,8 +196,8 @@ def ansiToHTML(ansiText, fileName, theme=THISDIR + "/onedark.yml"):
 		file.write("".join(html))
 
 
-def ansiToHTMLRaster(ansiText, fileName, theme=THISDIR + "/onedark.yml"):
-	"""convert an ANSI stream to a raster image using pypeteer to take a
+def ansiToHTMLRaster(ansiText, fileName, theme=None):
+	"""convert an ANSI stream to a raster image using pyppeteer to take a
 	screenshot of a generated html (hacky but we can output more like that
 	of a terminal now)
 
