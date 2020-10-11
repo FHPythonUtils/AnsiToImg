@@ -6,7 +6,7 @@ such that it can be rendered
 Classes
 -------
 
-`AnsiBlock(text, position, bgColour=None, fgColour=None, bold=False, italic=False, underline=False, crossedOut=False)`
+`AnsiBlock(text: str, position: tuple[int, int], bgColour: Optional[str] = None, fgColour: Optional[str] = None, bold: bool = False, italic: bool = False, underline: bool = False, crossedOut: bool = False)`
 :   represent a block of ANSI text. eg [31mhello![0m
     
     ANSI text can have the following attributes:
@@ -22,16 +22,16 @@ Classes
     Constructor
     
     Args:
-            text (string): text content to render
+            text (str): text content to render
             position (int, int): x, y tuple to store the absolute offset in chars
-            bgColour (string, optional): background colour. Defaults to None.
-            fgColour (string, optional): foreground colour. Defaults to None.
+            bgColour (str, optional): background colour. Defaults to None.
+            fgColour (str, optional): foreground colour. Defaults to None.
             bold (bool, optional): is text bold?. Defaults to False.
             italic (bool, optional): is text italic?. Defaults to False.
             underline (bool, optional): is text underlined?. Defaults to False.
             crossedOut (bool, optional): is text crossed out?. Defaults to False.
 
-`AnsiBlocks(ansiText)`
+`AnsiBlocks(ansiText: str)`
 :   representation of ANSI blocks
     
     ANSI blocks has the following attributes:
@@ -53,7 +53,7 @@ Classes
     Constructor
     
     Args:
-            ansiText (string): ANSI text stream to process
+            ansiText (str): ANSI text stream to process
 
     ### Methods
 
@@ -67,8 +67,8 @@ Classes
     `processSgi(self)`
     :   process an sgi code and set attributes accordingly
 
-    `setAnsiBlocks(self, text)`
+    `setAnsiBlocks(self, text: str)`
     :   create a series of ANSI blocks from the text buffer and other attributes
         
         Args:
-                text (string): text from the buffer
+                text (str): text from the buffer

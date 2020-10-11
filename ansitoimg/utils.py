@@ -1,30 +1,29 @@
 """
-
-use SVG write for much of this
-
-as per terminal environment
-
-
+Utility functions to get the length of a char and to get the hex colour from
+an ansi code
 """
+from __future__ import annotations
+from typing import Optional
+
 from pathlib import Path
 from yaml import safe_load
 
 THISDIR = str(Path(__file__).resolve().parent)
 
 
-def rgbToHex(rgb):
+def rgbToHex(rgb: tuple[int, int, int]) -> str:
 	""" convert rgb tuple to hex """
 	return "#{0:02x}{1:02x}{2:02x}".format(rgb[0], rgb[1], rgb[2])
 
 
-def ansiTrueToRgb(ansiTrue):
+def ansiTrueToRgb(ansiTrue: str):
 	""" convert ANSI truecolour to hex rgb """
 	rgb = ansiTrue.replace("\033[", "").replace("38;2;", "").replace("48;2;",
 	"").replace("m", "").split(";")
 	return rgbToHex((int(rgb[0]), int(rgb[1]), int(rgb[2])))
 
 
-def ansi256ToRGB(ansi256, theme=None):
+def ansi256ToRGB(ansi256: str, theme: Optional[str]=None) -> str:
 	"""  convert ANSI 256 to hex rgb """
 	# 0-7, 8-15
 	switch = int(
@@ -50,7 +49,7 @@ def ansi256ToRGB(ansi256, theme=None):
 	return rgbToHex((switch * 11, switch * 11, switch * 11))
 
 
-def ansi16ToRGB(ansi16, ansi16Map=None, theme=None):
+def ansi16ToRGB(ansi16: str, ansi16Map: Optional[dict[int, str]]=None, theme: Optional[str]=None):
 	"""  convert ANSI 16 to hex rgb """
 	cCode = int(ansi16.replace("\033[", "").replace("m", ""))
 	if 39 < cCode < 48 or 99 < cCode < 108:
@@ -63,7 +62,7 @@ def ansi16ToRGB(ansi16, ansi16Map=None, theme=None):
 	return "#" + safe_load(open(theme if theme is not None else THISDIR + "/onedark.yml"))[ansi16Map[cCode]]
 
 
-def ansiColourToRGB(ansiColour, theme=None):
+def ansiColourToRGB(ansiColour: str, theme: Optional[str]=None):
 	""" convert an ANSI colour to a hex colour
 
 	Args:
@@ -97,10 +96,11 @@ def ansiColourToRGB(ansiColour, theme=None):
 	# 100 - 107
 	if ansiColour.startswith("\033[10"):
 		return ansi16ToRGB(ansiColour, theme=theme)
-	return "#" + safe_load(open(theme if theme is not None else THISDIR + "/onedark.yml"))["base05"] # fail on fg colour
+	# fail on fg colour
+	return "#" + safe_load(open(theme if theme is not None else THISDIR + "/onedark.yml"))["base05"]
 
 
-def findLen(string):
+def findLen(string: list[str]):
 	""" find the length of a string and take into account that emojis are double
 	width """
 	counter = 0

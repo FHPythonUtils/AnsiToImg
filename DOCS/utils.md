@@ -1,22 +1,21 @@
 Module ansitoimg.utils
 ======================
-use SVG write for much of this
-
-as per terminal environment
+Utility functions to get the length of a char and to get the hex colour from
+an ansi code
 
 Functions
 ---------
 
     
-`ansi16ToRGB(ansi16, ansi16Map=None, theme=None)`
+`ansi16ToRGB(ansi16: str, ansi16Map: Optional[dict[int, str]] = None, theme: Optional[str] = None)`
 :   convert ANSI 16 to hex rgb
 
     
-`ansi256ToRGB(ansi256, theme=None)`
+`ansi256ToRGB(ansi256: str, theme: Optional[str] = None) ‑> str`
 :   convert ANSI 256 to hex rgb
 
     
-`ansiColourToRGB(ansiColour, theme=None)`
+`ansiColourToRGB(ansiColour: str, theme: Optional[str] = None)`
 :   convert an ANSI colour to a hex colour
     
     Args:
@@ -26,14 +25,14 @@ Functions
             string: hex code
 
     
-`ansiTrueToRgb(ansiTrue)`
+`ansiTrueToRgb(ansiTrue: str)`
 :   convert ANSI truecolour to hex rgb
 
     
-`findLen(string)`
+`findLen(string: list[str])`
 :   find the length of a string and take into account that emojis are double
     width
 
     
-`rgbToHex(rgb)`
+`rgbToHex(rgb: tuple[int, int, int]) ‑> str`
 :   convert rgb tuple to hex

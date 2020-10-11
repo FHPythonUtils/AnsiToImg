@@ -2,6 +2,11 @@
 All major and minor version changes will be documented in this file. Details of
 patch-level version changes can be found in [commit messages](../../commits/master).
 
+## 2020.4 - 2020/10/11
+- Added typing (so dropping python < 3.7)
+- Support sgi chars in the form ESC[0Xm - fixing quite a lot of bugs
+- Excess spaces are now rendered in svg and html
+
 ## 2020.3.3 - 2020/06/07
 - scale html better to mobile
 - add min width of 70 chars for html

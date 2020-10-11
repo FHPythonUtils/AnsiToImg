@@ -2,6 +2,9 @@
 
 render as SVG
 """
+from __future__ import annotations
+from typing import Optional
+
 import asyncio
 from os import remove
 from pathlib import Path
@@ -19,12 +22,12 @@ TEXT_HEIGHT = 15
 TEXT_WIDTH = 8.7
 
 
-def ansiToSVG(ansiText, fileName, theme=None):
+def ansiToSVG(ansiText: str, fileName: str, theme: Optional[str]=None):
 	"""convert an ANSI stream to SVG
 
 	Args:
-		ansiText (string): ANSI text to convert
-		fileName (string): file path to SVG to write
+		ansiText (str): ANSI text to convert
+		fileName (str): file path to SVG to write
 		theme (str, optional): file path to base24 theme to use. Defaults to "onedark.yml".
 	"""
 	themeData = safe_load(open(theme if theme is not None else THISDIR + "/onedark.yml"))
@@ -33,7 +36,7 @@ def ansiToSVG(ansiText, fileName, theme=None):
 	blocks = ansiBlocks.ansiBlocks
 	size = (70 * TEXT_WIDTH, TEXT_HEIGHT * ansiBlocks.height + 5)
 	dwg = svgwrite.Drawing(fileName, size)
-	dwg.add(dwg.rect((0, 0), size, fill="#" + themeData["base00"]))
+	dwg.add(dwg.rect((0, 0), size, fill="#" + themeData["base00"])) # type: ignore
 	group = dwg.g(style=
 	"font-size:14px;font-family:FiraCode NF, Fira Code, Courier New, monospace;")
 	for block in blocks:
@@ -44,29 +47,30 @@ def ansiToSVG(ansiText, fileName, theme=None):
 			(findLen(block.text) * TEXT_WIDTH, TEXT_HEIGHT), fill=block.bgColour))
 		style = "" if any([
 		block.bold, block.italic, block.underline, block.crossedOut]) else None
-		if block.bold:
-			style += "font-weight: bold;"
-		if block.italic:
-			style += "font-style: italic;"
-		if block.underline:
-			style += "text-decoration: underline;"
-		if block.crossedOut:
-			style += "text-decoration: line-through;"
+		if style is not None:
+			if block.bold:
+				style += "font-weight: bold;"
+			if block.italic:
+				style += "font-style: italic;"
+			if block.underline:
+				style += "text-decoration: underline;"
+			if block.crossedOut:
+				style += "text-decoration: line-through;"
 		group.add(
 		dwg.text(
 		block.text, insert=(block.position[0] * TEXT_WIDTH + 5,
 		(block.position[1] + 1) * TEXT_HEIGHT), fill=("#" + themeData["base05"]
-		if block.fgColour is None else block.fgColour), style=style))
-	dwg.add(group)
-	dwg.save()
+		if block.fgColour is None else block.fgColour), style=style, **{"xml:space": "preserve"}))
+	dwg.add(group) # type: ignore
+	dwg.save() # type: ignore
 
 
-def ansiToRaster(ansiText, fileName, theme=None):
+def ansiToRaster(ansiText: str, fileName: str, theme: Optional[str]=None):
 	"""convert an ANSI stream to a raster image with pillow
 
 	Args:
-		ansiText (string): ANSI text to convert
-		fileName (string): image file path
+		ansiText (str): ANSI text to convert
+		fileName (str): image file path
 		theme (str, optional): file path to base24 theme to use. Defaults to "onedark.yml".
 	"""
 	themeData = safe_load(open(theme if theme is not None else THISDIR + "/onedark.yml"))
@@ -119,13 +123,13 @@ def ansiToRaster(ansiText, fileName, theme=None):
 	image.save(fileName)
 
 
-def ansiToSVGRaster(ansiText, fileName, theme=None):
+def ansiToSVGRaster(ansiText: str, fileName: str, theme: Optional[str]=None):
 	"""convert an ANSI stream to a raster image using pyppeteer to take a
 	screenshot of a generated SVG (hacky but we can get coloured emoji now)
 
 	Args:
-		ansiText (string): ANSI text to convert
-		fileName (string): image file path
+		ansiText (str): ANSI text to convert
+		fileName (str): image file path
 		theme (str, optional): file path to base24 theme to use. Defaults to "onedark.yml".
 	"""
 	ansiToSVG(ansiText, THISDIR + "/temp.svg", theme)
@@ -141,23 +145,23 @@ def ansiToSVGRaster(ansiText, fileName, theme=None):
 		"or ignore")
 
 
-async def _doGrabWebpage(url, resolution, fileName):
+async def _doGrabWebpage(url: str, resolution: tuple[int, int], fileName: str):
 	''' Go to a URL, with a browser with a set resolution and take a screenshot'''
 	browser = await launch(
 	options={'args': ['--no-sandbox', '--disable-web-security']})
 	page = await browser.newPage()
-	await page.setViewport({"width": resolution[0], "height": resolution[1]})
-	await page.goto(url)
-	await page.screenshot({'path': fileName})
+	await page.setViewport({"width": resolution[0], "height": resolution[1]}) # type: ignore
+	await page.goto(url) # type: ignore
+	await page.screenshot({'path': fileName}) # type: ignore
 	await browser.close()
 
 
-def ansiToHTML(ansiText, fileName, theme=None):
+def ansiToHTML(ansiText: str, fileName: str, theme: Optional[str]=None):
 	"""convert an ANSI stream to a html file
 
 	Args:
-		ansiText (string): ANSI text to convert
-		fileName (string): image file path
+		ansiText (str): ANSI text to convert
+		fileName (str): image file path
 		theme (str, optional): file path to base24 theme to use. Defaults to "onedark.yml".
 	"""
 	themeData = safe_load(open(theme if theme is not None else THISDIR + "/onedark.yml"))
@@ -190,20 +194,20 @@ def ansiToHTML(ansiText, fileName, theme=None):
 			html.append("<br>")
 			prevY = block.position[1]
 		html.append("<span style=\"{0}\">{1}</span>".format(style[:-1],
-		escape(block.text)))
+		str(escape(block.text)).replace(" ", "&nbsp;")))
 	html.append("</body></html>")
-	with open(fileName, "w") as file:
+	with open(fileName, "w", encoding="utf-8") as file:
 		file.write("".join(html))
 
 
-def ansiToHTMLRaster(ansiText, fileName, theme=None):
+def ansiToHTMLRaster(ansiText: str, fileName: str, theme: Optional[str]=None):
 	"""convert an ANSI stream to a raster image using pyppeteer to take a
 	screenshot of a generated html (hacky but we can output more like that
 	of a terminal now)
 
 	Args:
-		ansiText (string): ANSI text to convert
-		fileName (string): image file path
+		ansiText (str): ANSI text to convert
+		fileName (str): image file path
 		theme (str, optional): file path to base24 theme to use. Defaults to "onedark.yml".
 	"""
 	ansiToHTML(ansiText, THISDIR + "/temp.html", theme)

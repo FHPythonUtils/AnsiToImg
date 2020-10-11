@@ -1,0 +1,118 @@
+#########################
+#      Meterpreter      #
+#########################
+none
+    [01mbold indent[00m
+    [03mitalic indent[00m
+[01m[04mheader[00m
+[01m[96m[$][00m debug
+[01m[36m[*][00m info
+[01m[32m[+][00m success
+[01m[33m[/][00m warning
+[01m[31m[-][00m error
+[01m[91m[!][00m critical
+#########################
+#          FH           #
+#########################
+none
+         [01mbold indent[00m
+         [03mitalic indent[00m
+[01m[04mheader[00m
+[[01m[96m$  Deb[00m] debug
+[[36m* Info[00m] info
+[[32m+   Ok[00m] success
+[[33m/ Warn[00m] warning
+[[31m-  Err[00m] error
+[[01m[91m! Crit[00m] critical
+#########################
+#         FHNF          #
+#########################
+none
+         [01mbold indent[00m
+         [03mitalic indent[00m
+[01m[04mheader[00m
+[[01m[96m  Deb[00m] debug
+[[36m Info[00m] info
+[[32m   Ok[00m] success
+[[33m Warn[00m] warning
+[[31m  Err[00m] error
+[[01m[91m Crit[00m] critical
+#########################
+#        Python         #
+#########################
+none
+    bold indent
+    italic indent
+HEADER:header
+DEBUG:debug
+INFO:info
+SUCCESS:success
+WARNING:warning
+ERROR:error
+CRITICAL:critical
+#########################
+#       ColorLog        #
+#########################
+none
+         [01mbold indent[00m
+         [03mitalic indent[00m
+[01m[04mheader[00m
+[36mDEBUG    [00m[34mdebug[00m
+[32mINFO     [00m[34minfo[00m
+[32mSUCCESS  [00m[34msuccess[00m
+[33mWARNING  [00m[34mwarning[00m
+[31mERROR    [00m[34merror[00m
+[31mCRITICAL [00m[34mcritical[00m
+#########################
+#       PrintTags       #
+#########################
+none
+    [01mbold indent[00m
+    [03mitalic indent[00m
+[01m[04mheader[00m
+[36m[debug] debug[00m
+[36m[info] info[00m
+[32m[success] success[00m
+[35m[warn] warning[00m
+[31m[error] error[00m
+[31m[critical] critical[00m
+#########################
+#          Xa           #
+#########################
+none
+    [01mbold indent[00m
+    [03mitalic indent[00m
+[01m[40m[93m TITLE [00m header
+[01m[106m[30m DEBUG [00m debug
+[01m[46m[30m INFO [00m info
+[01m[42m[30m SUCCESS [00m success
+[01m[43m[30m WARNING [00m warning
+[01m[41m[30m ERROR [00m error
+[01m[101m[30m CRITICAL [00m critical
+#########################
+#         Lamu          #
+#########################
+none
+               [01mbold indent[00m
+               [03mitalic indent[00m
+[01m[04mheader[00m
+[96m   debug[00m  : :  debug
+[36m    info[00m  : :  info
+[32m success[00m  : :  success
+[33m warning[00m  : :  warning
+[31m   error[00m  : :  error
+[91mcritical[00m  : :  critical
+#########################
+#        Custom         #
+#########################
+none
+         [01mbold indent[00m
+         [03mitalic indent[00m
+[01m[04mheader[00m
+[[01m[96m$  Deb[00m] debug
+[[36m* Info[00m] info
+[[32m+   Ok[00m] success
+[[33m/ Warn[00m] warning
+[[31m-  Err[00m] error
+[[01m[91m! Crit[00m] critical
+
