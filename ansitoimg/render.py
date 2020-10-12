@@ -22,19 +22,20 @@ TEXT_HEIGHT = 15
 TEXT_WIDTH = 8.7
 
 
-def ansiToSVG(ansiText: str, fileName: str, theme: Optional[str]=None):
+def ansiToSVG(ansiText: str, fileName: str, theme: Optional[str]=None, wide: bool=True):
 	"""convert an ANSI stream to SVG
 
 	Args:
 		ansiText (str): ANSI text to convert
 		fileName (str): file path to SVG to write
 		theme (str, optional): file path to base24 theme to use. Defaults to "onedark.yml".
+		wide (bool, optional): use a 'wide' terminal 89 vs 49 chars
 	"""
 	themeData = safe_load(open(theme if theme is not None else THISDIR + "/onedark.yml"))
-	ansiBlocks = AnsiBlocks(ansiText)
+	ansiBlocks = AnsiBlocks(ansiText, wide)
 	ansiBlocks.process()
 	blocks = ansiBlocks.ansiBlocks
-	size = (70 * TEXT_WIDTH, TEXT_HEIGHT * ansiBlocks.height + 5)
+	size = ((95 if wide else 55) * TEXT_WIDTH, TEXT_HEIGHT * ansiBlocks.height + 5)
 	dwg = svgwrite.Drawing(fileName, size)
 	dwg.add(dwg.rect((0, 0), size, fill="#" + themeData["base00"])) # type: ignore
 	group = dwg.g(style=
@@ -65,19 +66,20 @@ def ansiToSVG(ansiText: str, fileName: str, theme: Optional[str]=None):
 	dwg.save() # type: ignore
 
 
-def ansiToRaster(ansiText: str, fileName: str, theme: Optional[str]=None):
+def ansiToRaster(ansiText: str, fileName: str, theme: Optional[str]=None, wide: bool=True):
 	"""convert an ANSI stream to a raster image with pillow
 
 	Args:
 		ansiText (str): ANSI text to convert
 		fileName (str): image file path
 		theme (str, optional): file path to base24 theme to use. Defaults to "onedark.yml".
+		wide (bool, optional): use a 'wide' terminal 89 vs 49 chars
 	"""
 	themeData = safe_load(open(theme if theme is not None else THISDIR + "/onedark.yml"))
-	ansiBlocks = AnsiBlocks(ansiText)
+	ansiBlocks = AnsiBlocks(ansiText, wide)
 	ansiBlocks.process()
 	blocks = ansiBlocks.ansiBlocks
-	size = (int(70 * TEXT_WIDTH), int(TEXT_HEIGHT * ansiBlocks.height + 5))
+	size = (int((95 if wide else 55) * TEXT_WIDTH), int(TEXT_HEIGHT * ansiBlocks.height + 5))
 	image = Image.new("RGB", size, "#" + themeData["base00"])
 	draw = ImageDraw.Draw(image)
 	# Load the fonts
@@ -123,7 +125,7 @@ def ansiToRaster(ansiText: str, fileName: str, theme: Optional[str]=None):
 	image.save(fileName)
 
 
-def ansiToSVGRaster(ansiText: str, fileName: str, theme: Optional[str]=None):
+def ansiToSVGRaster(ansiText: str, fileName: str, theme: Optional[str]=None, wide: bool=True):
 	"""convert an ANSI stream to a raster image using pyppeteer to take a
 	screenshot of a generated SVG (hacky but we can get coloured emoji now)
 
@@ -131,11 +133,12 @@ def ansiToSVGRaster(ansiText: str, fileName: str, theme: Optional[str]=None):
 		ansiText (str): ANSI text to convert
 		fileName (str): image file path
 		theme (str, optional): file path to base24 theme to use. Defaults to "onedark.yml".
+		wide (bool, optional): use a 'wide' terminal 89 vs 49 chars
 	"""
-	ansiToSVG(ansiText, THISDIR + "/temp.svg", theme)
-	ansiBlocks = AnsiBlocks(ansiText)
+	ansiToSVG(ansiText, THISDIR + "/temp.svg", theme, wide)
+	ansiBlocks = AnsiBlocks(ansiText, wide)
 	ansiBlocks.process()
-	size = (int(70 * TEXT_WIDTH), int(TEXT_HEIGHT * ansiBlocks.height + 5))
+	size = (int((95 if wide else 55) * TEXT_WIDTH), int(TEXT_HEIGHT * ansiBlocks.height + 5))
 	asyncio.get_event_loop().run_until_complete(
 	_doGrabWebpage('file:///' + THISDIR + "/temp.svg", size, fileName))
 	try:
@@ -156,16 +159,17 @@ async def _doGrabWebpage(url: str, resolution: tuple[int, int], fileName: str):
 	await browser.close()
 
 
-def ansiToHTML(ansiText: str, fileName: str, theme: Optional[str]=None):
+def ansiToHTML(ansiText: str, fileName: str, theme: Optional[str]=None, wide: bool=True):
 	"""convert an ANSI stream to a html file
 
 	Args:
 		ansiText (str): ANSI text to convert
 		fileName (str): image file path
 		theme (str, optional): file path to base24 theme to use. Defaults to "onedark.yml".
+		wide (bool, optional): use a 'wide' terminal 89 vs 49 chars
 	"""
 	themeData = safe_load(open(theme if theme is not None else THISDIR + "/onedark.yml"))
-	ansiBlocks = AnsiBlocks(ansiText)
+	ansiBlocks = AnsiBlocks(ansiText, wide)
 	ansiBlocks.process()
 	blocks = ansiBlocks.ansiBlocks
 	prevY = 0
@@ -176,7 +180,7 @@ def ansiToHTML(ansiText: str, fileName: str, theme: Optional[str]=None):
 	"/").split("/")[-1] + "</title><meta name=\"viewport\" " +
 	"content=\"width=device-width, initial-scale=1, shrink-to-fit=no\"><link " +
 	"href=\"https://fonts.googleapis.com/css2?family=Fira+Code:wght@450;650&display=swap\" "
-	+ "rel=\"stylesheet\"></head><body style=\"min-width: " + str(int(70 * TEXT_WIDTH)) + "px\">"]
+	+ "rel=\"stylesheet\"></head><body style=\"min-width: " + str(int((95 if wide else 55) * TEXT_WIDTH)) + "px\">"]
 	for block in blocks:
 		style = "color: " + ("#" + themeData["base05"]
 		if block.fgColour is None else block.fgColour) + "; "
@@ -200,7 +204,7 @@ def ansiToHTML(ansiText: str, fileName: str, theme: Optional[str]=None):
 		file.write("".join(html))
 
 
-def ansiToHTMLRaster(ansiText: str, fileName: str, theme: Optional[str]=None):
+def ansiToHTMLRaster(ansiText: str, fileName: str, theme: Optional[str]=None, wide: bool=True):
 	"""convert an ANSI stream to a raster image using pyppeteer to take a
 	screenshot of a generated html (hacky but we can output more like that
 	of a terminal now)
@@ -209,11 +213,12 @@ def ansiToHTMLRaster(ansiText: str, fileName: str, theme: Optional[str]=None):
 		ansiText (str): ANSI text to convert
 		fileName (str): image file path
 		theme (str, optional): file path to base24 theme to use. Defaults to "onedark.yml".
+		wide (bool, optional): use a 'wide' terminal 89 vs 49 chars
 	"""
-	ansiToHTML(ansiText, THISDIR + "/temp.html", theme)
-	ansiBlocks = AnsiBlocks(ansiText)
+	ansiToHTML(ansiText, THISDIR + "/temp.html", theme, wide)
+	ansiBlocks = AnsiBlocks(ansiText, wide)
 	ansiBlocks.process()
-	size = (int(70 * 8.63) + 16, int(16.8 * ansiBlocks.height + 16))
+	size = (int((95 if wide else 55) * 8.63) + 16, int(16.8 * ansiBlocks.height + 16))
 	asyncio.get_event_loop().run_until_complete(
 	_doGrabWebpage('file:///' + THISDIR + "/temp.html", size, fileName))
 	try:

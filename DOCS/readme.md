@@ -8,3 +8,10 @@ Sub-modules
 * ansitoimg.ansirep
 * ansitoimg.render
 * ansitoimg.utils
+
+Functions
+---------
+
+    
+`cli()`
+:   cli entry point

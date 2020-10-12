@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "ansitoimg"
-version = "2020.4.0"
+version = "2020.4.1"
 description = "Convert an ANSI string to an image. Great for adding terminal output into a readme."
 authors = ["FredHappyface"]
 classifiers = [
@@ -32,8 +32,12 @@ MarkupSafe = "^1.1.1"
 
 
 [tool.poetry.dev-dependencies]
-fhmake = {extras = ["full"], version = "^2020.3.0"}
-catimage = "^2020.6.0"
+fhmake = {extras = ["full"], version = "^2020.3.1"}
+catimage = "^2020.6.1"
+
+
+[tool.poetry.scripts]
+ansitoimg = 'ansitoimg:cli'
 
 [build-system]
 requires = ["poetry>=0.12"]

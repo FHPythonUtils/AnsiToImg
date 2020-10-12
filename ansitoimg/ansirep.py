@@ -64,11 +64,12 @@ class AnsiBlocks():
 	- height
 	- char pointer
 	"""
-	def __init__(self, ansiText: str):
+	def __init__(self, ansiText: str, wide: bool=True):
 		"""Constructor
 
 		Args:
 			ansiText (str): ANSI text stream to process
+			wide (bool, optional): use a 'wide' terminal 89 vs 49 chars
 		"""
 		# text to parse
 		self.ansiText = ansiText
@@ -88,6 +89,8 @@ class AnsiBlocks():
 
 		self.height = 1
 		self.pointer = 0
+
+		self.maxWidth = 89 if wide else 49
 
 	def process(self):
 		""" process the ANSI text into a series of ANSI blocks """
@@ -116,7 +119,7 @@ class AnsiBlocks():
 		"""
 		writeTxt = []
 		for char in text:
-			if char == "\n" or self.absX + findLen(writeTxt) > 59: # triggers a newline
+			if char == "\n" or self.absX + findLen(writeTxt) > self.maxWidth: # triggers a newline
 				self.ansiBlocks.append(
 				AnsiBlock("".join(writeTxt), (self.absX, self.absY), self.bgColour,
 				self.fgColour, self.bold, self.italic))

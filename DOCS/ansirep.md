@@ -31,7 +31,7 @@ Classes
             underline (bool, optional): is text underlined?. Defaults to False.
             crossedOut (bool, optional): is text crossed out?. Defaults to False.
 
-`AnsiBlocks(ansiText: str)`
+`AnsiBlocks(ansiText: str, wide: bool = True)`
 :   representation of ANSI blocks
     
     ANSI blocks has the following attributes:
@@ -54,6 +54,7 @@ Classes
     
     Args:
             ansiText (str): ANSI text stream to process
+            wide (bool, optional): use a 'wide' terminal 89 vs 49 chars
 
     ### Methods
 
