@@ -2,6 +2,9 @@
 All major and minor version changes will be documented in this file. Details of
 patch-level version changes can be found in [commit messages](../../commits/master).
 
+## 2020.4.2 - 2020/10/17
+- Update dependencies
+
 ## 2020.4.1 - 2020/10/12
 - Add 'wide' parameter to renderers (enabled by default)
   - true: width of 89, false: width of 49

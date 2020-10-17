@@ -1,5 +1,5 @@
-MarkupSafe==1.*,>=1.1.1
-Pillow==7.*,>=7.2.0
-PyYAML==5.*,>=5.3.1
-pyppeteer==0.*,>=0.2.2
-svgwrite==1.*,>=1.4
+MarkupSafe<3,>=1.1.1
+Pillow<10,>=8.0.0
+PyYAML<7,>=5.3.1
+pyppeteer<2,>=0.2.2
+svgwrite<3,>=1.4
