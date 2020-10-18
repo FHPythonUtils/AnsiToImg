@@ -38,8 +38,9 @@ def ansiToSVG(ansiText: str, fileName: str, theme: Optional[str]=None, wide: boo
 	size = ((95 if wide else 55) * TEXT_WIDTH, TEXT_HEIGHT * ansiBlocks.height + 5)
 	dwg = svgwrite.Drawing(fileName, size)
 	dwg.add(dwg.rect((0, 0), size, fill="#" + themeData["base00"])) # type: ignore
-	group = dwg.g(style=
-	"font-size:14px;font-family:FiraCode NF, Fira Code, Courier New, monospace;")
+	dwg.defs.add(dwg.style("@import url('https://fonts.googleapis.com/css2?family=Fira+Code&display=swap');"))
+	group = dwg.g(style="font-size:14.15px;font-family:FiraCode NF, Fira Code, " +
+	"Cousine, Courier New, monospace;")
 	for block in blocks:
 		if block.bgColour is not None:
 			group.add(
@@ -176,7 +177,7 @@ def ansiToHTML(ansiText: str, fileName: str, theme: Optional[str]=None, wide: bo
 	html = [
 	"<!DOCTYPE html><html style=\"background-color: #" + themeData["base00"] +
 	"; font-size: 14px; font-family: FiraCode NF, Fira Code, Courier New, " +
-	"monospace;\"><head><title>" + fileName.replace("\\",
+	"Cousine, monospace;\"><head><title>" + fileName.replace("\\",
 	"/").split("/")[-1] + "</title><meta name=\"viewport\" " +
 	"content=\"width=device-width, initial-scale=1, shrink-to-fit=no\"><link " +
 	"href=\"https://fonts.googleapis.com/css2?family=Fira+Code:wght@450;650&display=swap\" "
