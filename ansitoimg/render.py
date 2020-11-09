@@ -38,8 +38,8 @@ def ansiToSVG(ansiText: str, fileName: str, theme: Optional[str]=None, wide: boo
 	size = ((95 if wide else 55) * TEXT_WIDTH, TEXT_HEIGHT * ansiBlocks.height + 5)
 	dwg = svgwrite.Drawing(fileName, size)
 	dwg.add(dwg.rect((0, 0), size, fill="#" + themeData["base00"])) # type: ignore
-	dwg.defs.add(dwg.style("@import url('https://fonts.googleapis.com/css2?family=Fira+Code&display=swap');"))
-	group = dwg.g(style="font-size:14.15px;font-family:FiraCode NF, Fira Code, " +
+	dwg.defs.add(dwg.style("@import url('https://rawcdn.githack.com/tonsky/FiraCode/07666484a9d92ec6ea916b94f776fc2410a87a11/distr/fira_code.css');"))
+	group = dwg.g(style="font-weight:300;font-size:14.15px;font-family:FiraCode NF, Fira Code, " +
 	"Cousine, Courier New, monospace;")
 	for block in blocks:
 		if block.bgColour is not None:
@@ -58,11 +58,10 @@ def ansiToSVG(ansiText: str, fileName: str, theme: Optional[str]=None, wide: boo
 				style += "text-decoration: underline;"
 			if block.crossedOut:
 				style += "text-decoration: line-through;"
-		group.add(
-		dwg.text(
-		block.text, insert=(block.position[0] * TEXT_WIDTH + 5,
+		group.add(dwg.text(block.text, insert=(block.position[0] * TEXT_WIDTH + 5,
 		(block.position[1] + 1) * TEXT_HEIGHT), fill=("#" + themeData["base05"]
-		if block.fgColour is None else block.fgColour), style=style, **{"xml:space": "preserve"}))
+		if block.fgColour is None else block.fgColour), style=style,
+		**{"xml:space": "preserve"} if " " in block.text else {})) # yapf: disable
 	dwg.add(group) # type: ignore
 	dwg.save() # type: ignore
 
@@ -176,11 +175,11 @@ def ansiToHTML(ansiText: str, fileName: str, theme: Optional[str]=None, wide: bo
 	prevY = 0
 	html = [
 	"<!DOCTYPE html><html style=\"background-color: #" + themeData["base00"] +
-	"; font-size: 14px; font-family: FiraCode NF, Fira Code, Courier New, " +
+	"; font-weight:300; font-size: 14px; font-family: FiraCode NF, Fira Code, Courier New, " +
 	"Cousine, monospace;\"><head><title>" + fileName.replace("\\",
-	"/").split("/")[-1] + "</title><meta name=\"viewport\" " +
+	"/").split("/")[-1] + "</title><meta charset=\"utf-8\"/><meta name=\"viewport\" " +
 	"content=\"width=device-width, initial-scale=1, shrink-to-fit=no\"><link " +
-	"href=\"https://fonts.googleapis.com/css2?family=Fira+Code:wght@450;650&display=swap\" "
+	"href=\"https://rawcdn.githack.com/tonsky/FiraCode/07666484a9d92ec6ea916b94f776fc2410a87a11/distr/fira_code.css\" "
 	+ "rel=\"stylesheet\"></head><body style=\"min-width: " + str(int((95 if wide else 55) * TEXT_WIDTH)) + "px\">"]
 	for block in blocks:
 		style = "color: " + ("#" + themeData["base05"]

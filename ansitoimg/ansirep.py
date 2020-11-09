@@ -74,7 +74,7 @@ class AnsiBlocks():
 		# text to parse
 		self.ansiText = ansiText
 		# list of blocks
-		self.ansiBlocks = []
+		self.ansiBlocks: list[AnsiBlock] = []
 		# track various attributes
 		self.sgiBuffer = []
 		self.textBuffer = []

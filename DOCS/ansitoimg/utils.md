@@ -70,7 +70,7 @@ convert ANSI truecolour to hex rgb
 [[find in source code]](../../ansitoimg/utils.py#L103)
 
 ```python
-def findLen(string: list[str]):
+def findLen(string: str):
 ```
 
  find the length of a string and take into account that emojis are double

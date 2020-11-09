@@ -100,7 +100,7 @@ def ansiColourToRGB(ansiColour: str, theme: Optional[str]=None):
 	return "#" + safe_load(open(theme if theme is not None else THISDIR + "/onedark.yml"))["base05"]
 
 
-def findLen(string: list[str]):
+def findLen(string: str):
 	""" find the length of a string and take into account that emojis are double
 	width """
 	counter = 0
