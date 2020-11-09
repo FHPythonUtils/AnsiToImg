@@ -144,7 +144,7 @@ ansiToHTMLRaster(example3, THISDIR + "/htmlExample3.png")
 
 ### Windows Terminal
 
-<img src="readme-assets/terminal.png" alt="winterm" width="575">
+<img src="readme-assets/terminal.png" alt="winterm" width="450">
 
 ## Choosing ansiToSVG, ansiToRaster, ansiToSVGRaster, ansiToHTML or ansiToHTMLRaster
 
