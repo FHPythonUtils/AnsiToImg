@@ -2,6 +2,9 @@
 All major and minor version changes will be documented in this file. Details of
 patch-level version changes can be found in [commit messages](../../commits/master).
 
+## 2021 - 2021/01/24
+- Fix unclosed file warnings
+
 ## 2020.4.4 - 2020/11/09
 - Optimize svg file size by omitting xml:space: preserve on elements without spaces
 - Use font-weight 300

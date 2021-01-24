@@ -18,7 +18,8 @@ from ansitoimg.render import ansiToSVG, ansiToRaster, ansiToSVGRaster, ansiToHTM
 example = "👋\033[32mHello\033[0m, \033[34mWorld\033[0m🌏\033[31m!\033[0m\n\033[41m👋\033[0m\033[43m🦄\033[0m\033[42m🐘\033[0m\033[3m\033[9m13\033[0m\033[1m3\033[0m\033[4m7\033[0m\033[46m🍄\033[0m\033[44m🎃\033[0m\033[45m🐦\033[0m"
 example2 = "hello\nworld\n\033[42m\033[31mwe meet again\033[0m\nABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz😁😂🤣😃😄😅😆😉😊😋😎😍😘🥰😗😙😚☺🙂🤗🤩🤔🤨😐😑😶🙄😏😣😥😮🤐😯😪asdfghjk"
 example3 = generateHDColour(THISDIR + "/test.png", 40)
-example4 = open(THISDIR + "/example4.txt", "r", encoding="utf-8").read()
+with open(THISDIR + "/example4.txt", "r", encoding="utf-8") as eg4:
+	example4 = eg4.read()
 
 sys.stdout = oldStdout
 

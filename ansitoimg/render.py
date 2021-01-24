@@ -9,11 +9,11 @@ import asyncio
 from os import remove
 from pathlib import Path
 import svgwrite
-from yaml import safe_load
 from PIL import Image, ImageDraw, ImageFont
 from pyppeteer import launch
 from markupsafe import escape
 from ansitoimg.ansirep import AnsiBlocks, findLen
+from ansitoimg.utils import getTheme
 
 THISDIR = str(Path(__file__).resolve().parent)
 
@@ -31,7 +31,7 @@ def ansiToSVG(ansiText: str, fileName: str, theme: Optional[str]=None, wide: boo
 		theme (str, optional): file path to base24 theme to use. Defaults to "onedark.yml".
 		wide (bool, optional): use a 'wide' terminal 89 vs 49 chars
 	"""
-	themeData = safe_load(open(theme if theme is not None else THISDIR + "/onedark.yml"))
+	themeData = getTheme(theme)
 	ansiBlocks = AnsiBlocks(ansiText, wide)
 	ansiBlocks.process()
 	blocks = ansiBlocks.ansiBlocks
@@ -75,7 +75,7 @@ def ansiToRaster(ansiText: str, fileName: str, theme: Optional[str]=None, wide: 
 		theme (str, optional): file path to base24 theme to use. Defaults to "onedark.yml".
 		wide (bool, optional): use a 'wide' terminal 89 vs 49 chars
 	"""
-	themeData = safe_load(open(theme if theme is not None else THISDIR + "/onedark.yml"))
+	themeData = getTheme(theme)
 	ansiBlocks = AnsiBlocks(ansiText, wide)
 	ansiBlocks.process()
 	blocks = ansiBlocks.ansiBlocks
@@ -168,7 +168,7 @@ def ansiToHTML(ansiText: str, fileName: str, theme: Optional[str]=None, wide: bo
 		theme (str, optional): file path to base24 theme to use. Defaults to "onedark.yml".
 		wide (bool, optional): use a 'wide' terminal 89 vs 49 chars
 	"""
-	themeData = safe_load(open(theme if theme is not None else THISDIR + "/onedark.yml"))
+	themeData = getTheme(theme)
 	ansiBlocks = AnsiBlocks(ansiText, wide)
 	ansiBlocks.process()
 	blocks = ansiBlocks.ansiBlocks

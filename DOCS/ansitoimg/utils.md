@@ -11,11 +11,12 @@ an ansi code
     - [ansiColourToRGB](#ansicolourtorgb)
     - [ansiTrueToRgb](#ansitruetorgb)
     - [findLen](#findlen)
+    - [getTheme](#gettheme)
     - [rgbToHex](#rgbtohex)
 
 ## ansi16ToRGB
 
-[[find in source code]](../../ansitoimg/utils.py#L52)
+[[find in source code]](../../ansitoimg/utils.py#L57)
 
 ```python
 def ansi16ToRGB(
@@ -29,7 +30,7 @@ convert ANSI 16 to hex rgb
 
 ## ansi256ToRGB
 
-[[find in source code]](../../ansitoimg/utils.py#L26)
+[[find in source code]](../../ansitoimg/utils.py#L31)
 
 ```python
 def ansi256ToRGB(ansi256: str, theme: Optional[str] = None) -> str:
@@ -39,7 +40,7 @@ convert ANSI 256 to hex rgb
 
 ## ansiColourToRGB
 
-[[find in source code]](../../ansitoimg/utils.py#L65)
+[[find in source code]](../../ansitoimg/utils.py#L70)
 
 ```python
 def ansiColourToRGB(ansiColour: str, theme: Optional[str] = None):
@@ -57,7 +58,7 @@ convert an ANSI colour to a hex colour
 
 ## ansiTrueToRgb
 
-[[find in source code]](../../ansitoimg/utils.py#L19)
+[[find in source code]](../../ansitoimg/utils.py#L24)
 
 ```python
 def ansiTrueToRgb(ansiTrue: str):
@@ -67,7 +68,7 @@ convert ANSI truecolour to hex rgb
 
 ## findLen
 
-[[find in source code]](../../ansitoimg/utils.py#L103)
+[[find in source code]](../../ansitoimg/utils.py#L108)
 
 ```python
 def findLen(string: str):
@@ -76,9 +77,19 @@ def findLen(string: str):
  find the length of a string and take into account that emojis are double
 width
 
+## getTheme
+
+[[find in source code]](../../ansitoimg/utils.py#L13)
+
+```python
+def getTheme(theme: str):
+```
+
+get the theme yaml
+
 ## rgbToHex
 
-[[find in source code]](../../ansitoimg/utils.py#L14)
+[[find in source code]](../../ansitoimg/utils.py#L19)
 
 ```python
 def rgbToHex(rgb: tuple[(int, int, int)]) -> str:

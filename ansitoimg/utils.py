@@ -10,6 +10,11 @@ from yaml import safe_load
 
 THISDIR = str(Path(__file__).resolve().parent)
 
+def getTheme(theme: str):
+	""" get the theme yaml"""
+	with open(theme if theme is not None else THISDIR + "/onedark.yml", encoding="utf-8") as themeYml:
+		themeData = themeYml.read()
+	return safe_load(themeData)
 
 def rgbToHex(rgb: tuple[int, int, int]) -> str:
 	""" convert rgb tuple to hex """
@@ -59,7 +64,7 @@ def ansi16ToRGB(ansi16: str, ansi16Map: Optional[dict[int, str]]=None, theme: Op
 	35: "base0E", 36: "base0C", 37: "base06", 90: "base02", 91: "base12",
 	92: "base14", 93: "base13", 94: "base16", 95: "base17", 96: "base15",
 	97: "base07"}
-	return "#" + safe_load(open(theme if theme is not None else THISDIR + "/onedark.yml"))[ansi16Map[cCode]]
+	return "#" + getTheme(theme)[ansi16Map[cCode]]
 
 
 def ansiColourToRGB(ansiColour: str, theme: Optional[str]=None):
@@ -97,7 +102,7 @@ def ansiColourToRGB(ansiColour: str, theme: Optional[str]=None):
 	if ansiColour.startswith("\033[10"):
 		return ansi16ToRGB(ansiColour, theme=theme)
 	# fail on fg colour
-	return "#" + safe_load(open(theme if theme is not None else THISDIR + "/onedark.yml"))["base05"]
+	return "#" + getTheme(theme)["base05"]
 
 
 def findLen(string: str):
