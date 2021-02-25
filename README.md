@@ -182,7 +182,7 @@ Has the same advantages and disadvantages of `ansiToSVGRaster`
 
 
 ## Docs
-See the [Docs](/DOCS/README.md) for more information.
+See the [Docs](/DOCS/) for more information.
 
 
 ## Install With PIP
