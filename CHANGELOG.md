@@ -2,6 +2,15 @@
 All major and minor version changes will be documented in this file. Details of
 patch-level version changes can be found in [commit messages](../../commits/master).
 
+## 2021.0.1 - 2021/03/18
+- Update Pillow >= 8.1.1 due to high severity security vulnerabilities:
+  - CVE-2021-27923
+  - CVE-2020-35654
+  - CVE-2020-35653
+  - CVE-2021-27921
+  - CVE-2021-27922
+  - CVE-2020-35655
+
 ## 2021 - 2021/01/24
 - Fix unclosed file warnings
 

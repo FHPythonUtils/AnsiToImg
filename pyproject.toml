@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "ansitoimg"
-version = "2021"
+version = "2021.0.1"
 description = "Convert an ANSI string to an image. Great for adding terminal output into a readme."
 authors = ["FredHappyface"]
 classifiers = [
@@ -26,7 +26,7 @@ readme = "README.md"
 python = "^3.7"
 svgwrite = "<3,>=1.4"
 PyYAML = "<7,>=5.3.1"
-Pillow = "<10,>=8.0.0"
+Pillow = "<10,>=8.1.2"
 pyppeteer = "<2,>=0.2.2"
 MarkupSafe = "<3,>=1.1.1"
 
