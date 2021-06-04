@@ -2,6 +2,12 @@
 All major and minor version changes will be documented in this file. Details of
 patch-level version changes can be found in [commit messages](../../commits/master).
 
+
+## 2021.0.2 - 2021/06/04
+- pyupgrade
+- reformatted code
+- update pyproject
+
 ## 2021.0.1 - 2021/03/18
 - Update Pillow >= 8.1.1 due to high severity security vulnerabilities:
   - CVE-2021-27923

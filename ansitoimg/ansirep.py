@@ -1,14 +1,13 @@
-""" representation and processing of an ANSI stream into an 'ast' of sorts
-such that it can be rendered
+"""Representation and processing of an ANSI stream into an 'ast' of sorts such...
+that it can be rendered
 """
 from __future__ import annotations
-from typing import Optional
 
 from ansitoimg.utils import ansiColourToRGB, findLen
 
 
-class AnsiBlock():
-	""" represent a block of ANSI text. eg \033[31mhello!\033[0m
+class AnsiBlock:
+	r"""represent a block of ANSI text. eg \033[31mhello!\033[0m.
 
 	ANSI text can have the following attributes:
 	- text
@@ -20,10 +19,19 @@ class AnsiBlock():
 	- underline
 	- crossed out
 	"""
-	def __init__(self, text: str, position: tuple[int, int],
-	bgColour: Optional[str]=None, fgColour: Optional[str]=None, bold: bool=False,
-	italic: bool=False, underline: bool=False, crossedOut: bool=False):
-		"""Constructor
+
+	def __init__(
+		self,
+		text: str,
+		position: tuple[int, int],
+		bgColour: str | None = None,
+		fgColour: str | None = None,
+		bold: bool = False,
+		italic: bool = False,
+		underline: bool = False,
+		crossedOut: bool = False,
+	):
+		"""Constructor.
 
 		Args:
 			text (str): text content to render
@@ -45,8 +53,8 @@ class AnsiBlock():
 		self.position = position
 
 
-class AnsiBlocks():
-	""" representation of ANSI blocks
+class AnsiBlocks:
+	"""representation of ANSI blocks...
 
 	ANSI blocks has the following attributes:
 	- ANSI text
@@ -64,8 +72,9 @@ class AnsiBlocks():
 	- height
 	- char pointer
 	"""
-	def __init__(self, ansiText: str, wide: bool=True):
-		"""Constructor
+
+	def __init__(self, ansiText: str, wide: bool = True):
+		"""Constructor.
 
 		Args:
 			ansiText (str): ANSI text stream to process
@@ -93,7 +102,7 @@ class AnsiBlocks():
 		self.maxWidth = 89 if wide else 49
 
 	def process(self):
-		""" process the ANSI text into a series of ANSI blocks """
+		"""Process the ANSI text into a series of ANSI blocks."""
 		while self.pointer < len(self.ansiText):
 			# process sgi codes
 			if self.ansiText[self.pointer] == "\033":
@@ -104,25 +113,40 @@ class AnsiBlocks():
 				self.textBuffer.append(self.ansiText[self.pointer])
 				self.pointer += 1
 			# if there is a 'closing' sgi code, create an ANSI block
-			if len(self.sgiBuffer) > 0 and self.sgiBuffer[-1] in ("\033[0m", "\033[00m", "\033[21m",
-			"\033[23m", "\033[24m", "\033[29m", "\033[39m", "\033[49m"):
+			if len(self.sgiBuffer) > 0 and self.sgiBuffer[-1] in (
+				"\033[0m",
+				"\033[00m",
+				"\033[21m",
+				"\033[23m",
+				"\033[24m",
+				"\033[29m",
+				"\033[39m",
+				"\033[49m",
+			):
 				self.processCloseSgi()
 		# create an ANSI block out of anythin left over
 		if len(self.textBuffer) > 0:
 			self.setAnsiBlocks("".join(self.textBuffer))
 
 	def setAnsiBlocks(self, text: str):
-		"""create a series of ANSI blocks from the text buffer and other attributes
+		"""Create a series of ANSI blocks from the text buffer and other attributes.
 
 		Args:
 			text (str): text from the buffer
 		"""
-		writeTxt = []
+		writeTxt = []  # list of chars
 		for char in text:
-			if char == "\n" or self.absX + findLen(writeTxt) > self.maxWidth: # triggers a newline
+			if char == "\n" or self.absX + findLen(writeTxt) > self.maxWidth:  # triggers a newline
 				self.ansiBlocks.append(
-				AnsiBlock("".join(writeTxt), (self.absX, self.absY), self.bgColour,
-				self.fgColour, self.bold, self.italic))
+					AnsiBlock(
+						"".join(writeTxt),
+						(self.absX, self.absY),
+						self.bgColour,
+						self.fgColour,
+						self.bold,
+						self.italic,
+					)
+				)
 				self.absX = 0
 				self.absY += 1
 				self.height += 1
@@ -131,13 +155,22 @@ class AnsiBlocks():
 				writeTxt.append(char)
 		if findLen(writeTxt) > 0:
 			self.ansiBlocks.append(
-			AnsiBlock("".join(writeTxt), (self.absX, self.absY), self.bgColour,
-			self.fgColour, self.bold, self.italic, self.underline, self.crossedOut))
+				AnsiBlock(
+					"".join(writeTxt),
+					(self.absX, self.absY),
+					self.bgColour,
+					self.fgColour,
+					self.bold,
+					self.italic,
+					self.underline,
+					self.crossedOut,
+				)
+			)
 			self.absX += findLen(writeTxt)
 		self.textBuffer = []
 
 	def processSgi(self):
-		""" process an sgi code and set attributes accordingly """
+		"""Process an sgi code and set attributes accordingly."""
 		# if text is before the sgi code. create an ANSI block
 		if len(self.textBuffer) > 0:
 			self.setAnsiBlocks("".join(self.textBuffer))
@@ -152,8 +185,18 @@ class AnsiBlocks():
 		sgiFlag = "".join(sgiChar)
 		if sgiFlag in ("\033[1m", "\033[01m"):
 			self.bold = True
-		elif sgiFlag in ("\033[2m", "\033[5m", "\033[6m", "\033[7m", "\033[8m",
-		"\033[02m", "\033[05m", "\033[06m", "\033[07m", "\033[08m", ):
+		elif sgiFlag in (
+			"\033[2m",
+			"\033[5m",
+			"\033[6m",
+			"\033[7m",
+			"\033[8m",
+			"\033[02m",
+			"\033[05m",
+			"\033[06m",
+			"\033[07m",
+			"\033[08m",
+		):
 			pass
 		elif sgiFlag in ("\033[3m", "\033[03m"):
 			self.italic = True
@@ -161,17 +204,17 @@ class AnsiBlocks():
 			self.underline = True
 		elif sgiFlag in ("\033[9m", "\033[09m"):
 			self.crossedOut = True
-		elif sgiFlag != "\033[39m" and sgiFlag.startswith(
-		"\033[3") or sgiFlag.startswith("\033[9"):
+		elif sgiFlag != "\033[39m" and sgiFlag.startswith("\033[3") or sgiFlag.startswith("\033[9"):
 			self.fgColour = ansiColourToRGB(sgiFlag)
-		elif sgiFlag != "\033[49m" and sgiFlag.startswith(
-		"\033[4") or sgiFlag.startswith("\033[10"):
+		elif (
+			sgiFlag != "\033[49m" and sgiFlag.startswith("\033[4") or sgiFlag.startswith("\033[10")
+		):
 			self.bgColour = ansiColourToRGB(sgiFlag)
 		self.sgiBuffer.append(sgiFlag)
 
 	def processCloseSgi(self):
-		""" process a closing sgi code and create ANSI blocks accordingly
-		reset any attributes that need setting """
+		"""process a closing sgi code and create ANSI blocks accordingly
+		reset any attributes that need setting"""
 		self.setAnsiBlocks("".join(self.textBuffer))
 		# reset as per sgi code
 		if self.sgiBuffer[-1] in ("\033[0m", "\033[00m", "\033[49m"):

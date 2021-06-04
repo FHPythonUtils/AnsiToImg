@@ -2,7 +2,7 @@
 
 > Auto-generated documentation for [ansitoimg.render](../../ansitoimg/render.py) module.
 
-render the ANSI
+Render the ANSI...
 
 - [Ansitoimg](../README.md#ansitoimg-index) / [Modules](../README.md#ansitoimg-modules) / [ansitoimg](index.md#ansitoimg) / render
     - [ansiToHTML](#ansitohtml)
@@ -11,26 +11,24 @@ render the ANSI
     - [ansiToSVG](#ansitosvg)
     - [ansiToSVGRaster](#ansitosvgraster)
 
-render as SVG
-
 #### Attributes
 
 - `TEXT_HEIGHT` - monospaced chars have a constant height and width: `15`
 
 ## ansiToHTML
 
-[[find in source code]](../../ansitoimg/render.py#L162)
+[[find in source code]](../../ansitoimg/render.py#L178)
 
 ```python
 def ansiToHTML(
     ansiText: str,
     fileName: str,
-    theme: Optional[str] = None,
+    theme: str | None = None,
     wide: bool = True,
 ):
 ```
 
-convert an ANSI stream to a html file
+Convert an ANSI stream to a html file.
 
 #### Arguments
 
@@ -41,18 +39,19 @@ convert an ANSI stream to a html file
 
 ## ansiToHTMLRaster
 
-[[find in source code]](../../ansitoimg/render.py#L207)
+[[find in source code]](../../ansitoimg/render.py#L234)
 
 ```python
 def ansiToHTMLRaster(
     ansiText: str,
     fileName: str,
-    theme: Optional[str] = None,
+    theme: str | None = None,
     wide: bool = True,
 ):
 ```
 
-convert an ANSI stream to a raster image using pyppeteer to take a
+Convert an ANSI stream to a raster image using pyppeteer to take a...
+
 screenshot of a generated html (hacky but we can output more like that
 of a terminal now)
 
@@ -65,18 +64,18 @@ of a terminal now)
 
 ## ansiToRaster
 
-[[find in source code]](../../ansitoimg/render.py#L69)
+[[find in source code]](../../ansitoimg/render.py#L81)
 
 ```python
 def ansiToRaster(
     ansiText: str,
     fileName: str,
-    theme: Optional[str] = None,
+    theme: str | None = None,
     wide: bool = True,
 ):
 ```
 
-convert an ANSI stream to a raster image with pillow
+Convert an ANSI stream to a raster image with pillow.
 
 #### Arguments
 
@@ -87,18 +86,18 @@ convert an ANSI stream to a raster image with pillow
 
 ## ansiToSVG
 
-[[find in source code]](../../ansitoimg/render.py#L25)
+[[find in source code]](../../ansitoimg/render.py#L24)
 
 ```python
 def ansiToSVG(
     ansiText: str,
     fileName: str,
-    theme: Optional[str] = None,
+    theme: str | None = None,
     wide: bool = True,
 ):
 ```
 
-convert an ANSI stream to SVG
+Convert an ANSI stream to SVG.
 
 #### Arguments
 
@@ -109,18 +108,19 @@ convert an ANSI stream to SVG
 
 ## ansiToSVGRaster
 
-[[find in source code]](../../ansitoimg/render.py#L128)
+[[find in source code]](../../ansitoimg/render.py#L144)
 
 ```python
 def ansiToSVGRaster(
     ansiText: str,
     fileName: str,
-    theme: Optional[str] = None,
+    theme: str | None = None,
     wide: bool = True,
 ):
 ```
 
-convert an ANSI stream to a raster image using pyppeteer to take a
+Convert an ANSI stream to a raster image using pyppeteer to take a...
+
 screenshot of a generated SVG (hacky but we can get coloured emoji now)
 
 #### Arguments

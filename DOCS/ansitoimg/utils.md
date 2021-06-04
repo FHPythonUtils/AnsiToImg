@@ -2,8 +2,7 @@
 
 > Auto-generated documentation for [ansitoimg.utils](../../ansitoimg/utils.py) module.
 
-Utility functions to get the length of a char and to get the hex colour from
-an ansi code
+Utility functions to get the length of a char and to get the hex colour from an ansi code.
 
 - [Ansitoimg](../README.md#ansitoimg-index) / [Modules](../README.md#ansitoimg-modules) / [ansitoimg](index.md#ansitoimg) / utils
     - [ansi16ToRGB](#ansi16torgb)
@@ -16,41 +15,42 @@ an ansi code
 
 ## ansi16ToRGB
 
-[[find in source code]](../../ansitoimg/utils.py#L57)
+[[find in source code]](../../ansitoimg/utils.py#L79)
 
 ```python
 def ansi16ToRGB(
     ansi16: str,
-    ansi16Map: Optional[dict[(int, str)]] = None,
-    theme: Optional[str] = None,
+    ansi16Map: dict[(int, str)] | None = None,
+    theme: str | None = None,
 ):
 ```
 
-convert ANSI 16 to hex rgb
+Convert ANSI 16 to hex rgb.
 
 ## ansi256ToRGB
 
-[[find in source code]](../../ansitoimg/utils.py#L31)
+[[find in source code]](../../ansitoimg/utils.py#L39)
 
 ```python
-def ansi256ToRGB(ansi256: str, theme: Optional[str] = None) -> str:
+def ansi256ToRGB(ansi256: str, theme: str | None = None) -> str:
 ```
 
-convert ANSI 256 to hex rgb
+Convert ANSI 256 to hex rgb.
 
 ## ansiColourToRGB
 
-[[find in source code]](../../ansitoimg/utils.py#L70)
+[[find in source code]](../../ansitoimg/utils.py#L109)
 
 ```python
-def ansiColourToRGB(ansiColour: str, theme: Optional[str] = None):
+def ansiColourToRGB(ansiColour: str, theme: str | None = None):
 ```
 
-convert an ANSI colour to a hex colour
+Convert an ANSI colour to a hex colour.
 
 #### Arguments
 
 - `ansiColour` *string* - ANSI colour
+- `theme` *Optional[str]* - set a theme (defaults to None.)
 
 #### Returns
 
@@ -58,41 +58,40 @@ convert an ANSI colour to a hex colour
 
 ## ansiTrueToRgb
 
-[[find in source code]](../../ansitoimg/utils.py#L24)
+[[find in source code]](../../ansitoimg/utils.py#L27)
 
 ```python
 def ansiTrueToRgb(ansiTrue: str):
 ```
 
-convert ANSI truecolour to hex rgb
+Convert ANSI truecolour to hex rgb.
 
 ## findLen
 
-[[find in source code]](../../ansitoimg/utils.py#L108)
+[[find in source code]](../../ansitoimg/utils.py#L148)
 
 ```python
-def findLen(string: str):
+def findLen(string: Iterable):
 ```
 
- find the length of a string and take into account that emojis are double
-width
+Find the length of a string and take into account that emojis are double	width.
 
 ## getTheme
 
 [[find in source code]](../../ansitoimg/utils.py#L13)
 
 ```python
-def getTheme(theme: str):
+def getTheme(theme: str | None) -> dict[(str, str)]:
 ```
 
-get the theme yaml
+Get the theme yaml.
 
 ## rgbToHex
 
-[[find in source code]](../../ansitoimg/utils.py#L19)
+[[find in source code]](../../ansitoimg/utils.py#L22)
 
 ```python
 def rgbToHex(rgb: tuple[(int, int, int)]) -> str:
 ```
 
-convert rgb tuple to hex
+Convert rgb tuple to hex.

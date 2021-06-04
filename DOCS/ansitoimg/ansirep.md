@@ -2,8 +2,8 @@
 
 > Auto-generated documentation for [ansitoimg.ansirep](../../ansitoimg/ansirep.py) module.
 
- representation and processing of an ANSI stream into an 'ast' of sorts
-such that it can be rendered
+Representation and processing of an ANSI stream into an 'ast' of sorts such...
+that it can be rendered
 
 - [Ansitoimg](../README.md#ansitoimg-index) / [Modules](../README.md#ansitoimg-modules) / [ansitoimg](index.md#ansitoimg) / ansirep
     - [AnsiBlock](#ansiblock)
@@ -15,15 +15,15 @@ such that it can be rendered
 
 ## AnsiBlock
 
-[[find in source code]](../../ansitoimg/ansirep.py#L10)
+[[find in source code]](../../ansitoimg/ansirep.py#L9)
 
 ```python
 class AnsiBlock():
     def __init__(
         text: str,
         position: tuple[(int, int)],
-        bgColour: Optional[str] = None,
-        fgColour: Optional[str] = None,
+        bgColour: str | None = None,
+        fgColour: str | None = None,
         bold: bool = False,
         italic: bool = False,
         underline: bool = False,
@@ -31,7 +31,7 @@ class AnsiBlock():
     ):
 ```
 
-represent a block of ANSI text. eg [31mhello![0m
+represent a block of ANSI text. eg \033[31mhello!\033[0m.
 
 ANSI text can have the following attributes:
 - text
@@ -45,14 +45,14 @@ ANSI text can have the following attributes:
 
 ## AnsiBlocks
 
-[[find in source code]](../../ansitoimg/ansirep.py#L48)
+[[find in source code]](../../ansitoimg/ansirep.py#L56)
 
 ```python
 class AnsiBlocks():
     def __init__(ansiText: str, wide: bool = True):
 ```
 
-representation of ANSI blocks
+representation of ANSI blocks...
 
 ANSI blocks has the following attributes:
 - ANSI text
@@ -72,44 +72,44 @@ ANSI blocks also holds a series of attributes that are used when processing
 
 ### AnsiBlocks().process
 
-[[find in source code]](../../ansitoimg/ansirep.py#L95)
+[[find in source code]](../../ansitoimg/ansirep.py#L104)
 
 ```python
 def process():
 ```
 
-process the ANSI text into a series of ANSI blocks
+Process the ANSI text into a series of ANSI blocks.
 
 ### AnsiBlocks().processCloseSgi
 
-[[find in source code]](../../ansitoimg/ansirep.py#L172)
+[[find in source code]](../../ansitoimg/ansirep.py#L215)
 
 ```python
 def processCloseSgi():
 ```
 
- process a closing sgi code and create ANSI blocks accordingly
+process a closing sgi code and create ANSI blocks accordingly
 reset any attributes that need setting
 
 ### AnsiBlocks().processSgi
 
-[[find in source code]](../../ansitoimg/ansirep.py#L139)
+[[find in source code]](../../ansitoimg/ansirep.py#L172)
 
 ```python
 def processSgi():
 ```
 
-process an sgi code and set attributes accordingly
+Process an sgi code and set attributes accordingly.
 
 ### AnsiBlocks().setAnsiBlocks
 
-[[find in source code]](../../ansitoimg/ansirep.py#L114)
+[[find in source code]](../../ansitoimg/ansirep.py#L131)
 
 ```python
 def setAnsiBlocks(text: str):
 ```
 
-create a series of ANSI blocks from the text buffer and other attributes
+Create a series of ANSI blocks from the text buffer and other attributes.
 
 #### Arguments
 

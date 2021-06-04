@@ -2,8 +2,7 @@
 
 > Auto-generated documentation for [ansitoimg](../../ansitoimg/__init__.py) module.
 
- Convert an ANSI string to an image. Great for adding terminal output into a
-readme.
+Convert an ANSI string to an image. Great for adding terminal output into a readme.
 
 - [Ansitoimg](../README.md#ansitoimg-index) / [Modules](../README.md#ansitoimg-modules) / ansitoimg
     - [cli](#cli)
@@ -21,4 +20,4 @@ readme.
 def cli():
 ```
 
-cli entry point
+Cli entry point.
