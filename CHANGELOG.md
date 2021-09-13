@@ -2,6 +2,8 @@
 All major and minor version changes will be documented in this file. Details of
 patch-level version changes can be found in [commit messages](../../commits/master).
 
+## 2021.0.3 - 2021/09/13
+- Update pillow
 
 ## 2021.0.2 - 2021/06/04
 - pyupgrade
