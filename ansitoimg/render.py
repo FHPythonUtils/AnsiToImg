@@ -39,12 +39,15 @@ def ansiToSVG(ansiText: str, fileName: str, theme: str | None = None, wide: bool
 	dwg.add(dwg.rect((0, 0), size, fill="#" + themeData["base00"]))  # type: ignore
 	dwg.defs.add(
 		dwg.style(
-			"@import url('https://rawcdn.githack.com/tonsky/FiraCode/07666484a9d92ec6ea916b94f776fc2410a87a11/distr/fira_code.css');"
+			"@import url('https://rawcdn.githack.com/tonsky/FiraCode/"
+			"07666484a9d92ec6ea916b94f776fc2410a87a11/distr/fira_code.css');"
 		)
 	)
 	group = dwg.g(
-		style="font-weight:300;font-size:14.15px;font-family:FiraCode NF, Fira Code, "
-		+ "Cousine, Courier New, monospace;"
+		style=(
+			"font-weight:300;font-size:14.15px;font-family:FiraCode NF, Fira Code, "
+			"Cousine, Courier New, monospace;"
+		)
 	)
 	for block in blocks:
 		if block.bgColour is not None:
@@ -73,7 +76,7 @@ def ansiToSVG(ansiText: str, fileName: str, theme: str | None = None, wide: bool
 				style=style,
 				**{"xml:space": "preserve"} if " " in block.text else {},
 			)
-		)  # yapf: disable
+		)
 	dwg.add(group)  # type: ignore
 	dwg.save()  # type: ignore
 
@@ -95,11 +98,11 @@ def ansiToRaster(ansiText: str, fileName: str, theme: str | None = None, wide: b
 	image = Image.new("RGB", size, "#" + themeData["base00"])
 	draw = ImageDraw.Draw(image)
 	# Load the fonts
-	fontNormal = ImageFont.truetype(THISDIR + "/resources/FiraCode-Regular.otf", 14)
-	fontBold = ImageFont.truetype(THISDIR + "/resources/FiraCode-Bold.otf", 14)
-	fontItalic = ImageFont.truetype(THISDIR + "/resources/FiraCode-Italic.otf", 14)
-	fontBoldItalic = ImageFont.truetype(THISDIR + "/resources/FiraCode-BoldItalic.otf", 14)
-	fontEmoji = ImageFont.truetype(THISDIR + "/resources/TwitterColorEmoji-SVGinOT30.ttf", 14)
+	fontNormal = ImageFont.truetype(f"{THISDIR}/resources/FiraCode-Regular.otf", 14)
+	fontBold = ImageFont.truetype(f"{THISDIR}/resources/FiraCode-Bold.otf", 14)
+	fontItalic = ImageFont.truetype(f"{THISDIR}/resources/FiraCode-Italic.otf", 14)
+	fontBoldItalic = ImageFont.truetype(f"{THISDIR}/resources/FiraCode-BoldItalic.otf", 14)
+	fontEmoji = ImageFont.truetype(f"{THISDIR}/resources/TwitterColorEmoji-SVGinOT30.ttf", 14)
 	# Iterate through the ANSI blocks
 	for block in blocks:
 		posY = block.position[1] * TEXT_HEIGHT + 2.5
@@ -129,7 +132,7 @@ def ansiToRaster(ansiText: str, fileName: str, theme: str | None = None, wide: b
 			else:
 				draw.text(
 					(posX, posY),
-					char if not block.crossedOut else "\u0336" + char + "\u0336",
+					char if not block.crossedOut else "\u0336{char}\u0336",
 					font=font,
 					fill=fill,
 				)
@@ -152,17 +155,17 @@ def ansiToSVGRaster(ansiText: str, fileName: str, theme: str | None = None, wide
 		theme (str, optional): file path to base24 theme to use. Defaults to "onedark.yml".
 		wide (bool, optional): use a 'wide' terminal 89 vs 49 chars
 	"""
-	ansiToSVG(ansiText, THISDIR + "/temp.svg", theme, wide)
+	ansiToSVG(ansiText, f"{THISDIR}/temp.svg", theme, wide)
 	ansiBlocks = AnsiBlocks(ansiText, wide)
 	ansiBlocks.process()
 	size = (int((95 if wide else 55) * TEXT_WIDTH), int(TEXT_HEIGHT * ansiBlocks.height + 5))
 	asyncio.get_event_loop().run_until_complete(
-		_doGrabWebpage("file:///" + THISDIR + "/temp.svg", size, fileName)
+		_doGrabWebpage(f"file:///{THISDIR}/temp.svg", size, fileName)
 	)
 	try:
-		remove(THISDIR + "/temp.svg")
+		remove(f"{THISDIR}/temp.svg")
 	except PermissionError:
-		print("Unable to clean up, manually remove temp.svg from project root " + "or ignore")
+		print("Unable to clean up, manually remove temp.svg from project root or ignore")
 
 
 async def _doGrabWebpage(url: str, resolution: tuple[int, int], fileName: str):
@@ -190,17 +193,17 @@ def ansiToHTML(ansiText: str, fileName: str, theme: str | None = None, wide: boo
 	blocks = ansiBlocks.ansiBlocks
 	prevY = 0
 	html = [
-		'<!DOCTYPE html><html style="background-color: #'
-		+ themeData["base00"]
-		+ "; font-weight:300; font-size: 14px; font-family: FiraCode NF, Fira Code, Courier New, "
-		+ 'Cousine, monospace;"><head><title>'
-		+ fileName.replace("\\", "/").split("/")[-1]
-		+ '</title><meta charset="utf-8"/><meta name="viewport" '
-		+ 'content="width=device-width, initial-scale=1, shrink-to-fit=no"><link '
-		+ 'href="https://rawcdn.githack.com/tonsky/FiraCode/07666484a9d92ec6ea916b94f776fc2410a87a11/distr/fira_code.css" '
-		+ 'rel="stylesheet"></head><body style="min-width: '
-		+ str(int((95 if wide else 55) * TEXT_WIDTH))
-		+ 'px">'
+		f"""<!DOCTYPE html>
+<html style="background-color: #{themeData["base00"]}; font-weight:300; font-size: 14px;
+font-family: FiraCode NF, Fira Code, Courier New, Cousine, monospace;">
+<head>
+	<title>{Path(fileName).name}</title>
+	<meta charset="utf-8"/><meta name="viewport" content="width=device-width,
+	initial-scale=1, shrink-to-fit=no">
+	<link
+	href="https://rawcdn.githack.com/tonsky/FiraCode/07666484a9d92ec6ea916b94f776fc2410a87a11/distr/fira_code.css"
+	rel="stylesheet">
+</head><body style="min-width: {int((95 if wide else 55) * TEXT_WIDTH)}px">"""
 	]
 	for block in blocks:
 		style = (
@@ -209,7 +212,7 @@ def ansiToHTML(ansiText: str, fileName: str, theme: str | None = None, wide: boo
 			+ "; "
 		)
 		if block.bgColour is not None:
-			style += "background-color: " + block.bgColour + "; "
+			style += f"background-color: {block.bgColour}; "
 		if block.bold:
 			style += "font-weight: bold; "
 		if block.italic:
@@ -222,9 +225,7 @@ def ansiToHTML(ansiText: str, fileName: str, theme: str | None = None, wide: boo
 			html.append("<br>")
 			prevY = block.position[1]
 		html.append(
-			'<span style="{}">{}</span>'.format(
-				style[:-1], str(escape(block.text)).replace(" ", "&nbsp;")
-			)
+			f'<span style="{style[:-1]}">{str(escape(block.text)).replace(" ", "&nbsp;")}</span>'
 		)
 	html.append("</body></html>")
 	with open(fileName, "w", encoding="utf-8") as file:
@@ -243,14 +244,14 @@ def ansiToHTMLRaster(ansiText: str, fileName: str, theme: str | None = None, wid
 		theme (str, optional): file path to base24 theme to use. Defaults to "onedark.yml".
 		wide (bool, optional): use a 'wide' terminal 89 vs 49 chars
 	"""
-	ansiToHTML(ansiText, THISDIR + "/temp.html", theme, wide)
+	ansiToHTML(ansiText, f"{THISDIR}/temp.html", theme, wide)
 	ansiBlocks = AnsiBlocks(ansiText, wide)
 	ansiBlocks.process()
 	size = (int((95 if wide else 55) * 8.63) + 16, int(16.8 * ansiBlocks.height + 16))
 	asyncio.get_event_loop().run_until_complete(
-		_doGrabWebpage("file:///" + THISDIR + "/temp.html", size, fileName)
+		_doGrabWebpage(f"file:///{THISDIR}/temp.html", size, fileName)
 	)
 	try:
-		remove(THISDIR + "/temp.html")
+		remove(f"{THISDIR}/temp.html")
 	except PermissionError:
-		print("Unable to clean up, manually remove temp.html from project root " + "or ignore")
+		print("Unable to clean up, manually remove temp.html from project root or ignore")

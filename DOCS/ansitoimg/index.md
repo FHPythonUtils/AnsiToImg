@@ -14,7 +14,7 @@ Convert an ANSI string to an image. Great for adding terminal output into a read
 
 ## cli
 
-[[find in source code]](../../ansitoimg/__init__.py#L16)
+[[find in source code]](../../ansitoimg/__init__.py#L22)
 
 ```python
 def cli():

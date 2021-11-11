@@ -115,4 +115,3 @@ none
 [[33m/ Warn[00m] warning
 [[31m-  Err[00m] error
 [[01m[91m! Crit[00m] critical
-

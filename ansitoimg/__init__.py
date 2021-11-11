@@ -2,13 +2,19 @@
 """
 
 import argparse
-from sys import exit as sysexit, stdin, stdout
+from sys import exit as sysexit
+from sys import stdin, stdout
+
+from ansitoimg.render import (
+	ansiToHTML,
+	ansiToHTMLRaster,
+	ansiToRaster,
+	ansiToSVG,
+	ansiToSVGRaster,
+)
 
 stdout.reconfigure(encoding="utf-8")
 
-
-from ansitoimg.render import (ansiToHTML, ansiToHTMLRaster, ansiToRaster,
-                              ansiToSVG, ansiToSVGRaster)
 
 PLUGIN_HELP = "Plugin to use. One of svg, raster, svgraster, html, htmlraster, default=svg"
 
@@ -23,11 +29,25 @@ def cli():
 		type=argparse.FileType("r", encoding="utf-8"),
 		default=stdin,
 	)
-	parser.add_argument("output", help="Filename to write to")
-	parser.add_argument("--plugin", "-p", help=PLUGIN_HELP)
-	parser.add_argument("--theme", "-t", help="Enter the path to a base24 theme")
 	parser.add_argument(
-		"--wide", "-w", action="store_true", help="Use a 'wide' virtual terminal (89 chars vs 49)"
+		"output",
+		help="Filename to write to",
+	)
+	parser.add_argument(
+		"--plugin",
+		"-p",
+		help=PLUGIN_HELP,
+	)
+	parser.add_argument(
+		"--theme",
+		"-t",
+		help="Enter the path to a base24 theme",
+	)
+	parser.add_argument(
+		"--wide",
+		"-w",
+		action="store_true",
+		help="Use a 'wide' virtual terminal (89 chars vs 49)",
 	)
 
 	args = parser.parse_args()

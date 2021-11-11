@@ -17,7 +17,7 @@ Render the ANSI...
 
 ## ansiToHTML
 
-[[find in source code]](../../ansitoimg/render.py#L178)
+[[find in source code]](../../ansitoimg/render.py#L181)
 
 ```python
 def ansiToHTML(
@@ -39,7 +39,7 @@ Convert an ANSI stream to a html file.
 
 ## ansiToHTMLRaster
 
-[[find in source code]](../../ansitoimg/render.py#L234)
+[[find in source code]](../../ansitoimg/render.py#L235)
 
 ```python
 def ansiToHTMLRaster(
@@ -64,7 +64,7 @@ of a terminal now)
 
 ## ansiToRaster
 
-[[find in source code]](../../ansitoimg/render.py#L81)
+[[find in source code]](../../ansitoimg/render.py#L84)
 
 ```python
 def ansiToRaster(
@@ -108,7 +108,7 @@ Convert an ANSI stream to SVG.
 
 ## ansiToSVGRaster
 
-[[find in source code]](../../ansitoimg/render.py#L144)
+[[find in source code]](../../ansitoimg/render.py#L147)
 
 ```python
 def ansiToSVGRaster(

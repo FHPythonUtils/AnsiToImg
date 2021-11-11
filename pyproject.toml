@@ -1,18 +1,15 @@
 [tool.poetry]
 name = "ansitoimg"
-version = "2021.0.3"
+version = "2021.0.4"
+license = "mit"
 description = "Convert an ANSI string to an image. Great for adding terminal output into a readme."
 authors = ["FredHappyface"]
 classifiers = [
 	"Development Status :: 5 - Production/Stable",
 	"Intended Audience :: Developers",
 	"Intended Audience :: Education",
-	"License :: OSI Approved :: MIT License",
 	"Natural Language :: English",
 	"Operating System :: OS Independent",
-	"Programming Language :: Python :: 3.7",
-	"Programming Language :: Python :: 3.8",
-	"Programming Language :: Python :: 3.9",
 	"Programming Language :: Python :: Implementation :: CPython",
 	"Topic :: Software Development :: Libraries :: Python Modules",
 	"Topic :: Utilities"
@@ -24,51 +21,51 @@ readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.7"
-svgwrite = "<3,>=1.4.1"
-PyYAML = "<7,>=5.4.1"
-Pillow = "<9,>=8.3.2"
-pyppeteer = "<2,>=0.2.5"
-MarkupSafe = "<4,>=2.0.1"
-
+svgwrite = "<2,>=1.4.1"
+PyYAML = "<7,>=6.0"
+Pillow = "<9,>=8.4.0"
+pyppeteer = "<2,>=0.2.6"
+MarkupSafe = "<3,>=2.0.1"
 
 [tool.poetry.dev-dependencies]
 catimage = "^2020.6.1"
 
-
 [tool.poetry.scripts]
 ansitoimg = 'ansitoimg:cli'
+
+[tool.black]
+line-length = 100
+target-version = ["py37"]
+
+[tool.isort]
+profile = "black"
+indent = "Tab"
+
+[tool.pydocstyle]
+convention = "google"
+ignore = "D205,D415"
 
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
 
-# Pylint
 [tool.pylint.basic]
-argument-naming-style ="camelCase"
-attr-naming-style ="camelCase"
-function-naming-style ="camelCase"
-method-naming-style ="camelCase"
-variable-naming-style ="camelCase"
+argument-naming-style = "camelCase"
+attr-naming-style = "camelCase"
+function-naming-style = "camelCase"
+method-naming-style = "camelCase"
+variable-naming-style = "camelCase"
 
 [tool.pylint.format]
-indent-string ="\t"
+indent-string = "\t"
 
 [tool.pylint.master]
-ignore-patterns ="test_.*?py"
+ignore-patterns = "test_.*?py"
 
 [tool.pylint.messages_control]
-enable = [
-	'F',  # Fatal
-	'E',  # Error
-	'W',  # Warning
-	'R',  # Refactor
-	'C',  # Convention
-]
-disable=[
+enable = ["F", "E", "W", "R", "C"]
+disable = [
 	"pointless-string-statement",
 	"superfluous-parens",
-	"bad-continuation",
-	"wrong-import-position",
-	"unsubscriptable-object",
-	"no-absolute-import",
+	"bad-continuation"
 ]
