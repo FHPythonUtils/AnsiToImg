@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "ansitoimg"
-version = "2021.0.5"
+version = "2022"
 license = "mit"
 description = "Convert an ANSI string to an image. Great for adding terminal output into a readme."
 authors = ["FredHappyface"]
@@ -23,16 +23,18 @@ readme = "README.md"
 python = "^3.7"
 svgwrite = "<2,>=1.4.1"
 PyYAML = "<7,>=6.0"
-Pillow = "<9,>=8.4.0"
-pyppeteer = "<2,>=0.2.6"
+Pillow = "<10,>=9.0.0"
+pyppeteer = "<2,>=1.0.2"
 MarkupSafe = "<3,>=2.0.1"
 
-[tool.poetry.dev-dependencies]
-catimage = "^2020.6.1"
 
 [tool.poetry.scripts]
 ansitoimg = 'ansitoimg:cli'
 
+[tool.poetry.dev-dependencies]
+catimage = "^2022"
+pytest = "^6.2.5"
+imgcompare = "^2.0.1"
 [tool.black]
 line-length = 100
 target-version = ["py37"]

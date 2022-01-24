@@ -9,16 +9,16 @@ from sys import stdin, stdout
 
 from ansitoimg.render import (
 	ansiToHTML,
-	ansiToHTMLRaster,
-	ansiToRaster,
+	ansiToHTMLRender,
+	ansiToRender,
 	ansiToSVG,
-	ansiToSVGRaster,
+	ansiToSVGRender,
 )
 
 stdout.reconfigure(encoding="utf-8")
 
 
-PLUGIN_HELP = "Plugin to use. One of svg, raster, svgraster, html, htmlraster, default=svg"
+PLUGIN_HELP = "Plugin to use. One of svg, render, svgrender, html, htmlrender, default=svg"
 
 
 def cli():
@@ -59,10 +59,10 @@ def cli():
 	# Plugin
 	pluginMap = {
 		"svg": ansiToSVG,
-		"raster": ansiToRaster,
-		"svgraster": ansiToSVGRaster,
+		"render": ansiToRender,
+		"svgrender": ansiToSVGRender,
 		"html": ansiToHTML,
-		"htmlraster": ansiToHTMLRaster,
+		"htmlrender": ansiToHTMLRender,
 	}
 	if args.plugin is None:
 		ansiToSVG(ansi, args.output, args.theme, args.wide)

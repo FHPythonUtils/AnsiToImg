@@ -3,6 +3,13 @@
 All major and minor version changes will be documented in this file. Details of
 patch-level version changes can be found in [commit messages](../../commits/master).
 
+## 2022 - 2022/01/24
+
+- Bump pillow version (CVE-2022-22815, CVE-2022-22816, CVE-2022-22817)
+- Update deps
+- Rename Raster functions to Render
+- Add formal tests
+
 ## 2021.0.4 - 2021/11/11
 
 - update deps

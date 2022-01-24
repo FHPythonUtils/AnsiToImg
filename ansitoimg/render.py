@@ -1,4 +1,4 @@
-"""Render the ANSI...
+"""Render the ANSI
 """
 from __future__ import annotations
 
@@ -81,8 +81,8 @@ def ansiToSVG(ansiText: str, fileName: str, theme: str | None = None, wide: bool
 	dwg.save()  # type: ignore
 
 
-def ansiToRaster(ansiText: str, fileName: str, theme: str | None = None, wide: bool = True):
-	"""Convert an ANSI stream to a raster image with pillow.
+def ansiToRender(ansiText: str, fileName: str, theme: str | None = None, wide: bool = True):
+	"""Convert an ANSI stream to a Render image with pillow.
 
 	Args:
 		ansiText (str): ANSI text to convert
@@ -144,9 +144,8 @@ def ansiToRaster(ansiText: str, fileName: str, theme: str | None = None, wide: b
 	image.save(fileName)
 
 
-def ansiToSVGRaster(ansiText: str, fileName: str, theme: str | None = None, wide: bool = True):
-	"""Convert an ANSI stream to a raster image using pyppeteer to take a...
-
+def ansiToSVGRender(ansiText: str, fileName: str, theme: str | None = None, wide: bool = True):
+	"""Convert an ANSI stream to a Render image using pyppeteer to take a
 	screenshot of a generated SVG (hacky but we can get coloured emoji now)
 
 	Args:
@@ -159,9 +158,7 @@ def ansiToSVGRaster(ansiText: str, fileName: str, theme: str | None = None, wide
 	ansiBlocks = AnsiBlocks(ansiText, wide)
 	ansiBlocks.process()
 	size = (int((95 if wide else 55) * TEXT_WIDTH), int(TEXT_HEIGHT * ansiBlocks.height + 5))
-	asyncio.get_event_loop().run_until_complete(
-		_doGrabWebpage(f"file:///{THISDIR}/temp.svg", size, fileName)
-	)
+	asyncio.run(_doGrabWebpage(f"file:///{THISDIR}/temp.svg", size, fileName))
 	try:
 		remove(f"{THISDIR}/temp.svg")
 	except PermissionError:
@@ -232,9 +229,8 @@ font-family: FiraCode NF, Fira Code, Courier New, Cousine, monospace;">
 		file.write("".join(html))
 
 
-def ansiToHTMLRaster(ansiText: str, fileName: str, theme: str | None = None, wide: bool = True):
-	"""Convert an ANSI stream to a raster image using pyppeteer to take a...
-
+def ansiToHTMLRender(ansiText: str, fileName: str, theme: str | None = None, wide: bool = True):
+	"""Convert an ANSI stream to a Render image using pyppeteer to take a
 	screenshot of a generated html (hacky but we can output more like that
 	of a terminal now)
 
@@ -248,9 +244,7 @@ def ansiToHTMLRaster(ansiText: str, fileName: str, theme: str | None = None, wid
 	ansiBlocks = AnsiBlocks(ansiText, wide)
 	ansiBlocks.process()
 	size = (int((95 if wide else 55) * 8.63) + 16, int(16.8 * ansiBlocks.height + 16))
-	asyncio.get_event_loop().run_until_complete(
-		_doGrabWebpage(f"file:///{THISDIR}/temp.html", size, fileName)
-	)
+	asyncio.run(_doGrabWebpage(f"file:///{THISDIR}/temp.html", size, fileName))
 	try:
 		remove(f"{THISDIR}/temp.html")
 	except PermissionError:

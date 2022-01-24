@@ -17,16 +17,16 @@ Convert an ANSI string to an image. Great for adding terminal output into a read
 
 - [Examples](#examples)
 	- [SVG Image](#svg-image)
-	- [Raster Image](#raster-image)
-	- [SVGRaster Image](#svgraster-image)
-	- [HTML/ HTMLRaster Image](#html-htmlraster-image)
+	- [Render Image](#render-image)
+	- [SVGRender Image](#svgrender-image)
+	- [HTML/ HTMLRender Image](#html-htmlrender-image)
 	- [Windows Terminal](#windows-terminal)
-- [Choosing ansiToSVG, ansiToRaster, ansiToSVGRaster, ansiToHTML or ansiToHTMLRaster](#choosing-ansitosvg-ansitoraster-ansitosvgraster-ansitohtml-or-ansitohtmlraster)
+- [Choosing ansiToSVG, ansiToRender, ansiToSVGRender, ansiToHTML or ansiToHTMLRender](#choosing-ansitosvg-ansitorender-ansitosvgrender-ansitohtml-or-ansitohtmlrender)
 	- [ansiToSVG](#ansitosvg)
-	- [ansiToRaster](#ansitoraster)
-	- [ansiToSVGRaster](#ansitosvgraster)
+	- [ansiToRender](#ansitorender)
+	- [ansiToSVGRender](#ansitosvgrender)
 	- [ansiToHTML](#ansitohtml)
-	- [ansiToHTMLRaster](#ansitohtmlraster)
+	- [ansiToHTMLRender](#ansitohtmlrender)
 - [Docs](#docs)
 - [Install With PIP](#install-with-pip)
 - [Language information](#language-information)
@@ -77,7 +77,7 @@ from catimage.catimage import generateHDColour
 
 THISDIR = str(Path(__file__).resolve().parent)
 sys.path.insert(0, os.path.dirname(THISDIR))
-from ansitoimg.render import ansiToSVG, ansiToRaster, ansiToSVGRaster, ansiToHTML, ansiToHTMLRaster
+from ansitoimg.render import ansiToSVG, ansiToRender, ansiToSVGRender, ansiToHTML, ansiToHTMLRender
 
 if platform.system() == "Windows":
 	kernel32 = ctypes.windll.kernel32
@@ -101,25 +101,25 @@ ansiToSVG(example, THISDIR + "/example.svg")
 ansiToSVG(example2, THISDIR + "/example2.svg")
 ansiToSVG(example3, THISDIR + "/example3.svg")
 
-# To Raster
-ansiToRaster(example, THISDIR + "/example.png")
-ansiToRaster(example2, THISDIR + "/example2.png")
-ansiToRaster(example3, THISDIR + "/example3.png")
+# To Render
+ansiToRender(example, THISDIR + "/example.png")
+ansiToRender(example2, THISDIR + "/example2.png")
+ansiToRender(example3, THISDIR + "/example3.png")
 
-# To SVGRaster
-ansiToSVGRaster(example, THISDIR + "/svgExample.png")
-ansiToSVGRaster(example2, THISDIR + "/svgExample2.png")
-ansiToSVGRaster(example3, THISDIR + "/svgExample3.png")
+# To SVGRender
+ansiToSVGRender(example, THISDIR + "/svgExample.png")
+ansiToSVGRender(example2, THISDIR + "/svgExample2.png")
+ansiToSVGRender(example3, THISDIR + "/svgExample3.png")
 
 # To HTML
 ansiToHTML(example, THISDIR + "/example.html")
 ansiToHTML(example2, THISDIR + "/example2.html")
 ansiToHTML(example3, THISDIR + "/example3.html")
 
-# To HTMLRaster
-ansiToHTMLRaster(example, THISDIR + "/htmlExample.png")
-ansiToHTMLRaster(example2, THISDIR + "/htmlExample2.png")
-ansiToHTMLRaster(example3, THISDIR + "/htmlExample3.png")
+# To HTMLRender
+ansiToHTMLRender(example, THISDIR + "/htmlExample.png")
+ansiToHTMLRender(example2, THISDIR + "/htmlExample2.png")
+ansiToHTMLRender(example3, THISDIR + "/htmlExample3.png")
 ```
 
 ### SVG Image
@@ -130,7 +130,7 @@ ansiToHTMLRaster(example3, THISDIR + "/htmlExample3.png")
 
 ![example3](test/example3.svg)
 
-### Raster Image
+### Render Image
 
 ![example](test/example.png)
 
@@ -138,7 +138,7 @@ ansiToHTMLRaster(example3, THISDIR + "/htmlExample3.png")
 
 ![example3](test/example3.png)
 
-### SVGRaster Image
+### SVGRender Image
 
 ![example](test/svgExample.png)
 
@@ -146,7 +146,7 @@ ansiToHTMLRaster(example3, THISDIR + "/htmlExample3.png")
 
 ![example3](test/svgExample3.png)
 
-### HTML/ HTMLRaster Image
+### HTML/ HTMLRender Image
 
 ![example](test/htmlExample.png)
 
@@ -158,7 +158,7 @@ ansiToHTMLRaster(example3, THISDIR + "/htmlExample3.png")
 
 <img src="readme-assets/terminal.png" alt="winterm" width="450">
 
-## Choosing ansiToSVG, ansiToRaster, ansiToSVGRaster, ansiToHTML or ansiToHTMLRaster
+## Choosing ansiToSVG, ansiToRender, ansiToSVGRender, ansiToHTML or ansiToHTMLRender
 
 ### ansiToSVG
 
@@ -170,16 +170,16 @@ opt for shorter sequences for output making `ansiToSVG` the better option.
 10 one can expect full colour emoji. Image sizes can get out of hand for some
 cases such as catimage output as those tend to be very long ANSI sequences.
 
-### ansiToRaster
+### ansiToRender
 
 The image size does not scale to the length of the ANSI sequence but does scale
 to the number of lines of terminal output. This is ideal for output of complex
 ANSI sequences that would be huge if `ansiToSVG` were used. However, emojis are
 in black and white and show quite poorly on coloured backgrounds.
 
-### ansiToSVGRaster
+### ansiToSVGRender
 
-Takes the advantages that `ansiToRaster` has whilst keeping colour emojis, Yay!
+Takes the advantages that `ansiToRender` has whilst keeping colour emojis, Yay!
 This uses pyppeteer to fire up a headless browser which opens the SVG and takes
 a screenshot.
 
@@ -188,9 +188,9 @@ a screenshot.
 Has the same advantages and disadvantages of `ansiToSVG` though this is not
 suitable to be included in a GitHub readme
 
-### ansiToHTMLRaster
+### ansiToHTMLRender
 
-Has the same advantages and disadvantages of `ansiToSVGRaster`
+Has the same advantages and disadvantages of `ansiToSVGRender`
 
 ## Docs
 
