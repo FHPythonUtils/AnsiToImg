@@ -2,7 +2,7 @@
 
 > Auto-generated documentation for [ansitoimg.render](../../ansitoimg/render.py) module.
 
-Render the ANSI...
+Render the ANSI
 
 - [Ansitoimg](../README.md#ansitoimg-index) / [Modules](../README.md#ansitoimg-modules) / [ansitoimg](index.md#ansitoimg) / render
     - [ansiToHTML](#ansitohtml)
@@ -17,7 +17,7 @@ Render the ANSI...
 
 ## ansiToHTML
 
-[[find in source code]](../../ansitoimg/render.py#L181)
+[[find in source code]](../../ansitoimg/render.py#L178)
 
 ```python
 def ansiToHTML(
@@ -39,7 +39,7 @@ Convert an ANSI stream to a html file.
 
 ## ansiToHTMLRender
 
-[[find in source code]](../../ansitoimg/render.py#L235)
+[[find in source code]](../../ansitoimg/render.py#L232)
 
 ```python
 def ansiToHTMLRender(
@@ -50,8 +50,7 @@ def ansiToHTMLRender(
 ):
 ```
 
-Convert an ANSI stream to a Render image using pyppeteer to take a...
-
+Convert an ANSI stream to a Render image using pyppeteer to take a
 screenshot of a generated html (hacky but we can output more like that
 of a terminal now)
 
@@ -119,8 +118,7 @@ def ansiToSVGRender(
 ):
 ```
 
-Convert an ANSI stream to a Render image using pyppeteer to take a...
-
+Convert an ANSI stream to a Render image using pyppeteer to take a
 screenshot of a generated SVG (hacky but we can get coloured emoji now)
 
 #### Arguments
