@@ -1,11 +1,11 @@
-# ansirep
+# Ansirep
 
-> Auto-generated documentation for [ansitoimg.ansirep](../../ansitoimg/ansirep.py) module.
+> Auto-generated documentation for [ansitoimg.ansirep](../../../ansitoimg/ansirep.py) module.
 
 Representation and processing of an ANSI stream into an 'ast' of sorts such...
 that it can be rendered
 
-- [Ansitoimg](../README.md#ansitoimg-index) / [Modules](../README.md#ansitoimg-modules) / [ansitoimg](index.md#ansitoimg) / ansirep
+- [Ansitoimg](../README.md#ansitoimg-index) / [Modules](../MODULES.md#ansitoimg-modules) / [Ansitoimg](index.md#ansitoimg) / Ansirep
     - [AnsiBlock](#ansiblock)
     - [AnsiBlocks](#ansiblocks)
         - [AnsiBlocks().process](#ansiblocksprocess)
@@ -15,7 +15,7 @@ that it can be rendered
 
 ## AnsiBlock
 
-[[find in source code]](../../ansitoimg/ansirep.py#L9)
+[[find in source code]](../../../ansitoimg/ansirep.py#L9)
 
 ```python
 class AnsiBlock():
@@ -45,7 +45,7 @@ ANSI text can have the following attributes:
 
 ## AnsiBlocks
 
-[[find in source code]](../../ansitoimg/ansirep.py#L56)
+[[find in source code]](../../../ansitoimg/ansirep.py#L56)
 
 ```python
 class AnsiBlocks():
@@ -72,7 +72,7 @@ ANSI blocks also holds a series of attributes that are used when processing
 
 ### AnsiBlocks().process
 
-[[find in source code]](../../ansitoimg/ansirep.py#L104)
+[[find in source code]](../../../ansitoimg/ansirep.py#L104)
 
 ```python
 def process():
@@ -82,7 +82,7 @@ Process the ANSI text into a series of ANSI blocks.
 
 ### AnsiBlocks().processCloseSgi
 
-[[find in source code]](../../ansitoimg/ansirep.py#L215)
+[[find in source code]](../../../ansitoimg/ansirep.py#L215)
 
 ```python
 def processCloseSgi():
@@ -93,7 +93,7 @@ reset any attributes that need setting
 
 ### AnsiBlocks().processSgi
 
-[[find in source code]](../../ansitoimg/ansirep.py#L172)
+[[find in source code]](../../../ansitoimg/ansirep.py#L172)
 
 ```python
 def processSgi():
@@ -103,7 +103,7 @@ Process an sgi code and set attributes accordingly.
 
 ### AnsiBlocks().setAnsiBlocks
 
-[[find in source code]](../../ansitoimg/ansirep.py#L131)
+[[find in source code]](../../../ansitoimg/ansirep.py#L131)
 
 ```python
 def setAnsiBlocks(text: str):

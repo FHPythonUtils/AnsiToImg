@@ -15,19 +15,8 @@
 
 Convert an ANSI string to an image. Great for adding terminal output into a readme.
 
-- [Examples](#examples)
-	- [SVG Image](#svg-image)
-	- [Render Image](#render-image)
-	- [SVGRender Image](#svgrender-image)
-	- [HTML/ HTMLRender Image](#html-htmlrender-image)
-	- [Windows Terminal](#windows-terminal)
-- [Choosing ansiToSVG, ansiToRender, ansiToSVGRender, ansiToHTML or ansiToHTMLRender](#choosing-ansitosvg-ansitorender-ansitosvgrender-ansitohtml-or-ansitohtmlrender)
-	- [ansiToSVG](#ansitosvg)
-	- [ansiToRender](#ansitorender)
-	- [ansiToSVGRender](#ansitosvgrender)
-	- [ansiToHTML](#ansitohtml)
-	- [ansiToHTMLRender](#ansitohtmlrender)
-- [Docs](#docs)
+- [Example Output](#example-output)
+- [Documentation](#documentation)
 - [Install With PIP](#install-with-pip)
 - [Language information](#language-information)
 	- [Built for](#built-for)
@@ -57,144 +46,24 @@ Convert an ANSI string to an image. Great for adding terminal output into a read
 	- [Support](#support)
 	- [Rationale](#rationale)
 
-## Examples
-
-Here is an example of some code and the images it produces:
-
-Functions accept the following arguments:
-
-- ansiText - text to process
-- fileName - name of the file to write to
-- theme - a base24 theme. Defaults to atom one dark
-
-```python
-import sys
-import os
-from pathlib import Path
-import platform
-import ctypes
-from catimage.catimage import generateHDColour
-
-THISDIR = str(Path(__file__).resolve().parent)
-sys.path.insert(0, os.path.dirname(THISDIR))
-from ansitoimg.render import ansiToSVG, ansiToRender, ansiToSVGRender, ansiToHTML, ansiToHTMLRender
-
-if platform.system() == "Windows":
-	kernel32 = ctypes.windll.kernel32
-	kernel32.SetConsoleMode(kernel32.GetStdHandle(-11), 7)
-
-# Define ANSI text
-example = "👋\033[32mHello\033[0m, \033[34mWorld\033[0m🌏\033[31m!\033[0m\n\033[41m👋\033[0m\033[43m🦄\033[0m\033[42m🐘\033[0m\033[3m\033[9m13\033[0m\033[1m3\033[0m\033[4m7\033[0m\033[46m🍄\033[0m\033[44m🎃\033[0m\033[45m🐦\033[0m"
-example2 = "hello\nworld\n\033[42m\033[31mwe meet again\033[0m\nABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz😁😂🤣😃😄😅😆😉😊😋😎😍😘🥰😗😙😚☺🙂🤗🤩🤔🤨😐😑😶🙄😏😣😥😮🤐😯😪asdfghjk"
-example3 = generateHDColour(THISDIR + "/test.png", 40)
-
-# Print
-print(example)
-print()
-print(example2)
-print()
-print(example3)
-print()
-
-# To SVG
-ansiToSVG(example, THISDIR + "/example.svg")
-ansiToSVG(example2, THISDIR + "/example2.svg")
-ansiToSVG(example3, THISDIR + "/example3.svg")
-
-# To Render
-ansiToRender(example, THISDIR + "/example.png")
-ansiToRender(example2, THISDIR + "/example2.png")
-ansiToRender(example3, THISDIR + "/example3.png")
-
-# To SVGRender
-ansiToSVGRender(example, THISDIR + "/svgExample.png")
-ansiToSVGRender(example2, THISDIR + "/svgExample2.png")
-ansiToSVGRender(example3, THISDIR + "/svgExample3.png")
-
-# To HTML
-ansiToHTML(example, THISDIR + "/example.html")
-ansiToHTML(example2, THISDIR + "/example2.html")
-ansiToHTML(example3, THISDIR + "/example3.html")
-
-# To HTMLRender
-ansiToHTMLRender(example, THISDIR + "/htmlExample.png")
-ansiToHTMLRender(example2, THISDIR + "/htmlExample2.png")
-ansiToHTMLRender(example3, THISDIR + "/htmlExample3.png")
-```
-
-### SVG Image
-
-![example](test/example.svg)
-
-![example2](test/example2.svg)
-
-![example3](test/example3.svg)
-
-### Render Image
-
-![example](test/example.png)
-
-![example2](test/example2.png)
-
-![example3](test/example3.png)
-
-### SVGRender Image
-
-![example](test/svgExample.png)
-
-![example2](test/svgExample2.png)
-
-![example3](test/svgExample3.png)
-
-### HTML/ HTMLRender Image
-
-![example](test/htmlExample.png)
-
-![example2](test/htmlExample2.png)
-
-![example3](test/htmlExample3.png)
-
-### Windows Terminal
+## Example Output
 
 <img src="readme-assets/terminal.png" alt="winterm" width="450">
 
-## Choosing ansiToSVG, ansiToRender, ansiToSVGRender, ansiToHTML or ansiToHTMLRender
+## Documentation
 
-### ansiToSVG
+A high-level overview of how the documentation is organized organized will help you know
+where to look for certain things:
 
-This is better for the vast majority of cases as the image sizes are smaller
-for reasonably simple ANSI sequences. The image size scales proportionally
-with the length of the ANSI sequence. A large number of applications tend to
-opt for shorter sequences for output making `ansiToSVG` the better option.
-`ansiToSVG` also handles emoji as well as the OS does. For instance, on Windows
-10 one can expect full colour emoji. Image sizes can get out of hand for some
-cases such as catimage output as those tend to be very long ANSI sequences.
-
-### ansiToRender
-
-The image size does not scale to the length of the ANSI sequence but does scale
-to the number of lines of terminal output. This is ideal for output of complex
-ANSI sequences that would be huge if `ansiToSVG` were used. However, emojis are
-in black and white and show quite poorly on coloured backgrounds.
-
-### ansiToSVGRender
-
-Takes the advantages that `ansiToRender` has whilst keeping colour emojis, Yay!
-This uses pyppeteer to fire up a headless browser which opens the SVG and takes
-a screenshot.
-
-### ansiToHTML
-
-Has the same advantages and disadvantages of `ansiToSVG` though this is not
-suitable to be included in a GitHub readme
-
-### ansiToHTMLRender
-
-Has the same advantages and disadvantages of `ansiToSVGRender`
-
-## Docs
-
-See the [Docs](/DOCS/) for more information.
+- [Tutorials](/documentation/tutorials) take you by the hand through a series of steps to get
+  started using the software. Start here if you’re new.
+- The [Technical Reference](/documentation/reference) documents APIs and other aspects of the
+  machinery. This documentation describes how to use the classes and functions at a lower level
+  and assume that you have a good high-level understanding of the software.
+<!--
+- The [Help](/documentation/help) guide provides a starting point and outlines common issues that you
+  may have.
+-->
 
 ## Install With PIP
 

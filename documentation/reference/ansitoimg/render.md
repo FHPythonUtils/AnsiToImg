@@ -1,10 +1,10 @@
-# render
+# Render
 
-> Auto-generated documentation for [ansitoimg.render](../../ansitoimg/render.py) module.
+> Auto-generated documentation for [ansitoimg.render](../../../ansitoimg/render.py) module.
 
 Render the ANSI
 
-- [Ansitoimg](../README.md#ansitoimg-index) / [Modules](../README.md#ansitoimg-modules) / [ansitoimg](index.md#ansitoimg) / render
+- [Ansitoimg](../README.md#ansitoimg-index) / [Modules](../MODULES.md#ansitoimg-modules) / [Ansitoimg](index.md#ansitoimg) / Render
     - [ansiToHTML](#ansitohtml)
     - [ansiToHTMLRender](#ansitohtmlrender)
     - [ansiToRender](#ansitorender)
@@ -17,7 +17,7 @@ Render the ANSI
 
 ## ansiToHTML
 
-[[find in source code]](../../ansitoimg/render.py#L178)
+[[find in source code]](../../../ansitoimg/render.py#L178)
 
 ```python
 def ansiToHTML(
@@ -39,7 +39,7 @@ Convert an ANSI stream to a html file.
 
 ## ansiToHTMLRender
 
-[[find in source code]](../../ansitoimg/render.py#L232)
+[[find in source code]](../../../ansitoimg/render.py#L232)
 
 ```python
 def ansiToHTMLRender(
@@ -63,7 +63,7 @@ of a terminal now)
 
 ## ansiToRender
 
-[[find in source code]](../../ansitoimg/render.py#L84)
+[[find in source code]](../../../ansitoimg/render.py#L84)
 
 ```python
 def ansiToRender(
@@ -85,7 +85,7 @@ Convert an ANSI stream to a Render image with pillow.
 
 ## ansiToSVG
 
-[[find in source code]](../../ansitoimg/render.py#L24)
+[[find in source code]](../../../ansitoimg/render.py#L24)
 
 ```python
 def ansiToSVG(
@@ -107,7 +107,7 @@ Convert an ANSI stream to SVG.
 
 ## ansiToSVGRender
 
-[[find in source code]](../../ansitoimg/render.py#L147)
+[[find in source code]](../../../ansitoimg/render.py#L147)
 
 ```python
 def ansiToSVGRender(
