@@ -21,7 +21,7 @@ that it can be rendered
 class AnsiBlock():
     def __init__(
         text: str,
-        position: tuple[(int, int)],
+        position: tuple[int, int],
         bgColour: str | None = None,
         fgColour: str | None = None,
         bold: bool = False,

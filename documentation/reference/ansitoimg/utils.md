@@ -20,7 +20,7 @@ Utility functions to get the length of a char and to get the hex colour from an 
 ```python
 def ansi16ToRGB(
     ansi16: str,
-    ansi16Map: dict[(int, str)] | None = None,
+    ansi16Map: dict[int, str] | None = None,
     theme: str | None = None,
 ):
 ```
@@ -81,7 +81,7 @@ Find the length of a string and take into account that emojis are double	width.
 [[find in source code]](../../../ansitoimg/utils.py#L13)
 
 ```python
-def getTheme(theme: str | None) -> dict[(str, str)]:
+def getTheme(theme: str | None) -> dict[str, str]:
 ```
 
 Get the theme yaml.
@@ -91,7 +91,7 @@ Get the theme yaml.
 [[find in source code]](../../../ansitoimg/utils.py#L22)
 
 ```python
-def rgbToHex(rgb: tuple[(int, int, int)]) -> str:
+def rgbToHex(rgb: tuple[int, int, int]) -> str:
 ```
 
 Convert rgb tuple to hex.
