@@ -33,8 +33,11 @@ ansitoimg = 'ansitoimg:cli'
 
 [tool.poetry.dev-dependencies]
 catimage = "^2022"
-pytest = "^6.2.5"
+pytest = "^7.1.1"
 imgcompare = "^2.0.1"
+pylint = "^2.13.5"
+handsdown = "^1.1.0"
+
 [tool.black]
 line-length = 100
 target-version = ["py37"]
