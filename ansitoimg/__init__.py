@@ -21,7 +21,7 @@ stdout.reconfigure(encoding="utf-8")
 PLUGIN_HELP = "Plugin to use. One of svg, render, svgrender, html, htmlrender, default=svg"
 
 
-def cli():
+def cli():  # pragma: no cover
 	"""Cli entry point."""
 	parser = argparse.ArgumentParser(description=__doc__)
 	parser.add_argument(
