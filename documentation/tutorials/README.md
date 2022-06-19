@@ -18,7 +18,7 @@
 
 ## Overview
 
-Here is an fancyHelloWorld of some code and the images it produces:
+Here is some code and the images it produces:
 
 Functions accept the following arguments:
 

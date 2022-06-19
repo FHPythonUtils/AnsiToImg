@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "ansitoimg"
-version = "2022"
+version = "2022.1"
 license = "mit"
 description = "Convert an ANSI string to an image. Great for adding terminal output into a readme."
 authors = ["FredHappyface"]
@@ -21,11 +21,9 @@ readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.7"
-svgwrite = "<2,>=1.4.1"
 PyYAML = "<7,>=6.0"
-Pillow = "<10,>=9.0.0"
 pyppeteer = "<2,>=1.0.2"
-MarkupSafe = "<3,>=2.0.1"
+rich = "<13,>=12.4.4"
 
 
 [tool.poetry.scripts]
@@ -73,5 +71,4 @@ enable = ["F", "E", "W", "R", "C"]
 disable = [
 	"pointless-string-statement",
 	"superfluous-parens",
-	"bad-continuation"
 ]

@@ -13,11 +13,11 @@ Render the ANSI
 
 #### Attributes
 
-- `TEXT_HEIGHT` - monospaced chars have a constant height and width: `15`
+- `TEXT_HEIGHT` - monospaced chars have a constant height and width: `21`
 
 ## ansiToHTML
 
-[[find in source code]](../../../ansitoimg/render.py#L178)
+[[find in source code]](../../../ansitoimg/render.py#L121)
 
 ```python
 def ansiToHTML(
@@ -39,7 +39,7 @@ Convert an ANSI stream to a html file.
 
 ## ansiToHTMLRender
 
-[[find in source code]](../../../ansitoimg/render.py#L232)
+[[find in source code]](../../../ansitoimg/render.py#L134)
 
 ```python
 def ansiToHTMLRender(
@@ -63,7 +63,7 @@ of a terminal now)
 
 ## ansiToRender
 
-[[find in source code]](../../../ansitoimg/render.py#L84)
+[[find in source code]](../../../ansitoimg/render.py#L80)
 
 ```python
 def ansiToRender(
@@ -74,18 +74,9 @@ def ansiToRender(
 ):
 ```
 
-Convert an ANSI stream to a Render image with pillow.
-
-#### Arguments
-
-- `ansiText` *str* - ANSI text to convert
-- `fileName` *str* - image file path
-- `theme` *str, optional* - file path to base24 theme to use. Defaults to "onedark.yml".
-- `wide` *bool, optional* - use a 'wide' terminal 89 vs 49 chars
-
 ## ansiToSVG
 
-[[find in source code]](../../../ansitoimg/render.py#L24)
+[[find in source code]](../../../ansitoimg/render.py#L65)
 
 ```python
 def ansiToSVG(
@@ -107,7 +98,7 @@ Convert an ANSI stream to SVG.
 
 ## ansiToSVGRender
 
-[[find in source code]](../../../ansitoimg/render.py#L147)
+[[find in source code]](../../../ansitoimg/render.py#L84)
 
 ```python
 def ansiToSVGRender(

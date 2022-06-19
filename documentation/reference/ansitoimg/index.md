@@ -8,9 +8,7 @@ Convert an ANSI string to an image. Great for adding terminal output into a read
     - [cli](#cli)
     - Modules
         - [Module](module.md#module)
-        - [Ansirep](ansirep.md#ansirep)
         - [Render](render.md#render)
-        - [Utils](utils.md#utils)
 
 ## cli
 

@@ -3,6 +3,10 @@
 All major and minor version changes will be documented in this file. Details of
 patch-level version changes can be found in [commit messages](../../commits/master).
 
+## 2022.1 - 2022/06/19
+
+- Use rich to do the heavy lifting (see https://github.com/FHPythonUtils/AnsiToImg/issues/3)
+
 ## 2022 - 2022/01/24
 
 - Bump pillow version (CVE-2022-22815, CVE-2022-22816, CVE-2022-22817)
