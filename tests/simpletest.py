@@ -28,6 +28,7 @@ fancyHelloWorld = (
 )
 fredHappyfaceHD = Path(f"{THISDIR}/data/fredHappyfaceHD.txt").read_text(encoding="utf-8")
 metprintOutput = Path(f"{THISDIR}/data/metprintOutput.txt").read_text(encoding="utf-8")
+cat = Path(f"{THISDIR}/data/cat.txt").read_text(encoding="utf-8")
 sys.stdout = oldStdout
 
 # Print
@@ -37,28 +38,35 @@ print(fredHappyfaceHD)
 print()
 print(metprintOutput)
 print()
+print(cat)
+print()
 
 # To SVG
 ansiToSVG(fancyHelloWorld, f"{THISDIR}/data/fancyHelloWorld.svg", wide=False)
 ansiToSVG(fredHappyfaceHD, f"{THISDIR}/data/fredHappyfaceHD.svg")
 ansiToSVG(metprintOutput, f"{THISDIR}/data/metprintOutput.svg", wide=False)
+ansiToSVG(cat, f"{THISDIR}/data/cat.svg", width=100)
 
 # To Render
 ansiToRender(fancyHelloWorld, f"{THISDIR}/data/fancyHelloWorld.png", wide=False)
 ansiToRender(fredHappyfaceHD, f"{THISDIR}/data/fredHappyfaceHD.png")
 ansiToRender(metprintOutput, f"{THISDIR}/data/metprintOutput.png", wide=False)
+ansiToRender(cat, f"{THISDIR}/data/cat.png", width=100)
 
 # To SVGRender
 ansiToSVGRender(fancyHelloWorld, f"{THISDIR}/data/fancyHelloWorld.svg.png", wide=False)
 ansiToSVGRender(fredHappyfaceHD, f"{THISDIR}/data/fredHappyfaceHD.svg.png")
 ansiToSVGRender(metprintOutput, f"{THISDIR}/data/metprintOutput.svg.png", wide=False)
+ansiToSVGRender(cat, f"{THISDIR}/data/cat.svg.png", width=100)
 
 # To HTML
 ansiToHTML(fancyHelloWorld, f"{THISDIR}/data/fancyHelloWorld.html", wide=False)
 ansiToHTML(fredHappyfaceHD, f"{THISDIR}/data/fredHappyfaceHD.html")
 ansiToHTML(metprintOutput, f"{THISDIR}/data/metprintOutput.html", wide=False)
+ansiToHTML(cat, f"{THISDIR}/data/cat.html", width=100)
 
 # To HTMLRender
 ansiToHTMLRender(fancyHelloWorld, f"{THISDIR}/data/fancyHelloWorld.html.png", wide=False)
 ansiToHTMLRender(fredHappyfaceHD, f"{THISDIR}/data/fredHappyfaceHD.html.png")
-ansiToHTMLRender(metprintOutput, f"{THISDIR}/data/metprintOutput.html.png", wide=False)
+ansiToHTMLRender(metprintOutput, f"{THISDIR}/data/cat.html.png", wide=False)
+ansiToHTMLRender(cat, f"{THISDIR}/data/cat.html.png", width=100)

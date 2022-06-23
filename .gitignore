@@ -140,3 +140,7 @@ dmypy.json
 
 # pytype static type analyzer
 .pytype/
+
+# editors
+.vscode
+.idea

@@ -21,11 +21,11 @@ TEXT_HEIGHT = 21
 TEXT_WIDTH = 12
 
 
-def _doRichRender(ansiText: str, wide: bool = True) -> Console:
-	console = Console(width=89 if wide else 49, record=True, file=StringIO())
+def _doRichRender(ansiText: str, wide: bool = True, width: int = 49) -> Console:
+	console = Console(width=round(width*1.82) if wide else width, record=True, file=StringIO())
 	richText = text.Text.from_ansi(ansiText)
 	console.print(richText)
-	console.height = len(richText.wrap(console, width=89 if wide else 49))
+	console.height = len(richText.wrap(console, width=round(width*1.82) if wide else width))
 	return console
 
 
@@ -62,7 +62,7 @@ def _hexToRGB(colourCode: str) -> tuple[int, int, int]:
 	return tuple(int(colourCode[i : i + 2], base=16) for i in (0, 2, 4))
 
 
-def ansiToSVG(ansiText: str, fileName: str, theme: str | None = None, wide: bool = True):
+def ansiToSVG(ansiText: str, fileName: str, theme: str | None = None, wide: bool = True, width: int = 49):
 	"""Convert an ANSI stream to SVG.
 
 	Args:
@@ -70,14 +70,15 @@ def ansiToSVG(ansiText: str, fileName: str, theme: str | None = None, wide: bool
 		fileName (str): file path to SVG to write
 		theme (str, optional): file path to base24 theme to use. Defaults to "onedark.yml".
 		wide (bool, optional): use a 'wide' terminal 89 vs 49 chars
+		width (int, optional): set the width for the image
 	"""
-	console = _doRichRender(ansiText, wide)
+	console = _doRichRender(ansiText, wide, width)
 	console.save_svg(
 		fileName, title="AnsiToImg (courtesy of Rich)", theme=_doRichTerminalTheme(theme)
 	)
 
 
-def ansiToRender(ansiText: str, fileName: str, theme: str | None = None, wide: bool = True):
+def ansiToRender(ansiText: str, fileName: str, theme: str | None = None, wide: bool = True, width: int = 49):
 	"""Convert an ANSI stream to a Render image using pyppeteer to take a
 	screenshot of a generated SVG (hacky but we can get coloured emoji now)
 
@@ -86,11 +87,12 @@ def ansiToRender(ansiText: str, fileName: str, theme: str | None = None, wide: b
 		fileName (str): image file path
 		theme (str, optional): file path to base24 theme to use. Defaults to "onedark.yml".
 		wide (bool, optional): use a 'wide' terminal 89 vs 49 chars
+		width (int, optional): set the width for the image
 	"""
-	return ansiToSVGRender(ansiText, fileName, theme, wide)
+	return ansiToSVGRender(ansiText, fileName, theme, wide, width)
 
 
-def ansiToSVGRender(ansiText: str, fileName: str, theme: str | None = None, wide: bool = True):
+def ansiToSVGRender(ansiText: str, fileName: str, theme: str | None = None, wide: bool = True, width: int = 49):
 	"""Convert an ANSI stream to a Render image using pyppeteer to take a
 	screenshot of a generated SVG (hacky but we can get coloured emoji now)
 
@@ -99,10 +101,11 @@ def ansiToSVGRender(ansiText: str, fileName: str, theme: str | None = None, wide
 		fileName (str): image file path
 		theme (str, optional): file path to base24 theme to use. Defaults to "onedark.yml".
 		wide (bool, optional): use a 'wide' terminal 89 vs 49 chars
+		width (int, optional): set the width for the image
 	"""
-	console = _doRichRender(ansiText, wide)
+	console = _doRichRender(ansiText, wide, width)
 	tempFileName = f"{THISDIR}/temp.svg"
-	ansiToSVG(ansiText, tempFileName, theme, wide)
+	ansiToSVG(ansiText, tempFileName, theme, wide, width)
 	match = re.search(
 		r'^<svg.*?viewBox="[\d.]+ [\d.]+ ([\d.]+) ([\d.]+)',
 		Path(tempFileName).read_text(encoding="utf-8"),
@@ -127,7 +130,7 @@ async def _doGrabWebpage(url: str, resolution: tuple[int, int], fileName: str):
 	await browser.close()
 
 
-def ansiToHTML(ansiText: str, fileName: str, theme: str | None = None, wide: bool = True):
+def ansiToHTML(ansiText: str, fileName: str, theme: str | None = None, wide: bool = True, width: int = 49):
 	"""Convert an ANSI stream to a html file.
 
 	Args:
@@ -135,12 +138,14 @@ def ansiToHTML(ansiText: str, fileName: str, theme: str | None = None, wide: boo
 		fileName (str): image file path
 		theme (str, optional): file path to base24 theme to use. Defaults to "onedark.yml".
 		wide (bool, optional): use a 'wide' terminal 89 vs 49 chars
+		width (int, optional): set the width for the image
+		height (int, optional): set the height for the image
 	"""
-	console = _doRichRender(ansiText, wide)
+	console = _doRichRender(ansiText, wide, width)
 	console.save_html(fileName, theme=_doRichTerminalTheme(theme))
 
 
-def ansiToHTMLRender(ansiText: str, fileName: str, theme: str | None = None, wide: bool = True):
+def ansiToHTMLRender(ansiText: str, fileName: str, theme: str | None = None, wide: bool = True, width: int = 49):
 	"""Convert an ANSI stream to a Render image using pyppeteer to take a
 	screenshot of a generated html (hacky but we can output more like that
 	of a terminal now)
@@ -150,9 +155,10 @@ def ansiToHTMLRender(ansiText: str, fileName: str, theme: str | None = None, wid
 		fileName (str): image file path
 		theme (str, optional): file path to base24 theme to use. Defaults to "onedark.yml".
 		wide (bool, optional): use a 'wide' terminal 89 vs 49 chars
+		width (int, optional): set the width for the image
 	"""
-	console = _doRichRender(ansiText, wide)
-	ansiToHTML(ansiText, f"{THISDIR}/temp.html", theme, wide)
+	console = _doRichRender(ansiText, wide, width)
+	ansiToHTML(ansiText, f"{THISDIR}/temp.html", theme, wide, width)
 	size = (console.width * TEXT_WIDTH, (console.height + 1) * TEXT_HEIGHT)
 	asyncio.run(_doGrabWebpage(f"file:///{THISDIR}/temp.html", size, fileName))
 	try:
