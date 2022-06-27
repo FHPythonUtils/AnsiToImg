@@ -14,18 +14,18 @@ fredHappyfaceHD = Path(f"{THISDIR}/data/fredHappyfaceHD.txt").read_text(encoding
 
 
 def test_html_render():
-	output = f"{THISDIR}/data/fredHappyfaceHD.html.png"
-	ansiToHTMLRender(fredHappyfaceHD, output)
-	imgcompare.is_equal(output, f"{THISDIR}/data/fredHappyfaceHD.html_expected.png", tolerance=0.2)
+    output = f"{THISDIR}/data/fredHappyfaceHD.html.png"
+    ansiToHTMLRender(fredHappyfaceHD, output)
+    imgcompare.is_equal(output, f"{THISDIR}/data/fredHappyfaceHD.html_expected.png", tolerance=0.2)
 
 
 def test_render():
-	output = f"{THISDIR}/data/fredHappyfaceHD.png"
-	ansiToRender(fredHappyfaceHD, output)
-	imgcompare.is_equal(output, f"{THISDIR}/data/fredHappyfaceHD_expected.png", tolerance=0.2)
+    output = f"{THISDIR}/data/fredHappyfaceHD.png"
+    ansiToRender(fredHappyfaceHD, output)
+    imgcompare.is_equal(output, f"{THISDIR}/data/fredHappyfaceHD_expected.png", tolerance=0.2)
 
 
 def test_svg_render():
-	output = f"{THISDIR}/data/fredHappyfaceHD.svg.png"
-	ansiToSVGRender(fredHappyfaceHD, output)
-	imgcompare.is_equal(output, f"{THISDIR}/data/fredHappyfaceHD.svg_expected.png", tolerance=0.2)
+    output = f"{THISDIR}/data/fredHappyfaceHD.svg.png"
+    ansiToSVGRender(fredHappyfaceHD, output)
+    imgcompare.is_equal(output, f"{THISDIR}/data/fredHappyfaceHD.svg_expected.png", tolerance=0.2)
