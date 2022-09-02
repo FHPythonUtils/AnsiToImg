@@ -5,7 +5,7 @@ patch-level version changes can be found in [commit messages](../../commits/mast
 
 ## 2022.2 - 2022/069/02
 
-- Add custom width by passing `width` to render functions
+- Add custom width by passing `width` to render functions. Thanks https://github.com/punctuations
   	(https://github.com/FHPythonUtils/AnsiToImg/issues/4)
 
 	eg.
