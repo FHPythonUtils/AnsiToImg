@@ -1,10 +1,9 @@
-# Ansitoimg Modules
+# Ansitoimg Index
 
-> Auto-generated documentation modules index.
+> Auto-generated documentation index.
 
-Full list of [Ansitoimg](README.md#ansitoimg-index) project modules.
+A full list of `Ansitoimg` project modules.
 
-- [Ansitoimg Index](README.md#ansitoimg-index)
 - [Ansitoimg](ansitoimg/index.md#ansitoimg)
     - [Module](ansitoimg/module.md#module)
     - [Render](ansitoimg/render.md#render)

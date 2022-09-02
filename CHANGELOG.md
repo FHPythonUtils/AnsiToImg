@@ -3,6 +3,17 @@
 All major and minor version changes will be documented in this file. Details of
 patch-level version changes can be found in [commit messages](../../commits/master).
 
+## 2022.2 - 2022/069/02
+
+- Add custom width by passing `width` to render functions
+  	(https://github.com/FHPythonUtils/AnsiToImg/issues/4)
+
+	eg.
+
+	```py
+	ansiToSVG(cat, f"{THISDIR}/data/cat.svg", width=100)
+	```
+
 ## 2022.1 - 2022/06/19
 
 - Use rich to do the heavy lifting (see https://github.com/FHPythonUtils/AnsiToImg/issues/3)
