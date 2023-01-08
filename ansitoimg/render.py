@@ -2,13 +2,13 @@
 """
 from __future__ import annotations
 
-import asyncio
 import re
 from io import StringIO
 from os import remove
 from pathlib import Path
 
-from pyppeteer import launch
+from install_playwright import install
+from playwright.sync_api import sync_playwright
 from rich import text
 from rich.console import Console
 from rich.terminal_theme import TerminalTheme
@@ -121,21 +121,23 @@ def ansiToSVGRender(
 	size = (console.width * TEXT_WIDTH, (console.height + 2) * TEXT_HEIGHT)
 	if match:
 		size = (int(float(match.group(1))), int(float(match.group(2))))
-	asyncio.run(_doGrabWebpage(f"file:///{tempFileName}", size, fileName))
+	_doGrabWebpage(f"file:///{tempFileName}", size, fileName)
 	try:
 		remove(tempFileName)
 	except PermissionError:
 		print("Unable to clean up, manually remove temp.svg from project root or ignore")
 
 
-async def _doGrabWebpage(url: str, resolution: tuple[int, int], fileName: str):
+def _doGrabWebpage(url: str, resolution: tuple[int, int], fileName: str):
 	"""Go to a URL, with a browser with a set resolution and take a screenshot."""
-	browser = await launch(options={"args": ["--no-sandbox", "--disable-web-security"]})
-	page = await browser.newPage()
-	await page.setViewport({"width": resolution[0], "height": resolution[1]})  # type: ignore
-	await page.goto(url)  # type: ignore
-	await page.screenshot({"path": fileName, "omitBackground": True})  # type: ignore
-	await browser.close()
+	with sync_playwright() as p:
+		install(p.chromium)
+		browser = p.chromium.launch()
+		page = browser.new_page()
+		page.set_viewport_size({"width": resolution[0], "height": resolution[1]})  # type: ignore
+		page.goto(url)  # type: ignore
+		page.screenshot(path=fileName, omit_background=True)  # type: ignore
+		browser.close()
 
 
 def ansiToHTML(
@@ -171,7 +173,7 @@ def ansiToHTMLRender(
 	console = _doRichRender(ansiText, wide, width)
 	ansiToHTML(ansiText, f"{THISDIR}/temp.html", theme, wide, width)
 	size = (console.width * TEXT_WIDTH, (console.height + 1) * TEXT_HEIGHT)
-	asyncio.run(_doGrabWebpage(f"file:///{THISDIR}/temp.html", size, fileName))
+	_doGrabWebpage(f"file:///{THISDIR}/temp.html", size, fileName)
 	try:
 		remove(f"{THISDIR}/temp.html")
 	except PermissionError:

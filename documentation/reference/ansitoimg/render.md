@@ -20,7 +20,7 @@ Render
 
 ## ansiToHTML
 
-[Show source in render.py:141](../../../ansitoimg/render.py#L141)
+[Show source in render.py:143](../../../ansitoimg/render.py#L143)
 
 Convert an ANSI stream to a html file.
 
@@ -49,7 +49,7 @@ def ansiToHTML(
 
 ## ansiToHTMLRender
 
-[Show source in render.py:157](../../../ansitoimg/render.py#L157)
+[Show source in render.py:159](../../../ansitoimg/render.py#L159)
 
 Convert an ANSI stream to a Render image using pyppeteer to take a
 screenshot of a generated html (hacky but we can output more like that
