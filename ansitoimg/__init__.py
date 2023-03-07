@@ -14,6 +14,7 @@ from ansitoimg.render import (
 	ansiToSVG,
 	ansiToSVGRender,
 )
+from ansitoimg.utils import TEXT_HEIGHT, TEXT_WIDTH, WIDTH_WIDE, _resolveWidth
 
 stdout.reconfigure(encoding="utf-8")
 
@@ -51,10 +52,15 @@ def cli():  # pragma: no cover
 		action="store_true",
 		help="Use a 'wide' virtual terminal (89 chars vs 49)",
 	)
+	parser.add_argument(
+		"--width",
+		default=49,
+		help="Explicitly set the width in chars",
+	)
 
 	args = parser.parse_args()
-
 	ansi = args.input.read()
+	width = _resolveWidth(args.wide, args.width)
 
 	# Plugin
 	pluginMap = {
@@ -65,9 +71,9 @@ def cli():  # pragma: no cover
 		"htmlrender": ansiToHTMLRender,
 	}
 	if args.plugin is None:
-		ansiToSVG(ansi, args.output, args.theme, args.wide)
+		ansiToSVG(ansi, args.output, args.theme, width=width)
 	elif args.plugin in pluginMap:
-		pluginMap[args.plugin](ansi, args.output, args.theme, args.wide)
+		pluginMap[args.plugin](ansi, args.output, args.theme, width=width)
 	else:
 		print(PLUGIN_HELP)
 		sysexit(1)

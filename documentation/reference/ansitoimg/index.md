@@ -11,7 +11,7 @@ Ansitoimg
 
 ## cli
 
-[Show source in __init__.py:24](../../../ansitoimg/__init__.py#L24)
+[Show source in __init__.py:25](../../../ansitoimg/__init__.py#L25)
 
 Cli entry point.
 
@@ -28,3 +28,4 @@ def cli():
 
 - [Module](./module.md)
 - [Render](./render.md)
+- [Utils](./utils.md)

@@ -11,6 +11,13 @@ sys.path.insert(0, str(Path(THISDIR).parent))
 from ansitoimg.render import ansiToHTMLRender, ansiToRender, ansiToSVGRender
 
 fredHappyfaceHD = Path(f"{THISDIR}/data/fredHappyfaceHD.txt").read_text(encoding="utf-8")
+fancyHelloWorld = Path(f"{THISDIR}/data/fancyHelloWorld.txt").read_text(encoding="utf-8")
+
+
+def util_svg_render(slug: str, file=fredHappyfaceHD, **kwargs):
+	output = f"{THISDIR}/data/{slug}.svg.png"
+	ansiToSVGRender(file, output, **kwargs)
+	imgcompare.is_equal(output, f"{THISDIR}/data/{slug}.svg_expected.png", tolerance=0.2)
 
 
 def test_html_render():
@@ -26,6 +33,16 @@ def test_render():
 
 
 def test_svg_render():
-	output = f"{THISDIR}/data/fredHappyfaceHD.svg.png"
-	ansiToSVGRender(fredHappyfaceHD, output)
-	imgcompare.is_equal(output, f"{THISDIR}/data/fredHappyfaceHD.svg_expected.png", tolerance=0.2)
+	util_svg_render("fredHappyfaceHD")
+
+
+def test_svg_hw20():
+	util_svg_render("hw20", fancyHelloWorld, width=20)
+
+
+def test_svg_hwT20():
+	util_svg_render("hwT20", fancyHelloWorld, wide=True, width=20)
+
+
+def test_svg_hw40test():
+	util_svg_render("hw40test", fancyHelloWorld, width=40, title="test")

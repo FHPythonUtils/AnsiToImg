@@ -7,3 +7,4 @@ A full list of `Ansitoimg` project modules.
 - [Ansitoimg](ansitoimg/index.md#ansitoimg)
     - [Module](ansitoimg/module.md#module)
     - [Render](ansitoimg/render.md#render)
+    - [Utils](ansitoimg/utils.md#utils)

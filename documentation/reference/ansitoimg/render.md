@@ -6,11 +6,6 @@ Render
 
 > Auto-generated documentation for [ansitoimg.render](../../../ansitoimg/render.py) module.
 
-#### Attributes
-
-- `TEXT_HEIGHT` - monospaced chars have a constant height and width: `21`
-
-
 - [Render](#render)
   - [ansiToHTML](#ansitohtml)
   - [ansiToHTMLRender](#ansitohtmlrender)
@@ -20,7 +15,7 @@ Render
 
 ## ansiToHTML
 
-[Show source in render.py:143](../../../ansitoimg/render.py#L143)
+[Show source in render.py:155](../../../ansitoimg/render.py#L155)
 
 Convert an ANSI stream to a html file.
 
@@ -31,6 +26,7 @@ Convert an ANSI stream to a html file.
 - `theme` *str, optional* - file path to base24 theme to use. Defaults to "onedark.yml".
 - `wide` *bool, optional* - use a 'wide' terminal 89 vs 49 chars
 - `width` *int, optional* - set the width for the image
+- `title` *str, optional* - set the title. Ingored
 
 #### Signature
 
@@ -40,16 +36,22 @@ def ansiToHTML(
     fileName: str,
     theme: str | None = None,
     wide: bool = True,
-    width: int = 49,
+    width: int = WIDTH_DEFAULT,
+    title: str = TITLE,
 ):
     ...
 ```
+
+#### See also
+
+- [TITLE](./utils.md#title)
+- [WIDTH_DEFAULT](./utils.md#width_default)
 
 
 
 ## ansiToHTMLRender
 
-[Show source in render.py:159](../../../ansitoimg/render.py#L159)
+[Show source in render.py:177](../../../ansitoimg/render.py#L177)
 
 Convert an ANSI stream to a Render image using pyppeteer to take a
 screenshot of a generated html (hacky but we can output more like that
@@ -62,6 +64,7 @@ of a terminal now)
 - `theme` *str, optional* - file path to base24 theme to use. Defaults to "onedark.yml".
 - `wide` *bool, optional* - use a 'wide' terminal 89 vs 49 chars
 - `width` *int, optional* - set the width for the image
+- `title` *str, optional* - set the title. Ingored
 
 #### Signature
 
@@ -71,10 +74,14 @@ def ansiToHTMLRender(
     fileName: str,
     theme: str | None = None,
     wide: bool = True,
-    width: int = 49,
+    width: int = WIDTH_DEFAULT,
 ):
     ...
 ```
+
+#### See also
+
+- [WIDTH_DEFAULT](./utils.md#width_default)
 
 
 
@@ -92,6 +99,7 @@ screenshot of a generated SVG (hacky but we can get coloured emoji now)
 - `theme` *str, optional* - file path to base24 theme to use. Defaults to "onedark.yml".
 - `wide` *bool, optional* - use a 'wide' terminal 89 vs 49 chars
 - `width` *int, optional* - set the width for the image
+- `title` *str, optional* - set the title. Defaults to "AnsiToImg (courtesy of Rich)"
 
 #### Signature
 
@@ -101,16 +109,22 @@ def ansiToRender(
     fileName: str,
     theme: str | None = None,
     wide: bool = True,
-    width: int = 49,
+    width: int = WIDTH_DEFAULT,
+    title: str = TITLE,
 ):
     ...
 ```
+
+#### See also
+
+- [TITLE](./utils.md#title)
+- [WIDTH_DEFAULT](./utils.md#width_default)
 
 
 
 ## ansiToSVG
 
-[Show source in render.py:67](../../../ansitoimg/render.py#L67)
+[Show source in render.py:63](../../../ansitoimg/render.py#L63)
 
 Convert an ANSI stream to SVG.
 
@@ -121,6 +135,7 @@ Convert an ANSI stream to SVG.
 - `theme` *str, optional* - file path to base24 theme to use. Defaults to "onedark.yml".
 - `wide` *bool, optional* - use a 'wide' terminal 89 vs 49 chars
 - `width` *int, optional* - set the width for the image
+- `title` *str, optional* - set the title. Defaults to "AnsiToImg (courtesy of Rich)"
 
 #### Signature
 
@@ -130,16 +145,22 @@ def ansiToSVG(
     fileName: str,
     theme: str | None = None,
     wide: bool = True,
-    width: int = 49,
+    width: int = WIDTH_DEFAULT,
+    title: str = TITLE,
 ):
     ...
 ```
+
+#### See also
+
+- [TITLE](./utils.md#title)
+- [WIDTH_DEFAULT](./utils.md#width_default)
 
 
 
 ## ansiToSVGRender
 
-[Show source in render.py:101](../../../ansitoimg/render.py#L101)
+[Show source in render.py:107](../../../ansitoimg/render.py#L107)
 
 Convert an ANSI stream to a Render image using pyppeteer to take a
 screenshot of a generated SVG (hacky but we can get coloured emoji now)
@@ -151,6 +172,7 @@ screenshot of a generated SVG (hacky but we can get coloured emoji now)
 - `theme` *str, optional* - file path to base24 theme to use. Defaults to "onedark.yml".
 - `wide` *bool, optional* - use a 'wide' terminal 89 vs 49 chars
 - `width` *int, optional* - set the width for the image
+- `title` *str, optional* - set the title. Defaults to "AnsiToImg (courtesy of Rich)"
 
 #### Signature
 
@@ -160,9 +182,15 @@ def ansiToSVGRender(
     fileName: str,
     theme: str | None = None,
     wide: bool = True,
-    width: int = 49,
+    width: int = WIDTH_DEFAULT,
+    title: str = TITLE,
 ):
     ...
 ```
+
+#### See also
+
+- [TITLE](./utils.md#title)
+- [WIDTH_DEFAULT](./utils.md#width_default)
 
 

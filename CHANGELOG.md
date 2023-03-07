@@ -3,6 +3,25 @@
 All major and minor version changes will be documented in this file. Details of
 patch-level version changes can be found in [commit messages](../../commits/master).
 
+## 2023.1 - 2023/03/07
+
+- Implement feature: choose custom title text enhancement
+  (https://github.com/FHPythonUtils/AnsiToImg/issues/7)
+- Implement feature: custom width from the CLI enhancement
+  (https://github.com/FHPythonUtils/AnsiToImg/issues/6)
+
+Note that the `width` param overrides `wide` eg. in the case
+`ansiToSVGRender(fancyHelloWorld, f"{THISDIR}/data/hwT20.svg.png", wide=True, width=20)`
+the width of the output is `20` chars
+
+Other examples:
+
+```python
+ansiToSVGRender(fancyHelloWorld, f"{THISDIR}/data/hw20.svg.png", width=20)
+ansiToSVGRender(fancyHelloWorld, f"{THISDIR}/data/hwT20.svg.png", wide=True, width=20)
+ansiToSVGRender(fancyHelloWorld, f"{THISDIR}/data/hw40test.svg.png", width=40, title="test")
+```
+
 ## 2023 - 2023/01/08
 
 - Add tox config
