@@ -61,7 +61,6 @@ ansiToHTML(cat, f"{THISDIR}/data/cat.html", width=100)
 # To HTMLRender
 ansiToHTMLRender(fancyHelloWorld, f"{THISDIR}/data/fancyHelloWorld.html.png", wide=False)
 ansiToHTMLRender(fredHappyfaceHD, f"{THISDIR}/data/fredHappyfaceHD.html.png")
-ansiToHTMLRender(metprintOutput, f"{THISDIR}/data/metprintOutput.html.png", wide=False)
 ansiToHTMLRender(cat, f"{THISDIR}/data/cat.html.png", width=100)
 
 # To SVGRender 06/03/2023
