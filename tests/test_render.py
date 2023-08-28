@@ -8,11 +8,18 @@ import imgcompare
 
 THISDIR = str(Path(__file__).resolve().parent)
 sys.path.insert(0, str(Path(THISDIR).parent))
-from ansitoimg.render import ansiToHTMLRender, ansiToRender, ansiToSVGRender
+from ansitoimg.render import ansiToHTMLRender, ansiToRender, ansiToSVGRender, ansiToHTML
 
 fredHappyfaceHD = Path(f"{THISDIR}/data/fredHappyfaceHD.txt").read_text(encoding="utf-8")
 fancyHelloWorld = Path(f"{THISDIR}/data/fancyHelloWorld.txt").read_text(encoding="utf-8")
 
+
+
+def test_html():
+	output = f"{THISDIR}/data/fredHappyfaceHD.html"
+	expected = f"{THISDIR}/data/fredHappyfaceHD_expected.html"
+	ansiToHTML(fredHappyfaceHD, output)
+	assert Path(output).read_text(encoding="utf-8") == Path(expected).read_text(encoding="utf-8")
 
 def util_svg_render(slug: str, file=fredHappyfaceHD, **kwargs):
 	output = f"{THISDIR}/data/{slug}.svg.png"

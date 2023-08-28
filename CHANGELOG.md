@@ -3,6 +3,11 @@
 All major and minor version changes will be documented in this file. Details of
 patch-level version changes can be found in [commit messages](../../commits/master).
 
+## 2023.2 - 2023/08/28
+
+- Use `tempfile` to manage temporary files
+- Update tests
+
 ## 2023.1 - 2023/03/07
 
 - Implement feature: choose custom title text enhancement

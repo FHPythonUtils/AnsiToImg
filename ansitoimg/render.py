@@ -1,10 +1,8 @@
-"""Render the ANSI
-"""
 from __future__ import annotations
 
 import re
+import tempfile
 from io import StringIO
-from os import remove
 from pathlib import Path
 
 from install_playwright import install
@@ -124,7 +122,7 @@ def ansiToSVGRender(
 		title (str, optional): set the title. Defaults to "AnsiToImg (courtesy of Rich)"
 	"""
 	console = _doRichRender(ansiText, _resolveWidth(wide, width))
-	tempFileName = f"{THISDIR}/temp.svg"
+	tempFileName = tempfile.mktemp(suffix=".svg")
 	ansiToSVG(ansiText, tempFileName, theme, wide, width, title)
 	match = re.search(
 		r'^<svg.*?viewBox="[\d.]+ [\d.]+ ([\d.]+) ([\d.]+)',
@@ -134,10 +132,7 @@ def ansiToSVGRender(
 	if match:
 		size = (int(float(match.group(1))), int(float(match.group(2))))
 	_doGrabWebpage(f"file:///{tempFileName}", size, fileName)
-	try:
-		remove(tempFileName)
-	except PermissionError:
-		print("Unable to clean up, manually remove temp.svg from project root or ignore")
+	Path(tempFileName).unlink()
 
 
 def _doGrabWebpage(url: str, resolution: tuple[int, int], fileName: str):
@@ -146,9 +141,9 @@ def _doGrabWebpage(url: str, resolution: tuple[int, int], fileName: str):
 		install(p.chromium)
 		browser = p.chromium.launch()
 		page = browser.new_page()
-		page.set_viewport_size({"width": resolution[0], "height": resolution[1]})  # type: ignore
-		page.goto(url)  # type: ignore
-		page.screenshot(path=fileName, omit_background=True)  # type: ignore
+		page.set_viewport_size({"width": resolution[0], "height": resolution[1]})
+		page.goto(url)
+		page.screenshot(path=fileName, omit_background=True)
 		browser.close()
 
 
@@ -194,10 +189,8 @@ def ansiToHTMLRender(
 		title (str, optional): set the title. Ingored
 	"""
 	console = _doRichRender(ansiText, _resolveWidth(wide, width))
-	ansiToHTML(ansiText, f"{THISDIR}/temp.html", theme, wide, width)
+	tempFileName = tempfile.mktemp(suffix=".html")
+	ansiToHTML(ansiText, tempFileName, theme, wide, width)
 	size = (console.width * TEXT_WIDTH, (console.height + 1) * TEXT_HEIGHT)
-	_doGrabWebpage(f"file:///{THISDIR}/temp.html", size, fileName)
-	try:
-		remove(f"{THISDIR}/temp.html")
-	except PermissionError:
-		print("Unable to clean up, manually remove temp.html from project root or ignore")
+	_doGrabWebpage(f"file:///{tempFileName}", size, fileName)
+	Path(tempFileName).unlink()

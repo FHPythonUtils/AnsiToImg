@@ -1,31 +1,22 @@
 # Ansitoimg
 
-[Ansitoimg Index](../README.md#ansitoimg-index) /
-Ansitoimg
-
 > Auto-generated documentation for [ansitoimg](../../../ansitoimg/__init__.py) module.
 
-- [Ansitoimg](#ansitoimg)
-  - [cli](#cli)
-  - [Modules](#modules)
+Convert an ANSI string to an image. Great for adding terminal output into a readme.
+
+- [Ansitoimg](../README.md#ansitoimg-index) / [Modules](../MODULES.md#ansitoimg-modules) / Ansitoimg
+    - [cli](#cli)
+    - Modules
+        - [Module](module.md#module)
+        - [Render](render.md#render)
+        - [Utils](utils.md#utils)
 
 ## cli
 
-[Show source in __init__.py:25](../../../ansitoimg/__init__.py#L25)
-
-Cli entry point.
-
-#### Signature
+[[find in source code]](../../../ansitoimg/__init__.py#L25)
 
 ```python
 def cli():
-    ...
 ```
 
-
-
-## Modules
-
-- [Module](./module.md)
-- [Render](./render.md)
-- [Utils](./utils.md)
+Cli entry point.

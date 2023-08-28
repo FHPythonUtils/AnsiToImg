@@ -1,21 +1,28 @@
 # Render
 
-[Ansitoimg Index](../README.md#ansitoimg-index) /
-[Ansitoimg](./index.md#ansitoimg) /
-Render
-
 > Auto-generated documentation for [ansitoimg.render](../../../ansitoimg/render.py) module.
 
-- [Render](#render)
-  - [ansiToHTML](#ansitohtml)
-  - [ansiToHTMLRender](#ansitohtmlrender)
-  - [ansiToRender](#ansitorender)
-  - [ansiToSVG](#ansitosvg)
-  - [ansiToSVGRender](#ansitosvgrender)
+- [Ansitoimg](../README.md#ansitoimg-index) / [Modules](../MODULES.md#ansitoimg-modules) / [Ansitoimg](index.md#ansitoimg) / Render
+    - [ansiToHTML](#ansitohtml)
+    - [ansiToHTMLRender](#ansitohtmlrender)
+    - [ansiToRender](#ansitorender)
+    - [ansiToSVG](#ansitosvg)
+    - [ansiToSVGRender](#ansitosvgrender)
 
 ## ansiToHTML
 
-[Show source in render.py:155](../../../ansitoimg/render.py#L155)
+[[find in source code]](../../../ansitoimg/render.py#L150)
+
+```python
+def ansiToHTML(
+    ansiText: str,
+    fileName: str,
+    theme: str | None = None,
+    wide: bool = True,
+    width: int = WIDTH_DEFAULT,
+    title: str = TITLE,
+):
+```
 
 Convert an ANSI stream to a html file.
 
@@ -28,30 +35,24 @@ Convert an ANSI stream to a html file.
 - `width` *int, optional* - set the width for the image
 - `title` *str, optional* - set the title. Ingored
 
-#### Signature
+#### See also
+
+- [TITLE](utils.md#title)
+- [WIDTH_DEFAULT](utils.md#width_default)
+
+## ansiToHTMLRender
+
+[[find in source code]](../../../ansitoimg/render.py#L172)
 
 ```python
-def ansiToHTML(
+def ansiToHTMLRender(
     ansiText: str,
     fileName: str,
     theme: str | None = None,
     wide: bool = True,
     width: int = WIDTH_DEFAULT,
-    title: str = TITLE,
 ):
-    ...
 ```
-
-#### See also
-
-- [TITLE](./utils.md#title)
-- [WIDTH_DEFAULT](./utils.md#width_default)
-
-
-
-## ansiToHTMLRender
-
-[Show source in render.py:177](../../../ansitoimg/render.py#L177)
 
 Convert an ANSI stream to a Render image using pyppeteer to take a
 screenshot of a generated html (hacky but we can output more like that
@@ -66,28 +67,24 @@ of a terminal now)
 - `width` *int, optional* - set the width for the image
 - `title` *str, optional* - set the title. Ingored
 
-#### Signature
+#### See also
+
+- [WIDTH_DEFAULT](utils.md#width_default)
+
+## ansiToRender
+
+[[find in source code]](../../../ansitoimg/render.py#L83)
 
 ```python
-def ansiToHTMLRender(
+def ansiToRender(
     ansiText: str,
     fileName: str,
     theme: str | None = None,
     wide: bool = True,
     width: int = WIDTH_DEFAULT,
+    title: str = TITLE,
 ):
-    ...
 ```
-
-#### See also
-
-- [WIDTH_DEFAULT](./utils.md#width_default)
-
-
-
-## ansiToRender
-
-[Show source in render.py:85](../../../ansitoimg/render.py#L85)
 
 Convert an ANSI stream to a Render image using pyppeteer to take a
 screenshot of a generated SVG (hacky but we can get coloured emoji now)
@@ -101,10 +98,17 @@ screenshot of a generated SVG (hacky but we can get coloured emoji now)
 - `width` *int, optional* - set the width for the image
 - `title` *str, optional* - set the title. Defaults to "AnsiToImg (courtesy of Rich)"
 
-#### Signature
+#### See also
+
+- [TITLE](utils.md#title)
+- [WIDTH_DEFAULT](utils.md#width_default)
+
+## ansiToSVG
+
+[[find in source code]](../../../ansitoimg/render.py#L61)
 
 ```python
-def ansiToRender(
+def ansiToSVG(
     ansiText: str,
     fileName: str,
     theme: str | None = None,
@@ -112,19 +116,7 @@ def ansiToRender(
     width: int = WIDTH_DEFAULT,
     title: str = TITLE,
 ):
-    ...
 ```
-
-#### See also
-
-- [TITLE](./utils.md#title)
-- [WIDTH_DEFAULT](./utils.md#width_default)
-
-
-
-## ansiToSVG
-
-[Show source in render.py:63](../../../ansitoimg/render.py#L63)
 
 Convert an ANSI stream to SVG.
 
@@ -137,10 +129,17 @@ Convert an ANSI stream to SVG.
 - `width` *int, optional* - set the width for the image
 - `title` *str, optional* - set the title. Defaults to "AnsiToImg (courtesy of Rich)"
 
-#### Signature
+#### See also
+
+- [TITLE](utils.md#title)
+- [WIDTH_DEFAULT](utils.md#width_default)
+
+## ansiToSVGRender
+
+[[find in source code]](../../../ansitoimg/render.py#L105)
 
 ```python
-def ansiToSVG(
+def ansiToSVGRender(
     ansiText: str,
     fileName: str,
     theme: str | None = None,
@@ -148,19 +147,7 @@ def ansiToSVG(
     width: int = WIDTH_DEFAULT,
     title: str = TITLE,
 ):
-    ...
 ```
-
-#### See also
-
-- [TITLE](./utils.md#title)
-- [WIDTH_DEFAULT](./utils.md#width_default)
-
-
-
-## ansiToSVGRender
-
-[Show source in render.py:107](../../../ansitoimg/render.py#L107)
 
 Convert an ANSI stream to a Render image using pyppeteer to take a
 screenshot of a generated SVG (hacky but we can get coloured emoji now)
@@ -174,23 +161,7 @@ screenshot of a generated SVG (hacky but we can get coloured emoji now)
 - `width` *int, optional* - set the width for the image
 - `title` *str, optional* - set the title. Defaults to "AnsiToImg (courtesy of Rich)"
 
-#### Signature
-
-```python
-def ansiToSVGRender(
-    ansiText: str,
-    fileName: str,
-    theme: str | None = None,
-    wide: bool = True,
-    width: int = WIDTH_DEFAULT,
-    title: str = TITLE,
-):
-    ...
-```
-
 #### See also
 
-- [TITLE](./utils.md#title)
-- [WIDTH_DEFAULT](./utils.md#width_default)
-
-
+- [TITLE](utils.md#title)
+- [WIDTH_DEFAULT](utils.md#width_default)
