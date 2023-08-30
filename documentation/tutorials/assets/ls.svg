@@ -1,8 +1,7 @@
-<svg class="rich-terminal" viewBox="0 0 1104 4734.799999999999" xmlns="http://www.w3.org/2000/svg">
-    <!-- Generated with Rich https://www.textualize.io -->
-    <style>
-
-    @font-face {
+<?xml version="1.0" encoding="UTF-8"?>
+<svg class="rich-terminal" viewBox="0 0 1104 4734.8" xmlns="http://www.w3.org/2000/svg">
+ <!-- Generated with Rich https://www.textualize.io -->
+ <style>@font-face {
         font-family: "Fira Code";
         src: local("FiraCode-Regular"),
                 url("https://cdnjs.cloudflare.com/ajax/libs/firacode/6.2.0/woff2/FiraCode-Regular.woff2") format("woff2"),
@@ -34,791 +33,978 @@
 
     .terminal-3106289353-r1 { fill: #4aa5f0;font-weight: bold }
 .terminal-3106289353-r2 { fill: #abb2bf }
-.terminal-3106289353-r3 { fill: #42b3c2;font-weight: bold }
-    </style>
-
-    <defs>
-    <clipPath id="terminal-3106289353-clip-terminal">
-      <rect x="0" y="0" width="1084.8" height="4683.799999999999" />
-    </clipPath>
-    <clipPath id="terminal-3106289353-line-0">
-    <rect x="0" y="1.5" width="1085.8" height="24.65"/>
-            </clipPath>
-<clipPath id="terminal-3106289353-line-1">
-    <rect x="0" y="25.9" width="1085.8" height="24.65"/>
-            </clipPath>
-<clipPath id="terminal-3106289353-line-2">
-    <rect x="0" y="50.3" width="1085.8" height="24.65"/>
-            </clipPath>
-<clipPath id="terminal-3106289353-line-3">
-    <rect x="0" y="74.7" width="1085.8" height="24.65"/>
-            </clipPath>
-<clipPath id="terminal-3106289353-line-4">
-    <rect x="0" y="99.1" width="1085.8" height="24.65"/>
-            </clipPath>
-<clipPath id="terminal-3106289353-line-5">
-    <rect x="0" y="123.5" width="1085.8" height="24.65"/>
-            </clipPath>
-<clipPath id="terminal-3106289353-line-6">
-    <rect x="0" y="147.9" width="1085.8" height="24.65"/>
-            </clipPath>
-<clipPath id="terminal-3106289353-line-7">
-    <rect x="0" y="172.3" width="1085.8" height="24.65"/>
-            </clipPath>
-<clipPath id="terminal-3106289353-line-8">
-    <rect x="0" y="196.7" width="1085.8" height="24.65"/>
-            </clipPath>
-<clipPath id="terminal-3106289353-line-9">
-    <rect x="0" y="221.1" width="1085.8" height="24.65"/>
-            </clipPath>
-<clipPath id="terminal-3106289353-line-10">
-    <rect x="0" y="245.5" width="1085.8" height="24.65"/>
-            </clipPath>
-<clipPath id="terminal-3106289353-line-11">
-    <rect x="0" y="269.9" width="1085.8" height="24.65"/>
-            </clipPath>
-<clipPath id="terminal-3106289353-line-12">
-    <rect x="0" y="294.3" width="1085.8" height="24.65"/>
-            </clipPath>
-<clipPath id="terminal-3106289353-line-13">
-    <rect x="0" y="318.7" width="1085.8" height="24.65"/>
-            </clipPath>
-<clipPath id="terminal-3106289353-line-14">
-    <rect x="0" y="343.1" width="1085.8" height="24.65"/>
-            </clipPath>
-<clipPath id="terminal-3106289353-line-15">
-    <rect x="0" y="367.5" width="1085.8" height="24.65"/>
-            </clipPath>
-<clipPath id="terminal-3106289353-line-16">
-    <rect x="0" y="391.9" width="1085.8" height="24.65"/>
-            </clipPath>
-<clipPath id="terminal-3106289353-line-17">
-    <rect x="0" y="416.3" width="1085.8" height="24.65"/>
-            </clipPath>
-<clipPath id="terminal-3106289353-line-18">
-    <rect x="0" y="440.7" width="1085.8" height="24.65"/>
-            </clipPath>
-<clipPath id="terminal-3106289353-line-19">
-    <rect x="0" y="465.1" width="1085.8" height="24.65"/>
-            </clipPath>
-<clipPath id="terminal-3106289353-line-20">
-    <rect x="0" y="489.5" width="1085.8" height="24.65"/>
-            </clipPath>
-<clipPath id="terminal-3106289353-line-21">
-    <rect x="0" y="513.9" width="1085.8" height="24.65"/>
-            </clipPath>
-<clipPath id="terminal-3106289353-line-22">
-    <rect x="0" y="538.3" width="1085.8" height="24.65"/>
-            </clipPath>
-<clipPath id="terminal-3106289353-line-23">
-    <rect x="0" y="562.7" width="1085.8" height="24.65"/>
-            </clipPath>
-<clipPath id="terminal-3106289353-line-24">
-    <rect x="0" y="587.1" width="1085.8" height="24.65"/>
-            </clipPath>
-<clipPath id="terminal-3106289353-line-25">
-    <rect x="0" y="611.5" width="1085.8" height="24.65"/>
-            </clipPath>
-<clipPath id="terminal-3106289353-line-26">
-    <rect x="0" y="635.9" width="1085.8" height="24.65"/>
-            </clipPath>
-<clipPath id="terminal-3106289353-line-27">
-    <rect x="0" y="660.3" width="1085.8" height="24.65"/>
-            </clipPath>
-<clipPath id="terminal-3106289353-line-28">
-    <rect x="0" y="684.7" width="1085.8" height="24.65"/>
-            </clipPath>
-<clipPath id="terminal-3106289353-line-29">
-    <rect x="0" y="709.1" width="1085.8" height="24.65"/>
-            </clipPath>
-<clipPath id="terminal-3106289353-line-30">
-    <rect x="0" y="733.5" width="1085.8" height="24.65"/>
-            </clipPath>
-<clipPath id="terminal-3106289353-line-31">
-    <rect x="0" y="757.9" width="1085.8" height="24.65"/>
-            </clipPath>
-<clipPath id="terminal-3106289353-line-32">
-    <rect x="0" y="782.3" width="1085.8" height="24.65"/>
-            </clipPath>
-<clipPath id="terminal-3106289353-line-33">
-    <rect x="0" y="806.7" width="1085.8" height="24.65"/>
-            </clipPath>
-<clipPath id="terminal-3106289353-line-34">
-    <rect x="0" y="831.1" width="1085.8" height="24.65"/>
-            </clipPath>
-<clipPath id="terminal-3106289353-line-35">
-    <rect x="0" y="855.5" width="1085.8" height="24.65"/>
-            </clipPath>
-<clipPath id="terminal-3106289353-line-36">
-    <rect x="0" y="879.9" width="1085.8" height="24.65"/>
-            </clipPath>
-<clipPath id="terminal-3106289353-line-37">
-    <rect x="0" y="904.3" width="1085.8" height="24.65"/>
-            </clipPath>
-<clipPath id="terminal-3106289353-line-38">
-    <rect x="0" y="928.7" width="1085.8" height="24.65"/>
-            </clipPath>
-<clipPath id="terminal-3106289353-line-39">
-    <rect x="0" y="953.1" width="1085.8" height="24.65"/>
-            </clipPath>
-<clipPath id="terminal-3106289353-line-40">
-    <rect x="0" y="977.5" width="1085.8" height="24.65"/>
-            </clipPath>
-<clipPath id="terminal-3106289353-line-41">
-    <rect x="0" y="1001.9" width="1085.8" height="24.65"/>
-            </clipPath>
-<clipPath id="terminal-3106289353-line-42">
-    <rect x="0" y="1026.3" width="1085.8" height="24.65"/>
-            </clipPath>
-<clipPath id="terminal-3106289353-line-43">
-    <rect x="0" y="1050.7" width="1085.8" height="24.65"/>
-            </clipPath>
-<clipPath id="terminal-3106289353-line-44">
-    <rect x="0" y="1075.1" width="1085.8" height="24.65"/>
-            </clipPath>
-<clipPath id="terminal-3106289353-line-45">
-    <rect x="0" y="1099.5" width="1085.8" height="24.65"/>
-            </clipPath>
-<clipPath id="terminal-3106289353-line-46">
-    <rect x="0" y="1123.9" width="1085.8" height="24.65"/>
-            </clipPath>
-<clipPath id="terminal-3106289353-line-47">
-    <rect x="0" y="1148.3" width="1085.8" height="24.65"/>
-            </clipPath>
-<clipPath id="terminal-3106289353-line-48">
-    <rect x="0" y="1172.7" width="1085.8" height="24.65"/>
-            </clipPath>
-<clipPath id="terminal-3106289353-line-49">
-    <rect x="0" y="1197.1" width="1085.8" height="24.65"/>
-            </clipPath>
-<clipPath id="terminal-3106289353-line-50">
-    <rect x="0" y="1221.5" width="1085.8" height="24.65"/>
-            </clipPath>
-<clipPath id="terminal-3106289353-line-51">
-    <rect x="0" y="1245.9" width="1085.8" height="24.65"/>
-            </clipPath>
-<clipPath id="terminal-3106289353-line-52">
-    <rect x="0" y="1270.3" width="1085.8" height="24.65"/>
-            </clipPath>
-<clipPath id="terminal-3106289353-line-53">
-    <rect x="0" y="1294.7" width="1085.8" height="24.65"/>
-            </clipPath>
-<clipPath id="terminal-3106289353-line-54">
-    <rect x="0" y="1319.1" width="1085.8" height="24.65"/>
-            </clipPath>
-<clipPath id="terminal-3106289353-line-55">
-    <rect x="0" y="1343.5" width="1085.8" height="24.65"/>
-            </clipPath>
-<clipPath id="terminal-3106289353-line-56">
-    <rect x="0" y="1367.9" width="1085.8" height="24.65"/>
-            </clipPath>
-<clipPath id="terminal-3106289353-line-57">
-    <rect x="0" y="1392.3" width="1085.8" height="24.65"/>
-            </clipPath>
-<clipPath id="terminal-3106289353-line-58">
-    <rect x="0" y="1416.7" width="1085.8" height="24.65"/>
-            </clipPath>
-<clipPath id="terminal-3106289353-line-59">
-    <rect x="0" y="1441.1" width="1085.8" height="24.65"/>
-            </clipPath>
-<clipPath id="terminal-3106289353-line-60">
-    <rect x="0" y="1465.5" width="1085.8" height="24.65"/>
-            </clipPath>
-<clipPath id="terminal-3106289353-line-61">
-    <rect x="0" y="1489.9" width="1085.8" height="24.65"/>
-            </clipPath>
-<clipPath id="terminal-3106289353-line-62">
-    <rect x="0" y="1514.3" width="1085.8" height="24.65"/>
-            </clipPath>
-<clipPath id="terminal-3106289353-line-63">
-    <rect x="0" y="1538.7" width="1085.8" height="24.65"/>
-            </clipPath>
-<clipPath id="terminal-3106289353-line-64">
-    <rect x="0" y="1563.1" width="1085.8" height="24.65"/>
-            </clipPath>
-<clipPath id="terminal-3106289353-line-65">
-    <rect x="0" y="1587.5" width="1085.8" height="24.65"/>
-            </clipPath>
-<clipPath id="terminal-3106289353-line-66">
-    <rect x="0" y="1611.9" width="1085.8" height="24.65"/>
-            </clipPath>
-<clipPath id="terminal-3106289353-line-67">
-    <rect x="0" y="1636.3" width="1085.8" height="24.65"/>
-            </clipPath>
-<clipPath id="terminal-3106289353-line-68">
-    <rect x="0" y="1660.7" width="1085.8" height="24.65"/>
-            </clipPath>
-<clipPath id="terminal-3106289353-line-69">
-    <rect x="0" y="1685.1" width="1085.8" height="24.65"/>
-            </clipPath>
-<clipPath id="terminal-3106289353-line-70">
-    <rect x="0" y="1709.5" width="1085.8" height="24.65"/>
-            </clipPath>
-<clipPath id="terminal-3106289353-line-71">
-    <rect x="0" y="1733.9" width="1085.8" height="24.65"/>
-            </clipPath>
-<clipPath id="terminal-3106289353-line-72">
-    <rect x="0" y="1758.3" width="1085.8" height="24.65"/>
-            </clipPath>
-<clipPath id="terminal-3106289353-line-73">
-    <rect x="0" y="1782.7" width="1085.8" height="24.65"/>
-            </clipPath>
-<clipPath id="terminal-3106289353-line-74">
-    <rect x="0" y="1807.1" width="1085.8" height="24.65"/>
-            </clipPath>
-<clipPath id="terminal-3106289353-line-75">
-    <rect x="0" y="1831.5" width="1085.8" height="24.65"/>
-            </clipPath>
-<clipPath id="terminal-3106289353-line-76">
-    <rect x="0" y="1855.9" width="1085.8" height="24.65"/>
-            </clipPath>
-<clipPath id="terminal-3106289353-line-77">
-    <rect x="0" y="1880.3" width="1085.8" height="24.65"/>
-            </clipPath>
-<clipPath id="terminal-3106289353-line-78">
-    <rect x="0" y="1904.7" width="1085.8" height="24.65"/>
-            </clipPath>
-<clipPath id="terminal-3106289353-line-79">
-    <rect x="0" y="1929.1" width="1085.8" height="24.65"/>
-            </clipPath>
-<clipPath id="terminal-3106289353-line-80">
-    <rect x="0" y="1953.5" width="1085.8" height="24.65"/>
-            </clipPath>
-<clipPath id="terminal-3106289353-line-81">
-    <rect x="0" y="1977.9" width="1085.8" height="24.65"/>
-            </clipPath>
-<clipPath id="terminal-3106289353-line-82">
-    <rect x="0" y="2002.3" width="1085.8" height="24.65"/>
-            </clipPath>
-<clipPath id="terminal-3106289353-line-83">
-    <rect x="0" y="2026.7" width="1085.8" height="24.65"/>
-            </clipPath>
-<clipPath id="terminal-3106289353-line-84">
-    <rect x="0" y="2051.1" width="1085.8" height="24.65"/>
-            </clipPath>
-<clipPath id="terminal-3106289353-line-85">
-    <rect x="0" y="2075.5" width="1085.8" height="24.65"/>
-            </clipPath>
-<clipPath id="terminal-3106289353-line-86">
-    <rect x="0" y="2099.9" width="1085.8" height="24.65"/>
-            </clipPath>
-<clipPath id="terminal-3106289353-line-87">
-    <rect x="0" y="2124.3" width="1085.8" height="24.65"/>
-            </clipPath>
-<clipPath id="terminal-3106289353-line-88">
-    <rect x="0" y="2148.7" width="1085.8" height="24.65"/>
-            </clipPath>
-<clipPath id="terminal-3106289353-line-89">
-    <rect x="0" y="2173.1" width="1085.8" height="24.65"/>
-            </clipPath>
-<clipPath id="terminal-3106289353-line-90">
-    <rect x="0" y="2197.5" width="1085.8" height="24.65"/>
-            </clipPath>
-<clipPath id="terminal-3106289353-line-91">
-    <rect x="0" y="2221.9" width="1085.8" height="24.65"/>
-            </clipPath>
-<clipPath id="terminal-3106289353-line-92">
-    <rect x="0" y="2246.3" width="1085.8" height="24.65"/>
-            </clipPath>
-<clipPath id="terminal-3106289353-line-93">
-    <rect x="0" y="2270.7" width="1085.8" height="24.65"/>
-            </clipPath>
-<clipPath id="terminal-3106289353-line-94">
-    <rect x="0" y="2295.1" width="1085.8" height="24.65"/>
-            </clipPath>
-<clipPath id="terminal-3106289353-line-95">
-    <rect x="0" y="2319.5" width="1085.8" height="24.65"/>
-            </clipPath>
-<clipPath id="terminal-3106289353-line-96">
-    <rect x="0" y="2343.9" width="1085.8" height="24.65"/>
-            </clipPath>
-<clipPath id="terminal-3106289353-line-97">
-    <rect x="0" y="2368.3" width="1085.8" height="24.65"/>
-            </clipPath>
-<clipPath id="terminal-3106289353-line-98">
-    <rect x="0" y="2392.7" width="1085.8" height="24.65"/>
-            </clipPath>
-<clipPath id="terminal-3106289353-line-99">
-    <rect x="0" y="2417.1" width="1085.8" height="24.65"/>
-            </clipPath>
-<clipPath id="terminal-3106289353-line-100">
-    <rect x="0" y="2441.5" width="1085.8" height="24.65"/>
-            </clipPath>
-<clipPath id="terminal-3106289353-line-101">
-    <rect x="0" y="2465.9" width="1085.8" height="24.65"/>
-            </clipPath>
-<clipPath id="terminal-3106289353-line-102">
-    <rect x="0" y="2490.3" width="1085.8" height="24.65"/>
-            </clipPath>
-<clipPath id="terminal-3106289353-line-103">
-    <rect x="0" y="2514.7" width="1085.8" height="24.65"/>
-            </clipPath>
-<clipPath id="terminal-3106289353-line-104">
-    <rect x="0" y="2539.1" width="1085.8" height="24.65"/>
-            </clipPath>
-<clipPath id="terminal-3106289353-line-105">
-    <rect x="0" y="2563.5" width="1085.8" height="24.65"/>
-            </clipPath>
-<clipPath id="terminal-3106289353-line-106">
-    <rect x="0" y="2587.9" width="1085.8" height="24.65"/>
-            </clipPath>
-<clipPath id="terminal-3106289353-line-107">
-    <rect x="0" y="2612.3" width="1085.8" height="24.65"/>
-            </clipPath>
-<clipPath id="terminal-3106289353-line-108">
-    <rect x="0" y="2636.7" width="1085.8" height="24.65"/>
-            </clipPath>
-<clipPath id="terminal-3106289353-line-109">
-    <rect x="0" y="2661.1" width="1085.8" height="24.65"/>
-            </clipPath>
-<clipPath id="terminal-3106289353-line-110">
-    <rect x="0" y="2685.5" width="1085.8" height="24.65"/>
-            </clipPath>
-<clipPath id="terminal-3106289353-line-111">
-    <rect x="0" y="2709.9" width="1085.8" height="24.65"/>
-            </clipPath>
-<clipPath id="terminal-3106289353-line-112">
-    <rect x="0" y="2734.3" width="1085.8" height="24.65"/>
-            </clipPath>
-<clipPath id="terminal-3106289353-line-113">
-    <rect x="0" y="2758.7" width="1085.8" height="24.65"/>
-            </clipPath>
-<clipPath id="terminal-3106289353-line-114">
-    <rect x="0" y="2783.1" width="1085.8" height="24.65"/>
-            </clipPath>
-<clipPath id="terminal-3106289353-line-115">
-    <rect x="0" y="2807.5" width="1085.8" height="24.65"/>
-            </clipPath>
-<clipPath id="terminal-3106289353-line-116">
-    <rect x="0" y="2831.9" width="1085.8" height="24.65"/>
-            </clipPath>
-<clipPath id="terminal-3106289353-line-117">
-    <rect x="0" y="2856.3" width="1085.8" height="24.65"/>
-            </clipPath>
-<clipPath id="terminal-3106289353-line-118">
-    <rect x="0" y="2880.7" width="1085.8" height="24.65"/>
-            </clipPath>
-<clipPath id="terminal-3106289353-line-119">
-    <rect x="0" y="2905.1" width="1085.8" height="24.65"/>
-            </clipPath>
-<clipPath id="terminal-3106289353-line-120">
-    <rect x="0" y="2929.5" width="1085.8" height="24.65"/>
-            </clipPath>
-<clipPath id="terminal-3106289353-line-121">
-    <rect x="0" y="2953.9" width="1085.8" height="24.65"/>
-            </clipPath>
-<clipPath id="terminal-3106289353-line-122">
-    <rect x="0" y="2978.3" width="1085.8" height="24.65"/>
-            </clipPath>
-<clipPath id="terminal-3106289353-line-123">
-    <rect x="0" y="3002.7" width="1085.8" height="24.65"/>
-            </clipPath>
-<clipPath id="terminal-3106289353-line-124">
-    <rect x="0" y="3027.1" width="1085.8" height="24.65"/>
-            </clipPath>
-<clipPath id="terminal-3106289353-line-125">
-    <rect x="0" y="3051.5" width="1085.8" height="24.65"/>
-            </clipPath>
-<clipPath id="terminal-3106289353-line-126">
-    <rect x="0" y="3075.9" width="1085.8" height="24.65"/>
-            </clipPath>
-<clipPath id="terminal-3106289353-line-127">
-    <rect x="0" y="3100.3" width="1085.8" height="24.65"/>
-            </clipPath>
-<clipPath id="terminal-3106289353-line-128">
-    <rect x="0" y="3124.7" width="1085.8" height="24.65"/>
-            </clipPath>
-<clipPath id="terminal-3106289353-line-129">
-    <rect x="0" y="3149.1" width="1085.8" height="24.65"/>
-            </clipPath>
-<clipPath id="terminal-3106289353-line-130">
-    <rect x="0" y="3173.5" width="1085.8" height="24.65"/>
-            </clipPath>
-<clipPath id="terminal-3106289353-line-131">
-    <rect x="0" y="3197.9" width="1085.8" height="24.65"/>
-            </clipPath>
-<clipPath id="terminal-3106289353-line-132">
-    <rect x="0" y="3222.3" width="1085.8" height="24.65"/>
-            </clipPath>
-<clipPath id="terminal-3106289353-line-133">
-    <rect x="0" y="3246.7" width="1085.8" height="24.65"/>
-            </clipPath>
-<clipPath id="terminal-3106289353-line-134">
-    <rect x="0" y="3271.1" width="1085.8" height="24.65"/>
-            </clipPath>
-<clipPath id="terminal-3106289353-line-135">
-    <rect x="0" y="3295.5" width="1085.8" height="24.65"/>
-            </clipPath>
-<clipPath id="terminal-3106289353-line-136">
-    <rect x="0" y="3319.9" width="1085.8" height="24.65"/>
-            </clipPath>
-<clipPath id="terminal-3106289353-line-137">
-    <rect x="0" y="3344.3" width="1085.8" height="24.65"/>
-            </clipPath>
-<clipPath id="terminal-3106289353-line-138">
-    <rect x="0" y="3368.7" width="1085.8" height="24.65"/>
-            </clipPath>
-<clipPath id="terminal-3106289353-line-139">
-    <rect x="0" y="3393.1" width="1085.8" height="24.65"/>
-            </clipPath>
-<clipPath id="terminal-3106289353-line-140">
-    <rect x="0" y="3417.5" width="1085.8" height="24.65"/>
-            </clipPath>
-<clipPath id="terminal-3106289353-line-141">
-    <rect x="0" y="3441.9" width="1085.8" height="24.65"/>
-            </clipPath>
-<clipPath id="terminal-3106289353-line-142">
-    <rect x="0" y="3466.3" width="1085.8" height="24.65"/>
-            </clipPath>
-<clipPath id="terminal-3106289353-line-143">
-    <rect x="0" y="3490.7" width="1085.8" height="24.65"/>
-            </clipPath>
-<clipPath id="terminal-3106289353-line-144">
-    <rect x="0" y="3515.1" width="1085.8" height="24.65"/>
-            </clipPath>
-<clipPath id="terminal-3106289353-line-145">
-    <rect x="0" y="3539.5" width="1085.8" height="24.65"/>
-            </clipPath>
-<clipPath id="terminal-3106289353-line-146">
-    <rect x="0" y="3563.9" width="1085.8" height="24.65"/>
-            </clipPath>
-<clipPath id="terminal-3106289353-line-147">
-    <rect x="0" y="3588.3" width="1085.8" height="24.65"/>
-            </clipPath>
-<clipPath id="terminal-3106289353-line-148">
-    <rect x="0" y="3612.7" width="1085.8" height="24.65"/>
-            </clipPath>
-<clipPath id="terminal-3106289353-line-149">
-    <rect x="0" y="3637.1" width="1085.8" height="24.65"/>
-            </clipPath>
-<clipPath id="terminal-3106289353-line-150">
-    <rect x="0" y="3661.5" width="1085.8" height="24.65"/>
-            </clipPath>
-<clipPath id="terminal-3106289353-line-151">
-    <rect x="0" y="3685.9" width="1085.8" height="24.65"/>
-            </clipPath>
-<clipPath id="terminal-3106289353-line-152">
-    <rect x="0" y="3710.3" width="1085.8" height="24.65"/>
-            </clipPath>
-<clipPath id="terminal-3106289353-line-153">
-    <rect x="0" y="3734.7" width="1085.8" height="24.65"/>
-            </clipPath>
-<clipPath id="terminal-3106289353-line-154">
-    <rect x="0" y="3759.1" width="1085.8" height="24.65"/>
-            </clipPath>
-<clipPath id="terminal-3106289353-line-155">
-    <rect x="0" y="3783.5" width="1085.8" height="24.65"/>
-            </clipPath>
-<clipPath id="terminal-3106289353-line-156">
-    <rect x="0" y="3807.9" width="1085.8" height="24.65"/>
-            </clipPath>
-<clipPath id="terminal-3106289353-line-157">
-    <rect x="0" y="3832.3" width="1085.8" height="24.65"/>
-            </clipPath>
-<clipPath id="terminal-3106289353-line-158">
-    <rect x="0" y="3856.7" width="1085.8" height="24.65"/>
-            </clipPath>
-<clipPath id="terminal-3106289353-line-159">
-    <rect x="0" y="3881.1" width="1085.8" height="24.65"/>
-            </clipPath>
-<clipPath id="terminal-3106289353-line-160">
-    <rect x="0" y="3905.5" width="1085.8" height="24.65"/>
-            </clipPath>
-<clipPath id="terminal-3106289353-line-161">
-    <rect x="0" y="3929.9" width="1085.8" height="24.65"/>
-            </clipPath>
-<clipPath id="terminal-3106289353-line-162">
-    <rect x="0" y="3954.3" width="1085.8" height="24.65"/>
-            </clipPath>
-<clipPath id="terminal-3106289353-line-163">
-    <rect x="0" y="3978.7" width="1085.8" height="24.65"/>
-            </clipPath>
-<clipPath id="terminal-3106289353-line-164">
-    <rect x="0" y="4003.1" width="1085.8" height="24.65"/>
-            </clipPath>
-<clipPath id="terminal-3106289353-line-165">
-    <rect x="0" y="4027.5" width="1085.8" height="24.65"/>
-            </clipPath>
-<clipPath id="terminal-3106289353-line-166">
-    <rect x="0" y="4051.9" width="1085.8" height="24.65"/>
-            </clipPath>
-<clipPath id="terminal-3106289353-line-167">
-    <rect x="0" y="4076.3" width="1085.8" height="24.65"/>
-            </clipPath>
-<clipPath id="terminal-3106289353-line-168">
-    <rect x="0" y="4100.7" width="1085.8" height="24.65"/>
-            </clipPath>
-<clipPath id="terminal-3106289353-line-169">
-    <rect x="0" y="4125.1" width="1085.8" height="24.65"/>
-            </clipPath>
-<clipPath id="terminal-3106289353-line-170">
-    <rect x="0" y="4149.5" width="1085.8" height="24.65"/>
-            </clipPath>
-<clipPath id="terminal-3106289353-line-171">
-    <rect x="0" y="4173.9" width="1085.8" height="24.65"/>
-            </clipPath>
-<clipPath id="terminal-3106289353-line-172">
-    <rect x="0" y="4198.3" width="1085.8" height="24.65"/>
-            </clipPath>
-<clipPath id="terminal-3106289353-line-173">
-    <rect x="0" y="4222.7" width="1085.8" height="24.65"/>
-            </clipPath>
-<clipPath id="terminal-3106289353-line-174">
-    <rect x="0" y="4247.1" width="1085.8" height="24.65"/>
-            </clipPath>
-<clipPath id="terminal-3106289353-line-175">
-    <rect x="0" y="4271.5" width="1085.8" height="24.65"/>
-            </clipPath>
-<clipPath id="terminal-3106289353-line-176">
-    <rect x="0" y="4295.9" width="1085.8" height="24.65"/>
-            </clipPath>
-<clipPath id="terminal-3106289353-line-177">
-    <rect x="0" y="4320.3" width="1085.8" height="24.65"/>
-            </clipPath>
-<clipPath id="terminal-3106289353-line-178">
-    <rect x="0" y="4344.7" width="1085.8" height="24.65"/>
-            </clipPath>
-<clipPath id="terminal-3106289353-line-179">
-    <rect x="0" y="4369.1" width="1085.8" height="24.65"/>
-            </clipPath>
-<clipPath id="terminal-3106289353-line-180">
-    <rect x="0" y="4393.5" width="1085.8" height="24.65"/>
-            </clipPath>
-<clipPath id="terminal-3106289353-line-181">
-    <rect x="0" y="4417.9" width="1085.8" height="24.65"/>
-            </clipPath>
-<clipPath id="terminal-3106289353-line-182">
-    <rect x="0" y="4442.3" width="1085.8" height="24.65"/>
-            </clipPath>
-<clipPath id="terminal-3106289353-line-183">
-    <rect x="0" y="4466.7" width="1085.8" height="24.65"/>
-            </clipPath>
-<clipPath id="terminal-3106289353-line-184">
-    <rect x="0" y="4491.1" width="1085.8" height="24.65"/>
-            </clipPath>
-<clipPath id="terminal-3106289353-line-185">
-    <rect x="0" y="4515.5" width="1085.8" height="24.65"/>
-            </clipPath>
-<clipPath id="terminal-3106289353-line-186">
-    <rect x="0" y="4539.9" width="1085.8" height="24.65"/>
-            </clipPath>
-<clipPath id="terminal-3106289353-line-187">
-    <rect x="0" y="4564.3" width="1085.8" height="24.65"/>
-            </clipPath>
-<clipPath id="terminal-3106289353-line-188">
-    <rect x="0" y="4588.7" width="1085.8" height="24.65"/>
-            </clipPath>
-<clipPath id="terminal-3106289353-line-189">
-    <rect x="0" y="4613.1" width="1085.8" height="24.65"/>
-            </clipPath>
-<clipPath id="terminal-3106289353-line-190">
-    <rect x="0" y="4637.5" width="1085.8" height="24.65"/>
-            </clipPath>
-    </defs>
-
-    <rect fill="#282c34" stroke="rgba(255,255,255,0.35)" stroke-width="1" x="1" y="1" width="1102" height="4732.8" rx="8"/><text class="terminal-3106289353-title" fill="#abb2bf" text-anchor="middle" x="551" y="27">AnsiToImg&#160;(courtesy&#160;of&#160;Rich)</text>
-            <g transform="translate(26,22)">
-            <circle cx="0" cy="0" r="7" fill="#ff5f57"/>
-            <circle cx="22" cy="0" r="7" fill="#febc2e"/>
-            <circle cx="44" cy="0" r="7" fill="#28c840"/>
-            </g>
-
-    <g transform="translate(9, 41)" clip-path="url(#terminal-3106289353-clip-terminal)">
-
-    <g class="terminal-3106289353-matrix">
-    <text class="terminal-3106289353-r1" x="0" y="20" textLength="146.4" clip-path="url(#terminal-3106289353-line-0)">ModemManager</text><text class="terminal-3106289353-r2" x="1085.8" y="20" textLength="12.2" clip-path="url(#terminal-3106289353-line-0)">
-</text><text class="terminal-3106289353-r1" x="0" y="44.4" textLength="170.8" clip-path="url(#terminal-3106289353-line-1)">NetworkManager</text><text class="terminal-3106289353-r2" x="1085.8" y="44.4" textLength="12.2" clip-path="url(#terminal-3106289353-line-1)">
-</text><text class="terminal-3106289353-r1" x="0" y="68.8" textLength="122" clip-path="url(#terminal-3106289353-line-2)">PackageKit</text><text class="terminal-3106289353-r2" x="1085.8" y="68.8" textLength="12.2" clip-path="url(#terminal-3106289353-line-2)">
-</text><text class="terminal-3106289353-r1" x="0" y="93.2" textLength="36.6" clip-path="url(#terminal-3106289353-line-3)">X11</text><text class="terminal-3106289353-r2" x="1085.8" y="93.2" textLength="12.2" clip-path="url(#terminal-3106289353-line-3)">
-</text><text class="terminal-3106289353-r2" x="0" y="117.6" textLength="146.4" clip-path="url(#terminal-3106289353-line-4)">adduser.conf</text><text class="terminal-3106289353-r2" x="1085.8" y="117.6" textLength="12.2" clip-path="url(#terminal-3106289353-line-4)">
-</text><text class="terminal-3106289353-r1" x="0" y="142" textLength="146.4" clip-path="url(#terminal-3106289353-line-5)">alternatives</text><text class="terminal-3106289353-r2" x="1085.8" y="142" textLength="12.2" clip-path="url(#terminal-3106289353-line-5)">
-</text><text class="terminal-3106289353-r1" x="0" y="166.4" textLength="97.6" clip-path="url(#terminal-3106289353-line-6)">apparmor</text><text class="terminal-3106289353-r2" x="1085.8" y="166.4" textLength="12.2" clip-path="url(#terminal-3106289353-line-6)">
-</text><text class="terminal-3106289353-r1" x="0" y="190.8" textLength="122" clip-path="url(#terminal-3106289353-line-7)">apparmor.d</text><text class="terminal-3106289353-r2" x="1085.8" y="190.8" textLength="12.2" clip-path="url(#terminal-3106289353-line-7)">
-</text><text class="terminal-3106289353-r1" x="0" y="215.2" textLength="73.2" clip-path="url(#terminal-3106289353-line-8)">apport</text><text class="terminal-3106289353-r2" x="1085.8" y="215.2" textLength="12.2" clip-path="url(#terminal-3106289353-line-8)">
-</text><text class="terminal-3106289353-r1" x="0" y="239.6" textLength="36.6" clip-path="url(#terminal-3106289353-line-9)">apt</text><text class="terminal-3106289353-r2" x="1085.8" y="239.6" textLength="12.2" clip-path="url(#terminal-3106289353-line-9)">
-</text><text class="terminal-3106289353-r2" x="0" y="264" textLength="85.4" clip-path="url(#terminal-3106289353-line-10)">at.deny</text><text class="terminal-3106289353-r2" x="1085.8" y="264" textLength="12.2" clip-path="url(#terminal-3106289353-line-10)">
-</text><text class="terminal-3106289353-r2" x="0" y="288.4" textLength="134.2" clip-path="url(#terminal-3106289353-line-11)">bash.bashrc</text><text class="terminal-3106289353-r2" x="1085.8" y="288.4" textLength="12.2" clip-path="url(#terminal-3106289353-line-11)">
-</text><text class="terminal-3106289353-r2" x="0" y="312.8" textLength="183" clip-path="url(#terminal-3106289353-line-12)">bash_completion</text><text class="terminal-3106289353-r2" x="1085.8" y="312.8" textLength="12.2" clip-path="url(#terminal-3106289353-line-12)">
-</text><text class="terminal-3106289353-r1" x="0" y="337.2" textLength="207.4" clip-path="url(#terminal-3106289353-line-13)">bash_completion.d</text><text class="terminal-3106289353-r2" x="1085.8" y="337.2" textLength="12.2" clip-path="url(#terminal-3106289353-line-13)">
-</text><text class="terminal-3106289353-r2" x="0" y="361.6" textLength="268.4" clip-path="url(#terminal-3106289353-line-14)">bindresvport.blacklist</text><text class="terminal-3106289353-r2" x="1085.8" y="361.6" textLength="12.2" clip-path="url(#terminal-3106289353-line-14)">
-</text><text class="terminal-3106289353-r1" x="0" y="386" textLength="97.6" clip-path="url(#terminal-3106289353-line-15)">binfmt.d</text><text class="terminal-3106289353-r2" x="1085.8" y="386" textLength="12.2" clip-path="url(#terminal-3106289353-line-15)">
-</text><text class="terminal-3106289353-r1" x="0" y="410.4" textLength="61" clip-path="url(#terminal-3106289353-line-16)">byobu</text><text class="terminal-3106289353-r2" x="1085.8" y="410.4" textLength="12.2" clip-path="url(#terminal-3106289353-line-16)">
-</text><text class="terminal-3106289353-r1" x="0" y="434.8" textLength="183" clip-path="url(#terminal-3106289353-line-17)">ca-certificates</text><text class="terminal-3106289353-r2" x="1085.8" y="434.8" textLength="12.2" clip-path="url(#terminal-3106289353-line-17)">
-</text><text class="terminal-3106289353-r2" x="0" y="459.2" textLength="244" clip-path="url(#terminal-3106289353-line-18)">ca-certificates.conf</text><text class="terminal-3106289353-r2" x="1085.8" y="459.2" textLength="12.2" clip-path="url(#terminal-3106289353-line-18)">
-</text><text class="terminal-3106289353-r2" x="0" y="483.6" textLength="353.8" clip-path="url(#terminal-3106289353-line-19)">ca-certificates.conf.dpkg-old</text><text class="terminal-3106289353-r2" x="1085.8" y="483.6" textLength="12.2" clip-path="url(#terminal-3106289353-line-19)">
-</text><text class="terminal-3106289353-r1" x="0" y="508" textLength="97.6" clip-path="url(#terminal-3106289353-line-20)">calendar</text><text class="terminal-3106289353-r2" x="1085.8" y="508" textLength="12.2" clip-path="url(#terminal-3106289353-line-20)">
-</text><text class="terminal-3106289353-r1" x="0" y="532.4" textLength="61" clip-path="url(#terminal-3106289353-line-21)">cloud</text><text class="terminal-3106289353-r2" x="1085.8" y="532.4" textLength="12.2" clip-path="url(#terminal-3106289353-line-21)">
-</text><text class="terminal-3106289353-r1" x="0" y="556.8" textLength="158.6" clip-path="url(#terminal-3106289353-line-22)">console-setup</text><text class="terminal-3106289353-r2" x="1085.8" y="556.8" textLength="12.2" clip-path="url(#terminal-3106289353-line-22)">
-</text><text class="terminal-3106289353-r1" x="0" y="581.2" textLength="73.2" clip-path="url(#terminal-3106289353-line-23)">cron.d</text><text class="terminal-3106289353-r2" x="1085.8" y="581.2" textLength="12.2" clip-path="url(#terminal-3106289353-line-23)">
-</text><text class="terminal-3106289353-r1" x="0" y="605.6" textLength="122" clip-path="url(#terminal-3106289353-line-24)">cron.daily</text><text class="terminal-3106289353-r2" x="1085.8" y="605.6" textLength="12.2" clip-path="url(#terminal-3106289353-line-24)">
-</text><text class="terminal-3106289353-r1" x="0" y="630" textLength="134.2" clip-path="url(#terminal-3106289353-line-25)">cron.hourly</text><text class="terminal-3106289353-r2" x="1085.8" y="630" textLength="12.2" clip-path="url(#terminal-3106289353-line-25)">
-</text><text class="terminal-3106289353-r1" x="0" y="654.4" textLength="146.4" clip-path="url(#terminal-3106289353-line-26)">cron.monthly</text><text class="terminal-3106289353-r2" x="1085.8" y="654.4" textLength="12.2" clip-path="url(#terminal-3106289353-line-26)">
-</text><text class="terminal-3106289353-r1" x="0" y="678.8" textLength="134.2" clip-path="url(#terminal-3106289353-line-27)">cron.weekly</text><text class="terminal-3106289353-r2" x="1085.8" y="678.8" textLength="12.2" clip-path="url(#terminal-3106289353-line-27)">
-</text><text class="terminal-3106289353-r2" x="0" y="703.2" textLength="85.4" clip-path="url(#terminal-3106289353-line-28)">crontab</text><text class="terminal-3106289353-r2" x="1085.8" y="703.2" textLength="12.2" clip-path="url(#terminal-3106289353-line-28)">
-</text><text class="terminal-3106289353-r1" x="0" y="727.6" textLength="244" clip-path="url(#terminal-3106289353-line-29)">cryptsetup-initramfs</text><text class="terminal-3106289353-r2" x="1085.8" y="727.6" textLength="12.2" clip-path="url(#terminal-3106289353-line-29)">
-</text><text class="terminal-3106289353-r2" x="0" y="752" textLength="97.6" clip-path="url(#terminal-3106289353-line-30)">crypttab</text><text class="terminal-3106289353-r2" x="1085.8" y="752" textLength="12.2" clip-path="url(#terminal-3106289353-line-30)">
-</text><text class="terminal-3106289353-r1" x="0" y="776.4" textLength="73.2" clip-path="url(#terminal-3106289353-line-31)">dbus-1</text><text class="terminal-3106289353-r2" x="1085.8" y="776.4" textLength="12.2" clip-path="url(#terminal-3106289353-line-31)">
-</text><text class="terminal-3106289353-r1" x="0" y="800.8" textLength="61" clip-path="url(#terminal-3106289353-line-32)">dconf</text><text class="terminal-3106289353-r2" x="1085.8" y="800.8" textLength="12.2" clip-path="url(#terminal-3106289353-line-32)">
-</text><text class="terminal-3106289353-r2" x="0" y="825.2" textLength="146.4" clip-path="url(#terminal-3106289353-line-33)">debconf.conf</text><text class="terminal-3106289353-r2" x="1085.8" y="825.2" textLength="12.2" clip-path="url(#terminal-3106289353-line-33)">
-</text><text class="terminal-3106289353-r2" x="0" y="849.6" textLength="170.8" clip-path="url(#terminal-3106289353-line-34)">debian_version</text><text class="terminal-3106289353-r2" x="1085.8" y="849.6" textLength="12.2" clip-path="url(#terminal-3106289353-line-34)">
-</text><text class="terminal-3106289353-r1" x="0" y="874" textLength="85.4" clip-path="url(#terminal-3106289353-line-35)">default</text><text class="terminal-3106289353-r2" x="1085.8" y="874" textLength="12.2" clip-path="url(#terminal-3106289353-line-35)">
-</text><text class="terminal-3106289353-r2" x="0" y="898.4" textLength="146.4" clip-path="url(#terminal-3106289353-line-36)">deluser.conf</text><text class="terminal-3106289353-r2" x="1085.8" y="898.4" textLength="12.2" clip-path="url(#terminal-3106289353-line-36)">
-</text><text class="terminal-3106289353-r1" x="0" y="922.8" textLength="97.6" clip-path="url(#terminal-3106289353-line-37)">depmod.d</text><text class="terminal-3106289353-r2" x="1085.8" y="922.8" textLength="12.2" clip-path="url(#terminal-3106289353-line-37)">
-</text><text class="terminal-3106289353-r1" x="0" y="947.2" textLength="48.8" clip-path="url(#terminal-3106289353-line-38)">dhcp</text><text class="terminal-3106289353-r2" x="1085.8" y="947.2" textLength="12.2" clip-path="url(#terminal-3106289353-line-38)">
-</text><text class="terminal-3106289353-r1" x="0" y="971.6" textLength="109.8" clip-path="url(#terminal-3106289353-line-39)">dnsmasq.d</text><text class="terminal-3106289353-r2" x="1085.8" y="971.6" textLength="12.2" clip-path="url(#terminal-3106289353-line-39)">
-</text><text class="terminal-3106289353-r1" x="0" y="996" textLength="73.2" clip-path="url(#terminal-3106289353-line-40)">docker</text><text class="terminal-3106289353-r2" x="1085.8" y="996" textLength="12.2" clip-path="url(#terminal-3106289353-line-40)">
-</text><text class="terminal-3106289353-r1" x="0" y="1020.4" textLength="48.8" clip-path="url(#terminal-3106289353-line-41)">dpkg</text><text class="terminal-3106289353-r2" x="1085.8" y="1020.4" textLength="12.2" clip-path="url(#terminal-3106289353-line-41)">
-</text><text class="terminal-3106289353-r2" x="0" y="1044.8" textLength="146.4" clip-path="url(#terminal-3106289353-line-42)">e2scrub.conf</text><text class="terminal-3106289353-r2" x="1085.8" y="1044.8" textLength="12.2" clip-path="url(#terminal-3106289353-line-42)">
-</text><text class="terminal-3106289353-r2" x="0" y="1069.2" textLength="134.2" clip-path="url(#terminal-3106289353-line-43)">ec2_version</text><text class="terminal-3106289353-r2" x="1085.8" y="1069.2" textLength="12.2" clip-path="url(#terminal-3106289353-line-43)">
-</text><text class="terminal-3106289353-r2" x="0" y="1093.6" textLength="134.2" clip-path="url(#terminal-3106289353-line-44)">environment</text><text class="terminal-3106289353-r2" x="1085.8" y="1093.6" textLength="12.2" clip-path="url(#terminal-3106289353-line-44)">
-</text><text class="terminal-3106289353-r2" x="0" y="1118" textLength="122" clip-path="url(#terminal-3106289353-line-45)">ethertypes</text><text class="terminal-3106289353-r2" x="1085.8" y="1118" textLength="12.2" clip-path="url(#terminal-3106289353-line-45)">
-</text><text class="terminal-3106289353-r1" x="0" y="1142.4" textLength="61" clip-path="url(#terminal-3106289353-line-46)">fonts</text><text class="terminal-3106289353-r2" x="1085.8" y="1142.4" textLength="12.2" clip-path="url(#terminal-3106289353-line-46)">
-</text><text class="terminal-3106289353-r2" x="0" y="1166.8" textLength="61" clip-path="url(#terminal-3106289353-line-47)">fstab</text><text class="terminal-3106289353-r2" x="1085.8" y="1166.8" textLength="12.2" clip-path="url(#terminal-3106289353-line-47)">
-</text><text class="terminal-3106289353-r2" x="0" y="1191.2" textLength="109.8" clip-path="url(#terminal-3106289353-line-48)">fuse.conf</text><text class="terminal-3106289353-r2" x="1085.8" y="1191.2" textLength="12.2" clip-path="url(#terminal-3106289353-line-48)">
-</text><text class="terminal-3106289353-r1" x="0" y="1215.6" textLength="61" clip-path="url(#terminal-3106289353-line-49)">fwupd</text><text class="terminal-3106289353-r2" x="1085.8" y="1215.6" textLength="12.2" clip-path="url(#terminal-3106289353-line-49)">
-</text><text class="terminal-3106289353-r2" x="0" y="1240" textLength="97.6" clip-path="url(#terminal-3106289353-line-50)">gai.conf</text><text class="terminal-3106289353-r2" x="1085.8" y="1240" textLength="12.2" clip-path="url(#terminal-3106289353-line-50)">
-</text><text class="terminal-3106289353-r1" x="0" y="1264.4" textLength="61" clip-path="url(#terminal-3106289353-line-51)">groff</text><text class="terminal-3106289353-r2" x="1085.8" y="1264.4" textLength="12.2" clip-path="url(#terminal-3106289353-line-51)">
-</text><text class="terminal-3106289353-r2" x="0" y="1288.8" textLength="61" clip-path="url(#terminal-3106289353-line-52)">group</text><text class="terminal-3106289353-r2" x="1085.8" y="1288.8" textLength="12.2" clip-path="url(#terminal-3106289353-line-52)">
-</text><text class="terminal-3106289353-r2" x="0" y="1313.2" textLength="73.2" clip-path="url(#terminal-3106289353-line-53)">group-</text><text class="terminal-3106289353-r2" x="1085.8" y="1313.2" textLength="12.2" clip-path="url(#terminal-3106289353-line-53)">
-</text><text class="terminal-3106289353-r1" x="0" y="1337.6" textLength="73.2" clip-path="url(#terminal-3106289353-line-54)">grub.d</text><text class="terminal-3106289353-r2" x="1085.8" y="1337.6" textLength="12.2" clip-path="url(#terminal-3106289353-line-54)">
-</text><text class="terminal-3106289353-r2" x="0" y="1362" textLength="85.4" clip-path="url(#terminal-3106289353-line-55)">gshadow</text><text class="terminal-3106289353-r2" x="1085.8" y="1362" textLength="12.2" clip-path="url(#terminal-3106289353-line-55)">
-</text><text class="terminal-3106289353-r2" x="0" y="1386.4" textLength="97.6" clip-path="url(#terminal-3106289353-line-56)">gshadow-</text><text class="terminal-3106289353-r2" x="1085.8" y="1386.4" textLength="12.2" clip-path="url(#terminal-3106289353-line-56)">
-</text><text class="terminal-3106289353-r1" x="0" y="1410.8" textLength="36.6" clip-path="url(#terminal-3106289353-line-57)">gss</text><text class="terminal-3106289353-r2" x="1085.8" y="1410.8" textLength="12.2" clip-path="url(#terminal-3106289353-line-57)">
-</text><text class="terminal-3106289353-r2" x="0" y="1435.2" textLength="134.2" clip-path="url(#terminal-3106289353-line-58)">hdparm.conf</text><text class="terminal-3106289353-r2" x="1085.8" y="1435.2" textLength="12.2" clip-path="url(#terminal-3106289353-line-58)">
-</text><text class="terminal-3106289353-r2" x="0" y="1459.6" textLength="109.8" clip-path="url(#terminal-3106289353-line-59)">host.conf</text><text class="terminal-3106289353-r2" x="1085.8" y="1459.6" textLength="12.2" clip-path="url(#terminal-3106289353-line-59)">
-</text><text class="terminal-3106289353-r2" x="0" y="1484" textLength="97.6" clip-path="url(#terminal-3106289353-line-60)">hostname</text><text class="terminal-3106289353-r2" x="1085.8" y="1484" textLength="12.2" clip-path="url(#terminal-3106289353-line-60)">
-</text><text class="terminal-3106289353-r2" x="0" y="1508.4" textLength="61" clip-path="url(#terminal-3106289353-line-61)">hosts</text><text class="terminal-3106289353-r2" x="1085.8" y="1508.4" textLength="12.2" clip-path="url(#terminal-3106289353-line-61)">
-</text><text class="terminal-3106289353-r2" x="0" y="1532.8" textLength="134.2" clip-path="url(#terminal-3106289353-line-62)">hosts.allow</text><text class="terminal-3106289353-r2" x="1085.8" y="1532.8" textLength="12.2" clip-path="url(#terminal-3106289353-line-62)">
-</text><text class="terminal-3106289353-r2" x="0" y="1557.2" textLength="122" clip-path="url(#terminal-3106289353-line-63)">hosts.deny</text><text class="terminal-3106289353-r2" x="1085.8" y="1557.2" textLength="12.2" clip-path="url(#terminal-3106289353-line-63)">
-</text><text class="terminal-3106289353-r1" x="0" y="1581.6" textLength="48.8" clip-path="url(#terminal-3106289353-line-64)">init</text><text class="terminal-3106289353-r2" x="1085.8" y="1581.6" textLength="12.2" clip-path="url(#terminal-3106289353-line-64)">
-</text><text class="terminal-3106289353-r1" x="0" y="1606" textLength="73.2" clip-path="url(#terminal-3106289353-line-65)">init.d</text><text class="terminal-3106289353-r2" x="1085.8" y="1606" textLength="12.2" clip-path="url(#terminal-3106289353-line-65)">
-</text><text class="terminal-3106289353-r1" x="0" y="1630.4" textLength="183" clip-path="url(#terminal-3106289353-line-66)">initramfs-tools</text><text class="terminal-3106289353-r2" x="1085.8" y="1630.4" textLength="12.2" clip-path="url(#terminal-3106289353-line-66)">
-</text><text class="terminal-3106289353-r2" x="0" y="1654.8" textLength="85.4" clip-path="url(#terminal-3106289353-line-67)">inputrc</text><text class="terminal-3106289353-r2" x="1085.8" y="1654.8" textLength="12.2" clip-path="url(#terminal-3106289353-line-67)">
-</text><text class="terminal-3106289353-r1" x="0" y="1679.2" textLength="97.6" clip-path="url(#terminal-3106289353-line-68)">iproute2</text><text class="terminal-3106289353-r2" x="1085.8" y="1679.2" textLength="12.2" clip-path="url(#terminal-3106289353-line-68)">
-</text><text class="terminal-3106289353-r1" x="0" y="1703.6" textLength="61" clip-path="url(#terminal-3106289353-line-69)">iscsi</text><text class="terminal-3106289353-r2" x="1085.8" y="1703.6" textLength="12.2" clip-path="url(#terminal-3106289353-line-69)">
-</text><text class="terminal-3106289353-r2" x="0" y="1728" textLength="61" clip-path="url(#terminal-3106289353-line-70)">issue</text><text class="terminal-3106289353-r2" x="1085.8" y="1728" textLength="12.2" clip-path="url(#terminal-3106289353-line-70)">
-</text><text class="terminal-3106289353-r2" x="0" y="1752.4" textLength="109.8" clip-path="url(#terminal-3106289353-line-71)">issue.net</text><text class="terminal-3106289353-r2" x="1085.8" y="1752.4" textLength="12.2" clip-path="url(#terminal-3106289353-line-71)">
-</text><text class="terminal-3106289353-r1" x="0" y="1776.8" textLength="73.2" clip-path="url(#terminal-3106289353-line-72)">kernel</text><text class="terminal-3106289353-r2" x="1085.8" y="1776.8" textLength="12.2" clip-path="url(#terminal-3106289353-line-72)">
-</text><text class="terminal-3106289353-r2" x="0" y="1801.2" textLength="183" clip-path="url(#terminal-3106289353-line-73)">kernel-img.conf</text><text class="terminal-3106289353-r2" x="1085.8" y="1801.2" textLength="12.2" clip-path="url(#terminal-3106289353-line-73)">
-</text><text class="terminal-3106289353-r1" x="0" y="1825.6" textLength="109.8" clip-path="url(#terminal-3106289353-line-74)">landscape</text><text class="terminal-3106289353-r2" x="1085.8" y="1825.6" textLength="12.2" clip-path="url(#terminal-3106289353-line-74)">
-</text><text class="terminal-3106289353-r2" x="0" y="1850" textLength="134.2" clip-path="url(#terminal-3106289353-line-75)">ld.so.cache</text><text class="terminal-3106289353-r2" x="1085.8" y="1850" textLength="12.2" clip-path="url(#terminal-3106289353-line-75)">
-</text><text class="terminal-3106289353-r2" x="0" y="1874.4" textLength="122" clip-path="url(#terminal-3106289353-line-76)">ld.so.conf</text><text class="terminal-3106289353-r2" x="1085.8" y="1874.4" textLength="12.2" clip-path="url(#terminal-3106289353-line-76)">
-</text><text class="terminal-3106289353-r1" x="0" y="1898.8" textLength="146.4" clip-path="url(#terminal-3106289353-line-77)">ld.so.conf.d</text><text class="terminal-3106289353-r2" x="1085.8" y="1898.8" textLength="12.2" clip-path="url(#terminal-3106289353-line-77)">
-</text><text class="terminal-3106289353-r1" x="0" y="1923.2" textLength="48.8" clip-path="url(#terminal-3106289353-line-78)">ldap</text><text class="terminal-3106289353-r2" x="1085.8" y="1923.2" textLength="12.2" clip-path="url(#terminal-3106289353-line-78)">
-</text><text class="terminal-3106289353-r2" x="0" y="1947.6" textLength="61" clip-path="url(#terminal-3106289353-line-79)">legal</text><text class="terminal-3106289353-r2" x="1085.8" y="1947.6" textLength="12.2" clip-path="url(#terminal-3106289353-line-79)">
-</text><text class="terminal-3106289353-r2" x="0" y="1972" textLength="158.6" clip-path="url(#terminal-3106289353-line-80)">libaudit.conf</text><text class="terminal-3106289353-r2" x="1085.8" y="1972" textLength="12.2" clip-path="url(#terminal-3106289353-line-80)">
-</text><text class="terminal-3106289353-r1" x="0" y="1996.4" textLength="134.2" clip-path="url(#terminal-3106289353-line-81)">libblockdev</text><text class="terminal-3106289353-r2" x="1085.8" y="1996.4" textLength="12.2" clip-path="url(#terminal-3106289353-line-81)">
-</text><text class="terminal-3106289353-r2" x="0" y="2020.8" textLength="146.4" clip-path="url(#terminal-3106289353-line-82)">locale.alias</text><text class="terminal-3106289353-r2" x="1085.8" y="2020.8" textLength="12.2" clip-path="url(#terminal-3106289353-line-82)">
-</text><text class="terminal-3106289353-r2" x="0" y="2045.2" textLength="122" clip-path="url(#terminal-3106289353-line-83)">locale.gen</text><text class="terminal-3106289353-r2" x="1085.8" y="2045.2" textLength="12.2" clip-path="url(#terminal-3106289353-line-83)">
-</text><text class="terminal-3106289353-r3" x="0" y="2069.6" textLength="109.8" clip-path="url(#terminal-3106289353-line-84)">localtime</text><text class="terminal-3106289353-r2" x="1085.8" y="2069.6" textLength="12.2" clip-path="url(#terminal-3106289353-line-84)">
-</text><text class="terminal-3106289353-r1" x="0" y="2094" textLength="97.6" clip-path="url(#terminal-3106289353-line-85)">logcheck</text><text class="terminal-3106289353-r2" x="1085.8" y="2094" textLength="12.2" clip-path="url(#terminal-3106289353-line-85)">
-</text><text class="terminal-3106289353-r2" x="0" y="2118.4" textLength="122" clip-path="url(#terminal-3106289353-line-86)">login.defs</text><text class="terminal-3106289353-r2" x="1085.8" y="2118.4" textLength="12.2" clip-path="url(#terminal-3106289353-line-86)">
-</text><text class="terminal-3106289353-r2" x="0" y="2142.8" textLength="170.8" clip-path="url(#terminal-3106289353-line-87)">logrotate.conf</text><text class="terminal-3106289353-r2" x="1085.8" y="2142.8" textLength="12.2" clip-path="url(#terminal-3106289353-line-87)">
-</text><text class="terminal-3106289353-r1" x="0" y="2167.2" textLength="134.2" clip-path="url(#terminal-3106289353-line-88)">logrotate.d</text><text class="terminal-3106289353-r2" x="1085.8" y="2167.2" textLength="12.2" clip-path="url(#terminal-3106289353-line-88)">
-</text><text class="terminal-3106289353-r2" x="0" y="2191.6" textLength="134.2" clip-path="url(#terminal-3106289353-line-89)">lsb-release</text><text class="terminal-3106289353-r2" x="1085.8" y="2191.6" textLength="12.2" clip-path="url(#terminal-3106289353-line-89)">
-</text><text class="terminal-3106289353-r2" x="0" y="2216" textLength="134.2" clip-path="url(#terminal-3106289353-line-90)">ltrace.conf</text><text class="terminal-3106289353-r2" x="1085.8" y="2216" textLength="12.2" clip-path="url(#terminal-3106289353-line-90)">
-</text><text class="terminal-3106289353-r1" x="0" y="2240.4" textLength="36.6" clip-path="url(#terminal-3106289353-line-91)">lvm</text><text class="terminal-3106289353-r2" x="1085.8" y="2240.4" textLength="12.2" clip-path="url(#terminal-3106289353-line-91)">
-</text><text class="terminal-3106289353-r2" x="0" y="2264.8" textLength="122" clip-path="url(#terminal-3106289353-line-92)">machine-id</text><text class="terminal-3106289353-r2" x="1085.8" y="2264.8" textLength="12.2" clip-path="url(#terminal-3106289353-line-92)">
-</text><text class="terminal-3106289353-r2" x="0" y="2289.2" textLength="61" clip-path="url(#terminal-3106289353-line-93)">magic</text><text class="terminal-3106289353-r2" x="1085.8" y="2289.2" textLength="12.2" clip-path="url(#terminal-3106289353-line-93)">
-</text><text class="terminal-3106289353-r2" x="0" y="2313.6" textLength="122" clip-path="url(#terminal-3106289353-line-94)">magic.mime</text><text class="terminal-3106289353-r2" x="1085.8" y="2313.6" textLength="12.2" clip-path="url(#terminal-3106289353-line-94)">
-</text><text class="terminal-3106289353-r2" x="0" y="2338" textLength="85.4" clip-path="url(#terminal-3106289353-line-95)">mailcap</text><text class="terminal-3106289353-r2" x="1085.8" y="2338" textLength="12.2" clip-path="url(#terminal-3106289353-line-95)">
-</text><text class="terminal-3106289353-r2" x="0" y="2362.4" textLength="158.6" clip-path="url(#terminal-3106289353-line-96)">mailcap.order</text><text class="terminal-3106289353-r2" x="1085.8" y="2362.4" textLength="12.2" clip-path="url(#terminal-3106289353-line-96)">
-</text><text class="terminal-3106289353-r2" x="0" y="2386.8" textLength="170.8" clip-path="url(#terminal-3106289353-line-97)">manpath.config</text><text class="terminal-3106289353-r2" x="1085.8" y="2386.8" textLength="12.2" clip-path="url(#terminal-3106289353-line-97)">
-</text><text class="terminal-3106289353-r1" x="0" y="2411.2" textLength="61" clip-path="url(#terminal-3106289353-line-98)">mdadm</text><text class="terminal-3106289353-r2" x="1085.8" y="2411.2" textLength="12.2" clip-path="url(#terminal-3106289353-line-98)">
-</text><text class="terminal-3106289353-r2" x="0" y="2435.6" textLength="122" clip-path="url(#terminal-3106289353-line-99)">mime.types</text><text class="terminal-3106289353-r2" x="1085.8" y="2435.6" textLength="12.2" clip-path="url(#terminal-3106289353-line-99)">
-</text><text class="terminal-3106289353-r2" x="0" y="2460" textLength="134.2" clip-path="url(#terminal-3106289353-line-100)">mke2fs.conf</text><text class="terminal-3106289353-r2" x="1085.8" y="2460" textLength="12.2" clip-path="url(#terminal-3106289353-line-100)">
-</text><text class="terminal-3106289353-r1" x="0" y="2484.4" textLength="122" clip-path="url(#terminal-3106289353-line-101)">modprobe.d</text><text class="terminal-3106289353-r2" x="1085.8" y="2484.4" textLength="12.2" clip-path="url(#terminal-3106289353-line-101)">
-</text><text class="terminal-3106289353-r2" x="0" y="2508.8" textLength="85.4" clip-path="url(#terminal-3106289353-line-102)">modules</text><text class="terminal-3106289353-r2" x="1085.8" y="2508.8" textLength="12.2" clip-path="url(#terminal-3106289353-line-102)">
-</text><text class="terminal-3106289353-r1" x="0" y="2533.2" textLength="170.8" clip-path="url(#terminal-3106289353-line-103)">modules-load.d</text><text class="terminal-3106289353-r2" x="1085.8" y="2533.2" textLength="12.2" clip-path="url(#terminal-3106289353-line-103)">
-</text><text class="terminal-3106289353-r3" x="0" y="2557.6" textLength="48.8" clip-path="url(#terminal-3106289353-line-104)">mtab</text><text class="terminal-3106289353-r2" x="1085.8" y="2557.6" textLength="12.2" clip-path="url(#terminal-3106289353-line-104)">
-</text><text class="terminal-3106289353-r2" x="0" y="2582" textLength="170.8" clip-path="url(#terminal-3106289353-line-105)">multipath.conf</text><text class="terminal-3106289353-r2" x="1085.8" y="2582" textLength="12.2" clip-path="url(#terminal-3106289353-line-105)">
-</text><text class="terminal-3106289353-r2" x="0" y="2606.4" textLength="73.2" clip-path="url(#terminal-3106289353-line-106)">nanorc</text><text class="terminal-3106289353-r2" x="1085.8" y="2606.4" textLength="12.2" clip-path="url(#terminal-3106289353-line-106)">
-</text><text class="terminal-3106289353-r1" x="0" y="2630.8" textLength="85.4" clip-path="url(#terminal-3106289353-line-107)">netplan</text><text class="terminal-3106289353-r2" x="1085.8" y="2630.8" textLength="12.2" clip-path="url(#terminal-3106289353-line-107)">
-</text><text class="terminal-3106289353-r1" x="0" y="2655.2" textLength="85.4" clip-path="url(#terminal-3106289353-line-108)">network</text><text class="terminal-3106289353-r2" x="1085.8" y="2655.2" textLength="12.2" clip-path="url(#terminal-3106289353-line-108)">
-</text><text class="terminal-3106289353-r1" x="0" y="2679.6" textLength="231.8" clip-path="url(#terminal-3106289353-line-109)">networkd-dispatcher</text><text class="terminal-3106289353-r2" x="1085.8" y="2679.6" textLength="12.2" clip-path="url(#terminal-3106289353-line-109)">
-</text><text class="terminal-3106289353-r2" x="0" y="2704" textLength="97.6" clip-path="url(#terminal-3106289353-line-110)">networks</text><text class="terminal-3106289353-r2" x="1085.8" y="2704" textLength="12.2" clip-path="url(#terminal-3106289353-line-110)">
-</text><text class="terminal-3106289353-r1" x="0" y="2728.4" textLength="48.8" clip-path="url(#terminal-3106289353-line-111)">newt</text><text class="terminal-3106289353-r2" x="1085.8" y="2728.4" textLength="12.2" clip-path="url(#terminal-3106289353-line-111)">
-</text><text class="terminal-3106289353-r2" x="0" y="2752.8" textLength="158.6" clip-path="url(#terminal-3106289353-line-112)">nsswitch.conf</text><text class="terminal-3106289353-r2" x="1085.8" y="2752.8" textLength="12.2" clip-path="url(#terminal-3106289353-line-112)">
-</text><text class="terminal-3106289353-r1" x="0" y="2777.2" textLength="73.2" clip-path="url(#terminal-3106289353-line-113)">openal</text><text class="terminal-3106289353-r2" x="1085.8" y="2777.2" textLength="12.2" clip-path="url(#terminal-3106289353-line-113)">
-</text><text class="terminal-3106289353-r1" x="0" y="2801.6" textLength="36.6" clip-path="url(#terminal-3106289353-line-114)">opt</text><text class="terminal-3106289353-r2" x="1085.8" y="2801.6" textLength="12.2" clip-path="url(#terminal-3106289353-line-114)">
-</text><text class="terminal-3106289353-r3" x="0" y="2826" textLength="122" clip-path="url(#terminal-3106289353-line-115)">os-release</text><text class="terminal-3106289353-r2" x="1085.8" y="2826" textLength="12.2" clip-path="url(#terminal-3106289353-line-115)">
-</text><text class="terminal-3106289353-r2" x="0" y="2850.4" textLength="195.2" clip-path="url(#terminal-3106289353-line-116)">overlayroot.conf</text><text class="terminal-3106289353-r2" x="1085.8" y="2850.4" textLength="12.2" clip-path="url(#terminal-3106289353-line-116)">
-</text><text class="terminal-3106289353-r2" x="0" y="2874.8" textLength="268.4" clip-path="url(#terminal-3106289353-line-117)">overlayroot.local.conf</text><text class="terminal-3106289353-r2" x="1085.8" y="2874.8" textLength="12.2" clip-path="url(#terminal-3106289353-line-117)">
-</text><text class="terminal-3106289353-r2" x="0" y="2899.2" textLength="97.6" clip-path="url(#terminal-3106289353-line-118)">pam.conf</text><text class="terminal-3106289353-r2" x="1085.8" y="2899.2" textLength="12.2" clip-path="url(#terminal-3106289353-line-118)">
-</text><text class="terminal-3106289353-r1" x="0" y="2923.6" textLength="61" clip-path="url(#terminal-3106289353-line-119)">pam.d</text><text class="terminal-3106289353-r2" x="1085.8" y="2923.6" textLength="12.2" clip-path="url(#terminal-3106289353-line-119)">
-</text><text class="terminal-3106289353-r2" x="0" y="2948" textLength="73.2" clip-path="url(#terminal-3106289353-line-120)">passwd</text><text class="terminal-3106289353-r2" x="1085.8" y="2948" textLength="12.2" clip-path="url(#terminal-3106289353-line-120)">
-</text><text class="terminal-3106289353-r2" x="0" y="2972.4" textLength="85.4" clip-path="url(#terminal-3106289353-line-121)">passwd-</text><text class="terminal-3106289353-r2" x="1085.8" y="2972.4" textLength="12.2" clip-path="url(#terminal-3106289353-line-121)">
-</text><text class="terminal-3106289353-r1" x="0" y="2996.8" textLength="48.8" clip-path="url(#terminal-3106289353-line-122)">perl</text><text class="terminal-3106289353-r2" x="1085.8" y="2996.8" textLength="12.2" clip-path="url(#terminal-3106289353-line-122)">
-</text><text class="terminal-3106289353-r1" x="0" y="3021.2" textLength="36.6" clip-path="url(#terminal-3106289353-line-123)">pki</text><text class="terminal-3106289353-r2" x="1085.8" y="3021.2" textLength="12.2" clip-path="url(#terminal-3106289353-line-123)">
-</text><text class="terminal-3106289353-r1" x="0" y="3045.6" textLength="24.4" clip-path="url(#terminal-3106289353-line-124)">pm</text><text class="terminal-3106289353-r2" x="1085.8" y="3045.6" textLength="12.2" clip-path="url(#terminal-3106289353-line-124)">
-</text><text class="terminal-3106289353-r1" x="0" y="3070" textLength="97.6" clip-path="url(#terminal-3106289353-line-125)">polkit-1</text><text class="terminal-3106289353-r2" x="1085.8" y="3070" textLength="12.2" clip-path="url(#terminal-3106289353-line-125)">
-</text><text class="terminal-3106289353-r1" x="0" y="3094.4" textLength="109.8" clip-path="url(#terminal-3106289353-line-126)">pollinate</text><text class="terminal-3106289353-r2" x="1085.8" y="3094.4" textLength="12.2" clip-path="url(#terminal-3106289353-line-126)">
-</text><text class="terminal-3106289353-r2" x="0" y="3118.8" textLength="280.6" clip-path="url(#terminal-3106289353-line-127)">popularity-contest.conf</text><text class="terminal-3106289353-r2" x="1085.8" y="3118.8" textLength="12.2" clip-path="url(#terminal-3106289353-line-127)">
-</text><text class="terminal-3106289353-r2" x="0" y="3143.2" textLength="85.4" clip-path="url(#terminal-3106289353-line-128)">profile</text><text class="terminal-3106289353-r2" x="1085.8" y="3143.2" textLength="12.2" clip-path="url(#terminal-3106289353-line-128)">
-</text><text class="terminal-3106289353-r1" x="0" y="3167.6" textLength="109.8" clip-path="url(#terminal-3106289353-line-129)">profile.d</text><text class="terminal-3106289353-r2" x="1085.8" y="3167.6" textLength="12.2" clip-path="url(#terminal-3106289353-line-129)">
-</text><text class="terminal-3106289353-r2" x="0" y="3192" textLength="109.8" clip-path="url(#terminal-3106289353-line-130)">protocols</text><text class="terminal-3106289353-r2" x="1085.8" y="3192" textLength="12.2" clip-path="url(#terminal-3106289353-line-130)">
-</text><text class="terminal-3106289353-r1" x="0" y="3216.4" textLength="61" clip-path="url(#terminal-3106289353-line-131)">pulse</text><text class="terminal-3106289353-r2" x="1085.8" y="3216.4" textLength="12.2" clip-path="url(#terminal-3106289353-line-131)">
-</text><text class="terminal-3106289353-r1" x="0" y="3240.8" textLength="85.4" clip-path="url(#terminal-3106289353-line-132)">python3</text><text class="terminal-3106289353-r2" x="1085.8" y="3240.8" textLength="12.2" clip-path="url(#terminal-3106289353-line-132)">
-</text><text class="terminal-3106289353-r1" x="0" y="3265.2" textLength="109.8" clip-path="url(#terminal-3106289353-line-133)">python3.8</text><text class="terminal-3106289353-r2" x="1085.8" y="3265.2" textLength="12.2" clip-path="url(#terminal-3106289353-line-133)">
-</text><text class="terminal-3106289353-r1" x="0" y="3289.6" textLength="61" clip-path="url(#terminal-3106289353-line-134)">rc0.d</text><text class="terminal-3106289353-r2" x="1085.8" y="3289.6" textLength="12.2" clip-path="url(#terminal-3106289353-line-134)">
-</text><text class="terminal-3106289353-r1" x="0" y="3314" textLength="61" clip-path="url(#terminal-3106289353-line-135)">rc1.d</text><text class="terminal-3106289353-r2" x="1085.8" y="3314" textLength="12.2" clip-path="url(#terminal-3106289353-line-135)">
-</text><text class="terminal-3106289353-r1" x="0" y="3338.4" textLength="61" clip-path="url(#terminal-3106289353-line-136)">rc2.d</text><text class="terminal-3106289353-r2" x="1085.8" y="3338.4" textLength="12.2" clip-path="url(#terminal-3106289353-line-136)">
-</text><text class="terminal-3106289353-r1" x="0" y="3362.8" textLength="61" clip-path="url(#terminal-3106289353-line-137)">rc3.d</text><text class="terminal-3106289353-r2" x="1085.8" y="3362.8" textLength="12.2" clip-path="url(#terminal-3106289353-line-137)">
-</text><text class="terminal-3106289353-r1" x="0" y="3387.2" textLength="61" clip-path="url(#terminal-3106289353-line-138)">rc4.d</text><text class="terminal-3106289353-r2" x="1085.8" y="3387.2" textLength="12.2" clip-path="url(#terminal-3106289353-line-138)">
-</text><text class="terminal-3106289353-r1" x="0" y="3411.6" textLength="61" clip-path="url(#terminal-3106289353-line-139)">rc5.d</text><text class="terminal-3106289353-r2" x="1085.8" y="3411.6" textLength="12.2" clip-path="url(#terminal-3106289353-line-139)">
-</text><text class="terminal-3106289353-r1" x="0" y="3436" textLength="61" clip-path="url(#terminal-3106289353-line-140)">rc6.d</text><text class="terminal-3106289353-r2" x="1085.8" y="3436" textLength="12.2" clip-path="url(#terminal-3106289353-line-140)">
-</text><text class="terminal-3106289353-r1" x="0" y="3460.4" textLength="61" clip-path="url(#terminal-3106289353-line-141)">rcS.d</text><text class="terminal-3106289353-r2" x="1085.8" y="3460.4" textLength="12.2" clip-path="url(#terminal-3106289353-line-141)">
-</text><text class="terminal-3106289353-r3" x="0" y="3484.8" textLength="134.2" clip-path="url(#terminal-3106289353-line-142)">resolv.conf</text><text class="terminal-3106289353-r2" x="1085.8" y="3484.8" textLength="12.2" clip-path="url(#terminal-3106289353-line-142)">
-</text><text class="terminal-3106289353-r3" x="0" y="3509.2" textLength="36.6" clip-path="url(#terminal-3106289353-line-143)">rmt</text><text class="terminal-3106289353-r2" x="1085.8" y="3509.2" textLength="12.2" clip-path="url(#terminal-3106289353-line-143)">
-</text><text class="terminal-3106289353-r2" x="0" y="3533.6" textLength="36.6" clip-path="url(#terminal-3106289353-line-144)">rpc</text><text class="terminal-3106289353-r2" x="1085.8" y="3533.6" textLength="12.2" clip-path="url(#terminal-3106289353-line-144)">
-</text><text class="terminal-3106289353-r2" x="0" y="3558" textLength="146.4" clip-path="url(#terminal-3106289353-line-145)">rsyslog.conf</text><text class="terminal-3106289353-r2" x="1085.8" y="3558" textLength="12.2" clip-path="url(#terminal-3106289353-line-145)">
-</text><text class="terminal-3106289353-r1" x="0" y="3582.4" textLength="109.8" clip-path="url(#terminal-3106289353-line-146)">rsyslog.d</text><text class="terminal-3106289353-r2" x="1085.8" y="3582.4" textLength="12.2" clip-path="url(#terminal-3106289353-line-146)">
-</text><text class="terminal-3106289353-r2" x="0" y="3606.8" textLength="97.6" clip-path="url(#terminal-3106289353-line-147)">screenrc</text><text class="terminal-3106289353-r2" x="1085.8" y="3606.8" textLength="12.2" clip-path="url(#terminal-3106289353-line-147)">
-</text><text class="terminal-3106289353-r1" x="0" y="3631.2" textLength="97.6" clip-path="url(#terminal-3106289353-line-148)">security</text><text class="terminal-3106289353-r2" x="1085.8" y="3631.2" textLength="12.2" clip-path="url(#terminal-3106289353-line-148)">
-</text><text class="terminal-3106289353-r1" x="0" y="3655.6" textLength="85.4" clip-path="url(#terminal-3106289353-line-149)">selinux</text><text class="terminal-3106289353-r2" x="1085.8" y="3655.6" textLength="12.2" clip-path="url(#terminal-3106289353-line-149)">
-</text><text class="terminal-3106289353-r1" x="0" y="3680" textLength="109.8" clip-path="url(#terminal-3106289353-line-150)">sensors.d</text><text class="terminal-3106289353-r2" x="1085.8" y="3680" textLength="12.2" clip-path="url(#terminal-3106289353-line-150)">
-</text><text class="terminal-3106289353-r2" x="0" y="3704.4" textLength="158.6" clip-path="url(#terminal-3106289353-line-151)">sensors3.conf</text><text class="terminal-3106289353-r2" x="1085.8" y="3704.4" textLength="12.2" clip-path="url(#terminal-3106289353-line-151)">
-</text><text class="terminal-3106289353-r2" x="0" y="3728.8" textLength="97.6" clip-path="url(#terminal-3106289353-line-152)">services</text><text class="terminal-3106289353-r2" x="1085.8" y="3728.8" textLength="12.2" clip-path="url(#terminal-3106289353-line-152)">
-</text><text class="terminal-3106289353-r2" x="0" y="3753.2" textLength="73.2" clip-path="url(#terminal-3106289353-line-153)">shadow</text><text class="terminal-3106289353-r2" x="1085.8" y="3753.2" textLength="12.2" clip-path="url(#terminal-3106289353-line-153)">
-</text><text class="terminal-3106289353-r2" x="0" y="3777.6" textLength="85.4" clip-path="url(#terminal-3106289353-line-154)">shadow-</text><text class="terminal-3106289353-r2" x="1085.8" y="3777.6" textLength="12.2" clip-path="url(#terminal-3106289353-line-154)">
-</text><text class="terminal-3106289353-r2" x="0" y="3802" textLength="73.2" clip-path="url(#terminal-3106289353-line-155)">shells</text><text class="terminal-3106289353-r2" x="1085.8" y="3802" textLength="12.2" clip-path="url(#terminal-3106289353-line-155)">
-</text><text class="terminal-3106289353-r1" x="0" y="3826.4" textLength="48.8" clip-path="url(#terminal-3106289353-line-156)">skel</text><text class="terminal-3106289353-r2" x="1085.8" y="3826.4" textLength="12.2" clip-path="url(#terminal-3106289353-line-156)">
-</text><text class="terminal-3106289353-r1" x="0" y="3850.8" textLength="36.6" clip-path="url(#terminal-3106289353-line-157)">sos</text><text class="terminal-3106289353-r2" x="1085.8" y="3850.8" textLength="12.2" clip-path="url(#terminal-3106289353-line-157)">
-</text><text class="terminal-3106289353-r1" x="0" y="3875.2" textLength="36.6" clip-path="url(#terminal-3106289353-line-158)">ssh</text><text class="terminal-3106289353-r2" x="1085.8" y="3875.2" textLength="12.2" clip-path="url(#terminal-3106289353-line-158)">
-</text><text class="terminal-3106289353-r1" x="0" y="3899.6" textLength="36.6" clip-path="url(#terminal-3106289353-line-159)">ssl</text><text class="terminal-3106289353-r2" x="1085.8" y="3899.6" textLength="12.2" clip-path="url(#terminal-3106289353-line-159)">
-</text><text class="terminal-3106289353-r2" x="0" y="3924" textLength="73.2" clip-path="url(#terminal-3106289353-line-160)">subgid</text><text class="terminal-3106289353-r2" x="1085.8" y="3924" textLength="12.2" clip-path="url(#terminal-3106289353-line-160)">
-</text><text class="terminal-3106289353-r2" x="0" y="3948.4" textLength="85.4" clip-path="url(#terminal-3106289353-line-161)">subgid-</text><text class="terminal-3106289353-r2" x="1085.8" y="3948.4" textLength="12.2" clip-path="url(#terminal-3106289353-line-161)">
-</text><text class="terminal-3106289353-r2" x="0" y="3972.8" textLength="73.2" clip-path="url(#terminal-3106289353-line-162)">subuid</text><text class="terminal-3106289353-r2" x="1085.8" y="3972.8" textLength="12.2" clip-path="url(#terminal-3106289353-line-162)">
-</text><text class="terminal-3106289353-r2" x="0" y="3997.2" textLength="85.4" clip-path="url(#terminal-3106289353-line-163)">subuid-</text><text class="terminal-3106289353-r2" x="1085.8" y="3997.2" textLength="12.2" clip-path="url(#terminal-3106289353-line-163)">
-</text><text class="terminal-3106289353-r2" x="0" y="4021.6" textLength="85.4" clip-path="url(#terminal-3106289353-line-164)">sudoers</text><text class="terminal-3106289353-r2" x="1085.8" y="4021.6" textLength="12.2" clip-path="url(#terminal-3106289353-line-164)">
-</text><text class="terminal-3106289353-r1" x="0" y="4046" textLength="109.8" clip-path="url(#terminal-3106289353-line-165)">sudoers.d</text><text class="terminal-3106289353-r2" x="1085.8" y="4046" textLength="12.2" clip-path="url(#terminal-3106289353-line-165)">
-</text><text class="terminal-3106289353-r2" x="0" y="4070.4" textLength="134.2" clip-path="url(#terminal-3106289353-line-166)">sysctl.conf</text><text class="terminal-3106289353-r2" x="1085.8" y="4070.4" textLength="12.2" clip-path="url(#terminal-3106289353-line-166)">
-</text><text class="terminal-3106289353-r1" x="0" y="4094.8" textLength="97.6" clip-path="url(#terminal-3106289353-line-167)">sysctl.d</text><text class="terminal-3106289353-r2" x="1085.8" y="4094.8" textLength="12.2" clip-path="url(#terminal-3106289353-line-167)">
-</text><text class="terminal-3106289353-r1" x="0" y="4119.2" textLength="85.4" clip-path="url(#terminal-3106289353-line-168)">systemd</text><text class="terminal-3106289353-r2" x="1085.8" y="4119.2" textLength="12.2" clip-path="url(#terminal-3106289353-line-168)">
-</text><text class="terminal-3106289353-r1" x="0" y="4143.6" textLength="97.6" clip-path="url(#terminal-3106289353-line-169)">terminfo</text><text class="terminal-3106289353-r2" x="1085.8" y="4143.6" textLength="12.2" clip-path="url(#terminal-3106289353-line-169)">
-</text><text class="terminal-3106289353-r2" x="0" y="4168" textLength="97.6" clip-path="url(#terminal-3106289353-line-170)">timezone</text><text class="terminal-3106289353-r2" x="1085.8" y="4168" textLength="12.2" clip-path="url(#terminal-3106289353-line-170)">
-</text><text class="terminal-3106289353-r1" x="0" y="4192.4" textLength="122" clip-path="url(#terminal-3106289353-line-171)">tmpfiles.d</text><text class="terminal-3106289353-r2" x="1085.8" y="4192.4" textLength="12.2" clip-path="url(#terminal-3106289353-line-171)">
-</text><text class="terminal-3106289353-r1" x="0" y="4216.8" textLength="195.2" clip-path="url(#terminal-3106289353-line-172)">ubuntu-advantage</text><text class="terminal-3106289353-r2" x="1085.8" y="4216.8" textLength="12.2" clip-path="url(#terminal-3106289353-line-172)">
-</text><text class="terminal-3106289353-r2" x="0" y="4241.2" textLength="97.6" clip-path="url(#terminal-3106289353-line-173)">ucf.conf</text><text class="terminal-3106289353-r2" x="1085.8" y="4241.2" textLength="12.2" clip-path="url(#terminal-3106289353-line-173)">
-</text><text class="terminal-3106289353-r1" x="0" y="4265.6" textLength="48.8" clip-path="url(#terminal-3106289353-line-174)">udev</text><text class="terminal-3106289353-r2" x="1085.8" y="4265.6" textLength="12.2" clip-path="url(#terminal-3106289353-line-174)">
-</text><text class="terminal-3106289353-r1" x="0" y="4290" textLength="85.4" clip-path="url(#terminal-3106289353-line-175)">udisks2</text><text class="terminal-3106289353-r2" x="1085.8" y="4290" textLength="12.2" clip-path="url(#terminal-3106289353-line-175)">
-</text><text class="terminal-3106289353-r1" x="0" y="4314.4" textLength="36.6" clip-path="url(#terminal-3106289353-line-176)">ufw</text><text class="terminal-3106289353-r2" x="1085.8" y="4314.4" textLength="12.2" clip-path="url(#terminal-3106289353-line-176)">
-</text><text class="terminal-3106289353-r1" x="0" y="4338.8" textLength="170.8" clip-path="url(#terminal-3106289353-line-177)">update-manager</text><text class="terminal-3106289353-r2" x="1085.8" y="4338.8" textLength="12.2" clip-path="url(#terminal-3106289353-line-177)">
-</text><text class="terminal-3106289353-r1" x="0" y="4363.2" textLength="158.6" clip-path="url(#terminal-3106289353-line-178)">update-motd.d</text><text class="terminal-3106289353-r2" x="1085.8" y="4363.2" textLength="12.2" clip-path="url(#terminal-3106289353-line-178)">
-</text><text class="terminal-3106289353-r1" x="0" y="4387.6" textLength="183" clip-path="url(#terminal-3106289353-line-179)">update-notifier</text><text class="terminal-3106289353-r2" x="1085.8" y="4387.6" textLength="12.2" clip-path="url(#terminal-3106289353-line-179)">
-</text><text class="terminal-3106289353-r2" x="0" y="4412" textLength="231.8" clip-path="url(#terminal-3106289353-line-180)">usb_modeswitch.conf</text><text class="terminal-3106289353-r2" x="1085.8" y="4412" textLength="12.2" clip-path="url(#terminal-3106289353-line-180)">
-</text><text class="terminal-3106289353-r1" x="0" y="4436.4" textLength="195.2" clip-path="url(#terminal-3106289353-line-181)">usb_modeswitch.d</text><text class="terminal-3106289353-r2" x="1085.8" y="4436.4" textLength="12.2" clip-path="url(#terminal-3106289353-line-181)">
-</text><text class="terminal-3106289353-r2" x="0" y="4460.8" textLength="207.4" clip-path="url(#terminal-3106289353-line-182)">vdpau_wrapper.cfg</text><text class="terminal-3106289353-r2" x="1085.8" y="4460.8" textLength="12.2" clip-path="url(#terminal-3106289353-line-182)">
-</text><text class="terminal-3106289353-r1" x="0" y="4485.2" textLength="36.6" clip-path="url(#terminal-3106289353-line-183)">vim</text><text class="terminal-3106289353-r2" x="1085.8" y="4485.2" textLength="12.2" clip-path="url(#terminal-3106289353-line-183)">
-</text><text class="terminal-3106289353-r1" x="0" y="4509.6" textLength="146.4" clip-path="url(#terminal-3106289353-line-184)">vmware-tools</text><text class="terminal-3106289353-r2" x="1085.8" y="4509.6" textLength="12.2" clip-path="url(#terminal-3106289353-line-184)">
-</text><text class="terminal-3106289353-r3" x="0" y="4534" textLength="61" clip-path="url(#terminal-3106289353-line-185)">vtrgb</text><text class="terminal-3106289353-r2" x="1085.8" y="4534" textLength="12.2" clip-path="url(#terminal-3106289353-line-185)">
-</text><text class="terminal-3106289353-r1" x="0" y="4558.4" textLength="73.2" clip-path="url(#terminal-3106289353-line-186)">vulkan</text><text class="terminal-3106289353-r2" x="1085.8" y="4558.4" textLength="12.2" clip-path="url(#terminal-3106289353-line-186)">
-</text><text class="terminal-3106289353-r2" x="0" y="4582.8" textLength="73.2" clip-path="url(#terminal-3106289353-line-187)">wgetrc</text><text class="terminal-3106289353-r2" x="1085.8" y="4582.8" textLength="12.2" clip-path="url(#terminal-3106289353-line-187)">
-</text><text class="terminal-3106289353-r2" x="0" y="4607.2" textLength="97.6" clip-path="url(#terminal-3106289353-line-188)">wsl.conf</text><text class="terminal-3106289353-r2" x="1085.8" y="4607.2" textLength="12.2" clip-path="url(#terminal-3106289353-line-188)">
-</text><text class="terminal-3106289353-r2" x="0" y="4631.6" textLength="122" clip-path="url(#terminal-3106289353-line-189)">xattr.conf</text><text class="terminal-3106289353-r2" x="1085.8" y="4631.6" textLength="12.2" clip-path="url(#terminal-3106289353-line-189)">
-</text><text class="terminal-3106289353-r1" x="0" y="4656" textLength="36.6" clip-path="url(#terminal-3106289353-line-190)">xdg</text><text class="terminal-3106289353-r2" x="1085.8" y="4656" textLength="12.2" clip-path="url(#terminal-3106289353-line-190)">
-</text><text class="terminal-3106289353-r2" x="0" y="4680.4" textLength="256.2" clip-path="url(#terminal-3106289353-line-191)">zsh_command_not_found</text><text class="terminal-3106289353-r2" x="1085.8" y="4680.4" textLength="12.2" clip-path="url(#terminal-3106289353-line-191)">
-</text>
-    </g>
-    </g>
+.terminal-3106289353-r3 { fill: #42b3c2;font-weight: bold }</style>
+ <defs>
+  <clipPath id="terminal-3106289353-clip-terminal">
+   <rect width="1084.8" height="4683.8"/>
+  </clipPath>
+  <clipPath id="terminal-3106289353-line-0">
+   <rect y="1.5" width="1085.8" height="24.65"/>
+  </clipPath>
+  <clipPath id="terminal-3106289353-line-1">
+   <rect y="25.9" width="1085.8" height="24.65"/>
+  </clipPath>
+  <clipPath id="terminal-3106289353-line-2">
+   <rect y="50.3" width="1085.8" height="24.65"/>
+  </clipPath>
+  <clipPath id="terminal-3106289353-line-3">
+   <rect y="74.7" width="1085.8" height="24.65"/>
+  </clipPath>
+  <clipPath id="terminal-3106289353-line-4">
+   <rect y="99.1" width="1085.8" height="24.65"/>
+  </clipPath>
+  <clipPath id="terminal-3106289353-line-5">
+   <rect y="123.5" width="1085.8" height="24.65"/>
+  </clipPath>
+  <clipPath id="terminal-3106289353-line-6">
+   <rect y="147.9" width="1085.8" height="24.65"/>
+  </clipPath>
+  <clipPath id="terminal-3106289353-line-7">
+   <rect y="172.3" width="1085.8" height="24.65"/>
+  </clipPath>
+  <clipPath id="terminal-3106289353-line-8">
+   <rect y="196.7" width="1085.8" height="24.65"/>
+  </clipPath>
+  <clipPath id="terminal-3106289353-line-9">
+   <rect y="221.1" width="1085.8" height="24.65"/>
+  </clipPath>
+  <clipPath id="terminal-3106289353-line-10">
+   <rect y="245.5" width="1085.8" height="24.65"/>
+  </clipPath>
+  <clipPath id="terminal-3106289353-line-11">
+   <rect y="269.9" width="1085.8" height="24.65"/>
+  </clipPath>
+  <clipPath id="terminal-3106289353-line-12">
+   <rect y="294.3" width="1085.8" height="24.65"/>
+  </clipPath>
+  <clipPath id="terminal-3106289353-line-13">
+   <rect y="318.7" width="1085.8" height="24.65"/>
+  </clipPath>
+  <clipPath id="terminal-3106289353-line-14">
+   <rect y="343.1" width="1085.8" height="24.65"/>
+  </clipPath>
+  <clipPath id="terminal-3106289353-line-15">
+   <rect y="367.5" width="1085.8" height="24.65"/>
+  </clipPath>
+  <clipPath id="terminal-3106289353-line-16">
+   <rect y="391.9" width="1085.8" height="24.65"/>
+  </clipPath>
+  <clipPath id="terminal-3106289353-line-17">
+   <rect y="416.3" width="1085.8" height="24.65"/>
+  </clipPath>
+  <clipPath id="terminal-3106289353-line-18">
+   <rect y="440.7" width="1085.8" height="24.65"/>
+  </clipPath>
+  <clipPath id="terminal-3106289353-line-19">
+   <rect y="465.1" width="1085.8" height="24.65"/>
+  </clipPath>
+  <clipPath id="terminal-3106289353-line-20">
+   <rect y="489.5" width="1085.8" height="24.65"/>
+  </clipPath>
+  <clipPath id="terminal-3106289353-line-21">
+   <rect y="513.9" width="1085.8" height="24.65"/>
+  </clipPath>
+  <clipPath id="terminal-3106289353-line-22">
+   <rect y="538.3" width="1085.8" height="24.65"/>
+  </clipPath>
+  <clipPath id="terminal-3106289353-line-23">
+   <rect y="562.7" width="1085.8" height="24.65"/>
+  </clipPath>
+  <clipPath id="terminal-3106289353-line-24">
+   <rect y="587.1" width="1085.8" height="24.65"/>
+  </clipPath>
+  <clipPath id="terminal-3106289353-line-25">
+   <rect y="611.5" width="1085.8" height="24.65"/>
+  </clipPath>
+  <clipPath id="terminal-3106289353-line-26">
+   <rect y="635.9" width="1085.8" height="24.65"/>
+  </clipPath>
+  <clipPath id="terminal-3106289353-line-27">
+   <rect y="660.3" width="1085.8" height="24.65"/>
+  </clipPath>
+  <clipPath id="terminal-3106289353-line-28">
+   <rect y="684.7" width="1085.8" height="24.65"/>
+  </clipPath>
+  <clipPath id="terminal-3106289353-line-29">
+   <rect y="709.1" width="1085.8" height="24.65"/>
+  </clipPath>
+  <clipPath id="terminal-3106289353-line-30">
+   <rect y="733.5" width="1085.8" height="24.65"/>
+  </clipPath>
+  <clipPath id="terminal-3106289353-line-31">
+   <rect y="757.9" width="1085.8" height="24.65"/>
+  </clipPath>
+  <clipPath id="terminal-3106289353-line-32">
+   <rect y="782.3" width="1085.8" height="24.65"/>
+  </clipPath>
+  <clipPath id="terminal-3106289353-line-33">
+   <rect y="806.7" width="1085.8" height="24.65"/>
+  </clipPath>
+  <clipPath id="terminal-3106289353-line-34">
+   <rect y="831.1" width="1085.8" height="24.65"/>
+  </clipPath>
+  <clipPath id="terminal-3106289353-line-35">
+   <rect y="855.5" width="1085.8" height="24.65"/>
+  </clipPath>
+  <clipPath id="terminal-3106289353-line-36">
+   <rect y="879.9" width="1085.8" height="24.65"/>
+  </clipPath>
+  <clipPath id="terminal-3106289353-line-37">
+   <rect y="904.3" width="1085.8" height="24.65"/>
+  </clipPath>
+  <clipPath id="terminal-3106289353-line-38">
+   <rect y="928.7" width="1085.8" height="24.65"/>
+  </clipPath>
+  <clipPath id="terminal-3106289353-line-39">
+   <rect y="953.1" width="1085.8" height="24.65"/>
+  </clipPath>
+  <clipPath id="terminal-3106289353-line-40">
+   <rect y="977.5" width="1085.8" height="24.65"/>
+  </clipPath>
+  <clipPath id="terminal-3106289353-line-41">
+   <rect y="1001.9" width="1085.8" height="24.65"/>
+  </clipPath>
+  <clipPath id="terminal-3106289353-line-42">
+   <rect y="1026.3" width="1085.8" height="24.65"/>
+  </clipPath>
+  <clipPath id="terminal-3106289353-line-43">
+   <rect y="1050.7" width="1085.8" height="24.65"/>
+  </clipPath>
+  <clipPath id="terminal-3106289353-line-44">
+   <rect y="1075.1" width="1085.8" height="24.65"/>
+  </clipPath>
+  <clipPath id="terminal-3106289353-line-45">
+   <rect y="1099.5" width="1085.8" height="24.65"/>
+  </clipPath>
+  <clipPath id="terminal-3106289353-line-46">
+   <rect y="1123.9" width="1085.8" height="24.65"/>
+  </clipPath>
+  <clipPath id="terminal-3106289353-line-47">
+   <rect y="1148.3" width="1085.8" height="24.65"/>
+  </clipPath>
+  <clipPath id="terminal-3106289353-line-48">
+   <rect y="1172.7" width="1085.8" height="24.65"/>
+  </clipPath>
+  <clipPath id="terminal-3106289353-line-49">
+   <rect y="1197.1" width="1085.8" height="24.65"/>
+  </clipPath>
+  <clipPath id="terminal-3106289353-line-50">
+   <rect y="1221.5" width="1085.8" height="24.65"/>
+  </clipPath>
+  <clipPath id="terminal-3106289353-line-51">
+   <rect y="1245.9" width="1085.8" height="24.65"/>
+  </clipPath>
+  <clipPath id="terminal-3106289353-line-52">
+   <rect y="1270.3" width="1085.8" height="24.65"/>
+  </clipPath>
+  <clipPath id="terminal-3106289353-line-53">
+   <rect y="1294.7" width="1085.8" height="24.65"/>
+  </clipPath>
+  <clipPath id="terminal-3106289353-line-54">
+   <rect y="1319.1" width="1085.8" height="24.65"/>
+  </clipPath>
+  <clipPath id="terminal-3106289353-line-55">
+   <rect y="1343.5" width="1085.8" height="24.65"/>
+  </clipPath>
+  <clipPath id="terminal-3106289353-line-56">
+   <rect y="1367.9" width="1085.8" height="24.65"/>
+  </clipPath>
+  <clipPath id="terminal-3106289353-line-57">
+   <rect y="1392.3" width="1085.8" height="24.65"/>
+  </clipPath>
+  <clipPath id="terminal-3106289353-line-58">
+   <rect y="1416.7" width="1085.8" height="24.65"/>
+  </clipPath>
+  <clipPath id="terminal-3106289353-line-59">
+   <rect y="1441.1" width="1085.8" height="24.65"/>
+  </clipPath>
+  <clipPath id="terminal-3106289353-line-60">
+   <rect y="1465.5" width="1085.8" height="24.65"/>
+  </clipPath>
+  <clipPath id="terminal-3106289353-line-61">
+   <rect y="1489.9" width="1085.8" height="24.65"/>
+  </clipPath>
+  <clipPath id="terminal-3106289353-line-62">
+   <rect y="1514.3" width="1085.8" height="24.65"/>
+  </clipPath>
+  <clipPath id="terminal-3106289353-line-63">
+   <rect y="1538.7" width="1085.8" height="24.65"/>
+  </clipPath>
+  <clipPath id="terminal-3106289353-line-64">
+   <rect y="1563.1" width="1085.8" height="24.65"/>
+  </clipPath>
+  <clipPath id="terminal-3106289353-line-65">
+   <rect y="1587.5" width="1085.8" height="24.65"/>
+  </clipPath>
+  <clipPath id="terminal-3106289353-line-66">
+   <rect y="1611.9" width="1085.8" height="24.65"/>
+  </clipPath>
+  <clipPath id="terminal-3106289353-line-67">
+   <rect y="1636.3" width="1085.8" height="24.65"/>
+  </clipPath>
+  <clipPath id="terminal-3106289353-line-68">
+   <rect y="1660.7" width="1085.8" height="24.65"/>
+  </clipPath>
+  <clipPath id="terminal-3106289353-line-69">
+   <rect y="1685.1" width="1085.8" height="24.65"/>
+  </clipPath>
+  <clipPath id="terminal-3106289353-line-70">
+   <rect y="1709.5" width="1085.8" height="24.65"/>
+  </clipPath>
+  <clipPath id="terminal-3106289353-line-71">
+   <rect y="1733.9" width="1085.8" height="24.65"/>
+  </clipPath>
+  <clipPath id="terminal-3106289353-line-72">
+   <rect y="1758.3" width="1085.8" height="24.65"/>
+  </clipPath>
+  <clipPath id="terminal-3106289353-line-73">
+   <rect y="1782.7" width="1085.8" height="24.65"/>
+  </clipPath>
+  <clipPath id="terminal-3106289353-line-74">
+   <rect y="1807.1" width="1085.8" height="24.65"/>
+  </clipPath>
+  <clipPath id="terminal-3106289353-line-75">
+   <rect y="1831.5" width="1085.8" height="24.65"/>
+  </clipPath>
+  <clipPath id="terminal-3106289353-line-76">
+   <rect y="1855.9" width="1085.8" height="24.65"/>
+  </clipPath>
+  <clipPath id="terminal-3106289353-line-77">
+   <rect y="1880.3" width="1085.8" height="24.65"/>
+  </clipPath>
+  <clipPath id="terminal-3106289353-line-78">
+   <rect y="1904.7" width="1085.8" height="24.65"/>
+  </clipPath>
+  <clipPath id="terminal-3106289353-line-79">
+   <rect y="1929.1" width="1085.8" height="24.65"/>
+  </clipPath>
+  <clipPath id="terminal-3106289353-line-80">
+   <rect y="1953.5" width="1085.8" height="24.65"/>
+  </clipPath>
+  <clipPath id="terminal-3106289353-line-81">
+   <rect y="1977.9" width="1085.8" height="24.65"/>
+  </clipPath>
+  <clipPath id="terminal-3106289353-line-82">
+   <rect y="2002.3" width="1085.8" height="24.65"/>
+  </clipPath>
+  <clipPath id="terminal-3106289353-line-83">
+   <rect y="2026.7" width="1085.8" height="24.65"/>
+  </clipPath>
+  <clipPath id="terminal-3106289353-line-84">
+   <rect y="2051.1" width="1085.8" height="24.65"/>
+  </clipPath>
+  <clipPath id="terminal-3106289353-line-85">
+   <rect y="2075.5" width="1085.8" height="24.65"/>
+  </clipPath>
+  <clipPath id="terminal-3106289353-line-86">
+   <rect y="2099.9" width="1085.8" height="24.65"/>
+  </clipPath>
+  <clipPath id="terminal-3106289353-line-87">
+   <rect y="2124.3" width="1085.8" height="24.65"/>
+  </clipPath>
+  <clipPath id="terminal-3106289353-line-88">
+   <rect y="2148.7" width="1085.8" height="24.65"/>
+  </clipPath>
+  <clipPath id="terminal-3106289353-line-89">
+   <rect y="2173.1" width="1085.8" height="24.65"/>
+  </clipPath>
+  <clipPath id="terminal-3106289353-line-90">
+   <rect y="2197.5" width="1085.8" height="24.65"/>
+  </clipPath>
+  <clipPath id="terminal-3106289353-line-91">
+   <rect y="2221.9" width="1085.8" height="24.65"/>
+  </clipPath>
+  <clipPath id="terminal-3106289353-line-92">
+   <rect y="2246.3" width="1085.8" height="24.65"/>
+  </clipPath>
+  <clipPath id="terminal-3106289353-line-93">
+   <rect y="2270.7" width="1085.8" height="24.65"/>
+  </clipPath>
+  <clipPath id="terminal-3106289353-line-94">
+   <rect y="2295.1" width="1085.8" height="24.65"/>
+  </clipPath>
+  <clipPath id="terminal-3106289353-line-95">
+   <rect y="2319.5" width="1085.8" height="24.65"/>
+  </clipPath>
+  <clipPath id="terminal-3106289353-line-96">
+   <rect y="2343.9" width="1085.8" height="24.65"/>
+  </clipPath>
+  <clipPath id="terminal-3106289353-line-97">
+   <rect y="2368.3" width="1085.8" height="24.65"/>
+  </clipPath>
+  <clipPath id="terminal-3106289353-line-98">
+   <rect y="2392.7" width="1085.8" height="24.65"/>
+  </clipPath>
+  <clipPath id="terminal-3106289353-line-99">
+   <rect y="2417.1" width="1085.8" height="24.65"/>
+  </clipPath>
+  <clipPath id="terminal-3106289353-line-100">
+   <rect y="2441.5" width="1085.8" height="24.65"/>
+  </clipPath>
+  <clipPath id="terminal-3106289353-line-101">
+   <rect y="2465.9" width="1085.8" height="24.65"/>
+  </clipPath>
+  <clipPath id="terminal-3106289353-line-102">
+   <rect y="2490.3" width="1085.8" height="24.65"/>
+  </clipPath>
+  <clipPath id="terminal-3106289353-line-103">
+   <rect y="2514.7" width="1085.8" height="24.65"/>
+  </clipPath>
+  <clipPath id="terminal-3106289353-line-104">
+   <rect y="2539.1" width="1085.8" height="24.65"/>
+  </clipPath>
+  <clipPath id="terminal-3106289353-line-105">
+   <rect y="2563.5" width="1085.8" height="24.65"/>
+  </clipPath>
+  <clipPath id="terminal-3106289353-line-106">
+   <rect y="2587.9" width="1085.8" height="24.65"/>
+  </clipPath>
+  <clipPath id="terminal-3106289353-line-107">
+   <rect y="2612.3" width="1085.8" height="24.65"/>
+  </clipPath>
+  <clipPath id="terminal-3106289353-line-108">
+   <rect y="2636.7" width="1085.8" height="24.65"/>
+  </clipPath>
+  <clipPath id="terminal-3106289353-line-109">
+   <rect y="2661.1" width="1085.8" height="24.65"/>
+  </clipPath>
+  <clipPath id="terminal-3106289353-line-110">
+   <rect y="2685.5" width="1085.8" height="24.65"/>
+  </clipPath>
+  <clipPath id="terminal-3106289353-line-111">
+   <rect y="2709.9" width="1085.8" height="24.65"/>
+  </clipPath>
+  <clipPath id="terminal-3106289353-line-112">
+   <rect y="2734.3" width="1085.8" height="24.65"/>
+  </clipPath>
+  <clipPath id="terminal-3106289353-line-113">
+   <rect y="2758.7" width="1085.8" height="24.65"/>
+  </clipPath>
+  <clipPath id="terminal-3106289353-line-114">
+   <rect y="2783.1" width="1085.8" height="24.65"/>
+  </clipPath>
+  <clipPath id="terminal-3106289353-line-115">
+   <rect y="2807.5" width="1085.8" height="24.65"/>
+  </clipPath>
+  <clipPath id="terminal-3106289353-line-116">
+   <rect y="2831.9" width="1085.8" height="24.65"/>
+  </clipPath>
+  <clipPath id="terminal-3106289353-line-117">
+   <rect y="2856.3" width="1085.8" height="24.65"/>
+  </clipPath>
+  <clipPath id="terminal-3106289353-line-118">
+   <rect y="2880.7" width="1085.8" height="24.65"/>
+  </clipPath>
+  <clipPath id="terminal-3106289353-line-119">
+   <rect y="2905.1" width="1085.8" height="24.65"/>
+  </clipPath>
+  <clipPath id="terminal-3106289353-line-120">
+   <rect y="2929.5" width="1085.8" height="24.65"/>
+  </clipPath>
+  <clipPath id="terminal-3106289353-line-121">
+   <rect y="2953.9" width="1085.8" height="24.65"/>
+  </clipPath>
+  <clipPath id="terminal-3106289353-line-122">
+   <rect y="2978.3" width="1085.8" height="24.65"/>
+  </clipPath>
+  <clipPath id="terminal-3106289353-line-123">
+   <rect y="3002.7" width="1085.8" height="24.65"/>
+  </clipPath>
+  <clipPath id="terminal-3106289353-line-124">
+   <rect y="3027.1" width="1085.8" height="24.65"/>
+  </clipPath>
+  <clipPath id="terminal-3106289353-line-125">
+   <rect y="3051.5" width="1085.8" height="24.65"/>
+  </clipPath>
+  <clipPath id="terminal-3106289353-line-126">
+   <rect y="3075.9" width="1085.8" height="24.65"/>
+  </clipPath>
+  <clipPath id="terminal-3106289353-line-127">
+   <rect y="3100.3" width="1085.8" height="24.65"/>
+  </clipPath>
+  <clipPath id="terminal-3106289353-line-128">
+   <rect y="3124.7" width="1085.8" height="24.65"/>
+  </clipPath>
+  <clipPath id="terminal-3106289353-line-129">
+   <rect y="3149.1" width="1085.8" height="24.65"/>
+  </clipPath>
+  <clipPath id="terminal-3106289353-line-130">
+   <rect y="3173.5" width="1085.8" height="24.65"/>
+  </clipPath>
+  <clipPath id="terminal-3106289353-line-131">
+   <rect y="3197.9" width="1085.8" height="24.65"/>
+  </clipPath>
+  <clipPath id="terminal-3106289353-line-132">
+   <rect y="3222.3" width="1085.8" height="24.65"/>
+  </clipPath>
+  <clipPath id="terminal-3106289353-line-133">
+   <rect y="3246.7" width="1085.8" height="24.65"/>
+  </clipPath>
+  <clipPath id="terminal-3106289353-line-134">
+   <rect y="3271.1" width="1085.8" height="24.65"/>
+  </clipPath>
+  <clipPath id="terminal-3106289353-line-135">
+   <rect y="3295.5" width="1085.8" height="24.65"/>
+  </clipPath>
+  <clipPath id="terminal-3106289353-line-136">
+   <rect y="3319.9" width="1085.8" height="24.65"/>
+  </clipPath>
+  <clipPath id="terminal-3106289353-line-137">
+   <rect y="3344.3" width="1085.8" height="24.65"/>
+  </clipPath>
+  <clipPath id="terminal-3106289353-line-138">
+   <rect y="3368.7" width="1085.8" height="24.65"/>
+  </clipPath>
+  <clipPath id="terminal-3106289353-line-139">
+   <rect y="3393.1" width="1085.8" height="24.65"/>
+  </clipPath>
+  <clipPath id="terminal-3106289353-line-140">
+   <rect y="3417.5" width="1085.8" height="24.65"/>
+  </clipPath>
+  <clipPath id="terminal-3106289353-line-141">
+   <rect y="3441.9" width="1085.8" height="24.65"/>
+  </clipPath>
+  <clipPath id="terminal-3106289353-line-142">
+   <rect y="3466.3" width="1085.8" height="24.65"/>
+  </clipPath>
+  <clipPath id="terminal-3106289353-line-143">
+   <rect y="3490.7" width="1085.8" height="24.65"/>
+  </clipPath>
+  <clipPath id="terminal-3106289353-line-144">
+   <rect y="3515.1" width="1085.8" height="24.65"/>
+  </clipPath>
+  <clipPath id="terminal-3106289353-line-145">
+   <rect y="3539.5" width="1085.8" height="24.65"/>
+  </clipPath>
+  <clipPath id="terminal-3106289353-line-146">
+   <rect y="3563.9" width="1085.8" height="24.65"/>
+  </clipPath>
+  <clipPath id="terminal-3106289353-line-147">
+   <rect y="3588.3" width="1085.8" height="24.65"/>
+  </clipPath>
+  <clipPath id="terminal-3106289353-line-148">
+   <rect y="3612.7" width="1085.8" height="24.65"/>
+  </clipPath>
+  <clipPath id="terminal-3106289353-line-149">
+   <rect y="3637.1" width="1085.8" height="24.65"/>
+  </clipPath>
+  <clipPath id="terminal-3106289353-line-150">
+   <rect y="3661.5" width="1085.8" height="24.65"/>
+  </clipPath>
+  <clipPath id="terminal-3106289353-line-151">
+   <rect y="3685.9" width="1085.8" height="24.65"/>
+  </clipPath>
+  <clipPath id="terminal-3106289353-line-152">
+   <rect y="3710.3" width="1085.8" height="24.65"/>
+  </clipPath>
+  <clipPath id="terminal-3106289353-line-153">
+   <rect y="3734.7" width="1085.8" height="24.65"/>
+  </clipPath>
+  <clipPath id="terminal-3106289353-line-154">
+   <rect y="3759.1" width="1085.8" height="24.65"/>
+  </clipPath>
+  <clipPath id="terminal-3106289353-line-155">
+   <rect y="3783.5" width="1085.8" height="24.65"/>
+  </clipPath>
+  <clipPath id="terminal-3106289353-line-156">
+   <rect y="3807.9" width="1085.8" height="24.65"/>
+  </clipPath>
+  <clipPath id="terminal-3106289353-line-157">
+   <rect y="3832.3" width="1085.8" height="24.65"/>
+  </clipPath>
+  <clipPath id="terminal-3106289353-line-158">
+   <rect y="3856.7" width="1085.8" height="24.65"/>
+  </clipPath>
+  <clipPath id="terminal-3106289353-line-159">
+   <rect y="3881.1" width="1085.8" height="24.65"/>
+  </clipPath>
+  <clipPath id="terminal-3106289353-line-160">
+   <rect y="3905.5" width="1085.8" height="24.65"/>
+  </clipPath>
+  <clipPath id="terminal-3106289353-line-161">
+   <rect y="3929.9" width="1085.8" height="24.65"/>
+  </clipPath>
+  <clipPath id="terminal-3106289353-line-162">
+   <rect y="3954.3" width="1085.8" height="24.65"/>
+  </clipPath>
+  <clipPath id="terminal-3106289353-line-163">
+   <rect y="3978.7" width="1085.8" height="24.65"/>
+  </clipPath>
+  <clipPath id="terminal-3106289353-line-164">
+   <rect y="4003.1" width="1085.8" height="24.65"/>
+  </clipPath>
+  <clipPath id="terminal-3106289353-line-165">
+   <rect y="4027.5" width="1085.8" height="24.65"/>
+  </clipPath>
+  <clipPath id="terminal-3106289353-line-166">
+   <rect y="4051.9" width="1085.8" height="24.65"/>
+  </clipPath>
+  <clipPath id="terminal-3106289353-line-167">
+   <rect y="4076.3" width="1085.8" height="24.65"/>
+  </clipPath>
+  <clipPath id="terminal-3106289353-line-168">
+   <rect y="4100.7" width="1085.8" height="24.65"/>
+  </clipPath>
+  <clipPath id="terminal-3106289353-line-169">
+   <rect y="4125.1" width="1085.8" height="24.65"/>
+  </clipPath>
+  <clipPath id="terminal-3106289353-line-170">
+   <rect y="4149.5" width="1085.8" height="24.65"/>
+  </clipPath>
+  <clipPath id="terminal-3106289353-line-171">
+   <rect y="4173.9" width="1085.8" height="24.65"/>
+  </clipPath>
+  <clipPath id="terminal-3106289353-line-172">
+   <rect y="4198.3" width="1085.8" height="24.65"/>
+  </clipPath>
+  <clipPath id="terminal-3106289353-line-173">
+   <rect y="4222.7" width="1085.8" height="24.65"/>
+  </clipPath>
+  <clipPath id="terminal-3106289353-line-174">
+   <rect y="4247.1" width="1085.8" height="24.65"/>
+  </clipPath>
+  <clipPath id="terminal-3106289353-line-175">
+   <rect y="4271.5" width="1085.8" height="24.65"/>
+  </clipPath>
+  <clipPath id="terminal-3106289353-line-176">
+   <rect y="4295.9" width="1085.8" height="24.65"/>
+  </clipPath>
+  <clipPath id="terminal-3106289353-line-177">
+   <rect y="4320.3" width="1085.8" height="24.65"/>
+  </clipPath>
+  <clipPath id="terminal-3106289353-line-178">
+   <rect y="4344.7" width="1085.8" height="24.65"/>
+  </clipPath>
+  <clipPath id="terminal-3106289353-line-179">
+   <rect y="4369.1" width="1085.8" height="24.65"/>
+  </clipPath>
+  <clipPath id="terminal-3106289353-line-180">
+   <rect y="4393.5" width="1085.8" height="24.65"/>
+  </clipPath>
+  <clipPath id="terminal-3106289353-line-181">
+   <rect y="4417.9" width="1085.8" height="24.65"/>
+  </clipPath>
+  <clipPath id="terminal-3106289353-line-182">
+   <rect y="4442.3" width="1085.8" height="24.65"/>
+  </clipPath>
+  <clipPath id="terminal-3106289353-line-183">
+   <rect y="4466.7" width="1085.8" height="24.65"/>
+  </clipPath>
+  <clipPath id="terminal-3106289353-line-184">
+   <rect y="4491.1" width="1085.8" height="24.65"/>
+  </clipPath>
+  <clipPath id="terminal-3106289353-line-185">
+   <rect y="4515.5" width="1085.8" height="24.65"/>
+  </clipPath>
+  <clipPath id="terminal-3106289353-line-186">
+   <rect y="4539.9" width="1085.8" height="24.65"/>
+  </clipPath>
+  <clipPath id="terminal-3106289353-line-187">
+   <rect y="4564.3" width="1085.8" height="24.65"/>
+  </clipPath>
+  <clipPath id="terminal-3106289353-line-188">
+   <rect y="4588.7" width="1085.8" height="24.65"/>
+  </clipPath>
+  <clipPath id="terminal-3106289353-line-189">
+   <rect y="4613.1" width="1085.8" height="24.65"/>
+  </clipPath>
+  <clipPath id="terminal-3106289353-line-190">
+   <rect y="4637.5" width="1085.8" height="24.65"/>
+  </clipPath>
+ </defs>
+ <rect x="1" y="1" width="1102" height="4732.8" rx="8" fill="#282c34" stroke="rgba(255,255,255,0.35)"/>
+ <text class="terminal-3106289353-title" x="551" y="27" fill="#abb2bf" text-anchor="middle">AnsiToImg (courtesy of Rich)</text>
+ <g transform="translate(26,22)">
+  <circle r="7" fill="#ff5f57"/>
+  <circle cx="22" r="7" fill="#febc2e"/>
+  <circle cx="44" r="7" fill="#28c840"/>
+ </g>
+ <g transform="translate(9 41)" clip-path="url(#terminal-3106289353-clip-terminal)">
+  <g class="terminal-3106289353-matrix">
+   <text class="terminal-3106289353-r1" y="20" clip-path="url(#terminal-3106289353-line-0)" textLength="146.4">ModemManager</text>
+   <text class="terminal-3106289353-r2" x="1085.8" y="20" clip-path="url(#terminal-3106289353-line-0)" textLength="12.2"/>
+   <text class="terminal-3106289353-r1" y="44.4" clip-path="url(#terminal-3106289353-line-1)" textLength="170.8">NetworkManager</text>
+   <text class="terminal-3106289353-r2" x="1085.8" y="44.4" clip-path="url(#terminal-3106289353-line-1)" textLength="12.2"/>
+   <text class="terminal-3106289353-r1" y="68.8" clip-path="url(#terminal-3106289353-line-2)" textLength="122">PackageKit</text>
+   <text class="terminal-3106289353-r2" x="1085.8" y="68.8" clip-path="url(#terminal-3106289353-line-2)" textLength="12.2"/>
+   <text class="terminal-3106289353-r1" y="93.2" clip-path="url(#terminal-3106289353-line-3)" textLength="36.6">X11</text>
+   <text class="terminal-3106289353-r2" x="1085.8" y="93.2" clip-path="url(#terminal-3106289353-line-3)" textLength="12.2"/>
+   <text class="terminal-3106289353-r2" y="117.6" clip-path="url(#terminal-3106289353-line-4)" textLength="146.4">adduser.conf</text>
+   <text class="terminal-3106289353-r2" x="1085.8" y="117.6" clip-path="url(#terminal-3106289353-line-4)" textLength="12.2"/>
+   <text class="terminal-3106289353-r1" y="142" clip-path="url(#terminal-3106289353-line-5)" textLength="146.4">alternatives</text>
+   <text class="terminal-3106289353-r2" x="1085.8" y="142" clip-path="url(#terminal-3106289353-line-5)" textLength="12.2"/>
+   <text class="terminal-3106289353-r1" y="166.4" clip-path="url(#terminal-3106289353-line-6)" textLength="97.6">apparmor</text>
+   <text class="terminal-3106289353-r2" x="1085.8" y="166.4" clip-path="url(#terminal-3106289353-line-6)" textLength="12.2"/>
+   <text class="terminal-3106289353-r1" y="190.8" clip-path="url(#terminal-3106289353-line-7)" textLength="122">apparmor.d</text>
+   <text class="terminal-3106289353-r2" x="1085.8" y="190.8" clip-path="url(#terminal-3106289353-line-7)" textLength="12.2"/>
+   <text class="terminal-3106289353-r1" y="215.2" clip-path="url(#terminal-3106289353-line-8)" textLength="73.2">apport</text>
+   <text class="terminal-3106289353-r2" x="1085.8" y="215.2" clip-path="url(#terminal-3106289353-line-8)" textLength="12.2"/>
+   <text class="terminal-3106289353-r1" y="239.6" clip-path="url(#terminal-3106289353-line-9)" textLength="36.6">apt</text>
+   <text class="terminal-3106289353-r2" x="1085.8" y="239.6" clip-path="url(#terminal-3106289353-line-9)" textLength="12.2"/>
+   <text class="terminal-3106289353-r2" y="264" clip-path="url(#terminal-3106289353-line-10)" textLength="85.4">at.deny</text>
+   <text class="terminal-3106289353-r2" x="1085.8" y="264" clip-path="url(#terminal-3106289353-line-10)" textLength="12.2"/>
+   <text class="terminal-3106289353-r2" y="288.4" clip-path="url(#terminal-3106289353-line-11)" textLength="134.2">bash.bashrc</text>
+   <text class="terminal-3106289353-r2" x="1085.8" y="288.4" clip-path="url(#terminal-3106289353-line-11)" textLength="12.2"/>
+   <text class="terminal-3106289353-r2" y="312.8" clip-path="url(#terminal-3106289353-line-12)" textLength="183">bash_completion</text>
+   <text class="terminal-3106289353-r2" x="1085.8" y="312.8" clip-path="url(#terminal-3106289353-line-12)" textLength="12.2"/>
+   <text class="terminal-3106289353-r1" y="337.2" clip-path="url(#terminal-3106289353-line-13)" textLength="207.4">bash_completion.d</text>
+   <text class="terminal-3106289353-r2" x="1085.8" y="337.2" clip-path="url(#terminal-3106289353-line-13)" textLength="12.2"/>
+   <text class="terminal-3106289353-r2" y="361.6" clip-path="url(#terminal-3106289353-line-14)" textLength="268.4">bindresvport.blacklist</text>
+   <text class="terminal-3106289353-r2" x="1085.8" y="361.6" clip-path="url(#terminal-3106289353-line-14)" textLength="12.2"/>
+   <text class="terminal-3106289353-r1" y="386" clip-path="url(#terminal-3106289353-line-15)" textLength="97.6">binfmt.d</text>
+   <text class="terminal-3106289353-r2" x="1085.8" y="386" clip-path="url(#terminal-3106289353-line-15)" textLength="12.2"/>
+   <text class="terminal-3106289353-r1" y="410.4" clip-path="url(#terminal-3106289353-line-16)" textLength="61">byobu</text>
+   <text class="terminal-3106289353-r2" x="1085.8" y="410.4" clip-path="url(#terminal-3106289353-line-16)" textLength="12.2"/>
+   <text class="terminal-3106289353-r1" y="434.8" clip-path="url(#terminal-3106289353-line-17)" textLength="183">ca-certificates</text>
+   <text class="terminal-3106289353-r2" x="1085.8" y="434.8" clip-path="url(#terminal-3106289353-line-17)" textLength="12.2"/>
+   <text class="terminal-3106289353-r2" y="459.2" clip-path="url(#terminal-3106289353-line-18)" textLength="244">ca-certificates.conf</text>
+   <text class="terminal-3106289353-r2" x="1085.8" y="459.2" clip-path="url(#terminal-3106289353-line-18)" textLength="12.2"/>
+   <text class="terminal-3106289353-r2" y="483.6" clip-path="url(#terminal-3106289353-line-19)" textLength="353.8">ca-certificates.conf.dpkg-old</text>
+   <text class="terminal-3106289353-r2" x="1085.8" y="483.6" clip-path="url(#terminal-3106289353-line-19)" textLength="12.2"/>
+   <text class="terminal-3106289353-r1" y="508" clip-path="url(#terminal-3106289353-line-20)" textLength="97.6">calendar</text>
+   <text class="terminal-3106289353-r2" x="1085.8" y="508" clip-path="url(#terminal-3106289353-line-20)" textLength="12.2"/>
+   <text class="terminal-3106289353-r1" y="532.4" clip-path="url(#terminal-3106289353-line-21)" textLength="61">cloud</text>
+   <text class="terminal-3106289353-r2" x="1085.8" y="532.4" clip-path="url(#terminal-3106289353-line-21)" textLength="12.2"/>
+   <text class="terminal-3106289353-r1" y="556.8" clip-path="url(#terminal-3106289353-line-22)" textLength="158.6">console-setup</text>
+   <text class="terminal-3106289353-r2" x="1085.8" y="556.8" clip-path="url(#terminal-3106289353-line-22)" textLength="12.2"/>
+   <text class="terminal-3106289353-r1" y="581.2" clip-path="url(#terminal-3106289353-line-23)" textLength="73.2">cron.d</text>
+   <text class="terminal-3106289353-r2" x="1085.8" y="581.2" clip-path="url(#terminal-3106289353-line-23)" textLength="12.2"/>
+   <text class="terminal-3106289353-r1" y="605.6" clip-path="url(#terminal-3106289353-line-24)" textLength="122">cron.daily</text>
+   <text class="terminal-3106289353-r2" x="1085.8" y="605.6" clip-path="url(#terminal-3106289353-line-24)" textLength="12.2"/>
+   <text class="terminal-3106289353-r1" y="630" clip-path="url(#terminal-3106289353-line-25)" textLength="134.2">cron.hourly</text>
+   <text class="terminal-3106289353-r2" x="1085.8" y="630" clip-path="url(#terminal-3106289353-line-25)" textLength="12.2"/>
+   <text class="terminal-3106289353-r1" y="654.4" clip-path="url(#terminal-3106289353-line-26)" textLength="146.4">cron.monthly</text>
+   <text class="terminal-3106289353-r2" x="1085.8" y="654.4" clip-path="url(#terminal-3106289353-line-26)" textLength="12.2"/>
+   <text class="terminal-3106289353-r1" y="678.8" clip-path="url(#terminal-3106289353-line-27)" textLength="134.2">cron.weekly</text>
+   <text class="terminal-3106289353-r2" x="1085.8" y="678.8" clip-path="url(#terminal-3106289353-line-27)" textLength="12.2"/>
+   <text class="terminal-3106289353-r2" y="703.2" clip-path="url(#terminal-3106289353-line-28)" textLength="85.4">crontab</text>
+   <text class="terminal-3106289353-r2" x="1085.8" y="703.2" clip-path="url(#terminal-3106289353-line-28)" textLength="12.2"/>
+   <text class="terminal-3106289353-r1" y="727.6" clip-path="url(#terminal-3106289353-line-29)" textLength="244">cryptsetup-initramfs</text>
+   <text class="terminal-3106289353-r2" x="1085.8" y="727.6" clip-path="url(#terminal-3106289353-line-29)" textLength="12.2"/>
+   <text class="terminal-3106289353-r2" y="752" clip-path="url(#terminal-3106289353-line-30)" textLength="97.6">crypttab</text>
+   <text class="terminal-3106289353-r2" x="1085.8" y="752" clip-path="url(#terminal-3106289353-line-30)" textLength="12.2"/>
+   <text class="terminal-3106289353-r1" y="776.4" clip-path="url(#terminal-3106289353-line-31)" textLength="73.2">dbus-1</text>
+   <text class="terminal-3106289353-r2" x="1085.8" y="776.4" clip-path="url(#terminal-3106289353-line-31)" textLength="12.2"/>
+   <text class="terminal-3106289353-r1" y="800.8" clip-path="url(#terminal-3106289353-line-32)" textLength="61">dconf</text>
+   <text class="terminal-3106289353-r2" x="1085.8" y="800.8" clip-path="url(#terminal-3106289353-line-32)" textLength="12.2"/>
+   <text class="terminal-3106289353-r2" y="825.2" clip-path="url(#terminal-3106289353-line-33)" textLength="146.4">debconf.conf</text>
+   <text class="terminal-3106289353-r2" x="1085.8" y="825.2" clip-path="url(#terminal-3106289353-line-33)" textLength="12.2"/>
+   <text class="terminal-3106289353-r2" y="849.6" clip-path="url(#terminal-3106289353-line-34)" textLength="170.8">debian_version</text>
+   <text class="terminal-3106289353-r2" x="1085.8" y="849.6" clip-path="url(#terminal-3106289353-line-34)" textLength="12.2"/>
+   <text class="terminal-3106289353-r1" y="874" clip-path="url(#terminal-3106289353-line-35)" textLength="85.4">default</text>
+   <text class="terminal-3106289353-r2" x="1085.8" y="874" clip-path="url(#terminal-3106289353-line-35)" textLength="12.2"/>
+   <text class="terminal-3106289353-r2" y="898.4" clip-path="url(#terminal-3106289353-line-36)" textLength="146.4">deluser.conf</text>
+   <text class="terminal-3106289353-r2" x="1085.8" y="898.4" clip-path="url(#terminal-3106289353-line-36)" textLength="12.2"/>
+   <text class="terminal-3106289353-r1" y="922.8" clip-path="url(#terminal-3106289353-line-37)" textLength="97.6">depmod.d</text>
+   <text class="terminal-3106289353-r2" x="1085.8" y="922.8" clip-path="url(#terminal-3106289353-line-37)" textLength="12.2"/>
+   <text class="terminal-3106289353-r1" y="947.2" clip-path="url(#terminal-3106289353-line-38)" textLength="48.8">dhcp</text>
+   <text class="terminal-3106289353-r2" x="1085.8" y="947.2" clip-path="url(#terminal-3106289353-line-38)" textLength="12.2"/>
+   <text class="terminal-3106289353-r1" y="971.6" clip-path="url(#terminal-3106289353-line-39)" textLength="109.8">dnsmasq.d</text>
+   <text class="terminal-3106289353-r2" x="1085.8" y="971.6" clip-path="url(#terminal-3106289353-line-39)" textLength="12.2"/>
+   <text class="terminal-3106289353-r1" y="996" clip-path="url(#terminal-3106289353-line-40)" textLength="73.2">docker</text>
+   <text class="terminal-3106289353-r2" x="1085.8" y="996" clip-path="url(#terminal-3106289353-line-40)" textLength="12.2"/>
+   <text class="terminal-3106289353-r1" y="1020.4" clip-path="url(#terminal-3106289353-line-41)" textLength="48.8">dpkg</text>
+   <text class="terminal-3106289353-r2" x="1085.8" y="1020.4" clip-path="url(#terminal-3106289353-line-41)" textLength="12.2"/>
+   <text class="terminal-3106289353-r2" y="1044.8" clip-path="url(#terminal-3106289353-line-42)" textLength="146.4">e2scrub.conf</text>
+   <text class="terminal-3106289353-r2" x="1085.8" y="1044.8" clip-path="url(#terminal-3106289353-line-42)" textLength="12.2"/>
+   <text class="terminal-3106289353-r2" y="1069.2" clip-path="url(#terminal-3106289353-line-43)" textLength="134.2">ec2_version</text>
+   <text class="terminal-3106289353-r2" x="1085.8" y="1069.2" clip-path="url(#terminal-3106289353-line-43)" textLength="12.2"/>
+   <text class="terminal-3106289353-r2" y="1093.6" clip-path="url(#terminal-3106289353-line-44)" textLength="134.2">environment</text>
+   <text class="terminal-3106289353-r2" x="1085.8" y="1093.6" clip-path="url(#terminal-3106289353-line-44)" textLength="12.2"/>
+   <text class="terminal-3106289353-r2" y="1118" clip-path="url(#terminal-3106289353-line-45)" textLength="122">ethertypes</text>
+   <text class="terminal-3106289353-r2" x="1085.8" y="1118" clip-path="url(#terminal-3106289353-line-45)" textLength="12.2"/>
+   <text class="terminal-3106289353-r1" y="1142.4" clip-path="url(#terminal-3106289353-line-46)" textLength="61">fonts</text>
+   <text class="terminal-3106289353-r2" x="1085.8" y="1142.4" clip-path="url(#terminal-3106289353-line-46)" textLength="12.2"/>
+   <text class="terminal-3106289353-r2" y="1166.8" clip-path="url(#terminal-3106289353-line-47)" textLength="61">fstab</text>
+   <text class="terminal-3106289353-r2" x="1085.8" y="1166.8" clip-path="url(#terminal-3106289353-line-47)" textLength="12.2"/>
+   <text class="terminal-3106289353-r2" y="1191.2" clip-path="url(#terminal-3106289353-line-48)" textLength="109.8">fuse.conf</text>
+   <text class="terminal-3106289353-r2" x="1085.8" y="1191.2" clip-path="url(#terminal-3106289353-line-48)" textLength="12.2"/>
+   <text class="terminal-3106289353-r1" y="1215.6" clip-path="url(#terminal-3106289353-line-49)" textLength="61">fwupd</text>
+   <text class="terminal-3106289353-r2" x="1085.8" y="1215.6" clip-path="url(#terminal-3106289353-line-49)" textLength="12.2"/>
+   <text class="terminal-3106289353-r2" y="1240" clip-path="url(#terminal-3106289353-line-50)" textLength="97.6">gai.conf</text>
+   <text class="terminal-3106289353-r2" x="1085.8" y="1240" clip-path="url(#terminal-3106289353-line-50)" textLength="12.2"/>
+   <text class="terminal-3106289353-r1" y="1264.4" clip-path="url(#terminal-3106289353-line-51)" textLength="61">groff</text>
+   <text class="terminal-3106289353-r2" x="1085.8" y="1264.4" clip-path="url(#terminal-3106289353-line-51)" textLength="12.2"/>
+   <text class="terminal-3106289353-r2" y="1288.8" clip-path="url(#terminal-3106289353-line-52)" textLength="61">group</text>
+   <text class="terminal-3106289353-r2" x="1085.8" y="1288.8" clip-path="url(#terminal-3106289353-line-52)" textLength="12.2"/>
+   <text class="terminal-3106289353-r2" y="1313.2" clip-path="url(#terminal-3106289353-line-53)" textLength="73.2">group-</text>
+   <text class="terminal-3106289353-r2" x="1085.8" y="1313.2" clip-path="url(#terminal-3106289353-line-53)" textLength="12.2"/>
+   <text class="terminal-3106289353-r1" y="1337.6" clip-path="url(#terminal-3106289353-line-54)" textLength="73.2">grub.d</text>
+   <text class="terminal-3106289353-r2" x="1085.8" y="1337.6" clip-path="url(#terminal-3106289353-line-54)" textLength="12.2"/>
+   <text class="terminal-3106289353-r2" y="1362" clip-path="url(#terminal-3106289353-line-55)" textLength="85.4">gshadow</text>
+   <text class="terminal-3106289353-r2" x="1085.8" y="1362" clip-path="url(#terminal-3106289353-line-55)" textLength="12.2"/>
+   <text class="terminal-3106289353-r2" y="1386.4" clip-path="url(#terminal-3106289353-line-56)" textLength="97.6">gshadow-</text>
+   <text class="terminal-3106289353-r2" x="1085.8" y="1386.4" clip-path="url(#terminal-3106289353-line-56)" textLength="12.2"/>
+   <text class="terminal-3106289353-r1" y="1410.8" clip-path="url(#terminal-3106289353-line-57)" textLength="36.6">gss</text>
+   <text class="terminal-3106289353-r2" x="1085.8" y="1410.8" clip-path="url(#terminal-3106289353-line-57)" textLength="12.2"/>
+   <text class="terminal-3106289353-r2" y="1435.2" clip-path="url(#terminal-3106289353-line-58)" textLength="134.2">hdparm.conf</text>
+   <text class="terminal-3106289353-r2" x="1085.8" y="1435.2" clip-path="url(#terminal-3106289353-line-58)" textLength="12.2"/>
+   <text class="terminal-3106289353-r2" y="1459.6" clip-path="url(#terminal-3106289353-line-59)" textLength="109.8">host.conf</text>
+   <text class="terminal-3106289353-r2" x="1085.8" y="1459.6" clip-path="url(#terminal-3106289353-line-59)" textLength="12.2"/>
+   <text class="terminal-3106289353-r2" y="1484" clip-path="url(#terminal-3106289353-line-60)" textLength="97.6">hostname</text>
+   <text class="terminal-3106289353-r2" x="1085.8" y="1484" clip-path="url(#terminal-3106289353-line-60)" textLength="12.2"/>
+   <text class="terminal-3106289353-r2" y="1508.4" clip-path="url(#terminal-3106289353-line-61)" textLength="61">hosts</text>
+   <text class="terminal-3106289353-r2" x="1085.8" y="1508.4" clip-path="url(#terminal-3106289353-line-61)" textLength="12.2"/>
+   <text class="terminal-3106289353-r2" y="1532.8" clip-path="url(#terminal-3106289353-line-62)" textLength="134.2">hosts.allow</text>
+   <text class="terminal-3106289353-r2" x="1085.8" y="1532.8" clip-path="url(#terminal-3106289353-line-62)" textLength="12.2"/>
+   <text class="terminal-3106289353-r2" y="1557.2" clip-path="url(#terminal-3106289353-line-63)" textLength="122">hosts.deny</text>
+   <text class="terminal-3106289353-r2" x="1085.8" y="1557.2" clip-path="url(#terminal-3106289353-line-63)" textLength="12.2"/>
+   <text class="terminal-3106289353-r1" y="1581.6" clip-path="url(#terminal-3106289353-line-64)" textLength="48.8">init</text>
+   <text class="terminal-3106289353-r2" x="1085.8" y="1581.6" clip-path="url(#terminal-3106289353-line-64)" textLength="12.2"/>
+   <text class="terminal-3106289353-r1" y="1606" clip-path="url(#terminal-3106289353-line-65)" textLength="73.2">init.d</text>
+   <text class="terminal-3106289353-r2" x="1085.8" y="1606" clip-path="url(#terminal-3106289353-line-65)" textLength="12.2"/>
+   <text class="terminal-3106289353-r1" y="1630.4" clip-path="url(#terminal-3106289353-line-66)" textLength="183">initramfs-tools</text>
+   <text class="terminal-3106289353-r2" x="1085.8" y="1630.4" clip-path="url(#terminal-3106289353-line-66)" textLength="12.2"/>
+   <text class="terminal-3106289353-r2" y="1654.8" clip-path="url(#terminal-3106289353-line-67)" textLength="85.4">inputrc</text>
+   <text class="terminal-3106289353-r2" x="1085.8" y="1654.8" clip-path="url(#terminal-3106289353-line-67)" textLength="12.2"/>
+   <text class="terminal-3106289353-r1" y="1679.2" clip-path="url(#terminal-3106289353-line-68)" textLength="97.6">iproute2</text>
+   <text class="terminal-3106289353-r2" x="1085.8" y="1679.2" clip-path="url(#terminal-3106289353-line-68)" textLength="12.2"/>
+   <text class="terminal-3106289353-r1" y="1703.6" clip-path="url(#terminal-3106289353-line-69)" textLength="61">iscsi</text>
+   <text class="terminal-3106289353-r2" x="1085.8" y="1703.6" clip-path="url(#terminal-3106289353-line-69)" textLength="12.2"/>
+   <text class="terminal-3106289353-r2" y="1728" clip-path="url(#terminal-3106289353-line-70)" textLength="61">issue</text>
+   <text class="terminal-3106289353-r2" x="1085.8" y="1728" clip-path="url(#terminal-3106289353-line-70)" textLength="12.2"/>
+   <text class="terminal-3106289353-r2" y="1752.4" clip-path="url(#terminal-3106289353-line-71)" textLength="109.8">issue.net</text>
+   <text class="terminal-3106289353-r2" x="1085.8" y="1752.4" clip-path="url(#terminal-3106289353-line-71)" textLength="12.2"/>
+   <text class="terminal-3106289353-r1" y="1776.8" clip-path="url(#terminal-3106289353-line-72)" textLength="73.2">kernel</text>
+   <text class="terminal-3106289353-r2" x="1085.8" y="1776.8" clip-path="url(#terminal-3106289353-line-72)" textLength="12.2"/>
+   <text class="terminal-3106289353-r2" y="1801.2" clip-path="url(#terminal-3106289353-line-73)" textLength="183">kernel-img.conf</text>
+   <text class="terminal-3106289353-r2" x="1085.8" y="1801.2" clip-path="url(#terminal-3106289353-line-73)" textLength="12.2"/>
+   <text class="terminal-3106289353-r1" y="1825.6" clip-path="url(#terminal-3106289353-line-74)" textLength="109.8">landscape</text>
+   <text class="terminal-3106289353-r2" x="1085.8" y="1825.6" clip-path="url(#terminal-3106289353-line-74)" textLength="12.2"/>
+   <text class="terminal-3106289353-r2" y="1850" clip-path="url(#terminal-3106289353-line-75)" textLength="134.2">ld.so.cache</text>
+   <text class="terminal-3106289353-r2" x="1085.8" y="1850" clip-path="url(#terminal-3106289353-line-75)" textLength="12.2"/>
+   <text class="terminal-3106289353-r2" y="1874.4" clip-path="url(#terminal-3106289353-line-76)" textLength="122">ld.so.conf</text>
+   <text class="terminal-3106289353-r2" x="1085.8" y="1874.4" clip-path="url(#terminal-3106289353-line-76)" textLength="12.2"/>
+   <text class="terminal-3106289353-r1" y="1898.8" clip-path="url(#terminal-3106289353-line-77)" textLength="146.4">ld.so.conf.d</text>
+   <text class="terminal-3106289353-r2" x="1085.8" y="1898.8" clip-path="url(#terminal-3106289353-line-77)" textLength="12.2"/>
+   <text class="terminal-3106289353-r1" y="1923.2" clip-path="url(#terminal-3106289353-line-78)" textLength="48.8">ldap</text>
+   <text class="terminal-3106289353-r2" x="1085.8" y="1923.2" clip-path="url(#terminal-3106289353-line-78)" textLength="12.2"/>
+   <text class="terminal-3106289353-r2" y="1947.6" clip-path="url(#terminal-3106289353-line-79)" textLength="61">legal</text>
+   <text class="terminal-3106289353-r2" x="1085.8" y="1947.6" clip-path="url(#terminal-3106289353-line-79)" textLength="12.2"/>
+   <text class="terminal-3106289353-r2" y="1972" clip-path="url(#terminal-3106289353-line-80)" textLength="158.6">libaudit.conf</text>
+   <text class="terminal-3106289353-r2" x="1085.8" y="1972" clip-path="url(#terminal-3106289353-line-80)" textLength="12.2"/>
+   <text class="terminal-3106289353-r1" y="1996.4" clip-path="url(#terminal-3106289353-line-81)" textLength="134.2">libblockdev</text>
+   <text class="terminal-3106289353-r2" x="1085.8" y="1996.4" clip-path="url(#terminal-3106289353-line-81)" textLength="12.2"/>
+   <text class="terminal-3106289353-r2" y="2020.8" clip-path="url(#terminal-3106289353-line-82)" textLength="146.4">locale.alias</text>
+   <text class="terminal-3106289353-r2" x="1085.8" y="2020.8" clip-path="url(#terminal-3106289353-line-82)" textLength="12.2"/>
+   <text class="terminal-3106289353-r2" y="2045.2" clip-path="url(#terminal-3106289353-line-83)" textLength="122">locale.gen</text>
+   <text class="terminal-3106289353-r2" x="1085.8" y="2045.2" clip-path="url(#terminal-3106289353-line-83)" textLength="12.2"/>
+   <text class="terminal-3106289353-r3" y="2069.6" clip-path="url(#terminal-3106289353-line-84)" textLength="109.8">localtime</text>
+   <text class="terminal-3106289353-r2" x="1085.8" y="2069.6" clip-path="url(#terminal-3106289353-line-84)" textLength="12.2"/>
+   <text class="terminal-3106289353-r1" y="2094" clip-path="url(#terminal-3106289353-line-85)" textLength="97.6">logcheck</text>
+   <text class="terminal-3106289353-r2" x="1085.8" y="2094" clip-path="url(#terminal-3106289353-line-85)" textLength="12.2"/>
+   <text class="terminal-3106289353-r2" y="2118.4" clip-path="url(#terminal-3106289353-line-86)" textLength="122">login.defs</text>
+   <text class="terminal-3106289353-r2" x="1085.8" y="2118.4" clip-path="url(#terminal-3106289353-line-86)" textLength="12.2"/>
+   <text class="terminal-3106289353-r2" y="2142.8" clip-path="url(#terminal-3106289353-line-87)" textLength="170.8">logrotate.conf</text>
+   <text class="terminal-3106289353-r2" x="1085.8" y="2142.8" clip-path="url(#terminal-3106289353-line-87)" textLength="12.2"/>
+   <text class="terminal-3106289353-r1" y="2167.2" clip-path="url(#terminal-3106289353-line-88)" textLength="134.2">logrotate.d</text>
+   <text class="terminal-3106289353-r2" x="1085.8" y="2167.2" clip-path="url(#terminal-3106289353-line-88)" textLength="12.2"/>
+   <text class="terminal-3106289353-r2" y="2191.6" clip-path="url(#terminal-3106289353-line-89)" textLength="134.2">lsb-release</text>
+   <text class="terminal-3106289353-r2" x="1085.8" y="2191.6" clip-path="url(#terminal-3106289353-line-89)" textLength="12.2"/>
+   <text class="terminal-3106289353-r2" y="2216" clip-path="url(#terminal-3106289353-line-90)" textLength="134.2">ltrace.conf</text>
+   <text class="terminal-3106289353-r2" x="1085.8" y="2216" clip-path="url(#terminal-3106289353-line-90)" textLength="12.2"/>
+   <text class="terminal-3106289353-r1" y="2240.4" clip-path="url(#terminal-3106289353-line-91)" textLength="36.6">lvm</text>
+   <text class="terminal-3106289353-r2" x="1085.8" y="2240.4" clip-path="url(#terminal-3106289353-line-91)" textLength="12.2"/>
+   <text class="terminal-3106289353-r2" y="2264.8" clip-path="url(#terminal-3106289353-line-92)" textLength="122">machine-id</text>
+   <text class="terminal-3106289353-r2" x="1085.8" y="2264.8" clip-path="url(#terminal-3106289353-line-92)" textLength="12.2"/>
+   <text class="terminal-3106289353-r2" y="2289.2" clip-path="url(#terminal-3106289353-line-93)" textLength="61">magic</text>
+   <text class="terminal-3106289353-r2" x="1085.8" y="2289.2" clip-path="url(#terminal-3106289353-line-93)" textLength="12.2"/>
+   <text class="terminal-3106289353-r2" y="2313.6" clip-path="url(#terminal-3106289353-line-94)" textLength="122">magic.mime</text>
+   <text class="terminal-3106289353-r2" x="1085.8" y="2313.6" clip-path="url(#terminal-3106289353-line-94)" textLength="12.2"/>
+   <text class="terminal-3106289353-r2" y="2338" clip-path="url(#terminal-3106289353-line-95)" textLength="85.4">mailcap</text>
+   <text class="terminal-3106289353-r2" x="1085.8" y="2338" clip-path="url(#terminal-3106289353-line-95)" textLength="12.2"/>
+   <text class="terminal-3106289353-r2" y="2362.4" clip-path="url(#terminal-3106289353-line-96)" textLength="158.6">mailcap.order</text>
+   <text class="terminal-3106289353-r2" x="1085.8" y="2362.4" clip-path="url(#terminal-3106289353-line-96)" textLength="12.2"/>
+   <text class="terminal-3106289353-r2" y="2386.8" clip-path="url(#terminal-3106289353-line-97)" textLength="170.8">manpath.config</text>
+   <text class="terminal-3106289353-r2" x="1085.8" y="2386.8" clip-path="url(#terminal-3106289353-line-97)" textLength="12.2"/>
+   <text class="terminal-3106289353-r1" y="2411.2" clip-path="url(#terminal-3106289353-line-98)" textLength="61">mdadm</text>
+   <text class="terminal-3106289353-r2" x="1085.8" y="2411.2" clip-path="url(#terminal-3106289353-line-98)" textLength="12.2"/>
+   <text class="terminal-3106289353-r2" y="2435.6" clip-path="url(#terminal-3106289353-line-99)" textLength="122">mime.types</text>
+   <text class="terminal-3106289353-r2" x="1085.8" y="2435.6" clip-path="url(#terminal-3106289353-line-99)" textLength="12.2"/>
+   <text class="terminal-3106289353-r2" y="2460" clip-path="url(#terminal-3106289353-line-100)" textLength="134.2">mke2fs.conf</text>
+   <text class="terminal-3106289353-r2" x="1085.8" y="2460" clip-path="url(#terminal-3106289353-line-100)" textLength="12.2"/>
+   <text class="terminal-3106289353-r1" y="2484.4" clip-path="url(#terminal-3106289353-line-101)" textLength="122">modprobe.d</text>
+   <text class="terminal-3106289353-r2" x="1085.8" y="2484.4" clip-path="url(#terminal-3106289353-line-101)" textLength="12.2"/>
+   <text class="terminal-3106289353-r2" y="2508.8" clip-path="url(#terminal-3106289353-line-102)" textLength="85.4">modules</text>
+   <text class="terminal-3106289353-r2" x="1085.8" y="2508.8" clip-path="url(#terminal-3106289353-line-102)" textLength="12.2"/>
+   <text class="terminal-3106289353-r1" y="2533.2" clip-path="url(#terminal-3106289353-line-103)" textLength="170.8">modules-load.d</text>
+   <text class="terminal-3106289353-r2" x="1085.8" y="2533.2" clip-path="url(#terminal-3106289353-line-103)" textLength="12.2"/>
+   <text class="terminal-3106289353-r3" y="2557.6" clip-path="url(#terminal-3106289353-line-104)" textLength="48.8">mtab</text>
+   <text class="terminal-3106289353-r2" x="1085.8" y="2557.6" clip-path="url(#terminal-3106289353-line-104)" textLength="12.2"/>
+   <text class="terminal-3106289353-r2" y="2582" clip-path="url(#terminal-3106289353-line-105)" textLength="170.8">multipath.conf</text>
+   <text class="terminal-3106289353-r2" x="1085.8" y="2582" clip-path="url(#terminal-3106289353-line-105)" textLength="12.2"/>
+   <text class="terminal-3106289353-r2" y="2606.4" clip-path="url(#terminal-3106289353-line-106)" textLength="73.2">nanorc</text>
+   <text class="terminal-3106289353-r2" x="1085.8" y="2606.4" clip-path="url(#terminal-3106289353-line-106)" textLength="12.2"/>
+   <text class="terminal-3106289353-r1" y="2630.8" clip-path="url(#terminal-3106289353-line-107)" textLength="85.4">netplan</text>
+   <text class="terminal-3106289353-r2" x="1085.8" y="2630.8" clip-path="url(#terminal-3106289353-line-107)" textLength="12.2"/>
+   <text class="terminal-3106289353-r1" y="2655.2" clip-path="url(#terminal-3106289353-line-108)" textLength="85.4">network</text>
+   <text class="terminal-3106289353-r2" x="1085.8" y="2655.2" clip-path="url(#terminal-3106289353-line-108)" textLength="12.2"/>
+   <text class="terminal-3106289353-r1" y="2679.6" clip-path="url(#terminal-3106289353-line-109)" textLength="231.8">networkd-dispatcher</text>
+   <text class="terminal-3106289353-r2" x="1085.8" y="2679.6" clip-path="url(#terminal-3106289353-line-109)" textLength="12.2"/>
+   <text class="terminal-3106289353-r2" y="2704" clip-path="url(#terminal-3106289353-line-110)" textLength="97.6">networks</text>
+   <text class="terminal-3106289353-r2" x="1085.8" y="2704" clip-path="url(#terminal-3106289353-line-110)" textLength="12.2"/>
+   <text class="terminal-3106289353-r1" y="2728.4" clip-path="url(#terminal-3106289353-line-111)" textLength="48.8">newt</text>
+   <text class="terminal-3106289353-r2" x="1085.8" y="2728.4" clip-path="url(#terminal-3106289353-line-111)" textLength="12.2"/>
+   <text class="terminal-3106289353-r2" y="2752.8" clip-path="url(#terminal-3106289353-line-112)" textLength="158.6">nsswitch.conf</text>
+   <text class="terminal-3106289353-r2" x="1085.8" y="2752.8" clip-path="url(#terminal-3106289353-line-112)" textLength="12.2"/>
+   <text class="terminal-3106289353-r1" y="2777.2" clip-path="url(#terminal-3106289353-line-113)" textLength="73.2">openal</text>
+   <text class="terminal-3106289353-r2" x="1085.8" y="2777.2" clip-path="url(#terminal-3106289353-line-113)" textLength="12.2"/>
+   <text class="terminal-3106289353-r1" y="2801.6" clip-path="url(#terminal-3106289353-line-114)" textLength="36.6">opt</text>
+   <text class="terminal-3106289353-r2" x="1085.8" y="2801.6" clip-path="url(#terminal-3106289353-line-114)" textLength="12.2"/>
+   <text class="terminal-3106289353-r3" y="2826" clip-path="url(#terminal-3106289353-line-115)" textLength="122">os-release</text>
+   <text class="terminal-3106289353-r2" x="1085.8" y="2826" clip-path="url(#terminal-3106289353-line-115)" textLength="12.2"/>
+   <text class="terminal-3106289353-r2" y="2850.4" clip-path="url(#terminal-3106289353-line-116)" textLength="195.2">overlayroot.conf</text>
+   <text class="terminal-3106289353-r2" x="1085.8" y="2850.4" clip-path="url(#terminal-3106289353-line-116)" textLength="12.2"/>
+   <text class="terminal-3106289353-r2" y="2874.8" clip-path="url(#terminal-3106289353-line-117)" textLength="268.4">overlayroot.local.conf</text>
+   <text class="terminal-3106289353-r2" x="1085.8" y="2874.8" clip-path="url(#terminal-3106289353-line-117)" textLength="12.2"/>
+   <text class="terminal-3106289353-r2" y="2899.2" clip-path="url(#terminal-3106289353-line-118)" textLength="97.6">pam.conf</text>
+   <text class="terminal-3106289353-r2" x="1085.8" y="2899.2" clip-path="url(#terminal-3106289353-line-118)" textLength="12.2"/>
+   <text class="terminal-3106289353-r1" y="2923.6" clip-path="url(#terminal-3106289353-line-119)" textLength="61">pam.d</text>
+   <text class="terminal-3106289353-r2" x="1085.8" y="2923.6" clip-path="url(#terminal-3106289353-line-119)" textLength="12.2"/>
+   <text class="terminal-3106289353-r2" y="2948" clip-path="url(#terminal-3106289353-line-120)" textLength="73.2">passwd</text>
+   <text class="terminal-3106289353-r2" x="1085.8" y="2948" clip-path="url(#terminal-3106289353-line-120)" textLength="12.2"/>
+   <text class="terminal-3106289353-r2" y="2972.4" clip-path="url(#terminal-3106289353-line-121)" textLength="85.4">passwd-</text>
+   <text class="terminal-3106289353-r2" x="1085.8" y="2972.4" clip-path="url(#terminal-3106289353-line-121)" textLength="12.2"/>
+   <text class="terminal-3106289353-r1" y="2996.8" clip-path="url(#terminal-3106289353-line-122)" textLength="48.8">perl</text>
+   <text class="terminal-3106289353-r2" x="1085.8" y="2996.8" clip-path="url(#terminal-3106289353-line-122)" textLength="12.2"/>
+   <text class="terminal-3106289353-r1" y="3021.2" clip-path="url(#terminal-3106289353-line-123)" textLength="36.6">pki</text>
+   <text class="terminal-3106289353-r2" x="1085.8" y="3021.2" clip-path="url(#terminal-3106289353-line-123)" textLength="12.2"/>
+   <text class="terminal-3106289353-r1" y="3045.6" clip-path="url(#terminal-3106289353-line-124)" textLength="24.4">pm</text>
+   <text class="terminal-3106289353-r2" x="1085.8" y="3045.6" clip-path="url(#terminal-3106289353-line-124)" textLength="12.2"/>
+   <text class="terminal-3106289353-r1" y="3070" clip-path="url(#terminal-3106289353-line-125)" textLength="97.6">polkit-1</text>
+   <text class="terminal-3106289353-r2" x="1085.8" y="3070" clip-path="url(#terminal-3106289353-line-125)" textLength="12.2"/>
+   <text class="terminal-3106289353-r1" y="3094.4" clip-path="url(#terminal-3106289353-line-126)" textLength="109.8">pollinate</text>
+   <text class="terminal-3106289353-r2" x="1085.8" y="3094.4" clip-path="url(#terminal-3106289353-line-126)" textLength="12.2"/>
+   <text class="terminal-3106289353-r2" y="3118.8" clip-path="url(#terminal-3106289353-line-127)" textLength="280.6">popularity-contest.conf</text>
+   <text class="terminal-3106289353-r2" x="1085.8" y="3118.8" clip-path="url(#terminal-3106289353-line-127)" textLength="12.2"/>
+   <text class="terminal-3106289353-r2" y="3143.2" clip-path="url(#terminal-3106289353-line-128)" textLength="85.4">profile</text>
+   <text class="terminal-3106289353-r2" x="1085.8" y="3143.2" clip-path="url(#terminal-3106289353-line-128)" textLength="12.2"/>
+   <text class="terminal-3106289353-r1" y="3167.6" clip-path="url(#terminal-3106289353-line-129)" textLength="109.8">profile.d</text>
+   <text class="terminal-3106289353-r2" x="1085.8" y="3167.6" clip-path="url(#terminal-3106289353-line-129)" textLength="12.2"/>
+   <text class="terminal-3106289353-r2" y="3192" clip-path="url(#terminal-3106289353-line-130)" textLength="109.8">protocols</text>
+   <text class="terminal-3106289353-r2" x="1085.8" y="3192" clip-path="url(#terminal-3106289353-line-130)" textLength="12.2"/>
+   <text class="terminal-3106289353-r1" y="3216.4" clip-path="url(#terminal-3106289353-line-131)" textLength="61">pulse</text>
+   <text class="terminal-3106289353-r2" x="1085.8" y="3216.4" clip-path="url(#terminal-3106289353-line-131)" textLength="12.2"/>
+   <text class="terminal-3106289353-r1" y="3240.8" clip-path="url(#terminal-3106289353-line-132)" textLength="85.4">python3</text>
+   <text class="terminal-3106289353-r2" x="1085.8" y="3240.8" clip-path="url(#terminal-3106289353-line-132)" textLength="12.2"/>
+   <text class="terminal-3106289353-r1" y="3265.2" clip-path="url(#terminal-3106289353-line-133)" textLength="109.8">python3.8</text>
+   <text class="terminal-3106289353-r2" x="1085.8" y="3265.2" clip-path="url(#terminal-3106289353-line-133)" textLength="12.2"/>
+   <text class="terminal-3106289353-r1" y="3289.6" clip-path="url(#terminal-3106289353-line-134)" textLength="61">rc0.d</text>
+   <text class="terminal-3106289353-r2" x="1085.8" y="3289.6" clip-path="url(#terminal-3106289353-line-134)" textLength="12.2"/>
+   <text class="terminal-3106289353-r1" y="3314" clip-path="url(#terminal-3106289353-line-135)" textLength="61">rc1.d</text>
+   <text class="terminal-3106289353-r2" x="1085.8" y="3314" clip-path="url(#terminal-3106289353-line-135)" textLength="12.2"/>
+   <text class="terminal-3106289353-r1" y="3338.4" clip-path="url(#terminal-3106289353-line-136)" textLength="61">rc2.d</text>
+   <text class="terminal-3106289353-r2" x="1085.8" y="3338.4" clip-path="url(#terminal-3106289353-line-136)" textLength="12.2"/>
+   <text class="terminal-3106289353-r1" y="3362.8" clip-path="url(#terminal-3106289353-line-137)" textLength="61">rc3.d</text>
+   <text class="terminal-3106289353-r2" x="1085.8" y="3362.8" clip-path="url(#terminal-3106289353-line-137)" textLength="12.2"/>
+   <text class="terminal-3106289353-r1" y="3387.2" clip-path="url(#terminal-3106289353-line-138)" textLength="61">rc4.d</text>
+   <text class="terminal-3106289353-r2" x="1085.8" y="3387.2" clip-path="url(#terminal-3106289353-line-138)" textLength="12.2"/>
+   <text class="terminal-3106289353-r1" y="3411.6" clip-path="url(#terminal-3106289353-line-139)" textLength="61">rc5.d</text>
+   <text class="terminal-3106289353-r2" x="1085.8" y="3411.6" clip-path="url(#terminal-3106289353-line-139)" textLength="12.2"/>
+   <text class="terminal-3106289353-r1" y="3436" clip-path="url(#terminal-3106289353-line-140)" textLength="61">rc6.d</text>
+   <text class="terminal-3106289353-r2" x="1085.8" y="3436" clip-path="url(#terminal-3106289353-line-140)" textLength="12.2"/>
+   <text class="terminal-3106289353-r1" y="3460.4" clip-path="url(#terminal-3106289353-line-141)" textLength="61">rcS.d</text>
+   <text class="terminal-3106289353-r2" x="1085.8" y="3460.4" clip-path="url(#terminal-3106289353-line-141)" textLength="12.2"/>
+   <text class="terminal-3106289353-r3" y="3484.8" clip-path="url(#terminal-3106289353-line-142)" textLength="134.2">resolv.conf</text>
+   <text class="terminal-3106289353-r2" x="1085.8" y="3484.8" clip-path="url(#terminal-3106289353-line-142)" textLength="12.2"/>
+   <text class="terminal-3106289353-r3" y="3509.2" clip-path="url(#terminal-3106289353-line-143)" textLength="36.6">rmt</text>
+   <text class="terminal-3106289353-r2" x="1085.8" y="3509.2" clip-path="url(#terminal-3106289353-line-143)" textLength="12.2"/>
+   <text class="terminal-3106289353-r2" y="3533.6" clip-path="url(#terminal-3106289353-line-144)" textLength="36.6">rpc</text>
+   <text class="terminal-3106289353-r2" x="1085.8" y="3533.6" clip-path="url(#terminal-3106289353-line-144)" textLength="12.2"/>
+   <text class="terminal-3106289353-r2" y="3558" clip-path="url(#terminal-3106289353-line-145)" textLength="146.4">rsyslog.conf</text>
+   <text class="terminal-3106289353-r2" x="1085.8" y="3558" clip-path="url(#terminal-3106289353-line-145)" textLength="12.2"/>
+   <text class="terminal-3106289353-r1" y="3582.4" clip-path="url(#terminal-3106289353-line-146)" textLength="109.8">rsyslog.d</text>
+   <text class="terminal-3106289353-r2" x="1085.8" y="3582.4" clip-path="url(#terminal-3106289353-line-146)" textLength="12.2"/>
+   <text class="terminal-3106289353-r2" y="3606.8" clip-path="url(#terminal-3106289353-line-147)" textLength="97.6">screenrc</text>
+   <text class="terminal-3106289353-r2" x="1085.8" y="3606.8" clip-path="url(#terminal-3106289353-line-147)" textLength="12.2"/>
+   <text class="terminal-3106289353-r1" y="3631.2" clip-path="url(#terminal-3106289353-line-148)" textLength="97.6">security</text>
+   <text class="terminal-3106289353-r2" x="1085.8" y="3631.2" clip-path="url(#terminal-3106289353-line-148)" textLength="12.2"/>
+   <text class="terminal-3106289353-r1" y="3655.6" clip-path="url(#terminal-3106289353-line-149)" textLength="85.4">selinux</text>
+   <text class="terminal-3106289353-r2" x="1085.8" y="3655.6" clip-path="url(#terminal-3106289353-line-149)" textLength="12.2"/>
+   <text class="terminal-3106289353-r1" y="3680" clip-path="url(#terminal-3106289353-line-150)" textLength="109.8">sensors.d</text>
+   <text class="terminal-3106289353-r2" x="1085.8" y="3680" clip-path="url(#terminal-3106289353-line-150)" textLength="12.2"/>
+   <text class="terminal-3106289353-r2" y="3704.4" clip-path="url(#terminal-3106289353-line-151)" textLength="158.6">sensors3.conf</text>
+   <text class="terminal-3106289353-r2" x="1085.8" y="3704.4" clip-path="url(#terminal-3106289353-line-151)" textLength="12.2"/>
+   <text class="terminal-3106289353-r2" y="3728.8" clip-path="url(#terminal-3106289353-line-152)" textLength="97.6">services</text>
+   <text class="terminal-3106289353-r2" x="1085.8" y="3728.8" clip-path="url(#terminal-3106289353-line-152)" textLength="12.2"/>
+   <text class="terminal-3106289353-r2" y="3753.2" clip-path="url(#terminal-3106289353-line-153)" textLength="73.2">shadow</text>
+   <text class="terminal-3106289353-r2" x="1085.8" y="3753.2" clip-path="url(#terminal-3106289353-line-153)" textLength="12.2"/>
+   <text class="terminal-3106289353-r2" y="3777.6" clip-path="url(#terminal-3106289353-line-154)" textLength="85.4">shadow-</text>
+   <text class="terminal-3106289353-r2" x="1085.8" y="3777.6" clip-path="url(#terminal-3106289353-line-154)" textLength="12.2"/>
+   <text class="terminal-3106289353-r2" y="3802" clip-path="url(#terminal-3106289353-line-155)" textLength="73.2">shells</text>
+   <text class="terminal-3106289353-r2" x="1085.8" y="3802" clip-path="url(#terminal-3106289353-line-155)" textLength="12.2"/>
+   <text class="terminal-3106289353-r1" y="3826.4" clip-path="url(#terminal-3106289353-line-156)" textLength="48.8">skel</text>
+   <text class="terminal-3106289353-r2" x="1085.8" y="3826.4" clip-path="url(#terminal-3106289353-line-156)" textLength="12.2"/>
+   <text class="terminal-3106289353-r1" y="3850.8" clip-path="url(#terminal-3106289353-line-157)" textLength="36.6">sos</text>
+   <text class="terminal-3106289353-r2" x="1085.8" y="3850.8" clip-path="url(#terminal-3106289353-line-157)" textLength="12.2"/>
+   <text class="terminal-3106289353-r1" y="3875.2" clip-path="url(#terminal-3106289353-line-158)" textLength="36.6">ssh</text>
+   <text class="terminal-3106289353-r2" x="1085.8" y="3875.2" clip-path="url(#terminal-3106289353-line-158)" textLength="12.2"/>
+   <text class="terminal-3106289353-r1" y="3899.6" clip-path="url(#terminal-3106289353-line-159)" textLength="36.6">ssl</text>
+   <text class="terminal-3106289353-r2" x="1085.8" y="3899.6" clip-path="url(#terminal-3106289353-line-159)" textLength="12.2"/>
+   <text class="terminal-3106289353-r2" y="3924" clip-path="url(#terminal-3106289353-line-160)" textLength="73.2">subgid</text>
+   <text class="terminal-3106289353-r2" x="1085.8" y="3924" clip-path="url(#terminal-3106289353-line-160)" textLength="12.2"/>
+   <text class="terminal-3106289353-r2" y="3948.4" clip-path="url(#terminal-3106289353-line-161)" textLength="85.4">subgid-</text>
+   <text class="terminal-3106289353-r2" x="1085.8" y="3948.4" clip-path="url(#terminal-3106289353-line-161)" textLength="12.2"/>
+   <text class="terminal-3106289353-r2" y="3972.8" clip-path="url(#terminal-3106289353-line-162)" textLength="73.2">subuid</text>
+   <text class="terminal-3106289353-r2" x="1085.8" y="3972.8" clip-path="url(#terminal-3106289353-line-162)" textLength="12.2"/>
+   <text class="terminal-3106289353-r2" y="3997.2" clip-path="url(#terminal-3106289353-line-163)" textLength="85.4">subuid-</text>
+   <text class="terminal-3106289353-r2" x="1085.8" y="3997.2" clip-path="url(#terminal-3106289353-line-163)" textLength="12.2"/>
+   <text class="terminal-3106289353-r2" y="4021.6" clip-path="url(#terminal-3106289353-line-164)" textLength="85.4">sudoers</text>
+   <text class="terminal-3106289353-r2" x="1085.8" y="4021.6" clip-path="url(#terminal-3106289353-line-164)" textLength="12.2"/>
+   <text class="terminal-3106289353-r1" y="4046" clip-path="url(#terminal-3106289353-line-165)" textLength="109.8">sudoers.d</text>
+   <text class="terminal-3106289353-r2" x="1085.8" y="4046" clip-path="url(#terminal-3106289353-line-165)" textLength="12.2"/>
+   <text class="terminal-3106289353-r2" y="4070.4" clip-path="url(#terminal-3106289353-line-166)" textLength="134.2">sysctl.conf</text>
+   <text class="terminal-3106289353-r2" x="1085.8" y="4070.4" clip-path="url(#terminal-3106289353-line-166)" textLength="12.2"/>
+   <text class="terminal-3106289353-r1" y="4094.8" clip-path="url(#terminal-3106289353-line-167)" textLength="97.6">sysctl.d</text>
+   <text class="terminal-3106289353-r2" x="1085.8" y="4094.8" clip-path="url(#terminal-3106289353-line-167)" textLength="12.2"/>
+   <text class="terminal-3106289353-r1" y="4119.2" clip-path="url(#terminal-3106289353-line-168)" textLength="85.4">systemd</text>
+   <text class="terminal-3106289353-r2" x="1085.8" y="4119.2" clip-path="url(#terminal-3106289353-line-168)" textLength="12.2"/>
+   <text class="terminal-3106289353-r1" y="4143.6" clip-path="url(#terminal-3106289353-line-169)" textLength="97.6">terminfo</text>
+   <text class="terminal-3106289353-r2" x="1085.8" y="4143.6" clip-path="url(#terminal-3106289353-line-169)" textLength="12.2"/>
+   <text class="terminal-3106289353-r2" y="4168" clip-path="url(#terminal-3106289353-line-170)" textLength="97.6">timezone</text>
+   <text class="terminal-3106289353-r2" x="1085.8" y="4168" clip-path="url(#terminal-3106289353-line-170)" textLength="12.2"/>
+   <text class="terminal-3106289353-r1" y="4192.4" clip-path="url(#terminal-3106289353-line-171)" textLength="122">tmpfiles.d</text>
+   <text class="terminal-3106289353-r2" x="1085.8" y="4192.4" clip-path="url(#terminal-3106289353-line-171)" textLength="12.2"/>
+   <text class="terminal-3106289353-r1" y="4216.8" clip-path="url(#terminal-3106289353-line-172)" textLength="195.2">ubuntu-advantage</text>
+   <text class="terminal-3106289353-r2" x="1085.8" y="4216.8" clip-path="url(#terminal-3106289353-line-172)" textLength="12.2"/>
+   <text class="terminal-3106289353-r2" y="4241.2" clip-path="url(#terminal-3106289353-line-173)" textLength="97.6">ucf.conf</text>
+   <text class="terminal-3106289353-r2" x="1085.8" y="4241.2" clip-path="url(#terminal-3106289353-line-173)" textLength="12.2"/>
+   <text class="terminal-3106289353-r1" y="4265.6" clip-path="url(#terminal-3106289353-line-174)" textLength="48.8">udev</text>
+   <text class="terminal-3106289353-r2" x="1085.8" y="4265.6" clip-path="url(#terminal-3106289353-line-174)" textLength="12.2"/>
+   <text class="terminal-3106289353-r1" y="4290" clip-path="url(#terminal-3106289353-line-175)" textLength="85.4">udisks2</text>
+   <text class="terminal-3106289353-r2" x="1085.8" y="4290" clip-path="url(#terminal-3106289353-line-175)" textLength="12.2"/>
+   <text class="terminal-3106289353-r1" y="4314.4" clip-path="url(#terminal-3106289353-line-176)" textLength="36.6">ufw</text>
+   <text class="terminal-3106289353-r2" x="1085.8" y="4314.4" clip-path="url(#terminal-3106289353-line-176)" textLength="12.2"/>
+   <text class="terminal-3106289353-r1" y="4338.8" clip-path="url(#terminal-3106289353-line-177)" textLength="170.8">update-manager</text>
+   <text class="terminal-3106289353-r2" x="1085.8" y="4338.8" clip-path="url(#terminal-3106289353-line-177)" textLength="12.2"/>
+   <text class="terminal-3106289353-r1" y="4363.2" clip-path="url(#terminal-3106289353-line-178)" textLength="158.6">update-motd.d</text>
+   <text class="terminal-3106289353-r2" x="1085.8" y="4363.2" clip-path="url(#terminal-3106289353-line-178)" textLength="12.2"/>
+   <text class="terminal-3106289353-r1" y="4387.6" clip-path="url(#terminal-3106289353-line-179)" textLength="183">update-notifier</text>
+   <text class="terminal-3106289353-r2" x="1085.8" y="4387.6" clip-path="url(#terminal-3106289353-line-179)" textLength="12.2"/>
+   <text class="terminal-3106289353-r2" y="4412" clip-path="url(#terminal-3106289353-line-180)" textLength="231.8">usb_modeswitch.conf</text>
+   <text class="terminal-3106289353-r2" x="1085.8" y="4412" clip-path="url(#terminal-3106289353-line-180)" textLength="12.2"/>
+   <text class="terminal-3106289353-r1" y="4436.4" clip-path="url(#terminal-3106289353-line-181)" textLength="195.2">usb_modeswitch.d</text>
+   <text class="terminal-3106289353-r2" x="1085.8" y="4436.4" clip-path="url(#terminal-3106289353-line-181)" textLength="12.2"/>
+   <text class="terminal-3106289353-r2" y="4460.8" clip-path="url(#terminal-3106289353-line-182)" textLength="207.4">vdpau_wrapper.cfg</text>
+   <text class="terminal-3106289353-r2" x="1085.8" y="4460.8" clip-path="url(#terminal-3106289353-line-182)" textLength="12.2"/>
+   <text class="terminal-3106289353-r1" y="4485.2" clip-path="url(#terminal-3106289353-line-183)" textLength="36.6">vim</text>
+   <text class="terminal-3106289353-r2" x="1085.8" y="4485.2" clip-path="url(#terminal-3106289353-line-183)" textLength="12.2"/>
+   <text class="terminal-3106289353-r1" y="4509.6" clip-path="url(#terminal-3106289353-line-184)" textLength="146.4">vmware-tools</text>
+   <text class="terminal-3106289353-r2" x="1085.8" y="4509.6" clip-path="url(#terminal-3106289353-line-184)" textLength="12.2"/>
+   <text class="terminal-3106289353-r3" y="4534" clip-path="url(#terminal-3106289353-line-185)" textLength="61">vtrgb</text>
+   <text class="terminal-3106289353-r2" x="1085.8" y="4534" clip-path="url(#terminal-3106289353-line-185)" textLength="12.2"/>
+   <text class="terminal-3106289353-r1" y="4558.4" clip-path="url(#terminal-3106289353-line-186)" textLength="73.2">vulkan</text>
+   <text class="terminal-3106289353-r2" x="1085.8" y="4558.4" clip-path="url(#terminal-3106289353-line-186)" textLength="12.2"/>
+   <text class="terminal-3106289353-r2" y="4582.8" clip-path="url(#terminal-3106289353-line-187)" textLength="73.2">wgetrc</text>
+   <text class="terminal-3106289353-r2" x="1085.8" y="4582.8" clip-path="url(#terminal-3106289353-line-187)" textLength="12.2"/>
+   <text class="terminal-3106289353-r2" y="4607.2" clip-path="url(#terminal-3106289353-line-188)" textLength="97.6">wsl.conf</text>
+   <text class="terminal-3106289353-r2" x="1085.8" y="4607.2" clip-path="url(#terminal-3106289353-line-188)" textLength="12.2"/>
+   <text class="terminal-3106289353-r2" y="4631.6" clip-path="url(#terminal-3106289353-line-189)" textLength="122">xattr.conf</text>
+   <text class="terminal-3106289353-r2" x="1085.8" y="4631.6" clip-path="url(#terminal-3106289353-line-189)" textLength="12.2"/>
+   <text class="terminal-3106289353-r1" y="4656" clip-path="url(#terminal-3106289353-line-190)" textLength="36.6">xdg</text>
+   <text class="terminal-3106289353-r2" x="1085.8" y="4656" clip-path="url(#terminal-3106289353-line-190)" textLength="12.2"/>
+   <text class="terminal-3106289353-r2" y="4680.4" clip-path="url(#terminal-3106289353-line-191)" textLength="256.2">zsh_command_not_found</text>
+   <text class="terminal-3106289353-r2" x="1085.8" y="4680.4" clip-path="url(#terminal-3106289353-line-191)" textLength="12.2"/>
+  </g>
+ </g>
 </svg>

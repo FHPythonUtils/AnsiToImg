@@ -14,7 +14,7 @@ from ansitoimg.render import (
 	ansiToSVG,
 	ansiToSVGRender,
 )
-from ansitoimg.utils import TITLE, TEXT_HEIGHT, TEXT_WIDTH, WIDTH_WIDE, _resolveWidth
+from ansitoimg.utils import TEXT_HEIGHT, TEXT_WIDTH, TITLE, WIDTH_WIDE, _resolveWidth
 
 stdout.reconfigure(encoding="utf-8")
 

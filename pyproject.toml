@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "ansitoimg"
-version = "2023.2"
+version = "2023.3"
 license = "mit"
 description = "Convert an ANSI string to an image. Great for adding terminal output into a readme."
 authors = ["FredHappyface"]
