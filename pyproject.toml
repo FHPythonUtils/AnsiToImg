@@ -20,7 +20,7 @@ documentation = "https://github.com/FHPythonUtils/AnsiToImg/blob/master/README.m
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = "^3.8"
+python = ">=3.8,<4.0"
 PyYAML = "<7,>=6.0"
 rich = "<13,>=12.5.1"
 install-playwright = "<2,>=0.0.0"
@@ -30,13 +30,12 @@ playwright = "<2,>=1.29.1"
 [tool.poetry.scripts]
 ansitoimg = 'ansitoimg:cli'
 
-[tool.poetry.dev-dependencies]
-catimage = "^2022"
-pytest = "^7.1.1"
+[tool.poetry.group.dev.dependencies]
 imgcompare = "^2.0.1"
-pylint = "^2.13.5"
-handsdown = "^1.1.0"
-coverage = "^6.3.2"
+pytest = "^7.4.0"
+pylint = "^2.17.5"
+handsdown = "^2.0.1"
+coverage = "^7.3.0"
 
 [tool.black]
 line-length = 100
