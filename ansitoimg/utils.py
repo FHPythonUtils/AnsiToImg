@@ -9,6 +9,7 @@ TITLE = "AnsiToImg (courtesy of Rich)"
 
 
 def _resolveWidth(wide: bool, width: int = 49):
+	width = int(width)
 	if width == 49 and wide:
 		return 89
 	return width
