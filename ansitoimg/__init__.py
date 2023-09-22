@@ -65,7 +65,7 @@ def cli():  # pragma: no cover
 
 	args = parser.parse_args()
 	ansi = args.input.read()
-	width = _resolveWidth(args.wide, args.width)
+	width = _resolveWidth(args.wide, int(args.width))
 
 	# Plugin
 	pluginMap = {
