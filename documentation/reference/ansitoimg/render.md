@@ -38,8 +38,7 @@ def ansiToHTML(
     wide: bool = True,
     width: int = WIDTH_DEFAULT,
     title: str = TITLE,
-):
-    ...
+): ...
 ```
 
 #### See also
@@ -75,8 +74,7 @@ def ansiToHTMLRender(
     theme: str | None = None,
     wide: bool = True,
     width: int = WIDTH_DEFAULT,
-):
-    ...
+): ...
 ```
 
 #### See also
@@ -111,8 +109,7 @@ def ansiToRender(
     wide: bool = True,
     width: int = WIDTH_DEFAULT,
     title: str = TITLE,
-):
-    ...
+): ...
 ```
 
 #### See also
@@ -147,8 +144,7 @@ def ansiToSVG(
     wide: bool = True,
     width: int = WIDTH_DEFAULT,
     title: str = TITLE,
-):
-    ...
+): ...
 ```
 
 #### See also
@@ -184,8 +180,7 @@ def ansiToSVGRender(
     wide: bool = True,
     width: int = WIDTH_DEFAULT,
     title: str = TITLE,
-):
-    ...
+): ...
 ```
 
 #### See also
