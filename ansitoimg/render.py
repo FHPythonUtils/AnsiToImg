@@ -12,7 +12,7 @@ from rich.console import Console
 from rich.terminal_theme import TerminalTheme
 from yaml import safe_load
 
-from ansitoimg.utils import TEXT_HEIGHT, TEXT_WIDTH, TITLE, WIDTH_DEFAULT, _resolveWidth
+from ansitoimg.utils import TEXT_HEIGHT, TEXT_WIDTH, TITLE, WIDTH_DEFAULT
 
 THISDIR = str(Path(__file__).resolve().parent)
 
@@ -62,7 +62,6 @@ def ansiToSVG(
 	ansiText: str,
 	fileName: str,
 	theme: str | None = None,
-	wide: bool = True,
 	width: int = WIDTH_DEFAULT,
 	title: str = TITLE,
 ):
@@ -71,12 +70,11 @@ def ansiToSVG(
 	Args:
 		ansiText (str): ANSI text to convert
 		fileName (str): file path to SVG to write
-		theme (str, optional): file path to base24 theme to use. Defaults to "onedark.yml".
-		wide (bool, optional): use a 'wide' terminal 89 vs 49 chars
+		theme (str, optional): file path to base24 theme to use. Defaults to "onedark.yml"
 		width (int, optional): set the width for the image
 		title (str, optional): set the title. Defaults to "AnsiToImg (courtesy of Rich)"
 	"""
-	console = _doRichRender(ansiText, _resolveWidth(wide, width))
+	console = _doRichRender(ansiText, width)
 	console.save_svg(fileName, theme=_doRichTerminalTheme(theme), title=title)
 
 
@@ -84,7 +82,6 @@ def ansiToRender(
 	ansiText: str,
 	fileName: str,
 	theme: str | None = None,
-	wide: bool = True,
 	width: int = WIDTH_DEFAULT,
 	title: str = TITLE,
 ):
@@ -94,19 +91,17 @@ def ansiToRender(
 	Args:
 		ansiText (str): ANSI text to convert
 		fileName (str): image file path
-		theme (str, optional): file path to base24 theme to use. Defaults to "onedark.yml".
-		wide (bool, optional): use a 'wide' terminal 89 vs 49 chars
+		theme (str, optional): file path to base24 theme to use. Defaults to "onedark.yml"
 		width (int, optional): set the width for the image
 		title (str, optional): set the title. Defaults to "AnsiToImg (courtesy of Rich)"
 	"""
-	return ansiToSVGRender(ansiText, fileName, theme, wide, width, title)
+	return ansiToSVGRender(ansiText, fileName, theme, width, title)
 
 
 def ansiToSVGRender(
 	ansiText: str,
 	fileName: str,
 	theme: str | None = None,
-	wide: bool = True,
 	width: int = WIDTH_DEFAULT,
 	title: str = TITLE,
 ):
@@ -116,14 +111,13 @@ def ansiToSVGRender(
 	Args:
 		ansiText (str): ANSI text to convert
 		fileName (str): image file path
-		theme (str, optional): file path to base24 theme to use. Defaults to "onedark.yml".
-		wide (bool, optional): use a 'wide' terminal 89 vs 49 chars
+		theme (str, optional): file path to base24 theme to use. Defaults to "onedark.yml"
 		width (int, optional): set the width for the image
 		title (str, optional): set the title. Defaults to "AnsiToImg (courtesy of Rich)"
 	"""
-	console = _doRichRender(ansiText, _resolveWidth(wide, width))
+	console = _doRichRender(ansiText, width)
 	tempFileName = tempfile.mktemp(suffix=".svg")
-	ansiToSVG(ansiText, tempFileName, theme, wide, width, title)
+	ansiToSVG(ansiText, tempFileName, theme, width, title)
 	match = re.search(
 		r'^<svg.*?viewBox="[\d.]+ [\d.]+ ([\d.]+) ([\d.]+)',
 		Path(tempFileName).read_text(encoding="utf-8"),
@@ -151,7 +145,6 @@ def ansiToHTML(
 	ansiText: str,
 	fileName: str,
 	theme: str | None = None,
-	wide: bool = True,
 	width: int = WIDTH_DEFAULT,
 	title: str = TITLE,
 ):
@@ -160,12 +153,11 @@ def ansiToHTML(
 	Args:
 		ansiText (str): ANSI text to convert
 		fileName (str): image file path
-		theme (str, optional): file path to base24 theme to use. Defaults to "onedark.yml".
-		wide (bool, optional): use a 'wide' terminal 89 vs 49 chars
+		theme (str, optional): file path to base24 theme to use. Defaults to "onedark.yml"
 		width (int, optional): set the width for the image
 		title (str, optional): set the title. Ingored
 	"""
-	console = _doRichRender(ansiText, _resolveWidth(wide, width))
+	console = _doRichRender(ansiText, width)
 	console.save_html(fileName, theme=_doRichTerminalTheme(theme))
 
 
@@ -173,8 +165,8 @@ def ansiToHTMLRender(
 	ansiText: str,
 	fileName: str,
 	theme: str | None = None,
-	wide: bool = True,
 	width: int = WIDTH_DEFAULT,
+	title: str = TITLE,
 ):
 	"""Convert an ANSI stream to a Render image using pyppeteer to take a
 	screenshot of a generated html (hacky but we can output more like that
@@ -183,14 +175,13 @@ def ansiToHTMLRender(
 	Args:
 		ansiText (str): ANSI text to convert
 		fileName (str): image file path
-		theme (str, optional): file path to base24 theme to use. Defaults to "onedark.yml".
-		wide (bool, optional): use a 'wide' terminal 89 vs 49 chars
+		theme (str, optional): file path to base24 theme to use. Defaults to "onedark.yml"
 		width (int, optional): set the width for the image
 		title (str, optional): set the title. Ingored
 	"""
-	console = _doRichRender(ansiText, _resolveWidth(wide, width))
+	console = _doRichRender(ansiText, width)
 	tempFileName = tempfile.mktemp(suffix=".html")
-	ansiToHTML(ansiText, tempFileName, theme, wide, width)
+	ansiToHTML(ansiText, tempFileName, theme, width)
 	size = (console.width * TEXT_WIDTH, (console.height + 1) * TEXT_HEIGHT)
 	_doGrabWebpage(f"file:///{tempFileName}", size, fileName)
 	Path(tempFileName).unlink()

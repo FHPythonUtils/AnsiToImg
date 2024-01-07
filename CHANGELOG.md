@@ -3,6 +3,36 @@
 All major and minor version changes will be documented in this file. Details of
 patch-level version changes can be found in [commit messages](../../commits/master).
 
+## 2024.1 - 2024/01/07
+
+- **Breaking Change** to `ansiTo.*` functions removing `wide=` option
+
+  Note:
+  ```py
+	def ansiToSVG(
+		ansiText: str,
+		fileName: str,
+		theme: str | None = None,
+		width: int = WIDTH_DEFAULT,
+		wide: bool = True,
+		title: str = TITLE,
+	):
+  ```
+
+  has been replaced by:
+
+    ```py
+	def ansiToSVG(
+		ansiText: str,
+		fileName: str,
+		theme: str | None = None,
+		width: int = WIDTH_DEFAULT,
+		title: str = TITLE,
+	):
+  ```
+
+  meaning that calling `ansiToSVG` with only `ansiText` and a `fileName` will result in a 49 char wide image compared to the previous 89 char wide image to match the command line behaviour.
+
 ## 2024 - 2024/01/07
 
 - update dependencies
