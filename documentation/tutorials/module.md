@@ -136,7 +136,7 @@ in black and white and show quite poorly on coloured backgrounds.
 ### ansiToSVGRender
 
 Takes the advantages that `ansiToRender` has whilst keeping colour emojis, Yay!
-This uses pyppeteer to fire up a headless browser which opens the SVG and takes
+This uses playwright to fire up a headless browser which opens the SVG and takes
 a screenshot.
 
 ### ansiToHTML

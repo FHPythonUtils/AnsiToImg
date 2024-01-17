@@ -3,6 +3,7 @@ from __future__ import annotations
 
 import sys
 from pathlib import Path
+from typing import Any
 
 import imgcompare
 
@@ -15,38 +16,38 @@ fredHappyfaceHD = Path(f"{THISDIR}/data/fredHappyfaceHD.txt").read_text(encoding
 fancyHelloWorld = Path(f"{THISDIR}/data/fancyHelloWorld.txt").read_text(encoding="utf-8")
 
 
-def test_html():
+def test_html() -> None:
 	output = f"{THISDIR}/data/fredHappyfaceHD.html"
 	expected = f"{THISDIR}/data/fredHappyfaceHD_expected.html"
 	ansiToHTML(fredHappyfaceHD, output, width=WIDTH_WIDE)
 	assert Path(output).read_text(encoding="utf-8") == Path(expected).read_text(encoding="utf-8")
 
 
-def util_svg_render(slug: str, file=fredHappyfaceHD, **kwargs):
+def util_svg_render(slug: str, file: str = fredHappyfaceHD, **kwargs: Any) -> None:
 	output = f"{THISDIR}/data/{slug}.svg.png"
 	ansiToSVGRender(file, output, **kwargs)
 	imgcompare.is_equal(output, f"{THISDIR}/data/{slug}.svg_expected.png", tolerance=0.2)
 
 
-def test_html_render():
+def test_html_render() -> None:
 	output = f"{THISDIR}/data/fredHappyfaceHD.html.png"
 	ansiToHTMLRender(fredHappyfaceHD, output, width=WIDTH_WIDE)
 	imgcompare.is_equal(output, f"{THISDIR}/data/fredHappyfaceHD.html_expected.png", tolerance=0.2)
 
 
-def test_render():
+def test_render() -> None:
 	output = f"{THISDIR}/data/fredHappyfaceHD.png"
 	ansiToRender(fredHappyfaceHD, output, width=WIDTH_WIDE)
 	imgcompare.is_equal(output, f"{THISDIR}/data/fredHappyfaceHD_expected.png", tolerance=0.2)
 
 
-def test_svg_render():
+def test_svg_render() -> None:
 	util_svg_render("fredHappyfaceHD", width=WIDTH_WIDE)
 
 
-def test_svg_hw20():
+def test_svg_hw20() -> None:
 	util_svg_render("hw20", fancyHelloWorld, width=20)
 
 
-def test_svg_hw40test():
+def test_svg_hw40test() -> None:
 	util_svg_render("hw40test", fancyHelloWorld, width=40, title="test")

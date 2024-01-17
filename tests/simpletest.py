@@ -18,8 +18,6 @@ from ansitoimg.render import (
 	ansiToSVGRender,
 )
 
-# pylint:disable=invalid-name
-
 # Define ANSI text
 fancyHelloWorld = (
 	"👋\033[32mHello\033[0m, \033[34mWorld\033[0m🌏\033[31m!\033[0m\n\033[41m"
@@ -39,31 +37,31 @@ print(cat)
 print()
 
 # To SVG
-ansiToSVG(fancyHelloWorld, f"{THISDIR}/data/fancyHelloWorld.svg", wide=False)
+ansiToSVG(fancyHelloWorld, f"{THISDIR}/data/fancyHelloWorld.svg", width=89)
 ansiToSVG(fredHappyfaceHD, f"{THISDIR}/data/fredHappyfaceHD.svg")
 ansiToSVG(cat, f"{THISDIR}/data/cat.svg", width=100)
 
 # To Render
-ansiToRender(fancyHelloWorld, f"{THISDIR}/data/fancyHelloWorld.png", wide=False)
+ansiToRender(fancyHelloWorld, f"{THISDIR}/data/fancyHelloWorld.png", width=89)
 ansiToRender(fredHappyfaceHD, f"{THISDIR}/data/fredHappyfaceHD.png")
 ansiToRender(cat, f"{THISDIR}/data/cat.png", width=100)
 
 # To SVGRender
-ansiToSVGRender(fancyHelloWorld, f"{THISDIR}/data/fancyHelloWorld.svg.png", wide=False)
+ansiToSVGRender(fancyHelloWorld, f"{THISDIR}/data/fancyHelloWorld.svg.png", width=89)
 ansiToSVGRender(fredHappyfaceHD, f"{THISDIR}/data/fredHappyfaceHD.svg.png")
 ansiToSVGRender(cat, f"{THISDIR}/data/cat.svg.png", width=100)
 
 # To HTML
-ansiToHTML(fancyHelloWorld, f"{THISDIR}/data/fancyHelloWorld.html", wide=False)
+ansiToHTML(fancyHelloWorld, f"{THISDIR}/data/fancyHelloWorld.html", width=89)
 ansiToHTML(fredHappyfaceHD, f"{THISDIR}/data/fredHappyfaceHD.html")
 ansiToHTML(cat, f"{THISDIR}/data/cat.html", width=100)
 
 # To HTMLRender
-ansiToHTMLRender(fancyHelloWorld, f"{THISDIR}/data/fancyHelloWorld.html.png", wide=False)
+ansiToHTMLRender(fancyHelloWorld, f"{THISDIR}/data/fancyHelloWorld.html.png", width=89)
 ansiToHTMLRender(fredHappyfaceHD, f"{THISDIR}/data/fredHappyfaceHD.html.png")
 ansiToHTMLRender(cat, f"{THISDIR}/data/cat.html.png", width=100)
 
 # To SVGRender 06/03/2023
 ansiToSVGRender(fancyHelloWorld, f"{THISDIR}/data/hw20.svg.png", width=20)
-ansiToSVGRender(fancyHelloWorld, f"{THISDIR}/data/hwT20.svg.png", wide=True, width=20)
+ansiToSVGRender(fancyHelloWorld, f"{THISDIR}/data/hwT20.svg.png", width=20)
 ansiToSVGRender(fancyHelloWorld, f"{THISDIR}/data/hw40test.svg.png", width=40, title="test")

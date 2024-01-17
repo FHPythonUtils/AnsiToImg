@@ -50,7 +50,7 @@ def ansiToHTML(
 
 [Show source in render.py:164](../../../ansitoimg/render.py#L164)
 
-Convert an ANSI stream to a Render image using pyppeteer to take a
+Convert an ANSI stream to a Render image using playwright to take a
 screenshot of a generated html (hacky but we can output more like that
 of a terminal now)
 
@@ -85,7 +85,7 @@ def ansiToHTMLRender(
 
 [Show source in render.py:81](../../../ansitoimg/render.py#L81)
 
-Convert an ANSI stream to a Render image using pyppeteer to take a
+Convert an ANSI stream to a Render image using playwright to take a
 screenshot of a generated SVG (hacky but we can get coloured emoji now)
 
 #### Arguments
@@ -152,7 +152,7 @@ def ansiToSVG(
 
 [Show source in render.py:101](../../../ansitoimg/render.py#L101)
 
-Convert an ANSI stream to a Render image using pyppeteer to take a
+Convert an ANSI stream to a Render image using playwright to take a
 screenshot of a generated SVG (hacky but we can get coloured emoji now)
 
 #### Arguments

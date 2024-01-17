@@ -1,44 +1,32 @@
 repos:
+  - repo: https://github.com/astral-sh/ruff-pre-commit
+    rev: v0.1.13
+    hooks:
+      - id: ruff
+        args: [ --fix ]
+
+  - repo: https://github.com/RobertCraigie/pyright-python
+    rev: v1.1.347
+    hooks:
+    - id: pyright
+
   - repo: https://github.com/FHPythonUtils/Blackt
-    rev: '2022.0.3'
+    rev: '2024'
     hooks:
       - id: blackt
 
-  - repo: https://github.com/pycqa/isort
-    rev: 5.12.0
-    hooks:
-      - id: isort
-
-  - repo: https://github.com/pycqa/pylint
-    rev: v3.0.0a6
-    hooks:
-      - id: pylint
-        exclude: "tests/"
-        args: [--disable=import-error,--jobs=0]
-
   - repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: v4.4.0
+    rev: v4.5.0
     hooks:
       - id: trailing-whitespace
-        exclude: "tests/"
       - id: end-of-file-fixer
-        exclude: "tests/"
 
-  - repo: https://github.com/asottile/pyupgrade
-    rev: v3.7.0
-    hooks:
-      - id: pyupgrade
-        args: [--py38-plus]
   - repo: https://github.com/boidolr/pre-commit-images
-    rev: v1.2.1
+    rev: v1.5.1
     hooks:
-      - id: optimize-avif
-        exclude: "tests/"
       - id: optimize-jpg
-        exclude: "tests/"
       - id: optimize-png
-        exclude: "tests/"
       - id: optimize-svg
-        exclude: "tests/"
       - id: optimize-webp
-        exclude: "tests/"
+
+exclude: "tests/data|documentation/reference"

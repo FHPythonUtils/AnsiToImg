@@ -14,7 +14,7 @@ from ansitoimg.render import (
 	ansiToSVG,
 	ansiToSVGRender,
 )
-from ansitoimg.utils import TITLE, WIDTH_WIDE, WIDTH_DEFAULT
+from ansitoimg.utils import TITLE, WIDTH_DEFAULT, WIDTH_WIDE
 
 stdout.reconfigure(encoding="utf-8")
 
@@ -22,7 +22,7 @@ stdout.reconfigure(encoding="utf-8")
 PLUGIN_HELP = "Plugin to use. One of svg, render, svgrender, html, htmlrender, default=svg"
 
 
-def cli():  # pragma: no cover
+def cli() -> None:  # pragma: no cover
 	"""Cli entry point."""
 	parser = argparse.ArgumentParser(description=__doc__)
 	parser.add_argument(
@@ -60,7 +60,8 @@ def cli():  # pragma: no cover
 	parser.add_argument(
 		"--width",
 		default=WIDTH_DEFAULT,
-		help="Explicitly set the width in chars, use 'auto' to attempt to automatically calculate this from your environment",
+		help="Explicitly set the width in chars, use 'auto' to attempt to automatically "
+		"calculate this from your environment",
 	)
 
 	args = parser.parse_args()
@@ -69,7 +70,6 @@ def cli():  # pragma: no cover
 	width = int(args.width) if args.width.isdigit() else WIDTH_DEFAULT
 	if width == WIDTH_DEFAULT and args.wide:
 		width = WIDTH_WIDE
-
 
 	# Plugin
 	pluginMap = {

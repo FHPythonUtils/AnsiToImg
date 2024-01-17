@@ -64,10 +64,11 @@ def ansiToSVG(
 	theme: str | None = None,
 	width: int = WIDTH_DEFAULT,
 	title: str = TITLE,
-):
+) -> None:
 	"""Convert an ANSI stream to SVG.
 
 	Args:
+	----
 		ansiText (str): ANSI text to convert
 		fileName (str): file path to SVG to write
 		theme (str, optional): file path to base24 theme to use. Defaults to "onedark.yml"
@@ -84,11 +85,12 @@ def ansiToRender(
 	theme: str | None = None,
 	width: int = WIDTH_DEFAULT,
 	title: str = TITLE,
-):
-	"""Convert an ANSI stream to a Render image using pyppeteer to take a
-	screenshot of a generated SVG (hacky but we can get coloured emoji now)
+) -> None:
+	"""Convert an ANSI stream to a Render image using playwright to take a
+	screenshot of a generated SVG (hacky but we can get coloured emoji now).
 
 	Args:
+	----
 		ansiText (str): ANSI text to convert
 		fileName (str): image file path
 		theme (str, optional): file path to base24 theme to use. Defaults to "onedark.yml"
@@ -104,11 +106,12 @@ def ansiToSVGRender(
 	theme: str | None = None,
 	width: int = WIDTH_DEFAULT,
 	title: str = TITLE,
-):
-	"""Convert an ANSI stream to a Render image using pyppeteer to take a
-	screenshot of a generated SVG (hacky but we can get coloured emoji now)
+) -> None:
+	"""Convert an ANSI stream to a Render image using playwright to take a
+	screenshot of a generated SVG (hacky but we can get coloured emoji now).
 
 	Args:
+	----
 		ansiText (str): ANSI text to convert
 		fileName (str): image file path
 		theme (str, optional): file path to base24 theme to use. Defaults to "onedark.yml"
@@ -129,7 +132,7 @@ def ansiToSVGRender(
 	Path(tempFileName).unlink()
 
 
-def _doGrabWebpage(url: str, resolution: tuple[int, int], fileName: str):
+def _doGrabWebpage(url: str, resolution: tuple[int, int], fileName: str) -> None:
 	"""Go to a URL, with a browser with a set resolution and take a screenshot."""
 	with sync_playwright() as p:
 		install(p.chromium)
@@ -147,10 +150,11 @@ def ansiToHTML(
 	theme: str | None = None,
 	width: int = WIDTH_DEFAULT,
 	title: str = TITLE,
-):
+) -> None:
 	"""Convert an ANSI stream to a html file.
 
 	Args:
+	----
 		ansiText (str): ANSI text to convert
 		fileName (str): image file path
 		theme (str, optional): file path to base24 theme to use. Defaults to "onedark.yml"
@@ -167,12 +171,13 @@ def ansiToHTMLRender(
 	theme: str | None = None,
 	width: int = WIDTH_DEFAULT,
 	title: str = TITLE,
-):
-	"""Convert an ANSI stream to a Render image using pyppeteer to take a
+) -> None:
+	"""Convert an ANSI stream to a Render image using playwright to take a
 	screenshot of a generated html (hacky but we can output more like that
-	of a terminal now)
+	of a terminal now).
 
 	Args:
+	----
 		ansiText (str): ANSI text to convert
 		fileName (str): image file path
 		theme (str, optional): file path to base24 theme to use. Defaults to "onedark.yml"
