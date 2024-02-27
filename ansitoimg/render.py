@@ -74,6 +74,7 @@ def ansiToSVG(
 		theme (str, optional): file path to base24 theme to use. Defaults to "onedark.yml"
 		width (int, optional): set the width for the image
 		title (str, optional): set the title. Defaults to "AnsiToImg (courtesy of Rich)"
+
 	"""
 	console = _doRichRender(ansiText, width)
 	console.save_svg(fileName, theme=_doRichTerminalTheme(theme), title=title)
@@ -96,6 +97,7 @@ def ansiToRender(
 		theme (str, optional): file path to base24 theme to use. Defaults to "onedark.yml"
 		width (int, optional): set the width for the image
 		title (str, optional): set the title. Defaults to "AnsiToImg (courtesy of Rich)"
+
 	"""
 	return ansiToSVGRender(ansiText, fileName, theme, width, title)
 
@@ -117,6 +119,7 @@ def ansiToSVGRender(
 		theme (str, optional): file path to base24 theme to use. Defaults to "onedark.yml"
 		width (int, optional): set the width for the image
 		title (str, optional): set the title. Defaults to "AnsiToImg (courtesy of Rich)"
+
 	"""
 	console = _doRichRender(ansiText, width)
 	tempFileName = tempfile.mktemp(suffix=".svg")
@@ -160,6 +163,7 @@ def ansiToHTML(
 		theme (str, optional): file path to base24 theme to use. Defaults to "onedark.yml"
 		width (int, optional): set the width for the image
 		title (str, optional): set the title. Ingored
+
 	"""
 	console = _doRichRender(ansiText, width)
 	console.save_html(fileName, theme=_doRichTerminalTheme(theme))
@@ -183,6 +187,7 @@ def ansiToHTMLRender(
 		theme (str, optional): file path to base24 theme to use. Defaults to "onedark.yml"
 		width (int, optional): set the width for the image
 		title (str, optional): set the title. Ingored
+
 	"""
 	console = _doRichRender(ansiText, width)
 	tempFileName = tempfile.mktemp(suffix=".html")

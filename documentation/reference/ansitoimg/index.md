@@ -1,7 +1,6 @@
 # Ansitoimg
 
-[Ansitoimg Index](../README.md#ansitoimg-index) /
-Ansitoimg
+[Ansitoimg Index](../README.md#ansitoimg-index) / Ansitoimg
 
 > Auto-generated documentation for [ansitoimg](../../../ansitoimg/__init__.py) module.
 
@@ -18,7 +17,7 @@ Cli entry point.
 #### Signature
 
 ```python
-def cli(): ...
+def cli() -> None: ...
 ```
 
 

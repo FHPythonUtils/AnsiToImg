@@ -1,31 +1,45 @@
 # Render
 
-[Ansitoimg Index](../README.md#ansitoimg-index) /
-[Ansitoimg](./index.md#ansitoimg) /
-Render
+[Ansitoimg Index](../README.md#ansitoimg-index) / [Ansitoimg](./index.md#ansitoimg) / Render
 
 > Auto-generated documentation for [ansitoimg.render](../../../ansitoimg/render.py) module.
 
 - [Render](#render)
+  - [_doGrabWebpage](#_dograbwebpage)
   - [ansiToHTML](#ansitohtml)
   - [ansiToHTMLRender](#ansitohtmlrender)
   - [ansiToRender](#ansitorender)
   - [ansiToSVG](#ansitosvg)
   - [ansiToSVGRender](#ansitosvgrender)
 
+## _doGrabWebpage
+
+[Show source in render.py:138](../../../ansitoimg/render.py#L138)
+
+Go to a URL, with a browser with a set resolution and take a screenshot.
+
+#### Signature
+
+```python
+def _doGrabWebpage(url: str, resolution: tuple[int, int], fileName: str) -> None: ...
+```
+
+
+
 ## ansiToHTML
 
-[Show source in render.py:144](../../../ansitoimg/render.py#L144)
+[Show source in render.py:150](../../../ansitoimg/render.py#L150)
 
 Convert an ANSI stream to a html file.
 
 #### Arguments
 
-- `ansiText` *str* - ANSI text to convert
-- `fileName` *str* - image file path
-- `theme` *str, optional* - file path to base24 theme to use. Defaults to "onedark.yml"
-- `width` *int, optional* - set the width for the image
-- `title` *str, optional* - set the title. Ingored
+----
+ - `ansiText` *str* - ANSI text to convert
+ - `fileName` *str* - image file path
+ - `theme` *str, optional* - file path to base24 theme to use. Defaults to "onedark.yml"
+ - `width` *int, optional* - set the width for the image
+ - `title` *str, optional* - set the title. Ingored
 
 #### Signature
 
@@ -36,7 +50,7 @@ def ansiToHTML(
     theme: str | None = None,
     width: int = WIDTH_DEFAULT,
     title: str = TITLE,
-): ...
+) -> None: ...
 ```
 
 #### See also
@@ -48,19 +62,20 @@ def ansiToHTML(
 
 ## ansiToHTMLRender
 
-[Show source in render.py:164](../../../ansitoimg/render.py#L164)
+[Show source in render.py:172](../../../ansitoimg/render.py#L172)
 
 Convert an ANSI stream to a Render image using playwright to take a
 screenshot of a generated html (hacky but we can output more like that
-of a terminal now)
+of a terminal now).
 
 #### Arguments
 
-- `ansiText` *str* - ANSI text to convert
-- `fileName` *str* - image file path
-- `theme` *str, optional* - file path to base24 theme to use. Defaults to "onedark.yml"
-- `width` *int, optional* - set the width for the image
-- `title` *str, optional* - set the title. Ingored
+----
+ - `ansiText` *str* - ANSI text to convert
+ - `fileName` *str* - image file path
+ - `theme` *str, optional* - file path to base24 theme to use. Defaults to "onedark.yml"
+ - `width` *int, optional* - set the width for the image
+ - `title` *str, optional* - set the title. Ingored
 
 #### Signature
 
@@ -71,7 +86,7 @@ def ansiToHTMLRender(
     theme: str | None = None,
     width: int = WIDTH_DEFAULT,
     title: str = TITLE,
-): ...
+) -> None: ...
 ```
 
 #### See also
@@ -83,18 +98,19 @@ def ansiToHTMLRender(
 
 ## ansiToRender
 
-[Show source in render.py:81](../../../ansitoimg/render.py#L81)
+[Show source in render.py:83](../../../ansitoimg/render.py#L83)
 
 Convert an ANSI stream to a Render image using playwright to take a
-screenshot of a generated SVG (hacky but we can get coloured emoji now)
+screenshot of a generated SVG (hacky but we can get coloured emoji now).
 
 #### Arguments
 
-- `ansiText` *str* - ANSI text to convert
-- `fileName` *str* - image file path
-- `theme` *str, optional* - file path to base24 theme to use. Defaults to "onedark.yml"
-- `width` *int, optional* - set the width for the image
-- `title` *str, optional* - set the title. Defaults to "AnsiToImg (courtesy of Rich)"
+----
+ - `ansiText` *str* - ANSI text to convert
+ - `fileName` *str* - image file path
+ - `theme` *str, optional* - file path to base24 theme to use. Defaults to "onedark.yml"
+ - `width` *int, optional* - set the width for the image
+ - `title` *str, optional* - set the title. Defaults to "AnsiToImg (courtesy of Rich)"
 
 #### Signature
 
@@ -105,7 +121,7 @@ def ansiToRender(
     theme: str | None = None,
     width: int = WIDTH_DEFAULT,
     title: str = TITLE,
-): ...
+) -> None: ...
 ```
 
 #### See also
@@ -123,11 +139,12 @@ Convert an ANSI stream to SVG.
 
 #### Arguments
 
-- `ansiText` *str* - ANSI text to convert
-- `fileName` *str* - file path to SVG to write
-- `theme` *str, optional* - file path to base24 theme to use. Defaults to "onedark.yml"
-- `width` *int, optional* - set the width for the image
-- `title` *str, optional* - set the title. Defaults to "AnsiToImg (courtesy of Rich)"
+----
+ - `ansiText` *str* - ANSI text to convert
+ - `fileName` *str* - file path to SVG to write
+ - `theme` *str, optional* - file path to base24 theme to use. Defaults to "onedark.yml"
+ - `width` *int, optional* - set the width for the image
+ - `title` *str, optional* - set the title. Defaults to "AnsiToImg (courtesy of Rich)"
 
 #### Signature
 
@@ -138,7 +155,7 @@ def ansiToSVG(
     theme: str | None = None,
     width: int = WIDTH_DEFAULT,
     title: str = TITLE,
-): ...
+) -> None: ...
 ```
 
 #### See also
@@ -150,18 +167,19 @@ def ansiToSVG(
 
 ## ansiToSVGRender
 
-[Show source in render.py:101](../../../ansitoimg/render.py#L101)
+[Show source in render.py:105](../../../ansitoimg/render.py#L105)
 
 Convert an ANSI stream to a Render image using playwright to take a
-screenshot of a generated SVG (hacky but we can get coloured emoji now)
+screenshot of a generated SVG (hacky but we can get coloured emoji now).
 
 #### Arguments
 
-- `ansiText` *str* - ANSI text to convert
-- `fileName` *str* - image file path
-- `theme` *str, optional* - file path to base24 theme to use. Defaults to "onedark.yml"
-- `width` *int, optional* - set the width for the image
-- `title` *str, optional* - set the title. Defaults to "AnsiToImg (courtesy of Rich)"
+----
+ - `ansiText` *str* - ANSI text to convert
+ - `fileName` *str* - image file path
+ - `theme` *str, optional* - file path to base24 theme to use. Defaults to "onedark.yml"
+ - `width` *int, optional* - set the width for the image
+ - `title` *str, optional* - set the title. Defaults to "AnsiToImg (courtesy of Rich)"
 
 #### Signature
 
@@ -172,7 +190,7 @@ def ansiToSVGRender(
     theme: str | None = None,
     width: int = WIDTH_DEFAULT,
     title: str = TITLE,
-): ...
+) -> None: ...
 ```
 
 #### See also
