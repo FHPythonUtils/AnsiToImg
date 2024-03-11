@@ -68,7 +68,7 @@ def cli() -> None:  # pragma: no cover
 	args = parser.parse_args()
 	ansi = args.input.read()
 
-	width = args.width 
+	width = args.width
 	if width == WIDTH_DEFAULT and args.wide:
 		width = WIDTH_WIDE
 
