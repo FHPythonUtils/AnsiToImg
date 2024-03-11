@@ -60,6 +60,7 @@ def cli() -> None:  # pragma: no cover
 	parser.add_argument(
 		"--width",
 		default=WIDTH_DEFAULT,
+		type=int,
 		help="Explicitly set the width in chars, use 'auto' to attempt to automatically "
 		"calculate this from your environment",
 	)
@@ -67,7 +68,7 @@ def cli() -> None:  # pragma: no cover
 	args = parser.parse_args()
 	ansi = args.input.read()
 
-	width = int(args.width) if args.width.isdigit() else WIDTH_DEFAULT
+	width = args.width 
 	if width == WIDTH_DEFAULT and args.wide:
 		width = WIDTH_WIDE
 
