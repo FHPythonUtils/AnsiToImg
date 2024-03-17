@@ -1,5 +1,4 @@
-"""Convert an ANSI string to an image. Great for adding terminal output into a readme.
-"""
+"""Convert an ANSI string to an image. Great for adding terminal output into a readme."""
 
 from __future__ import annotations
 

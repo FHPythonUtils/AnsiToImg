@@ -10,7 +10,7 @@
 
 ## cli
 
-[Show source in __init__.py:25](../../../ansitoimg/__init__.py#L25)
+[Show source in __init__.py:24](../../../ansitoimg/__init__.py#L24)
 
 Cli entry point.
 
