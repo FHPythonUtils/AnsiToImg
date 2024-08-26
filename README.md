@@ -61,10 +61,9 @@ where to look for certain things:
 - The [Technical Reference](/documentation/reference) documents APIs and other aspects of the
   machinery. This documentation describes how to use the classes and functions at a lower level
   and assume that you have a good high-level understanding of the software.
-<!--
 - The [Help](/documentation/help) guide provides a starting point and outlines common issues that you
   may have.
--->
+
 
 ## Install With PIP
 
